@@ -49,6 +49,10 @@ markdown_extensions:
   - pymdownx.tilde
 extra_css:
   - stylesheets/extra.css
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: timeago
 theme:
   logo: icon.svg
   favicon: favicon.png

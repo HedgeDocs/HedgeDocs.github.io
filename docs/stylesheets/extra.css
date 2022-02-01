@@ -13,3 +13,7 @@
 .md-typeset li {
   font-size: 16px;
 }
+
+.md-typeset code {
+  font-size: 15px;
+}
