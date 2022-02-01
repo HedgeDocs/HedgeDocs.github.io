@@ -2,26 +2,89 @@ site_name: HedgeDocs
 site_url: https://hedgedocs.github.io/
 nav:
   - Home: index.md
+  - Tools:
+    - tools/index.md
+    - Sonic Generations: 
+      - Lighting/GI: tools/blueblur/lighting.md
+      - File Formats: tools/blueblur/files.md
+      - Audio: tools/blueblur/audio.md
+  - Guides:
+    - guides/index.md
+    - Sonic Generations: 
+      - Lighting/GI:
+        - guides/blueblur/lighting/index.md
+        - Example Guide: guides/blueblur/lighting/example.md
+      - File Formats:
+        - guides/blueblur/files/index.md
+        - Example Guide: guides/blueblur/files/example.md
+      - Audio:
+        - guides/blueblur/audio/index.md
+        - Example Guide: guides/blueblur/audio/example.md
+      - Misc:
+        - guides/blueblur/misc/index.md
+        - Example Guide: guides/blueblur/misc/example.md
 markdown_extensions:
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.inlinehilite
+  - abbr
   - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 extra_css:
   - stylesheets/extra.css
 theme:
+  logo: icon.svg
+  favicon: favicon.png
   name: material
+  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.tabs
     - navigation.indexes
+    - navigation.sections
   palette:
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/brightness-4
         name: Switch to light mode
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: blue
       toggle:
-        icon: material/lightbulb
+        icon: material/brightness-7
         name: Switch to dark mode
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/hedgedocs/hedgedocs.github.io
