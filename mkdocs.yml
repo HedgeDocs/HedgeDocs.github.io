@@ -17,7 +17,7 @@ nav:
         - Example Guide: guides/blueblur/lighting/example.md
       - File Formats:
         - guides/blueblur/files/index.md
-        - Example Guide: guides/blueblur/files/example.md
+        - XNCP Animations: guides/blueblur/files/xncp_anims.md
       - Audio:
         - guides/blueblur/audio/index.md
         - Example Guide: guides/blueblur/audio/example.md

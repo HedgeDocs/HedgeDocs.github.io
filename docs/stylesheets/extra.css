@@ -6,3 +6,10 @@
   --md-primary-fg-color:             #1656E4;
   --md-primary-fg-color--light:      #75B6E7;
 }
+.md-typeset p {
+  font-size: 16px;
+}
+
+.md-typeset li {
+  font-size: 16px;
+}
