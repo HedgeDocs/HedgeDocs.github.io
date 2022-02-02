@@ -1,4 +1,9 @@
-# HedgeDocs
+<h1>
+    <a href="#hedgedocs">
+        <img width="42" align="left" src="https://raw.githubusercontent.com/HedgeDocs/HedgeDocs.github.io/main/docs/assets/favicon.png">
+    </a>
+    HedgeDocs
+</h1>
 
 Tools and guides for modding Sonic games. Uses [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
