@@ -21,10 +21,10 @@ You can use MkDocs' metadata support to add descriptions to your pages. This way
 Example:
 ```
 ---
-description: This is the description for this page.
+description: Level editing tools for Sonic Generations
 ---
 
-# Page Title
+# Level Editing
 
 content
 (...)
