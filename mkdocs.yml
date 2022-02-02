@@ -50,8 +50,8 @@ extra_css:
 plugins:
   - search
 theme:
-  logo: icon.svg
-  favicon: favicon.png
+  logo: assets/icon.svg
+  favicon: assets/favicon.png
   name: material
   custom_dir: overrides
   features:
