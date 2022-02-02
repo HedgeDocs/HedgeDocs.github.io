@@ -18,6 +18,19 @@
   font-size: 15px;
 }
 
+.md-tabs__link {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: block;
+    font-size: .7rem;
+    margin-top: .8rem;
+    opacity: .7;
+    outline-color: var(--md-accent-fg-color);
+    outline-offset: .2rem;
+    border-bottom: 0px transparent;
+    transition: transform .4s cubic-bezier(.1,.7,.1,1),opacity .25s,border-bottom .25s ease;
+}
+
 .md-tabs__link--active, .md-tabs__link:-webkit-any(:focus,:hover) {
     color: inherit;
     opacity: 1;
@@ -30,17 +43,4 @@
     opacity: 1;
     border-bottom: 1px solid;
     padding-bottom: 1em;
-}
-
-.md-tabs__link {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    display: block;
-    font-size: .7rem;
-    margin-top: .8rem;
-    opacity: .7;
-    outline-color: var(--md-accent-fg-color);
-    outline-offset: .2rem;
-    border-bottom: 0px transparent;
-    transition: transform .4s cubic-bezier(.1,.7,.1,1),opacity .25s,border-bottom .25s ease;
 }
