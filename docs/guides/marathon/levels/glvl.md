@@ -14,15 +14,15 @@ Objects in '06 make frequent usage of grouping, allowing objects to influence ea
 
 ![](./assets/glvl/image1.png)
 
-Each <Group> key is... Well... A Group that will be compiled into the converted SET.
+Each \<Group\> key is... Well... A Group that will be compiled into the converted SET.
 
-The <Name> key seems to just be for identification, so here (for Ocean Palace) I called it `CageGroup01` as it was the first group I made that unlocked a cage.
+The \<Name\> key seems to just be for identification, so here (for Ocean Palace) I called it `CageGroup01` as it was the first group I made that unlocked a cage.
 
-The <Type> key is the name of the lua event that this group will activate, this key can be left empty if the group doesn't need to activate anything. In this example, it's called Cage01, so it will fire the event called Cage01 in the stage's lua file; which, as you can probably guess, signalled a cage to open.
+The \<Type\> key is the name of the lua event that this group will activate, this key can be left empty if the group doesn't need to activate anything. In this example, it's called Cage01, so it will fire the event called Cage01 in the stage's lua file; which, as you can probably guess, signalled a cage to open.
 
-The <ObjectCount> key simply lists how many objects this group has (and honestly shouldn't have even been a thing, but I wrote this thing incredibly badly).
+The \<ObjectCount\> key simply lists how many objects this group has (and honestly shouldn't have even been a thing, but I wrote this thing incredibly badly).
 
-The subkeys within the <ObjectIDs> key simply give the ID of an object that should be in this group. These IDs are shown in the conversion log, and are also patched into the Generations SET if the `Patch Generations SET` option is used in the Converter (see below).
+The subkeys within the \<ObjectIDs\> key simply give the ID of an object that should be in this group. These IDs are shown in the conversion log, and are also patched into the Generations SET if the `Patch Generations SET` option is used in the Converter (see below).
 
 # '06 SET Conversion
 ![](./assets/glvl/image2.png)
