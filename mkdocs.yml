@@ -24,6 +24,9 @@ nav:
         - Sonic GLvl: guides/blueblur/levels/glvl.md
       - Misc:
         - Example Guide: guides/blueblur/misc/example.md
+    - Sonic The Hedgehog (2006):
+      - Level Editing:
+        - Sonic GLvl: guides/marathon/levels/glvl.md
 markdown_extensions:
   - abbr
   - admonition
