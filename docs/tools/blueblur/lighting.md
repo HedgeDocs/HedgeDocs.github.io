@@ -1,8 +1,4 @@
-This page is still a work in progress...
-
-
 ## HedgeGI
-This tool makes your level mod look cool I guess. 
-This button could download it... but it doesn't
+Tool that allows you to bake global illumination and light field data for Hedgehog Engine games.
 
-[Download :fontawesome-solid-download:](#){ .md-button .md-button--primary }
+[GitHub Repository :fontawesome-brands-github:](https://github.com/blueskythlikesclouds/HedgeGI){ .md-button .md-button--primary target="_blank"}

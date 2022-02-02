@@ -13,16 +13,14 @@ nav:
     - guides/index.md
     - Sonic Generations: 
       - Lighting/GI:
-        - guides/blueblur/lighting/index.md
         - Example Guide: guides/blueblur/lighting/example.md
       - File Formats:
-        - guides/blueblur/files/index.md
         - XNCP Animations: guides/blueblur/files/xncp_anims.md
       - Audio:
-        - guides/blueblur/audio/index.md
         - Example Guide: guides/blueblur/audio/example.md
+      - Level Editing:
+        - Sonic GLvl: guides/blueblur/levels/glvl.md
       - Misc:
-        - guides/blueblur/misc/index.md
         - Example Guide: guides/blueblur/misc/example.md
 markdown_extensions:
   - abbr
@@ -61,7 +59,6 @@ theme:
     - navigation.tabs
     - navigation.indexes
     - navigation.sections
-    - navigation.expand
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
