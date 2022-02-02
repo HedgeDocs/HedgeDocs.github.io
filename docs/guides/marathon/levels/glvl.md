@@ -9,16 +9,16 @@ description: Sonic GLvl tutorial for Sonic '06
 
 
 
-# Setting Up
+## Setting Up
 Download your preferred version of Sonic GLvl 0.9 and extract the repository to any location. Then, open the database folder and delete the `objects` folder. Next, download the [Sonic '06 Stage Editing Archive](https://github.com/Knuxfan24/Sonic-06-Stage-Editing-Archive) and extract the `SonicGLvl/database` folder to your SonicGLvl location, choosing to merge/replace existing files.
 
-# Converting Stage Terrain
+## Converting Stage Terrain
 Pre converted copies of the actual Sonic '06 stages are present on the Stage Editing Archive repository (under the `SonicGLvl/import` directory). When converting your own terrain (such as for a stage mod) the process is almost identical to the conversion process for Sonic Generations (it's recommended to use the two `#base` files as a template). The crucial step is to remember to set the stage scale in HedgehogConverter to 1% on all three axis, as the scale does not match between both games.
 
-# Usage
+## Usage
 The process of placing and editing objects at this point follows the workflow of using Sonic GLvl for a Generations stage mod, so will not be covered here.
 
-# Groups
+## Groups
 Objects in '06 make frequent usage of grouping, allowing objects to influence each other in some way (such as an Egg Chaser commanding a squad of Egg Liners or defeating an enemy unlocking a cage). To set these up, create an XML in your stage's cache directory called `groupdata_[x].group.xml` (where [x] is a name, such as `base`). Then lay them out as shown below.
 
 ![](./assets/glvl/image1.png)
@@ -33,7 +33,7 @@ The <ObjectCount\> key simply lists how many objects this group has (and honestl
 
 The subkeys within the <ObjectIDs\> key simply give the ID of an object that should be in this group. These IDs are shown in the conversion log, and are also patched into the Generations SET if the `Patch Generations SET` option is used in the Converter (see below).
 
-# '06 SET Conversion
+## '06 SET Conversion
 ![](./assets/glvl/image2.png)
 
 For converting between Generations and '06, we use the GLvl Converter. In the Source SET, select your Generations `.set.xml` file from your stage's cache directory in your GLvl location (will be named `setdata_base.set.xml` by default). If you've created any groups for your object layout (which need to be made manually, see above), then select the approriate `groupdata_[x].group.xml` file for the Groups XML option, otherwise, leave it blank.
