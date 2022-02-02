@@ -22,17 +22,3 @@
   </div>
 </footer>
 {% endblock %}
-
-{% block content %}
-  {{ super() }}
-
-  {% if git_page_authors %}
-    {% if git_info %}
-      {%- for author in git_info.get('page_authors') -%}
-        <a href="{{ author.email }}" title="{{ author.name }}">
-          {{ author.name }}
-        </a>
-      {%- endfor -%}
-    {% endif %}
-  {% endif %}
-{% endblock %}
