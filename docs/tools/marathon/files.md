@@ -1,3 +1,5 @@
+# File Format Tools
+
 ## Marathon.CLI
 All in one tool that allows extraction and repacking of Sonic '06 .arc archives, as well as conversion of multiple formats to and from human readable JSON files.
 
