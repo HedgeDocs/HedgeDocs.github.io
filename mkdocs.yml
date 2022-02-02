@@ -9,6 +9,7 @@ nav:
       - Lighting/GI: tools/blueblur/lighting.md
       - File Formats: tools/blueblur/files.md
       - Audio: tools/blueblur/audio.md
+      - Level Editing: tools/blueblur/levels.md
     - Sonic The Hedgehog (2006):
       - File Formats: tools/marathon/files.md
   - Guides:
