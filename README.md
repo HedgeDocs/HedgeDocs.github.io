@@ -1,6 +1,6 @@
 # HedgeDocs
 
-Tools and guides for modding Sonic games. Uses [Material for MkDocs](https://github.com/squidfunk/mkdocs-material).
+Tools and guides for modding Sonic games. Uses [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
 Page layout is defined in `mkdocs.yml`.
 
