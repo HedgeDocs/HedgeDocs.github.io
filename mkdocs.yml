@@ -61,6 +61,7 @@ theme:
     - navigation.tabs
     - navigation.indexes
     - navigation.sections
+    - navigation.expand
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
