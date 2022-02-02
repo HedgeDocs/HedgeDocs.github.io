@@ -1,3 +1,8 @@
+---
+description: Lighting tools for Sonic Generations
+---
+# Lighting Tools
+
 ## HedgeGI
 Tool that allows you to bake global illumination and light field data for Hedgehog Engine games.
 

@@ -1,3 +1,6 @@
+---
+description: Sonic GLvl tutorial for Sonic Generations
+---
 # How to use Sonic GLvl with Sonic Generations
 !!! note
     These video guides are old and still use Sonic GLvl 0.5.7. It's recommended you use the latest 0.9 version instead.

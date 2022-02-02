@@ -1,3 +1,7 @@
+---
+description: Sonic GLvl tutorial for Sonic '06
+---
+
 # How to use Sonic GLvl with Sonic '06
 
 !!! note

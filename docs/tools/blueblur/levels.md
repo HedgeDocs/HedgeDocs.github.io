@@ -1,3 +1,8 @@
+---
+description: Level editing tools for Sonic Generations
+---
+# Level Editing Tools
+
 ## SonicGLvl
 Level editor for Sonic Generations.
 

@@ -1,7 +1,23 @@
-# HedgeDocs
+---
+hide:
+  - navigation
+  - toc
+---
 
-<figure markdown>
-  ![Image title](https://pbs.twimg.com/media/CZVspBDWAAIjfsY.jpg){ width="300" }
-</figure>
+#
+<h1>
+  <img width="48" align="left" src="/assets/favicon.png">
+  HedgeDocs
+  </img>
+</h1>
 
-This page is still a work in progress...
+HedgeDocs is a webpage containing several guides and tools to be used for modding Sonic the Hedgehog games.
+
+----
+<a class="md-button md-button--primary" href="/tools" style="text-align: center; width: 10em">
+  Tools :fontawesome-solid-cog:
+</a>
+
+<a class="md-button md-button--primary" href="/tools" style="text-align: center; width: 10em">
+  Guides :fontawesome-solid-cog:
+</a>

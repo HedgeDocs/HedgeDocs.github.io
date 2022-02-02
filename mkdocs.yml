@@ -1,6 +1,7 @@
 site_name: HedgeDocs
 site_url: https://hedgedocs.github.io/
 github_repo: https://github.com/hedgedocs/hedgedocs.github.io
+site_description: Sonic the Hedgehog modding guides and tools
 nav:
   - Home: index.md
   - Tools:
