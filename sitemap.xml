@@ -61,7 +61,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hedgedocs.github.io/tools/hedgehog-engine/common/files/</loc>
+         <lastmod>2022-02-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hedgedocs.github.io/tools/hedgehog-engine/common/lighting/</loc>
+         <lastmod>2022-02-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.github.io/tools/hedgehog-engine-2/wars/files/pac/</loc>
          <lastmod>2022-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
