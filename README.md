@@ -1,11 +1,11 @@
 <h1>
     <a href="#hedgedocs">
-        <img width="42" align="left" src="https://raw.githubusercontent.com/HedgeDocs/HedgeDocs.github.io/main/docs/assets/favicon.png">
+        <img width="95" align="left" src="https://raw.githubusercontent.com/HedgeDocs/HedgeDocs.github.io/main/docs/assets/favicon.png">
     </a>
     HedgeDocs
 </h1>
 
-Tools and guides for modding Sonic games. Uses [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+GitHub Page with tools and guides for modding Sonic games, powered by [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
 # Adding New Pages
 Page layout is defined in `mkdocs.yml`. There you can add new pages and sections to HedgeDocs, by pointing the pages to a markdown file. 
