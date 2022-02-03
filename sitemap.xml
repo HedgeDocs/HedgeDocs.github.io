@@ -11,32 +11,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hedgedocs.github.io/guides/blueblur/audio/example/</loc>
+         <loc>https://hedgedocs.github.io/guides/hedgehog-engine/blueblur/files/xncp/anims/</loc>
          <lastmod>2022-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hedgedocs.github.io/guides/blueblur/files/xncp_anims/</loc>
+         <loc>https://hedgedocs.github.io/guides/hedgehog-engine/blueblur/levels/glvl/</loc>
          <lastmod>2022-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hedgedocs.github.io/guides/blueblur/levels/glvl/</loc>
+         <loc>https://hedgedocs.github.io/guides/hedgehog-engine/common/lighting/example/</loc>
          <lastmod>2022-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hedgedocs.github.io/guides/blueblur/lighting/example/</loc>
-         <lastmod>2022-02-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hedgedocs.github.io/guides/blueblur/misc/example/</loc>
-         <lastmod>2022-02-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hedgedocs.github.io/guides/marathon/levels/glvl/</loc>
+         <loc>https://hedgedocs.github.io/guides/others/marathon/levels/glvl/</loc>
          <lastmod>2022-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -46,27 +36,37 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hedgedocs.github.io/tools/blueblur/audio/</loc>
+         <loc>https://hedgedocs.github.io/tools/hedgehog-engine/blueblur/audio/</loc>
          <lastmod>2022-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hedgedocs.github.io/tools/blueblur/files/</loc>
+         <loc>https://hedgedocs.github.io/tools/hedgehog-engine/blueblur/levels/</loc>
          <lastmod>2022-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hedgedocs.github.io/tools/blueblur/levels/</loc>
+         <loc>https://hedgedocs.github.io/tools/hedgehog-engine/blueblur/files/ar/</loc>
          <lastmod>2022-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hedgedocs.github.io/tools/blueblur/lighting/</loc>
+         <loc>https://hedgedocs.github.io/tools/hedgehog-engine/blueblur/files/gte/</loc>
          <lastmod>2022-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hedgedocs.github.io/tools/marathon/files/</loc>
+         <loc>https://hedgedocs.github.io/tools/hedgehog-engine/blueblur/files/xncp/</loc>
+         <lastmod>2022-02-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.github.io/tools/hedgehog-engine/common/lighting/</loc>
+         <lastmod>2022-02-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.github.io/tools/others/marathon/files/</loc>
          <lastmod>2022-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
