@@ -18,6 +18,10 @@
   font-size: 15px;
 }
 
+.md-banner {
+  background-color: #b71c1c;
+}
+
 .md-tabs__link {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
