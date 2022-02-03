@@ -1,5 +1,5 @@
 ---
-description: Lighting tools for Sonic Generations
+description: Lighting tools for the Hedgehog Engine
 ---
 # Lighting Tools
 

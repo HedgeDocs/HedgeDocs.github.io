@@ -1,13 +1,16 @@
 ---
 description: Sonic GLvl tutorial for Sonic '06
 ---
+!!! info
+    This guide uses the following tools:
 
-# How to use Sonic GLvl with Sonic '06
+    - [Sonic GLvl](https://github.com/DarioSamo/libgens-sonicglvl){ target="_blank"}
+    - [Sonic '06 Stage Editing Archive](https://github.com/Knuxfan24/Sonic-06-Stage-Editing-Archive){ target="_blank" }
 
 !!! note
     Due to a lack of an actual, dedicated level editor for Sonic '06, we (at the time of writing) use a hacked together solution that allows us to use Sonic GLvl as a stand in. This guide will explain how to set up GLvl for this purpose, with the assumption that the user understands basic usage of the program itself.
 
-
+# How to use Sonic GLvl with Sonic '06
 
 ## Setting Up
 Download your preferred version of Sonic GLvl 0.9 and extract the repository to any location. Then, open the database folder and delete the `objects` folder. Next, download the [Sonic '06 Stage Editing Archive](https://github.com/Knuxfan24/Sonic-06-Stage-Editing-Archive) and extract the `SonicGLvl/database` folder to your SonicGLvl location, choosing to merge/replace existing files.
