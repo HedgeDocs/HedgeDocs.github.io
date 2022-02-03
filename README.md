@@ -45,6 +45,8 @@ You can test your changes locally before committing. To do so:
 
 - Install [Python](https://www.python.org/downloads/)
 - Install Material For MkDocs: `pip install mkdocs-material`
+- Install necessary MkDocs Plugins
+    - git-revision-date-localized-plugin: `pip install mkdocs-git-revision-date-localized-plugin`
 - Serve webpage locally: `mkdocs serve`
   - You can also build a static site instead, using `mkdocs build`
  
