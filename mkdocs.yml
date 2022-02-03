@@ -8,6 +8,7 @@ nav:
     - tools/index.md
     - Hedgehog Engine:
       - Common:
+        - File Formats: tools/hedgehog-engine/common/files.md
         - Lighting/GI: tools/hedgehog-engine/common/lighting.md
       - Sonic Generations:
         - File Formats: 
@@ -16,6 +17,10 @@ nav:
           - AR/ARL: tools/hedgehog-engine/blueblur/files/ar.md
         - Audio: tools/hedgehog-engine/blueblur/audio.md
         - Level Editing: tools/hedgehog-engine/blueblur/levels.md
+    - Hedgehog Engine 2:
+      - Sonic Forces:
+        - File Formats: 
+          - PAC: tools/hedgehog-engine-2/wars/files/pac.md
     - Other Engines:
       - Sonic The Hedgehog (2006):
         - File Formats: tools/others/marathon/files.md
@@ -68,7 +73,6 @@ plugins:
         - index.md
         - tools/*
         - guides/index.md
-      exclude_tags: false
 theme:
   logo: assets/icon.svg
   favicon: assets/favicon.png
