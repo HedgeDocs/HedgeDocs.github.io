@@ -1,4 +1,9 @@
-# HedgeDocs
+<h1>
+    <a href="#hedgedocs">
+        <img width="42" align="left" src="https://raw.githubusercontent.com/HedgeDocs/HedgeDocs.github.io/main/docs/assets/favicon.png">
+    </a>
+    HedgeDocs
+</h1>
 
 Tools and guides for modding Sonic games. Uses [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
@@ -21,10 +26,10 @@ You can use MkDocs' metadata support to add descriptions to your pages. This way
 Example:
 ```
 ---
-description: This is the description for this page.
+description: Level editing tools for Sonic Generations
 ---
 
-# Page Title
+# Level Editing
 
 content
 (...)
