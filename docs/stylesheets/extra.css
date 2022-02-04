@@ -8,12 +8,14 @@
 }
 
 [data-md-color-scheme="amoled"] {
-  --md-default-fg-color:             #D2D2D2;
-  --md-default-fg-color--light:      #E0E6E6;
-  --md-default-fg-color--lighter:    #E6E6E6;
+  --md-default-fg-color:             #D8D8D8;
+  --md-default-fg-color--light:      #E6E6E6;
+  --md-default-fg-color--lighter:    #EFEFEF;
+  --md-default-fg-color--lightest:   #505050;
   --md-default-bg-color:             #000000;
-  --md-primary-fg-color:             #014ae7;
+  --md-primary-fg-color:             #1f61ee;
   --md-primary-fg-color--light:      #75B6E7;
+  --md-admonition-bg-color:          #0F0F0F;
 }
 
 .md-typeset p {
