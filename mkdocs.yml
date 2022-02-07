@@ -17,13 +17,21 @@ nav:
           - AR/ARL: tools/hedgehog-engine/blueblur/files/ar.md
         - Audio: tools/hedgehog-engine/blueblur/audio.md
         - Level Editing: tools/hedgehog-engine/blueblur/levels.md
+      - Sonic Lost World:
+        - Level Editing: tools/hedgehog-engine/lostworld/levels.md
     - Hedgehog Engine 2:
       - Sonic Forces:
         - File Formats: 
           - PAC: tools/hedgehog-engine-2/wars/files/pac.md
     - Other Engines:
+      - Sonic Colors:
+        - File Formats: tools/others/colors/files.md
       - Sonic The Hedgehog (2006):
         - File Formats: tools/others/marathon/files.md
+      - Sonic Heros / Shadow The Hedgehog: 
+        - File Formats:
+          - ONE: tools/others/heros/files/one.md
+        - Level Editing: tools/others/heros/levels.md
   - Guides:
     - guides/index.md
     - Hedgehog Engine:
