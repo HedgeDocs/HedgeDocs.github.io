@@ -26,8 +26,8 @@ nav:
     - Renderware:
       - Common: 
         - File Formats:
-          - ONE: tools/others/heros/files/one.md
-        - Level Editing: tools/others/heros/levels.md
+          - ONE: tools/renderware/common/files/one.md
+        - Level Editing: tools/renderware/common/levels.md
     - Other Engines:
       - Sonic Colors:
         - File Formats: tools/others/sonic2010/files.md
