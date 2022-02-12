@@ -36,16 +36,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hedgedocs.github.io/tools/Renderware/heros/levels/</loc>
-         <lastmod>2022-02-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hedgedocs.github.io/tools/Renderware/heros/files/one/</loc>
-         <lastmod>2022-02-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://hedgedocs.github.io/tools/hedgehog-engine/blueblur/audio/</loc>
          <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
@@ -97,6 +87,16 @@
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/others/sonic2010/files/</loc>
+         <lastmod>2022-02-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.github.io/tools/renderware/common/levels/</loc>
+         <lastmod>2022-02-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.github.io/tools/renderware/common/files/one/</loc>
          <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
