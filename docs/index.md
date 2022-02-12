@@ -12,7 +12,7 @@ hide:
 </div>
 
 <a class="md-button md-button--primary" href="tools/" style="text-align: center; width: 10em">
-  Tools :fontawesome-solid-cog:
+  Tools :material-cog:
 </a>
 
 <a class="md-button md-button--primary" href="guides/" style="text-align: center; width: 10em">
