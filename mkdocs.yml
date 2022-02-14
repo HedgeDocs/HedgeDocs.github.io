@@ -15,6 +15,7 @@ nav:
           - XNCP: tools/hedgehog-engine/blueblur/files/xncp.md
           - GTE/GTM: tools/hedgehog-engine/blueblur/files/gte.md
           - AR/ARL: tools/hedgehog-engine/blueblur/files/ar.md
+          - SAV: tools/hedgehog-engine/blueblur/files/sav.md
         - Audio: tools/hedgehog-engine/blueblur/audio.md
         - Level Editing: tools/hedgehog-engine/blueblur/levels.md
       - Sonic Lost World:
@@ -27,6 +28,7 @@ nav:
       - Common: 
         - File Formats:
           - ONE: tools/renderware/common/files/one.md
+          - PAC: tools/renderware/common/files/pac.md
         - Level Editing: tools/renderware/common/levels.md
     - Other Engines:
       - Sonic Colors:
