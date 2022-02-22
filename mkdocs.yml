@@ -29,12 +29,19 @@ nav:
         - File Formats:
           - ONE: tools/renderware/common/files/one.md
           - PAC: tools/renderware/common/files/pac.md
+          - TXD: tools/renderware/common/files/txd.md
         - Level Editing: tools/renderware/common/levels.md
+    - RSDK:
+      - Common:
+        - File Formats: tools/RSDK/common/files.md
+        - Level Editing: tools/RSDK/common/levels.md
     - Other Engines:
       - Sonic Colors:
         - File Formats: tools/others/sonic2010/files.md
       - Sonic The Hedgehog (2006):
         - File Formats: tools/others/marathon/files.md
+      - Sonic Adventure:
+        - File Formats: tools/others/sonicRPG/files.md
   - Guides:
     - guides/index.md
     - Hedgehog Engine:
