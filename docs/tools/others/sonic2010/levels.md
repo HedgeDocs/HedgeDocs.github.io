@@ -1,7 +1,7 @@
 ---
-description: File format tools for Sonic Colors
+description: Level editing tools for Sonic Colors
 ---
-# File Format Tools
+# Level Editing Tools
 
 ## Sonic Colors Set Editor
 Sonic Colors Set Data editor powered by HedgeLib.

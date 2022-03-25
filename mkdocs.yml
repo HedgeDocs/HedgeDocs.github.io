@@ -30,7 +30,9 @@ nav:
         - Level Editing: tools/renderware/common/levels.md
     - Other Engines:
       - Sonic Colors:
-        - File Formats: tools/others/sonic2010/files.md
+        - File Formats: 
+          - XNCP: tools/others/sonic2010/files/xncp.md
+        - Level Editing: tools//others/sonic2010/levels.md
       - Sonic The Hedgehog (2006):
         - File Formats: tools/others/marathon/files.md
   - Guides:
