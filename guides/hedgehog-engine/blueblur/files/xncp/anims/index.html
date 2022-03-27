@@ -1812,17 +1812,17 @@ They can obviously store other animations, and those have their own names.</li>
 </ul>
 <p>So, in Intro_Anim, we have several <strong>CastAnimationData</strong>. These control what happens to each cast in this animation. Let’s see what happens to Cast 0 (position, which usually is the parent of all casts in a scene and controls their position)...</p>
 <p><img alt="" src="../assets/anims/image3.png" /></p>
-<p>Seems like we have flags! It’s a bitfield, and it controls what actually animates in this cast. Here’s the meaning of each bit:</p>
-<pre><code>0000 0000 - Nothing
-0000 0001 - Unknown
-0000 0010 - X Position
-0000 0100 - Y Position
-0000 1000 - Rotation
-0001 0000 - X Scale
-0010 0000 - Y Scale
-0100 0000 - SubImage
-1000 0000 - Colour Mask
-</code></pre>
+<p>Seems like we have flags! It’s a bitfield, and it controls what actually animates in this cast. Here’s the meaning of each bit:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>0000 0000 - Nothing
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>0000 0001 - Unknown
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>0000 0010 - X Position
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>0000 0100 - Y Position
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>0000 1000 - Rotation
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>0001 0000 - X Scale
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>0010 0000 - Y Scale
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>0100 0000 - SubImage
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>1000 0000 - Colour Mask
+</code></pre></div></p>
 <p>So, with this info, we now know what animates in the position cast: It’s its X Position.
 The <strong>CastAnimationDataSubData1List</strong> is what stores the actual animation data. The amount of entries in this list depends on the number of bits signaled in the <strong>Flags</strong> field. The first entry in the list is referring to the first bit signaled from right to left. So by that logic, the list only has one entry.</p>
 <p><img alt="" src="../assets/anims/image9.png" /></p>
