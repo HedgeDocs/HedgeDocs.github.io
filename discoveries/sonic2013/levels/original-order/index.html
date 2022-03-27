@@ -2425,7 +2425,7 @@
 
 <h2 id="partial-original-order">Partial Original Order</h2>
 <p>Up to a point the game's original level order can be revealed to us by investigating the game's leftover <code style="color: green;">actstgdata.lua</code> file.</p>
-<p><div class="highlight"><span class="filename">actstgdata.lua</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">old_stage_all</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight"><span class="filename">actstgdata.lua</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">old_stage_all</span> <span class="o">=</span> <span class="p">{</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>   <span class="c1">-- w1</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>   <span class="p">{</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>      <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;w1草原&quot;</span><span class="p">,</span>
@@ -2543,7 +2543,7 @@
 <a id="__codelineno-0-116" name="__codelineno-0-116" href="#__codelineno-0-116"></a>   <span class="p">},</span>
 <a id="__codelineno-0-117" name="__codelineno-0-117" href="#__codelineno-0-117"></a><span class="p">}</span>
 </code></pre></div>
-Many of these levels have been deleted, however, there's plenty of changes we can dissect in this list.</p>
+<p>Many of these levels have been deleted, however, there's plenty of changes we can dissect in this list.</p>
 <h3 id="windy-hill">Windy Hill</h3>
 <table>
 <thead>
@@ -2816,14 +2816,14 @@ However, checking the description (ilomiloお菓子) of the level it matches up 
 </tr>
 </tbody>
 </table>
-<p>Inside the configuration file for the level <code style="color: green;">xswe01</code>, the file is still called <code style="color: green;">w4a03_config.lua</code>, however the <code>brief</code> section states it's a configuration file for <code style="color: green;">w2a05</code>.
+<p>Inside the configuration file for the level <code style="color: green;">xswe01</code>, the file is still called <code style="color: green;">w4a03_config.lua</code>, however the <code>brief</code> section states it's a configuration file for <code style="color: green;">w2a05</code>.</p>
 <div class="highlight"><span class="filename">xswe01_config.lua</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">---------------------------------------------------------------</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1">-- @file    w4a03_config.lua</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1">-- @author  Jibiki_Hisae</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">-- @brief   w2-5 の設定ファイル</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1">-- @data    2012/7/20</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1">---------------------------------------------------------------</span>
-</code></pre></div></p>
+</code></pre></div>
 <h3 id="silent-forest">Silent Forest</h3>
 <table>
 <thead>
@@ -2854,14 +2854,14 @@ However, checking the description (ilomiloお菓子) of the level it matches up 
 <h3 id="sky-road">Sky Road</h3>
 <h4 id="w6a03">w6a03</h4>
 <p>The secret level of Tropical Coast in the final game. As most of Sky Roads levels seem to come from elsewhere it's hard to make a proper judgement on whether the stage would aesthetically belong in Sky Road or not, it does however play very similarly to <code style="color: green;">w6a05</code>, Sky Road's Act 3.<br>
-The configuration file for the level does state that it belongs to Sky Road as well.
+The configuration file for the level does state that it belongs to Sky Road as well.</p>
 <div class="highlight"><span class="filename">w6a03_config.lua</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">---------------------------------------------------------------</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1">-- @file    w6a03_config.lua</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">-- @author  Yoshitaka Miura</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">-- @brief   w6-3 の設定ファイル</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">-- @data    2012/10/30</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1">---------------------------------------------------------------</span>
-</code></pre></div></p>
+</code></pre></div>
 <h4 id="w6a05">w6a05</h4>
 <p>Inside the configuration file for the level <code style="color: green;">xnim02</code> the <code>brief</code> section states it's a configuration file for <code style="color: green;">w6a05</code>.
 <div class="highlight"><span class="filename">xnim02_config.lua</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">---------------------------------------------------------------</span>
@@ -2894,7 +2894,7 @@ This comment roughly translates to <code>World 3-5: Sideview Casino Test (w0a04)
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-03-27T23:48:37+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-03-27</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-03-27T23:54:21+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-03-27</span>
       
     
   </small>
