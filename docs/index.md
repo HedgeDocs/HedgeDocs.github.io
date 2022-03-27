@@ -11,10 +11,14 @@ hide:
   <hr>
 </div>
 
-<a class="md-button md-button--primary" href="tools/" style="text-align: center; width: 10em">
+<a class="md-button md-button--primary" href="tools/" style="text-align: center; width: 12em">
   Tools :material-cog:
 </a>
 
-<a class="md-button md-button--primary" href="guides/" style="text-align: center; width: 10em">
+<a class="md-button md-button--primary" href="guides/" style="text-align: center; width: 12em">
   Guides :fontawesome-solid-book:
+</a>
+
+<a class="md-button md-button--primary" href="discoveries/" style="text-align: center; width: 12em">
+  Discoveries :fontawesome-solid-lightbulb:
 </a>
