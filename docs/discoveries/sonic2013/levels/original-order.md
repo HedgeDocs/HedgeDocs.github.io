@@ -124,6 +124,7 @@ old_stage_all = {
    },
 }
 ```
+
 Many of these levels have been deleted, however, there's plenty of changes we can dissect in this list.
 
 ### Windy Hill
@@ -257,6 +258,7 @@ However, checking the description (ilomiloお菓子) of the level it matches up 
 | { -590.76, 403.30, 1040.85 } | { -1.08, 3.02, -3.30 } |
 
 Inside the configuration file for the level <code style="color: green;">xswe01</code>, the file is still called <code style="color: green;">w4a03_config.lua</code>, however the `brief` section states it's a configuration file for <code style="color: green;">w2a05</code>.
+
 ``` lua title="xswe01_config.lua"
 ---------------------------------------------------------------
 -- @file	w4a03_config.lua
@@ -278,6 +280,7 @@ Inside the configuration file for the level <code style="color: green;">xswe01</
 #### w6a03
 The secret level of Tropical Coast in the final game. As most of Sky Roads levels seem to come from elsewhere it's hard to make a proper judgement on whether the stage would aesthetically belong in Sky Road or not, it does however play very similarly to <code style="color: green;">w6a05</code>, Sky Road's Act 3.<br>
 The configuration file for the level does state that it belongs to Sky Road as well.
+
 ``` lua title="w6a03_config.lua"
 ---------------------------------------------------------------
 -- @file	w6a03_config.lua

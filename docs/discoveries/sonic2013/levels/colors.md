@@ -3,6 +3,7 @@ description: Information on leftover entries specifically from Sonic Colors in S
 ---
 ## Tropical Resort Act 1
 There’s an unused Tropical Resort Act 1 entry in Sonic Lost World’s <code style="color: green;">actstgmission.lua</code> file.
+
 ``` lua title="actstgmission.lua"
 mission_all = {
     -- RSO(リゾート面)
@@ -44,8 +45,8 @@ mission_all = {
         },
     },
 }
-
 ```
+
 Only thing changed in this entry from the Sonic Colors version is that the <code>player_dir</code> takes in a 3D value, just like every other Sonic Lost World entry.O
 
 The entire <code>score</code> block, <code>start_event</code>, <code>result_bg</code> are leftover from Colors as well as those values are not read by Sonic Lost World's lua parser funciton.
@@ -55,6 +56,7 @@ This file is responsible for serving information to the game regarding stages, s
 
 ## Test Levels
 Due to the release of Sonic Colors Ultimate we can identify a few test levels from Sonic Colors that were reused in Sonic Lost World.
+
 ``` lua title="actstgmission.lua"
 test_mission_all = {
    -- プログラマテスト.
@@ -99,6 +101,7 @@ test_mission_all = {
    },
 }
 ```
+
 The only difference here being compared to the Colors version is that the entries use take a 3D value for the <code>player_dir</code> tag and the inclusion of the <code style="color: #76CAA0;">asteroid</code> wisp in the <code>phantoms</code> tag.
 
 ``` lua title="actstgdata.lua"
@@ -127,6 +130,7 @@ stage_all = {
    },
 }
 ```
+
 The Japanese titles translate to the same values found in the files found in Sonic Colors Ultimate. 
 
 ### actstgdata.lua
