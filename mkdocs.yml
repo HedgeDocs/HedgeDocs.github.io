@@ -32,7 +32,7 @@ nav:
       - Sonic Colors:
         - File Formats: 
           - XNCP: tools/others/sonic2010/files/xncp.md
-        - Level Editing: tools//others/sonic2010/levels.md
+        - Level Editing: tools/others/sonic2010/levels.md
       - Sonic The Hedgehog (2006):
         - File Formats: tools/others/marathon/files.md
   - Guides:
@@ -51,6 +51,10 @@ nav:
       - Sonic The Hedgehog (2006):
         - Level Editing:
           - Sonic GLvl: guides/others/marathon/levels/glvl.md
+  - Discoveries:
+    - discoveries/index.md
+    - Sonic Lost World:
+      - Example: discoveries/sonic2013/example.md
 markdown_extensions:
   - abbr
   - admonition
@@ -84,6 +88,7 @@ plugins:
         - index.md
         - tools/*
         - guides/index.md
+        - discoveries/index.md
 theme:
   logo: assets/icon.svg
   favicon: assets/favicon.png
