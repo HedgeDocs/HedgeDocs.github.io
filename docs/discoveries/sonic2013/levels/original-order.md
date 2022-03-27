@@ -168,8 +168,8 @@ This list includes:<br>
 1x - SetRigidBody
 
 The spawn position being so close to the GoalRing means the level was more than likely supposed to start close to its end, though not meaning it was a short level as the Moai objects function as warp objects.
-![Leftover objects in xmoa01's sky around w1a05's spawn position.](./assets/w1a05.png)
-![The leftover objects in SonicGLvL.](./assets/w1a05-glvl.png)
+![Leftover objects in xmoa01's sky around w1a05's spawn position.](./assets/original-order/w1a05.png)
+![The leftover objects in SonicGLvL.](./assets/original-order/w1a05-glvl.png)
 
 #### w1c01 
 Finally for Windy Hill there's <code style="color: red;">w1c01</code>. Taking note of the change from `a` to a `c`, it seems this level wasn't meant to be a normal act but a challenge level.<br>
