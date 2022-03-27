@@ -11,7 +11,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hedgedocs.github.io/discoveries/sonic2013/example/</loc>
+         <loc>https://hedgedocs.github.io/discoveries/sonic2013/levels/colors/</loc>
+         <lastmod>2022-03-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.github.io/discoveries/sonic2013/levels/deleted/</loc>
+         <lastmod>2022-03-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.github.io/discoveries/sonic2013/levels/original-order/</loc>
+         <lastmod>2022-03-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.github.io/discoveries/sonic2013/levels/test/</loc>
          <lastmod>2022-03-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
