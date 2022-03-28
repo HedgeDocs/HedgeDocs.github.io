@@ -1,4 +1,5 @@
 ---
+title: Test Levels
 description: Information on leftover Test Level entries in Sonic Lost World.
 ---
 There are several entries for test levels leftover in Sonic Lost World's <code style="color: green;">testmission.lua</code> file.

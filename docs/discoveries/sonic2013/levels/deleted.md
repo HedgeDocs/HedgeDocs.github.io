@@ -1,4 +1,5 @@
 ---
+title: Deleted Levels
 description: Information on deleted levels from Sonic Lost World's final release.
 ---
 There are several levels that have been removed from the game, but their entries can still be found in <code style="color: green;">actstgmission.lua</code>.

@@ -1,4 +1,5 @@
 ---
+title: Colors Leftovers
 description: Information on leftover entries specifically from Sonic Colors in Sonic Lost World.
 ---
 ## Tropical Resort Act 1
