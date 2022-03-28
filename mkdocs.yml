@@ -59,6 +59,8 @@ nav:
         - Test Levels: discoveries/sonic2013/levels/test.md
         - Deleted Levels: discoveries/sonic2013/levels/deleted.md
         - Original Level Order: discoveries/sonic2013/levels/original-order.md
+     - Sonic Generations:
+        - Unused HUD animations: discoveries/bb/hudanims/blb_hudanims.md
 markdown_extensions:
   - abbr
   - admonition
