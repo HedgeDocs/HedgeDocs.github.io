@@ -1,7 +1,9 @@
 ---
-description: Unused HUD animations for Time Eater in bb.cpk/SonicActionCommonHud\ui_gameplay.xncp
+description: Info about Unused HUD Animations in Sonic Generations
 ---
-Scene called <code style="color:red;">blb_gauge</code>.
+There's some unused HUD animations for Time Eater in <code style="color:red;">bb.cpk/SonicActionCommonHud.ar.00\ui_gameplay.xncp</code>.
+Scene called <code style="color:red;">blb_gauge</code> in XNCP file.
+Here's the list:
 ### change_c2g:
 
 ### change_c2w:
