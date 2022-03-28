@@ -61,7 +61,7 @@ nav:
         - Original Level Order: discoveries/sonic2013/levels/original-order.md
     - Sonic Generations:
       - HUD: 
-        - Unused HUD animations: discoveries/bb/hudanims/blb_hudanims.md
+        - Unused Time Eater Gauge: discoveries/blueblur/hudanims/hud.md
 markdown_extensions:
   - abbr
   - admonition
