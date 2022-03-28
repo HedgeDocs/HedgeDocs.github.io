@@ -1,7 +1,7 @@
 ---
 description: Information on leftover Test Level entries in Sonic Lost World.
 ---
-There are several test levels entries leftover in Sonic Lost World's <code style="color: green;">testmission.lua</code> file.
+There are several entries for test levels leftover in Sonic Lost World's <code style="color: green;">testmission.lua</code> file.
 
 Some of these entries are using the naming scheme from Sonic Colors for stage names, that being <code><span style="color: green;">stgX</span><span style="color: red;">YY</span></code>.<br>
 Another chunk of the entries are named according to the scheme standardized in Sonic Lost World, <code><span style="color: green;">w0</span><span style="color: blue;">x</span><span style="color: red;">YY</span></code>.

@@ -47,9 +47,9 @@ mission_all = {
 }
 ```
 
-Only thing changed in this entry from the Sonic Colors version is that the <code>player_dir</code> takes in a 3D value, just like every other Sonic Lost World entry.O
+Only thing changed in this entry from the Sonic Colors version is that <code>player_dir</code> takes in a 3D value, just like every other Sonic Lost World entry.
 
-The entire <code>score</code> block, <code>start_event</code>, <code>result_bg</code> are leftover from Colors as well as those values are not read by Sonic Lost World's lua parser funciton.
+The entire <code>score</code> block, <code>start_event</code> and <code>result_bg</code> are leftovers from Colors as well, as those values are not read by Sonic Lost World's lua parser function.
 
 ### actstgmission.lua
 This file is responsible for serving information to the game regarding stages, such as where the player should start at or what folder to read the assets for the stage from.
@@ -102,7 +102,7 @@ test_mission_all = {
 }
 ```
 
-The only difference here being compared to the Colors version is that the entries use take a 3D value for the <code>player_dir</code> tag and the inclusion of the <code style="color: #76CAA0;">asteroid</code> wisp in the <code>phantoms</code> tag.
+The only difference here when compared to the Colors version is that the entries used take a 3D value for the <code>player_dir</code> tag and the inclusion of the <code style="color: #76CAA0;">asteroid</code> wisp in the <code>phantoms</code> tag.
 
 ``` lua title="actstgdata.lua"
 stage_all = {
@@ -131,7 +131,7 @@ stage_all = {
 }
 ```
 
-The Japanese titles translate to the same values found in the files found in Sonic Colors Ultimate. 
+The Japanese titles translate to the same values in Sonic Colors Ultimate's files. 
 
 ### actstgdata.lua
 This file was only meant to be used by the game's debug menu, which does not exist in the final release, thus making the file a leftover.

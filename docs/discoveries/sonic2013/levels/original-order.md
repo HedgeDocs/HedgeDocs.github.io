@@ -125,7 +125,7 @@ old_stage_all = {
 }
 ```
 
-Many of these levels have been deleted, however, there's plenty of changes we can dissect in this list.
+Many of these levels have been deleted. However, there's plenty of changes we can dissect in this list.
 
 ### Windy Hill
 | Final  | Original |
@@ -139,7 +139,7 @@ Many of these levels have been deleted, however, there's plenty of changes we ca
 
 #### w1a02
 Starting off just like the final, it swiftly changes gears by heading into <code style="color: red;">w1a02</code> instead of <code style="color: green;">w1a03</code>.
-However, checking the description (インディ洞窟) of the level it matches up with the final game's <code style="color: green;">xind01</code> suggesting the two stages are one and the same, however the starting positions don't line up.
+However, checking the description of the level (インディ洞窟), it matches up with the final game's <code style="color: green;">xind01</code> suggesting the two stages are one and the same, however the starting positions don't line up.
 
 |          xind01          |            w1a02          |
 | ------------------------ | ------------------------- |
@@ -152,7 +152,7 @@ The following level is <code style="color: green;">w1a03</code>, meaning Act 3 a
 The order then continues with <code style="color: red;">w1a04</code>, which is originally used as Sky Road Act 1. This suggests that this level was meant to be used in Windy Hill, which is supported by the fact that the level shares a very similar look with that area of the game.
 
 #### w1a05
-<code style="color: red;">w1a05</code> shares its description (モアイ) with the level <code style="color: green;">xmoa01 (Silent Forest Act 4)</code> suggesting, just like the previous stage it was to come much sooner into the game, however once again the starting positions don't line up. 
+<code style="color: red;">w1a05</code> shares its description (モアイ) with the level <code style="color: green;">xmoa01 (Silent Forest Act 4)</code> suggesting, just like the previous stage, it was to come much sooner into the game, however once again the starting positions don't line up. 
 
 |       xmoa01      |         w1a05       |
 | ----------------- | ------------------- |
@@ -195,7 +195,7 @@ Interestingly enough this leaves the final game's second encounter with Zazz in 
 
 #### w2a02
 Starting off just like the final, it swiftly changes gears by heading into <code style="color: red;">w2a02</code> instead of <code style="color: green;">xbee01</code>.
-However, checking the description (スカイチェイス) of the level it matches up with the final game's <code style="color: green;">xsky01</code> suggesting the two stages are one and the same, however the starting positions don't line up.
+However, checking the description of the level (スカイチェイス), it matches up with the final game's <code style="color: green;">xsky01</code>, suggesting the two stages are one and the same, however the starting positions don't line up.
 Interestingly enough this level also has the `SKYCHASE` tag, meaning it was a level where you controlled the Tornado just like the final iteration of the stage.
 
 |          xsky01         |             w2a02          |
@@ -206,16 +206,16 @@ Test level <code style="color: green;">stg823</code> has the following comment, 
 This comment roughly translates to `World 2-2: 20m Diameter Test`.
 
 #### w2a03
-This level sadly does not have a final countpart in the release of the game. Its description roughly translates to `Ancient City`.
+This level sadly does not have a final counterpart in the release of the game. Its description roughly translates to `Ancient City`.
 
 #### w2a05
-This level sadly does not have a final countpart in the release of the game. Its description roughly translates to `Japanese Spider Crab`.
+This level sadly does not have a final counterpart in the release of the game. Its description roughly translates to `Japanese Spider Crab`.
 
 #### w2a03
-This level sadly does not have a final countpart in the release of the game. Its description roughly translates to `Sandworm Body`.
+This level sadly does not have a final counterpart in the release of the game. Its description roughly translates to `Sandworm Body`.
 
 #### w2c01
-<code style="color: red;">w2c01</code> is the final level of the original order for Desert Ruins, but it's actually used as Sky Road Act 4 in the final game. The aesthetics of the area does match up with the look of Desert Ruins so it's quite likely this level supposed to be there originally. The description for this level roughly translates to "Yellow Triple Spring", meaning it was very likely going to function like the Yellow Spring levels from Sonic Colors. This is supported by the fact that the Moving Springs in the level behave very similarly to the Yellow Springs in Sonic Colors.
+<code style="color: red;">w2c01</code> is the final level of the original order for Desert Ruins, but it's actually used as Sky Road Act 4 in the final game. The aesthetics of the area does match up with the look of Desert Ruins, so it's quite likely that this level was supposed to be there originally. The description for this level roughly translates to "Yellow Triple Spring", meaning it was very likely going to function like the Yellow Spring levels from Sonic Colors. This is supported by the fact that the Moving Springs in the level behave very similarly to the Yellow Springs in Sonic Colors.
 
 ### Tropical Coast
 From here on out the original level order becomes very segmented with barely any trace left of it.
@@ -231,7 +231,7 @@ From here on out the original level order becomes very segmented with barely any
 |        | w3a07    |
 
 #### w3a07
-This level sadly does not have a final countpart in the release of the game. Its description is the same as `w3a01`'s with but it has a `2` at the end.
+This level sadly does not have a final counterpart in the release of the game. Its description is the same as `w3a01`'s with but it has a `2` at the end.
 
 ### Frozen Factory
 | Final  | Original |
@@ -243,7 +243,7 @@ This level sadly does not have a final countpart in the release of the game. Its
 
 #### w4a02
 The second level instead of being <code style="color: green;">w4a04</code> is <code style="color: red;">w4a02</code>.
-However, checking the description (インディ洞窟2) of the level it matches up with the final game's <code style="color: green;">xind02 (Silent Forest Act 3)</code> suggesting the two stages are one and the same, however the starting positions don't line up.
+However, checking the description of the level (インディ洞窟2), it matches up with the final game's <code style="color: green;">xind02 (Silent Forest Act 3)</code> suggesting the two stages are one and the same, however the starting positions don't line up.
 
 |           xind02           |            w4a02          |
 | -------------------------- | ------------------------- |
@@ -251,7 +251,7 @@ However, checking the description (インディ洞窟2) of the level it matches 
 
 #### w4a03
 The third level instead of being <code style="color: green;">xcas01</code> is <code style="color: red;">w4a03</code>.
-However, checking the description (ilomiloお菓子) of the level it matches up with the final game's <code style="color: green;">xswe01 (Desert Ruins Act 3)</code> suggesting the two stages are one and the same, however the starting positions don't line up.
+However, checking the description of the level (ilomiloお菓子), it matches up with the final game's <code style="color: green;">xswe01 (Desert Ruins Act 3)</code> suggesting the two stages are one and the same, however the starting positions don't line up.
 
 |            xswe01            |          w4a03         |
 | ---------------------------- | ---------------------- |
@@ -278,7 +278,7 @@ Inside the configuration file for the level <code style="color: green;">xswe01</
 
 ### Sky Road
 #### w6a03
-The secret level of Tropical Coast in the final game. As most of Sky Roads levels seem to come from elsewhere it's hard to make a proper judgement on whether the stage would aesthetically belong in Sky Road or not, it does however play very similarly to <code style="color: green;">w6a05</code>, Sky Road's Act 3.<br>
+The secret level of Tropical Coast in the final game. As most of Sky Roads levels seem to come from elsewhere, it's hard to make a proper judgement on whether the stage would aesthetically belong in Sky Road or not, it does however play very similarly to <code style="color: green;">w6a05</code>, Sky Road's Act 3.<br>
 The configuration file for the level does state that it belongs to Sky Road as well.
 
 ``` lua title="w6a03_config.lua"
