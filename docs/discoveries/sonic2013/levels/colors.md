@@ -1,6 +1,9 @@
 ---
+title: Colors Leftovers
 description: Information on leftover entries specifically from Sonic Colors in Sonic Lost World.
 ---
+# Colors Leftovers
+
 ## Tropical Resort Act 1
 There’s an unused Tropical Resort Act 1 entry in Sonic Lost World’s <code style="color: green;">actstgmission.lua</code> file.
 

@@ -2,6 +2,8 @@
 title: Original Level Order
 description: Information on the original level order of Sonic Lost World.
 ---
+# Original Level Order
+
 ## Partial Original Order
 Up to a point the game's original level order can be revealed to us by investigating the game's leftover <code style="color: green;">actstgdata.lua</code> file.
 
