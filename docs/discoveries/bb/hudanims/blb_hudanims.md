@@ -1,5 +1,5 @@
 ---
-description: Info about unused HUD Animations in Sonic Generations
+description: Info about unused HUD animations in Sonic Generations
 ---
 # Unused HUD animations
 There's some unused HUD animations for Time Eater in <code style="color:red;">bb.cpk/SonicActionCommonHud.ar.00\ui_gameplay.xncp</code>.
