@@ -9,22 +9,30 @@ Visually, this element appears to be finished, and it even features animations.
 ## Intro_Anim
 Following the naming scheme of almost every XNCP animation made for Generations, this was supposed to be played whenever the HUD element showed up on screen. Simple slide-in animation.
 
-![Intro_Anim](assets/blb_gauge/intro_anim.gif)
+<video autoplay loop width="840">
+  <source src="../assets/blb_gauge/intro_anim.webm" type="video/webm">
+</video>
 
 ## change_c2g
 According to the name, it was supposed to be played whenever switching from Classic to Modern Sonic, referred to as "Generic" in the game files.
 
-![change_c2g](assets/blb_gauge/change_c2g.gif)
+<video autoplay loop width="840">
+  <source src="../assets/blb_gauge/change_c2g.webm" type="video/webm">
+</video>
 
 ## change_c2w
 Not sure what the "w" stands for, but seems like this was supposed to be an animation when changing to an intermediate state between Classic and Modern Sonic.
 
-![change_c2w](assets/blb_gauge/change_c2w.gif)
+<video autoplay loop width="840">
+  <source src="../assets/blb_gauge/change_c2w.webm" type="video/webm">
+</video>
 
 ## change_g2c
 According to the name, it was supposed to be played whenever switching from Modern to Classic Sonic.
 
-![change_g2c](assets/blb_gauge/change_g2c.gif)
+<video autoplay loop width="840">
+  <source src="../assets/blb_gauge/change_g2c.webm" type="video/webm">
+</video>
 
 ## cl_gauge_size_1
 Animation for Classic Sonic's gauge.
