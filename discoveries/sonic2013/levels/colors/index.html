@@ -2018,8 +2018,8 @@
 <a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>    <span class="p">},</span>
 <a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="p">}</span>
 </code></pre></div>
-<p>Only thing changed in this entry from the Sonic Colors version is that the <code>player_dir</code> takes in a 3D value, just like every other Sonic Lost World entry.O</p>
-<p>The entire <code>score</code> block, <code>start_event</code>, <code>result_bg</code> are leftover from Colors as well as those values are not read by Sonic Lost World's lua parser funciton.</p>
+<p>Only thing changed in this entry from the Sonic Colors version is that <code>player_dir</code> takes in a 3D value, just like every other Sonic Lost World entry.</p>
+<p>The entire <code>score</code> block, <code>start_event</code> and <code>result_bg</code> are leftovers from Colors as well, as those values are not read by Sonic Lost World's lua parser function.</p>
 <h3 id="actstgmissionlua">actstgmission.lua</h3>
 <p>This file is responsible for serving information to the game regarding stages, such as where the player should start at or what folder to read the assets for the stage from.</p>
 <h2 id="test-levels">Test Levels</h2>
@@ -2067,7 +2067,7 @@
 <a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>   <span class="p">},</span>
 <a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="p">}</span>
 </code></pre></div>
-<p>The only difference here being compared to the Colors version is that the entries use take a 3D value for the <code>player_dir</code> tag and the inclusion of the <code style="color: #76CAA0;">asteroid</code> wisp in the <code>phantoms</code> tag.</p>
+<p>The only difference here when compared to the Colors version is that the entries used take a 3D value for the <code>player_dir</code> tag and the inclusion of the <code style="color: #76CAA0;">asteroid</code> wisp in the <code>phantoms</code> tag.</p>
 <div class="highlight"><span class="filename">actstgdata.lua</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">stage_all</span> <span class="o">=</span> <span class="p">{</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>   <span class="c1">-- テストステージ</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>   <span class="p">{</span>
@@ -2093,7 +2093,7 @@
 <a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>   <span class="p">},</span>
 <a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="p">}</span>
 </code></pre></div>
-<p>The Japanese titles translate to the same values found in the files found in Sonic Colors Ultimate. </p>
+<p>The Japanese titles translate to the same values in Sonic Colors Ultimate's files. </p>
 <h3 id="actstgdatalua">actstgdata.lua</h3>
 <p>This file was only meant to be used by the game's debug menu, which does not exist in the final release, thus making the file a leftover.</p>
 
@@ -2102,7 +2102,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-03-27T23:54:21+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-03-27</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-03-28T00:13:02+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-03-28</span>
       
     
   </small>
