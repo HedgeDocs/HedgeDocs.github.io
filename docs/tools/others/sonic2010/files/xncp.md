@@ -12,6 +12,6 @@ Allows editing various file formats, in particular the XNCP format through the u
 [XNCP Template :octicons-link-external-16:](https://github.com/tge-was-taken/010-Editor-Templates/blob/master/templates/sonic_xncp_yncp.bt){ .md-button target="_blank"}
 
 ## ColoursXNCPGen
-Basic tool to combine XNCP and DXL files.
+Basic tool to combine XNCP and DXL files, as well as split XNCP files to an XNCP-DXL pair.
 
 [Download :fontawesome-solid-download:](https://github.com/PTKickass/ColoursXNCPGen/releases){ .md-button .md-button--primary}

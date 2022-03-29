@@ -4,7 +4,7 @@ description: Info about an unused Time Eater gauge in Sonic Generations
 # Unused Time Eater Gauge
 There's an unused gauge that was supposed to be used in the Time Eater boss battle. The gauge is present in `bb.cpk/SonicActionCommonHud/ui_gameplay.xncp`, in the `blb_gauge` XNCP scene. Unfortunately, this gauge isn't functional in-game, and its usage also remains unknown.
 
-Visually, this element appears to be finished, and it even features animations. Below you can see the available animations for this element, recorded using a WIP build of [Shuriken](https://github.com/crash5band/Shuriken), which explains the flickering you see in the gauges.
+Visually, this element appears to be finished, and it even features animations. Below you can see the available animations for this element, recorded using a WIP build of [Shuriken](https://github.com/crash5band/Shuriken). Due to this, the recordings may be inaccurate to what you would actually see in-game.
 
 ## Intro_Anim
 Following the naming scheme of almost every XNCP animation made for Generations, this was supposed to be played whenever the HUD element showed up on screen. Simple slide-in animation.
