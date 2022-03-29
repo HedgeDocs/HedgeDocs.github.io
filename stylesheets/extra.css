@@ -8,6 +8,7 @@
 }
 
 [data-md-color-scheme="amoled"] {
+  --md-hue:                              232;
   --md-default-fg-color:             #D8D8D8;
   --md-default-fg-color--light:      #E6E6E6;
   --md-default-fg-color--lighter:    #EFEFEF;
@@ -17,6 +18,8 @@
   --md-primary-fg-color--light:      #75B6E7;
   --md-admonition-bg-color:          #0F0F0F;
   --md-typeset-table-color:          #404040;
+  --md-code-fg-color:                #D8D8D8;
+  --md-code-bg-color:                #0F0F0F;
 }
 
 .md-typeset p {
