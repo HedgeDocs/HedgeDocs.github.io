@@ -96,3 +96,32 @@ th, td {
 video {
   width: 100%;
 }
+
+/* AUTHORS */
+
+.metadata {
+  margin-top: .25em;
+}
+
+.contributor {
+  opacity: .75;
+  font-size: 95%;
+}
+
+.contributors-text {
+  opacity: .75;
+  font-size: 80%;
+}
+
+.page-metadata .contributors {
+  display: inline-block;
+  list-style: none;
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.page-metadata .contributors li {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
