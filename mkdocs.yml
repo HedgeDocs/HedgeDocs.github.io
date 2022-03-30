@@ -94,6 +94,12 @@ extra_css:
   - stylesheets/extra.css
 plugins:
   - search
+  - git-committers:
+      exclude: 
+        - index.md
+        - tools/*
+        - guides/index.md
+        - discoveries/index.md
   - git-revision-date-localized:
       type: timeago
       exclude:

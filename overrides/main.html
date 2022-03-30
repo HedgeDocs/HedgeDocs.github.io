@@ -15,7 +15,26 @@
   <meta property="og:image:height" content="512" />
 {% endblock %}
 
+{% block content %}
+  {{ super() }}
+
+  {% if committers %}
+    <div class="metadata page-metadata">
+        <span class="contributors-text">Authors:</span>
+        <ul class="contributors" data-bi-name="contributors">
+          {%- for user in committers -%}
+            <li>
+              - <span class="contributor">{{ user.name }}</span>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </li>
+    </div>
+  {% endif %}
+{% endblock %}
+
 {% block footer %}
+
 <footer class="md-footer">
   <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">
