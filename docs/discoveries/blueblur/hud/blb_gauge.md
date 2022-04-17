@@ -14,14 +14,14 @@ Following the naming scheme of almost every XNCP animation made for Generations,
 </video>
 
 ## change_c2g / change_g2c
-These animations are played whenever you switch between Classic Sonic to Modern Sonic and vice versa. The video below shows a recording of the animation in-game
+These animations are played whenever you switch between Classic Sonic to Modern Sonic and vice versa. The video below shows a recording of the animation in-game.
 
 <video autoplay loop muted defaultmuted playsinline>
   <source src="../assets/blb_gauge/change.mp4" type="video/mp4">
 </video>
 
 ## change_c2w / change_g2w
-Seems like these were supposed to be an animation when changing to an intermediate state between Classic and Modern Sonic. The "w" means "double" in japanese.
+Seems like these were supposed to be animations for changing to an intermediate state between Classic and Modern Sonic, like in the final part of the boss battle. The "w" means "double" in japanese.
 
 <video autoplay loop muted defaultmuted playsinline>
   <source src="../assets/blb_gauge/change_c2w.webm" type="video/webm">
