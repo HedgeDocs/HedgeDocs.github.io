@@ -44,6 +44,7 @@ nav:
       - Sonic Generations: 
         - File Formats:
           - XNCP: 
+            - Basics: guides/hedgehog-engine/blueblur/files/xncp/basics.md
             - Animations: guides/hedgehog-engine/blueblur/files/xncp/anims.md
         - Level Editing:
           - Sonic GLvl: guides/hedgehog-engine/blueblur/levels/glvl.md
