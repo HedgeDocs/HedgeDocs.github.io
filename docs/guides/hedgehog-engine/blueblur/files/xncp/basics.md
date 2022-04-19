@@ -68,10 +68,10 @@ The Cast has several variables that you can change:
 
 
 - **Field0C**, **Field14**, **Field1C**, **Field24** change the positions of the corners of the cast, Top Left, Bottom Left, Top Right, Bottom Right respectively. These only really affect casts that render sprites
-- **Offset** changes the position of the element relative to its parent. This is useful for moving elements around.
+- **Offset** changes the position of the element relative to its parent. This is useful for moving elements around, although it's not used much.
 - **Field30Data** contains most of the fun things that you can edit in a Cast, like:
 ```
-Offset - confusingly, this is an actual offset, compared to the one before which is more like a position
+Offset - confusingly, this is the position of the cast, compared to the one before which is an offset. Most casts use this!
 Rotation
 Scale
 Color - where the variable "Color" will change the main color of the image, and GradientTopLeft,BottomLeft,TopRight,BottomRight will change the colors of the corners of the image
