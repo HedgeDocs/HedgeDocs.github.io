@@ -54,15 +54,18 @@ nav:
           - Sonic GLvl: guides/others/marathon/levels/glvl.md
   - Discoveries:
     - discoveries/index.md
+    - Sonic Unleashed:
+      - PlayStation 3:
+        - Leftover Install Assets: discoveries/swa/ps3/install.md
+    - Sonic Generations:
+      - HUD:
+        - Unused Time Eater Gauge: discoveries/blueblur/hud/blb_gauge.md
     - Sonic Lost World:
       - Levels:
         - Colors Leftovers: discoveries/sonic2013/levels/colors.md
         - Test Levels: discoveries/sonic2013/levels/test.md
         - Deleted Levels: discoveries/sonic2013/levels/deleted.md
         - Original Level Order: discoveries/sonic2013/levels/original-order.md
-    - Sonic Generations:
-      - HUD: 
-        - Unused Time Eater Gauge: discoveries/blueblur/hud/blb_gauge.md
 markdown_extensions:
   - abbr
   - admonition
