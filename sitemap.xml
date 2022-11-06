@@ -2,147 +2,132 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://hedgedocs.github.io/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/discoveries/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/discoveries/blueblur/hud/blb_gauge/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/discoveries/sonic2013/levels/colors/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/discoveries/sonic2013/levels/deleted/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/discoveries/sonic2013/levels/original-order/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/discoveries/sonic2013/levels/test/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/discoveries/swa/ps3/install/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/guides/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/guides/hedgehog-engine/blueblur/files/xncp/anims/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/guides/hedgehog-engine/blueblur/files/xncp/basics/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/guides/hedgehog-engine/blueblur/levels/glvl/</loc>
-         <lastmod>2022-05-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hedgedocs.github.io/guides/hedgehog-engine/common/lighting/example/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/guides/others/marathon/levels/glvl/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/</loc>
-         <lastmod>2022-05-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hedgedocs.github.io/tools/hedgehog-engine/blueblur/audio/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/hedgehog-engine/blueblur/levels/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/hedgehog-engine/blueblur/files/ar/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/hedgehog-engine/blueblur/files/gte/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/hedgehog-engine/blueblur/files/xncp/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/hedgehog-engine/common/files/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/hedgehog-engine/common/lighting/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/hedgehog-engine/sonic2013/levels/</loc>
-         <lastmod>2022-05-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hedgedocs.github.io/tools/hedgehog-engine-2/wars/files/pac/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/others/marathon/files/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/others/sonic2010/levels/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/others/sonic2010/files/xncp/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/renderware/common/levels/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.github.io/tools/renderware/common/files/one/</loc>
-         <lastmod>2022-05-08</lastmod>
+         <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
