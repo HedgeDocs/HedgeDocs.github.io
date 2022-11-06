@@ -71,6 +71,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hedgedocs.github.io/tools/general/files/</loc>
+         <lastmod>2022-11-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hedgedocs.github.io/tools/hedgehog-engine/blueblur/levels/</loc>
          <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>
