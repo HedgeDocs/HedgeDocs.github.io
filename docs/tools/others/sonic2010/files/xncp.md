@@ -15,3 +15,4 @@ Allows editing various file formats, in particular the XNCP format through the u
 Basic tool to combine XNCP and DXL files, as well as split XNCP files to an XNCP-DXL pair.
 
 [Download :fontawesome-solid-download:](https://github.com/PTKickass/ColoursXNCPGen/releases){ .md-button .md-button--primary}
+[Source Code :fontawesome-brands-github:](https://github.com/PTKickass/ColoursXNCPGen){ .md-button target="_blank"}
