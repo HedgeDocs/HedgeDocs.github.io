@@ -93,6 +93,8 @@ extra_css:
 plugins:
   - search
   - git-committers:
+      repository: HedgeDocs/HedgeDocs.github.io
+      branch: main
       exclude: 
         - index.md
         - tools/*
