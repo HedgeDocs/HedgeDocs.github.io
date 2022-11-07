@@ -22,6 +22,7 @@
   --md-code-fg-color:                #D8D8D8;
   --md-code-bg-color:                #151515;
   --md-typeset-color:                var(--md-default-fg-color);
+  --md-typeset-a-color:              #2162EC;
 }
 
 .md-typeset p {
