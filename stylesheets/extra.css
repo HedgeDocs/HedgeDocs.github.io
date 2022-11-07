@@ -6,7 +6,13 @@
   --md-primary-fg-color:             #2162ec;
   --md-primary-fg-color--light:      #75B6E7;
   --md-typeset-color:                var(--md-default-fg-color);
-  --md-admonition-fg-color:          var(--md-default-fg-color);
+  --md-admonition-fg-color:          var(--md-default-fg-color);  
+  --md-code-hl-name-color:           var(--md-code-fg-color);
+  --md-code-hl-operator-color:       var(--md-default-fg-color--light);
+  --md-code-hl-punctuation-color:    var(--md-default-fg-color--light);
+  --md-code-hl-comment-color:        var(--md-default-fg-color--light);
+  --md-code-hl-generic-color:        var(--md-default-fg-color--light);
+  --md-code-hl-variable-color:       var(--md-default-fg-color--light);
 }
 
 [data-md-color-scheme="amoled"] {
@@ -25,6 +31,12 @@
   --md-typeset-color:                var(--md-default-fg-color);
   --md-typeset-a-color:              #2162EC;
   --md-admonition-fg-color:          var(--md-default-fg-color);
+  --md-code-hl-name-color:           var(--md-code-fg-color);
+  --md-code-hl-operator-color:       var(--md-default-fg-color--light);
+  --md-code-hl-punctuation-color:    var(--md-default-fg-color--light);
+  --md-code-hl-comment-color:        var(--md-default-fg-color--light);
+  --md-code-hl-generic-color:        var(--md-default-fg-color--light);
+  --md-code-hl-variable-color:       var(--md-default-fg-color--light);
 }
 
 .md-typeset p {
