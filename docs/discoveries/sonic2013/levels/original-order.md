@@ -210,10 +210,10 @@ This comment roughly translates to `World 2-2: 20m Diameter Test`.
 #### w2a03
 This level sadly does not have a final counterpart in the release of the game. Its description roughly translates to `Ancient City`.
 
-#### w2a05
+#### w2a04
 This level sadly does not have a final counterpart in the release of the game. Its description roughly translates to `Japanese Spider Crab`.
 
-#### w2a03
+#### w2a05
 This level sadly does not have a final counterpart in the release of the game. Its description roughly translates to `Sandworm Body`.
 
 #### w2c01
