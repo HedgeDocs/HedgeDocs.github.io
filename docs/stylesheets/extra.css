@@ -5,6 +5,7 @@
   --md-default-bg-color:             #151515;
   --md-primary-fg-color:             #2162ec;
   --md-primary-fg-color--light:      #75B6E7;
+  --md-typeset-color:                var(--md-default-fg-color);
 }
 
 [data-md-color-scheme="amoled"] {
@@ -20,6 +21,7 @@
   --md-typeset-table-color:          #404040;
   --md-code-fg-color:                #D8D8D8;
   --md-code-bg-color:                #151515;
+  --md-typeset-color:                var(--md-default-fg-color);
 }
 
 .md-typeset p {
