@@ -51,7 +51,7 @@ Seems like we have flags! It’s a bitfield, and it controls what actually anima
 ```
 
 So, with this info, we now know what animates in the position cast: It is its X Position.
-The **CastAnimationDataSubData1List** is what stores the actual animation data. The amount of entries in this list depends on the number of bits *(or combination of decimal numbers)* signaled in the **Flags** field. The first entry in the list is referring to the first bit signaled from right to left. So by that logic, the list only has one entry.
+The **CastAnimationDataSubData1List** is what stores the actual animation data. The amount of entries in this list depends on the number of bits signaled in the **Flags** field. The first entry in the list is referring to the first bit signaled from right to left. So by that logic, the list only has one entry.
 
 ![](./assets/anims/image9.png)
 
@@ -73,7 +73,7 @@ Scary right? I don’t understand much of what’s going on here, but here we go
 
 According to the flags of this specific cast, these keyframes are supposed to control the X Position, which means that “Data” actually represents the X Position of the cast in this frame.
 
-The **Offset** and **Offset2** fields control the casts' Offset position value, where "Offset" is X, while "Offset2" is Y. They're usually used in the bouncing animations in the title screen, and things like that.
+The **Offset** and **Offset2** fields control the casts' Offset position value, where "Offset" is X, while "Offset2" is Y. For example, the buttons in the title screen of Sonic Generations use these values to stay in place when they're clicked since they get scaled up and down.
 Let’s look at the second keyframe:
 
 ![](./assets/anims/image8.png)
@@ -84,8 +84,8 @@ Looking at the remaining **CastAnimationData** entries, we can see that none of 
 
 ![](./assets/anims/image6.png)
 
-## Unsolved Mysteries about Animations
-An animation's loop is defined in code, so it can't be changed, however **Field00** in **CastAnimationDataSubData** does seem to control how fast a loop occurs, where the value **1** seems to loop it with a delay, while **2** makes it loop smoother.
+## Additional Notes
+An animation can only be looped using code, so that can't be controlled via the XNCP. However, **Field00** in **CastAnimationDataSubData** does seem to control how fast a loop occurs, where the value **1** seems to loop it with a delay, while **2** makes it loop smoother.
 
 ## Conclusion
 Hope I explained XNCP animations well enough. Have fun!
