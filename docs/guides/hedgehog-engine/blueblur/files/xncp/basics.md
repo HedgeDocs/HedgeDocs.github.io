@@ -71,7 +71,7 @@ The Cast has several variables that you can change:
 - **Offset** changes the position of the element relative to its parent. This is useful for moving elements around, although it's not used much.
 - **Field30Data** contains most of the fun things that you can edit in a Cast, like:
 ```
-Offset - confusingly, this is the position of the cast, compared to the one before which is an offset. Most casts use this!
+Translation
 Rotation
 Scale
 Color - where the variable "Color" will change the main color of the image, and GradientTopLeft,BottomLeft,TopRight,BottomRight will change the colors of the corners of the image
