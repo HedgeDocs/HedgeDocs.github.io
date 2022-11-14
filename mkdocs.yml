@@ -34,7 +34,7 @@ nav:
         - Level Editing: tools/others/sonic2010/levels.md
       - Sonic The Hedgehog (2006):
         - File Formats: tools/others/marathon/files.md
-  - Guides:
+  - Guides & Documentation:
     - guides/index.md
     - Hedgehog Engine:
       - Sonic Generations: 
@@ -44,6 +44,11 @@ nav:
             - Animations: guides/hedgehog-engine/blueblur/files/xncp/anims.md
         - Level Editing:
           - Sonic GLvl: guides/hedgehog-engine/blueblur/levels/glvl.md
+      - Sonic Frontiers:
+        - Levels:
+          - Level ID Map: guides/hedgehog-engine/rangers/levels/ids.md
+        - Events:
+          - Event ID Map: guides/hedgehog-engine/rangers/events/ids.md
     - Other Engines:
       - Sonic The Hedgehog (2006):
         - Level Editing:
