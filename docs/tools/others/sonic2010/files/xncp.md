@@ -3,7 +3,7 @@ description: XNCP tools for Sonic Colours
 ---
 # XNCP Tools
 !!! warning
-    The XNCP file format is only used in Sonic Colours: Ultimate
+    For Sonic Colours, the XNCP file format is only used in Sonic Colours: Ultimate
 
 ## 010 Editor
 Allows editing various file formats, in particular the XNCP format through the use of a template.
