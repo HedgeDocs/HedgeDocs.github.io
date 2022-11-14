@@ -4,9 +4,7 @@ description: Sonic GLvl tutorial for Sonic Generations
 !!! info
     This guide uses the following tools:
 
-    - Sonic GLvl
-
-    These tools and more can be found in the [Level Editing tools page](/tools/hedgehog-engine/blueblur/levels)
+    - [Sonic GLvl](tools/hedgehog-engine/blueblur/levels/){ target="_blank"}
 
 !!! note
     These video guides are old and are for Sonic GLvl 0.5.7. It's recommended you use the latest 0.9 version instead.
@@ -14,8 +12,8 @@ description: Sonic GLvl tutorial for Sonic Generations
 
 # How to use Sonic GLvl with Sonic Generations
 
-**Part 1 (Getting Levels and Camera Controls)**
+#### Part 1 (Getting Levels and Camera Controls)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e6olKDqFkR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Part 2 (Basic Level Editing and Testing your mod in-game)**
+#### Part 2 (Basic Level Editing and Testing your mod in-game)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F5ILHTlMjgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

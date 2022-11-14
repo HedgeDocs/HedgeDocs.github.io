@@ -36,6 +36,7 @@ nav:
         - Level Editing: tools/others/sonic2010/levels.md
       - Sonic The Hedgehog (2006):
         - File Formats: tools/others/marathon/files.md
+        - Level Editing: tools/others/marathon/levels.md
   - Guides & Documentation:
     - guides/index.md
     - Hedgehog Engine:
@@ -99,6 +100,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
 extra_css:
   - stylesheets/extra.css
 extra_javascript:

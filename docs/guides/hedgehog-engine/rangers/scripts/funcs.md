@@ -18,11 +18,11 @@ Function(arguments, ...) : returnType
 Unlocks an achievement.
 
 #### Input Parameters
-- (**string**, number): Name of the achievement to unlock
-- (string, **number**): *unknown*
+- (^^**string**^^, number): Name of the achievement to unlock
+- (string, ^^**number**^^): *Unknown...*
 
 #### Return Value
-*unknown*
+*Unknown...*
 
 ### 🗒️ ActivityComplete(number) : unknown
 #### Description
