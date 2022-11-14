@@ -20,6 +20,8 @@ nav:
         - Level Editing: tools/hedgehog-engine/blueblur/levels.md
       - Sonic Lost World:
         - Level Editing: tools/hedgehog-engine/sonic2013/levels.md
+      - Sonic Frontiers:
+        - Models: tools/hedgehog-engine/rangers/models.md
     - Renderware:
       - Common: 
         - File Formats:
