@@ -146,6 +146,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hedgedocs.github.io/tools/others/marathon/levels/</loc>
+         <lastmod>2022-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hedgedocs.github.io/tools/others/sonic2010/levels/</loc>
          <lastmod>2022-11-14</lastmod>
          <changefreq>daily</changefreq>
