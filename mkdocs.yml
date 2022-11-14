@@ -12,6 +12,8 @@ nav:
       - Common:
         - File Formats: tools/hedgehog-engine/common/files.md
         - Lighting/GI: tools/hedgehog-engine/common/lighting.md
+        - Models: tools/hedgehog-engine/common/models.md
+        - Text: tools/hedgehog-engine/common/text.md
       - Sonic Generations:
         - File Formats: 
           - XNCP: tools/hedgehog-engine/blueblur/files/xncp.md
@@ -49,6 +51,8 @@ nav:
           - Level ID Map: guides/hedgehog-engine/rangers/levels/ids.md
         - Events:
           - Event ID Map: guides/hedgehog-engine/rangers/events/ids.md
+        - Scripts:
+          - Functions: guides/hedgehog-engine/rangers/scripts/funcs.md
     - Other Engines:
       - Sonic The Hedgehog (2006):
         - Level Editing:
