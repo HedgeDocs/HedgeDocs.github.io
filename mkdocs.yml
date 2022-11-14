@@ -97,6 +97,8 @@ markdown_extensions:
   - pymdownx.superfences
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - assets/custom.js
 plugins:
   - search
   - git-committers:
