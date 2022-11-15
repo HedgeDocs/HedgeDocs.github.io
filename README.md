@@ -21,6 +21,7 @@ When adding new pages, please follow these guidelines (check pre-existing pages 
 
 - Be sure to follow the general structure while adding new pages, as in, read the existing pages from the same category you're writing about, and follow their style (what metadata they use, the button styling, etc.)
 - Make sure that each markdown file has a title at the start (specified with `#`). The first title in the markdown file is what's going to show up in the webpage's search results
+- Related to the previous rule, but there should only be one `#` title per page, and that is the page's title. All other titles should start at `##`
 - Guides should include an info box before the title, listing the tools that they're using. Each tool mentioned in that box should be a link to a HedgeDocs page, which contains a link to said tool
     - If the tools aren't included in the tools page, add them. If that doesn't make sense, then add the links to said tools in the info box. These links should not be direct download links, but a link to the tool's page, is applicable.
     - This rule helps avoiding fragmentation of tool versions. By making every tool link point to a HedgeDocs tool page, you can be sure that everyone will download the version that HedgeDocs has stored in the tools category, and update it if necessary in the future.
