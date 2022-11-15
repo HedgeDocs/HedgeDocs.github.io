@@ -9,6 +9,7 @@ nav:
     - tools/index.md
     - Various Engines:
       - File Formats: tools/general/files.md
+      - Audio: tools/general/audio.md
     - Hedgehog Engine:
       - Common:
         - File Formats: tools/hedgehog-engine/common/files.md
@@ -49,10 +50,12 @@ nav:
         - Level Editing:
           - Sonic GLvl: guides/hedgehog-engine/blueblur/levels/glvl.md
       - Sonic Frontiers:
-        - Levels:
-          - Level ID Map: guides/hedgehog-engine/rangers/levels/ids.md
+        - Audio:
+          - Replacing Audio: guides/hedgehog-engine/rangers/audio/replacing.md
         - Events:
           - Event ID Map: guides/hedgehog-engine/rangers/events/ids.md
+        - Levels:
+          - Level ID Map: guides/hedgehog-engine/rangers/levels/ids.md
         - Scripts:
           - Functions: guides/hedgehog-engine/rangers/scripts/funcs.md
     - Other Engines:
