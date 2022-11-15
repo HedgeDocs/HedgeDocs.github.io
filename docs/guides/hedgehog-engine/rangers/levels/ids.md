@@ -3,7 +3,9 @@ description: Sonic Frontiers level ID map
 ---
 
 # Level ID Map
-## Worlds (Zones)
+
+## Mapping
+### Worlds (Zones)
 
 - w1 - Kronos
 - w2 - Ares
@@ -14,15 +16,13 @@ description: Sonic Frontiers level ID map
 - w8 - Sky Sanctuary
 - w9 - Highway
 
-## Stage Type
+### Stage Type
 - r - Open Zone
 - d - Cyber Space
 - f - Fishing (always w1)
 - h - Hacking (always w1)
 
-----
-
-# Oddities
+## Oddities
 Due to Ouranos and Rhea actually being part of Kronos, their map files are stored in w1:
 
 - w1r04 - Ouranos
