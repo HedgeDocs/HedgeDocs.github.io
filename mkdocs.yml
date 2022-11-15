@@ -137,7 +137,7 @@ theme:
     - navigation.indexes
     - navigation.sections
   icon:
-    edit: material/file-edit
+    edit: material/file-edit-outline
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
