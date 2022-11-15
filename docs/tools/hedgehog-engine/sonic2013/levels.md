@@ -6,4 +6,4 @@ description: Level editing tools for Sonic Lost World
 ## SonicGLvl Lost World
 Fork of SonicGLvl for Sonic Lost World.
 
-[GitHub Repository :fontawesome-brands-github:](https://github.com/arukibree/libgens-sonicglvl-lostworld){ .md-button .md-button--primary target="_blank"}
+[Source Code :fontawesome-brands-github:](https://github.com/arukibree/libgens-sonicglvl-lostworld){ .md-button .md-button--primary target="_blank"}
