@@ -151,6 +151,9 @@ video {
 }
 
 .md-header__source {
-    margin-left: 1.4rem;
+    display: none;
+}
+
+.md-nav__source {
     display: none;
 }
