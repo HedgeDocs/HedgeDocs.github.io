@@ -2263,7 +2263,7 @@
 <li><a href="/tools/hedgehog-engine/blueblur/files/xncp" target="_blank">010 Editor (with XNCP Template)</a></li>
 </ul>
 </div>
-<h1 id="xncp-animations">XNCP Animations</h1>
+<h1 id="xncp-animations">XNCP Animations<a class="headerlink" href="#xncp-animations" title="Permanent link">&para;</a></h1>
 <p>XNCP animations for a specific scene are listed in <strong>AnimationDictionary</strong>, which behaves the same way as the CastDictionary:</p>
 <p><img alt="" src="../assets/anims/image2.png" /></p>
 <p>In <strong>AnimationFrameDataList</strong>, it’s possible to control the amount of keyframes that a specific animation has:</p>
@@ -2314,9 +2314,9 @@ Let’s look at the second keyframe:</p>
 <p>As we suspected, the <strong>Frame</strong> field is now set to 10, meaning this is referring to the last frame in the animation. The value in <strong>Data</strong> has increased, so this means that <strong>this cast slides from left to right</strong> in this animation!</p>
 <p>Looking at the remaining <strong>CastAnimationData</strong> entries, we can see that none of them animate, since their <strong>Flags</strong> field is set to 0. So we can conclude that <strong>Intro_Anim</strong> makes the <strong>position</strong> cast slide from <strong>left to right</strong>, and since “position” controls the entire scene, every single cast from this scene slides from left to right in this animation!</p>
 <p><img alt="" src="../assets/anims/image6.png" /></p>
-<h2 id="additional-notes">Additional Notes</h2>
+<h2 id="additional-notes">Additional Notes<a class="headerlink" href="#additional-notes" title="Permanent link">&para;</a></h2>
 <p>An animation can only be looped using code, so that can't be controlled via the XNCP. However, <strong>Field00</strong> in <strong>CastAnimationDataSubData</strong> does seem to control how fast a loop occurs, where the value <strong>1</strong> seems to loop it with a delay, while <strong>2</strong> makes it loop smoother.</p>
-<h2 id="conclusion">Conclusion</h2>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
 <p>Hope I explained XNCP animations well enough. Have fun!</p>
 <p><em>PS: there’s also AnimationData2List but...</em></p>
 <p><img alt="" src="../assets/anims/image7.png" /></p>

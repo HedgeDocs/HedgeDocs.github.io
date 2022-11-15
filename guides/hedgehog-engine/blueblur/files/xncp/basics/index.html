@@ -2305,12 +2305,12 @@
 <li><a href="/tools/hedgehog-engine/blueblur/files/xncp" target="_blank">010 Editor (with XNCP Template)</a></li>
 </ul>
 </div>
-<h1 id="the-basics-of-xncp-editing">The Basics of XNCP Editing</h1>
+<h1 id="the-basics-of-xncp-editing">The Basics of XNCP Editing<a class="headerlink" href="#the-basics-of-xncp-editing" title="Permanent link">&para;</a></h1>
 <p><strong>XNCP</strong> is the file format of Sonic Generations's UI. In this guide, I'll explain the general things you need to get started.</p>
-<h2 id="requirements">Requirements</h2>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <p>First of all, you will need to download the <a href="https://www.sweetscape.com/010editor/">010 Editor</a>. This program is used for hex editing, and in our case, to modify XNCP files.
 You'll also need to download the <a href="https://github.com/tge-was-taken/010-Editor-Templates/blob/master/templates/sonic_xncp_yncp.bt">XNCP Template</a>; essentially, this file will make it so that you can read and understand the XNCP file's contents, otherwise you'd only see hex numbers, and that's not exactly readable.</p>
-<h2 id="opening-an-xncp-file">Opening an XNCP file</h2>
+<h2 id="opening-an-xncp-file">Opening an XNCP file<a class="headerlink" href="#opening-an-xncp-file" title="Permanent link">&para;</a></h2>
 <p>After installing the 010 Editor, and downloaded the XNCP Template, it's time to open a file.</p>
 <p>Open the 010 Editor and click on <strong>File &gt; Open File...</strong>, and open the file that you need to edit.</p>
 <p><img alt="" src="../assets/basics/image0.png" /></p>
@@ -2323,7 +2323,7 @@ You'll also need to download the <a href="https://github.com/tge-was-taken/010-E
 <p><img alt="" src="../assets/basics/image3.png" /></p>
 <p>This new window that has appeared will be your workspace. This'll be the way in which you edit all aspects of a UI file.
 Click on the <strong>struct TFAPC File</strong> dropdown, then <strong>struct TFAPCEmbeddedRes Resources[0]</strong>, then <strong>struct TNNNCPJChunk CsdmProject</strong>, and then on <strong>struct TCSDNode Root</strong>. Now  you'll have a few variables here; I'll explain what some of them mean!</p>
-<h2 id="the-structure-of-an-xncp-file-resource-0">The structure of an XNCP file (Resource 0)</h2>
+<h2 id="the-structure-of-an-xncp-file-resource-0">The structure of an XNCP file (Resource 0)<a class="headerlink" href="#the-structure-of-an-xncp-file-resource-0" title="Permanent link">&para;</a></h2>
 <p><strong>Scenes</strong> are essentially the containers for a specific group of UI elements, think of it like a folder inside a folder, and you'll need <strong>SceneIDTable</strong> to understand which Scene is what. This table contains the name and index of each Scene (e.g: Scene "gauge" in ui_gameplay.xncp is the "folder" that contains all elements of the boost bar in the HUD).
 Scenes also have a few variables that may be of interest, like:</p>
 <ul>
@@ -2337,7 +2337,7 @@ Scenes also have a few variables that may be of interest, like:</p>
 <ul>
 <li><strong>Casts</strong>, these are the UI elements of XNCP files, these contain the necessary data to display text, move other elements, or display an image.</li>
 </ul>
-<h2 id="the-structure-of-a-cast">The structure of a Cast</h2>
+<h2 id="the-structure-of-a-cast">The structure of a Cast<a class="headerlink" href="#the-structure-of-a-cast" title="Permanent link">&para;</a></h2>
 <p>The Cast has several variables that you can change:</p>
 <ul>
 <li><strong>Field04</strong> controls the type of the cast, these types can be:
@@ -2362,7 +2362,7 @@ Scenes also have a few variables that may be of interest, like:</p>
 </code></pre></div></li>
 <li><strong>Field40Data</strong> contains data about a cast's subimages. If the cast is a nodraw or font type, this will be all set to -1 most of the time. Each of these variables is a holder for a specific index of a subimage. However, only the first one is used all the time, all of the other ones are for animations.</li>
 </ul>
-<h2 id="the-structure-of-an-xncp-file-resource-1">The structure of an XNCP file (Resource 1)</h2>
+<h2 id="the-structure-of-an-xncp-file-resource-1">The structure of an XNCP file (Resource 1)<a class="headerlink" href="#the-structure-of-an-xncp-file-resource-1" title="Permanent link">&para;</a></h2>
 <p>Before, I wrote that you needed to go into Resource 0. This is because Resource 0 has most of the cool stuff that you can edit, while Resource 1 contains data about image file locations.</p>
 <ul>
 <li><strong>TextureList</strong>, this is a list of all the textures used by the UI... this is pretty much it. Each texture will have a name, and it's index will be the number specified next to the "Textures" name.</li>

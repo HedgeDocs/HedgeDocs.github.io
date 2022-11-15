@@ -137,8 +137,15 @@ video {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 .page-metadata .contributors li {
   vertical-align: top;
   margin: 0;
   padding: 0;
+}
+
+.md-typeset :is(.emojione,.twemoji,.gemoji) svg {
+  fill: currentcolor;
+  max-height: 100%;
+  width: 1em;
 }

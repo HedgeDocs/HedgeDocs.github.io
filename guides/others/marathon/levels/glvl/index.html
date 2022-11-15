@@ -2309,14 +2309,14 @@
 <p class="admonition-title">Note</p>
 <p>Due to a lack of an actual, dedicated level editor for Sonic '06, we (at the time of writing) use a hacked together solution that allows us to use Sonic GLvl as a stand in. This guide will explain how to set up GLvl for this purpose, with the assumption that the user understands basic usage of the program itself.</p>
 </div>
-<h1 id="how-to-use-sonic-glvl-with-sonic-06">How to use Sonic GLvl with Sonic '06</h1>
-<h2 id="setting-up">Setting Up</h2>
+<h1 id="how-to-use-sonic-glvl-with-sonic-06">How to use Sonic GLvl with Sonic '06<a class="headerlink" href="#how-to-use-sonic-glvl-with-sonic-06" title="Permanent link">&para;</a></h1>
+<h2 id="setting-up">Setting Up<a class="headerlink" href="#setting-up" title="Permanent link">&para;</a></h2>
 <p>Download your preferred version of Sonic GLvl 0.9 and extract the repository to any location. Then, open the database folder and delete the <code>objects</code> folder. Next, download the <a href="https://github.com/Knuxfan24/Sonic-06-Stage-Editing-Archive">Sonic '06 Stage Editing Archive</a> and extract the <code>SonicGLvl/database</code> folder to your SonicGLvl location, choosing to merge/replace existing files.</p>
-<h2 id="converting-stage-terrain">Converting Stage Terrain</h2>
+<h2 id="converting-stage-terrain">Converting Stage Terrain<a class="headerlink" href="#converting-stage-terrain" title="Permanent link">&para;</a></h2>
 <p>Pre converted copies of the actual Sonic '06 stages are present on the Stage Editing Archive repository (under the <code>SonicGLvl/import</code> directory). When converting your own terrain (such as for a stage mod) the process is almost identical to the conversion process for Sonic Generations (it's recommended to use the two <code>#base</code> files as a template). The crucial step is to remember to set the stage scale in HedgehogConverter to 1% on all three axis, as the scale does not match between both games.</p>
-<h2 id="usage">Usage</h2>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>The process of placing and editing objects at this point follows the workflow of using Sonic GLvl for a Generations stage mod, so will not be covered here.</p>
-<h2 id="groups">Groups</h2>
+<h2 id="groups">Groups<a class="headerlink" href="#groups" title="Permanent link">&para;</a></h2>
 <p>Objects in '06 make frequent usage of grouping, allowing objects to influence each other in some way (such as an Egg Chaser commanding a squad of Egg Liners or defeating an enemy unlocking a cage). To set these up, create an XML in your stage's cache directory called <code>groupdata_[x].group.xml</code> (where [x] is a name, such as <code>base</code>). Then lay them out as shown below.</p>
 <p><img alt="" src="../assets/glvl/image1.png" /></p>
 <p>Each &lt;Group> key is... Well... A Group that will be compiled into the converted SET.</p>
@@ -2324,7 +2324,7 @@
 <p>The &lt;Type> key is the name of the lua event that this group will activate, this key can be left empty if the group doesn't need to activate anything. In this example, it's called Cage01, so it will fire the event called Cage01 in the stage's lua file; which, as you can probably guess, signalled a cage to open.</p>
 <p>The &lt;ObjectCount> key simply lists how many objects this group has (and honestly shouldn't have even been a thing, but I wrote this thing incredibly badly).</p>
 <p>The subkeys within the &lt;ObjectIDs> key simply give the ID of an object that should be in this group. These IDs are shown in the conversion log, and are also patched into the Generations SET if the <code>Patch Generations SET</code> option is used in the Converter (see below).</p>
-<h2 id="06-set-conversion">'06 SET Conversion</h2>
+<h2 id="06-set-conversion">'06 SET Conversion<a class="headerlink" href="#06-set-conversion" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../assets/glvl/image2.png" /></p>
 <p>For converting between Generations and '06, we use the GLvl Converter. In the Source SET, select your Generations <code>.set.xml</code> file from your stage's cache directory in your GLvl location (will be named <code>setdata_base.set.xml</code> by default). If you've created any groups for your object layout (which need to be made manually, see above), then select the approriate <code>groupdata_[x].group.xml</code> file for the Groups XML option, otherwise, leave it blank.</p>
 <p>For the GLvl Templates, select the <code>database\objects</code> folder.</p>
