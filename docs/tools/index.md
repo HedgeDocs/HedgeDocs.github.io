@@ -1,6 +1,11 @@
 ---
 title: Tools
 ---
+<style>
+  .md-content__button {
+    display: none;
+  }
+</style>
 
 # :material-cog: Tools
 

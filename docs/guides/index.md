@@ -1,6 +1,11 @@
 ---
 title: Guides and Documentation
 ---
+<style>
+  .md-content__button {
+    display: none;
+  }
+</style>
 
 # :fontawesome-solid-book: Guides and Documentation
 
