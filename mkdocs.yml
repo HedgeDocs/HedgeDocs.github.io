@@ -120,6 +120,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+  - tables
 extra_css:
   - assets/stylesheets/extra.css
 extra_javascript:
@@ -135,6 +136,7 @@ plugins:
         - tools/*
         - guides/index.md
         - discoveries/index.md
+        - docs/index.md
   - git-revision-date-localized:
       enabled: !ENV [ENABLE_GIT_PLUGINS, False]
       type: timeago
@@ -143,6 +145,7 @@ plugins:
         - tools/*
         - guides/index.md
         - discoveries/index.md
+        - docs/index.md
 theme:
   logo: assets/images/icon.svg
   favicon: assets/images/favicon.png
