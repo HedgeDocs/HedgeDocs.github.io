@@ -20,28 +20,28 @@ description: Cyloop color replacement guide for Sonic Frontiers
 
 - This can be done by going to templates at the top and pressing "Open Template" and selecting the PlayerParameters.bt
 
-![](./assets/1.png)
+![](./images/1.png)
 
 - Afterwards, you can press "Run Template" and it should bring up a new window in 010 editor.
-- ![](./assets/2.png)
+- ![](./images/2.png)
 - If a new window doesn't appear, restart 010 editor or reload player_common.rfl into the editor
 - Run the PlayerParameters.bt and you should see new information in the Variables tab in 010 editor
 - Split your editor so that you can see your hex values, the inspector tab, and the variables tab all at once.
-- ![](./assets/3.png)
+- ![](./images/3.png)
 - Now you're ready to hex edit!
 
 4. Open the struct PlayerParameters data in variables, then go into struct CommonPackage common, and find struct PlayerParamCyloop cyloop
 
-![](./assets/4.png)
+![](./images/4.png)
 
 5. Open thecyloop struct and find CyloopLocusParameter locus, this holds the colors for the cyloop across multiple variables
   i. Each color will look like this (there are 3 of these)
 
-    ![](./assets/5.png)
+    ![](./images/5.png)
 
     Or these (there are 2 of these)
 
-    ![](./assets/6.png)
+    ![](./images/6.png)
 
   ii. When you open these variables, you will see 4 values, float r, g, b, and a
   iii. These values don't make sense so keep up with this:
@@ -59,7 +59,7 @@ description: Cyloop color replacement guide for Sonic Frontiers
     0/255 = 0 (blue)
 
 - Replace the float values with your new values (you dont need to touch float r)
-  - Ex: ![](./assets/7.png)
+  - Ex: ![](./images/7.png)
   - Do this for all of the color struct variables from earlier
   - This will replace all of the different parts of the cyloop
   - You can mix colors for different results, like making some of the cyloop variables red, and some white.
@@ -70,4 +70,4 @@ description: Cyloop color replacement guide for Sonic Frontiers
 
 9. Run around with a new cyloop color :)
 
-![](./assets/8.png)
+![](./images/8.png)
