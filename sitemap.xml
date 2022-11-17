@@ -46,6 +46,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hedgedocs.github.io/docs/hedgehog-engine/rangers/enemies/guardians/names/</loc>
+         <lastmod>2022-11-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hedgedocs.github.io/docs/hedgehog-engine/rangers/events/ids/</loc>
          <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
