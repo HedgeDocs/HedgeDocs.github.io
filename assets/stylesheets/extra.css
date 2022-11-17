@@ -76,14 +76,14 @@ a.md-tabs__link.md-tabs__link--active {
     display: block;
     content: '';
     opacity: 1;
-    border-bottom: 1px var(--md-accent-fg-color);
-    padding-bottom: 0.9em;
+    border-bottom: 2px var(--md-accent-fg-color);
+    padding-bottom: 1em;
 }
 a.md-tabs__link.md-tabs__link--active:after {
     display: block;
     content: '';
-    border-bottom: 1px solid;
-    padding-bottom: 0.9em;
+    border-bottom: 2px solid;
+    padding-bottom: 1em;
     transform: scaleX(1);
     transition: transform 250ms ease-in-out;
 }
@@ -91,8 +91,8 @@ a.md-tabs__link.md-tabs__link--active:after {
 .md-tabs__link:after {
     display: block;
     content: '';
-    border-bottom: 1px solid;
-    padding-bottom: 0.9em;
+    border-bottom: 2px solid;
+    padding-bottom: 1em;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
