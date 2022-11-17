@@ -1,7 +1,7 @@
 ---
-description: RFL tools for Sonic Generations
+description: RFL tools for Sonic Frontiers
 ---
-# XNCP Tools
+# RFL Tools
 
 ## 010 Editor
 Allows editing various file formats. Frontiers RFL files are supported through the use of specific templates.
