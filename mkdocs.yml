@@ -25,6 +25,8 @@ nav:
       - Sonic Lost World:
         - Level Editing: tools/hedgehog-engine/sonic2013/levels.md
       - Sonic Frontiers:
+        - File Formats: 
+          - RFL: tools/hedgehog-engine/rangers/files/rfl.md
         - Models: tools/hedgehog-engine/rangers/models.md
     - Renderware:
       - Common: 
@@ -54,6 +56,9 @@ nav:
           - Replacing Audio: guides/hedgehog-engine/rangers/audio/replacing.md
         - Events:
           - Event ID Map: guides/hedgehog-engine/rangers/events/ids.md
+        - File Formats:
+          - RFL:
+            - RFL Binary Template Map: guides/hedgehog-engine/rangers/files/rfl/mapping.md
         - Levels:
           - Level ID Map: guides/hedgehog-engine/rangers/levels/ids.md
         - Scripts:
