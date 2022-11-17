@@ -4,7 +4,7 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}" />
   <meta property="og:type" content="webpage" />
   <meta property="og:url" content="{{ page.canonical_url }}" />
-  <meta property="og:image" content="/assets/images/favicon.png" />
+  <meta property="og:image" content="{{ page.canonical_url }}assets/images/favicon.png" />
   <meta property="og:image:type" content="image/png" />
   {% if page and page.meta and page.meta.description %}
     <meta property="og:description" content="{{ page.meta.description }}">
