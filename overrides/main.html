@@ -24,7 +24,7 @@
         <span class="contributors-text">Authors:</span>
         <ul class="contributors" data-bi-name="contributors">
           {%- for user in committers -%}
-            <li style="margin-top: 5px;">
+            <li class="contributor-entry">
               <a class="contributor" href="https://github.com/{{ user.name }}">
                 <img class="github-avatar" src="{{ user.avatar }}" alt="{{ user.name }}">
                 {{ user.name }} 

@@ -625,8 +625,10 @@ Controls the stage's scene data
 
 ### PlayerParameters
 #### Filename Format
+player_common.rfl
 
 #### Usage
+Controls Sonic's physics and other player parameters, including the cyloop colour for example.
 
 ### PlayerParamLowAltitudeJump
 #### Filename Format
