@@ -120,6 +120,7 @@ extra_javascript:
 plugins:
   - search
   - git-committers:
+      enabled: !ENV [ENABLED_GIT_COMMITERS, False]
       repository: HedgeDocs/HedgeDocs.github.io
       branch: main
       exclude: 

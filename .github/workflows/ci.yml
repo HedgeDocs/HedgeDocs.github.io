@@ -4,6 +4,10 @@ on:
     branches: 
       - master
       - main
+
+env:
+  ENABLED_GIT_COMMITERS: True
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
