@@ -62,6 +62,9 @@ nav:
     - docs/index.md
     - Hedgehog Engine:
       - Sonic Frontiers:
+        - Enemies:
+          - Guardians:
+            - Internal Names: docs/hedgehog-engine/rangers/enemies/guardians/names.md
         - Events:
           - Event ID Map: docs/hedgehog-engine/rangers/events/ids.md
         - File Formats:
