@@ -47,10 +47,11 @@ Unlocks an achievement.
 
 ### 🗒️ ActivityTaskEnd() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ ActivityTaskStart(number, number) : unknown
 #### Description
@@ -68,31 +69,35 @@ Unlocks an achievement.
 
 ### 🗒️ AmbSoundCoordinator() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ AmbSoundEmitterBaseNoise() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ AmbSoundEmitterNearPoint() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ AmbSoundEmitterRelativeWind() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ AutoSave(string) : unknown
 #### Description
@@ -159,10 +164,11 @@ Unlocks an achievement.
 
 ### 🗒️ ClearPracticeNotifier() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ ClearQuestTarget() : unknown
 #### Description
@@ -187,10 +193,11 @@ Unlocks an achievement.
 
 ### 🗒️ DebugPrint() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ DeletePracticeNotifierPermissionDeny(string) : unknown
 #### Description
@@ -201,10 +208,11 @@ Unlocks an achievement.
 
 ### 🗒️ EndLetterBoxUI() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ EndTalkMode() : unknown
 #### Description
@@ -285,10 +293,11 @@ Unlocks an achievement.
 
 ### 🗒️ GetHackingAliveEnemyNum() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ GetHackingCurrentWaveId() : unknown
 #### Description
@@ -376,10 +385,11 @@ Unlocks an achievement.
 
 ### 🗒️ GetPowerupRequiredKodamaNum() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ GetRingLevel(number) : number
 #### Description
@@ -425,10 +435,11 @@ Unlocks an achievement.
 
 ### 🗒️ GoToCyberStage() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ HideObjectInEvent(string) : unknown
 #### Description
@@ -733,10 +744,11 @@ Unlocks an achievement.
 
 ### 🗒️ SetVisibleKodama() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ ShootBulletPattern(string) : unknown
 #### Description
@@ -810,10 +822,11 @@ Unlocks an achievement.
 
 ### 🗒️ ShowTalkCaptionOverFade() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ ShowToastUI(string) : unknown
 #### Description
@@ -838,17 +851,19 @@ Unlocks an achievement.
 
 ### 🗒️ ShowYesNoWindowUI() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ SoundDirector() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ SpawnHackingEnemy(string) : unknown
 #### Description
@@ -880,10 +895,11 @@ Unlocks an achievement.
 
 ### 🗒️ StartLetterBoxUI() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ StartMinigameQuest(string) : unknown
 #### Description
@@ -908,10 +924,11 @@ Unlocks an achievement.
 
 ### 🗒️ StartupGimmickInfo() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ StartWaitMinigameQuest() : unknown
 #### Description
@@ -922,31 +939,35 @@ Unlocks an achievement.
 
 ### 🗒️ UnloadDiEvent() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ UnloadLevel() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ WaitFromChaosEmeraldNum() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ WaitFromFlag() : unknown
 #### Description
-
+This function is unused.
 #### Parameters
-
+*Unknown...*
 #### Return Value
+*Unknown...*
 
 ### 🗒️ WaitTime(number) : unknown
 #### Description
