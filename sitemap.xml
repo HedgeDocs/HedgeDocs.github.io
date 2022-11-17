@@ -41,6 +41,31 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hedgedocs.github.io/docs/</loc>
+         <lastmod>2022-11-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.github.io/docs/hedgehog-engine/rangers/events/ids/</loc>
+         <lastmod>2022-11-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.github.io/docs/hedgehog-engine/rangers/files/rfl/mapping/</loc>
+         <lastmod>2022-11-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.github.io/docs/hedgehog-engine/rangers/levels/ids/</loc>
+         <lastmod>2022-11-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.github.io/docs/hedgehog-engine/rangers/scripts/funcs/</loc>
+         <lastmod>2022-11-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hedgedocs.github.io/guides/</loc>
          <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
@@ -62,26 +87,6 @@
     </url>
     <url>
          <loc>https://hedgedocs.github.io/guides/hedgehog-engine/rangers/audio/replacing/</loc>
-         <lastmod>2022-11-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hedgedocs.github.io/guides/hedgehog-engine/rangers/events/ids/</loc>
-         <lastmod>2022-11-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hedgedocs.github.io/guides/hedgehog-engine/rangers/files/rfl/mapping/</loc>
-         <lastmod>2022-11-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hedgedocs.github.io/guides/hedgehog-engine/rangers/levels/ids/</loc>
-         <lastmod>2022-11-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hedgedocs.github.io/guides/hedgehog-engine/rangers/scripts/funcs/</loc>
          <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
