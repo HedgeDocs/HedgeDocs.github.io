@@ -21,7 +21,11 @@ hide:
 </a>
 
 <a class="md-button md-button--primary" href="guides/" style="text-align: center; width: 17em">
-  Guides & Documentation :fontawesome-solid-book:
+  Guides :fontawesome-solid-book:
+</a>
+
+<a class="md-button md-button--primary" href="docs/" style="text-align: center; width: 17em">
+  Documentation :material-file-document:
 </a>
 
 <a class="md-button md-button--primary" href="discoveries/" style="text-align: center; width: 17em">

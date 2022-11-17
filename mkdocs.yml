@@ -41,7 +41,7 @@ nav:
       - Sonic The Hedgehog (2006):
         - File Formats: tools/others/marathon/files.md
         - Level Editing: tools/others/marathon/levels.md
-  - Guides & Documentation:
+  - Guides:
     - guides/index.md
     - Hedgehog Engine:
       - Sonic Generations: 
@@ -54,19 +54,23 @@ nav:
       - Sonic Frontiers:
         - Audio:
           - Replacing Audio: guides/hedgehog-engine/rangers/audio/replacing.md
-        - Events:
-          - Event ID Map: guides/hedgehog-engine/rangers/events/ids.md
-        - File Formats:
-          - RFL:
-            - RFL Binary Template Map: guides/hedgehog-engine/rangers/files/rfl/mapping.md
-        - Levels:
-          - Level ID Map: guides/hedgehog-engine/rangers/levels/ids.md
-        - Scripts:
-          - Functions: guides/hedgehog-engine/rangers/scripts/funcs.md
     - Other Engines:
       - Sonic The Hedgehog (2006):
         - Level Editing:
           - Sonic GLvl: guides/others/marathon/levels/glvl.md
+  - Documentation:
+    - docs/index.md
+    - Hedgehog Engine:
+      - Sonic Frontiers:
+        - Events:
+          - Event ID Map: docs/hedgehog-engine/rangers/events/ids.md
+        - File Formats:
+          - RFL:
+            - RFL Binary Template Map: docs/hedgehog-engine/rangers/files/rfl/mapping.md
+        - Levels:
+          - Level ID Map: docs/hedgehog-engine/rangers/levels/ids.md
+        - Scripts:
+          - Functions: docs/hedgehog-engine/rangers/scripts/funcs.md
   - Discoveries:
     - discoveries/index.md
     - Sonic Unleashed:
@@ -120,7 +124,7 @@ extra_javascript:
 plugins:
   - search
   - git-committers:
-      enabled: !ENV [ENABLED_GIT_COMMITERS, False]
+      enabled: !ENV [ENABLE_GIT_PLUGINS, False]
       repository: HedgeDocs/HedgeDocs.github.io
       branch: main
       exclude: 
@@ -129,6 +133,7 @@ plugins:
         - guides/index.md
         - discoveries/index.md
   - git-revision-date-localized:
+      enabled: !ENV [ENABLE_GIT_PLUGINS, False]
       type: timeago
       exclude:
         - index.md

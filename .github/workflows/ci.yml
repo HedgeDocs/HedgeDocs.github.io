@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  ENABLED_GIT_COMMITERS: True
+  ENABLE_GIT_PLUGINS: True
 
 jobs:
   deploy:
