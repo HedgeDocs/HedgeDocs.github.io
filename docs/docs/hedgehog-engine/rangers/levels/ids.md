@@ -5,22 +5,34 @@ description: Sonic Frontiers level ID map
 # Level ID Map
 
 ## Mapping
+Stage IDs are defined like this:
+```
+{world_id}{stage_type}{stage_number}
+```
+!!! info "Example"
+    w2r01 -> Ares Open Zone 1
+
 ### Worlds (Zones)
 
-- w1 - Kronos
-- w2 - Ares
-- w3 - Chaos
-- w5 - The End
-- w6 - Green Hill
-- w7 - Chemical Plant
-- w8 - Sky Sanctuary
-- w9 - Highway
+World ID | World Name
+-------- | -----------
+w1       | Kronos
+w2       | Ares
+w3       | Chaos
+w5       | The End
+w6       | Green Hill
+w7       | Chemical Plant
+w8       | Sky Sanctuary
+w9       | Highway
 
 ### Stage Type
-- r - Open Zone
-- d - Cyber Space
-- f - Fishing (always w1)
-- h - Hacking (always w1)
+
+Stage Type ID | Stage Type
+------------- | -----------
+r             | Open Zone
+d             | Cyber Space
+f             | Fishing (always w1)
+h             | Hacking (always w1)
 
 ## Oddities
 Due to Ouranos and Rhea actually being part of Kronos, their map files are stored in w1:
