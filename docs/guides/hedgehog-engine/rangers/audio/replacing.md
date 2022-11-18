@@ -7,7 +7,7 @@ description: Audio replacement guide for Sonic Frontiers
     This guide uses the following tools:
 
     - [foobar2000](https://www.foobar2000.org/){ target="_blank"}
-    - [VGStream foobar2000 component](https://dl.vgmstream.org/){ target="_blank"}
+    - [VGMStream foobar2000 component](https://dl.vgmstream.org/){ target="_blank"}
     - [SonicAudioTools](/tools/general/audio){ target="_blank"}
     - [VGAudio.Wpf](/tools/general/audio){ target="_blank"}
     - Audio Editing Software of your choice (I use [Audacity](https://www.audacityteam.org/){ target="_blank"})
