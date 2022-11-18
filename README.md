@@ -7,6 +7,9 @@
 
 GitHub Page with tools and guides for modding Sonic games, powered by [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
+## Editing and Creating Pages
+HedgeDocs pages are written in markdown, just like GitHub's own markdown files! One of the best ways to write markdown text files is to use [Visual Studio Code](https://code.visualstudio.com/), which allows you to preview the page you are currently typing by pressing CTRL+Shift+V, making it easy to see how your page might look like on the website. For a more accurate look, you absolutely should setup the website locally by following the instructions in the **Testing** chapter.
+
 ## Adding New Pages
 We appreciate every contribution that's made to HedgeDocs, as every single one helps the modding community to grow and make better mods.
 
@@ -68,10 +71,10 @@ Result:
 You can test your changes locally before committing. To do so:
 
 - Install [Python](https://www.python.org/downloads/)
-- Install Material For MkDocs: `pip install mkdocs-material`
+- Install Material For MkDocs: `pip install mkdocs-material --upgrade`
 - Install necessary MkDocs Plugins
-    - git-revision-date-localized-plugin: `pip install mkdocs-git-revision-date-localized-plugin`
-    - lxml (required by committers plugin): `pip install lxml`
+    - git-revision-date-localized-plugin: `pip install mkdocs-git-revision-date-localized-plugin --upgrade`
+    - lxml (required by committers plugin): `pip install lxml --upgrade`
     - git-committers-plugin-2 (modified with exclude folders): `pip install git+https://github.com/PTKickass/mkdocs-git-committers-plugin-2`
 - Serve webpage locally: `mkdocs serve`
   - You can also build a static site instead, using `mkdocs build`

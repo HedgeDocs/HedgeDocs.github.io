@@ -4,6 +4,10 @@ on:
     branches: 
       - master
       - main
+
+env:
+  ENABLE_GIT_PLUGINS: True
+
 jobs:
   deploy:
     runs-on: ubuntu-latest

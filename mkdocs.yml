@@ -1,5 +1,5 @@
 site_name: HedgeDocs
-site_url: https://hedgedocs.github.io/
+site_url: https://hedgedocs.com
 repo_url: https://github.com/hedgedocs/hedgedocs.github.io
 edit_uri: edit/main/docs/
 site_description: Sonic the Hedgehog modding guides and tools
@@ -41,7 +41,7 @@ nav:
       - Sonic The Hedgehog (2006):
         - File Formats: tools/others/marathon/files.md
         - Level Editing: tools/others/marathon/levels.md
-  - Guides & Documentation:
+  - Guides:
     - guides/index.md
     - Hedgehog Engine:
       - Sonic Generations: 
@@ -52,21 +52,30 @@ nav:
         - Level Editing:
           - Sonic GLvl: guides/hedgehog-engine/blueblur/levels/glvl.md
       - Sonic Frontiers:
+        - Cyloop:
+          - Replacing Cyloop Color: guides/hedgehog-engine/rangers/cyloop/color.md
         - Audio:
           - Replacing Audio: guides/hedgehog-engine/rangers/audio/replacing.md
-        - Events:
-          - Event ID Map: guides/hedgehog-engine/rangers/events/ids.md
-        - File Formats:
-          - RFL:
-            - RFL Binary Template Map: guides/hedgehog-engine/rangers/files/rfl/mapping.md
-        - Levels:
-          - Level ID Map: guides/hedgehog-engine/rangers/levels/ids.md
-        - Scripts:
-          - Functions: guides/hedgehog-engine/rangers/scripts/funcs.md
     - Other Engines:
       - Sonic The Hedgehog (2006):
         - Level Editing:
           - Sonic GLvl: guides/others/marathon/levels/glvl.md
+  - Documentation:
+    - docs/index.md
+    - Hedgehog Engine:
+      - Sonic Frontiers:
+        - Enemies:
+          - Guardians:
+            - Internal Names: docs/hedgehog-engine/rangers/enemies/guardians/names.md
+        - Events:
+          - Event ID Map: docs/hedgehog-engine/rangers/events/ids.md
+        - File Formats:
+          - RFL:
+            - RFL Binary Template Map: docs/hedgehog-engine/rangers/files/rfl/mapping.md
+        - Levels:
+          - Level ID Map: docs/hedgehog-engine/rangers/levels/ids.md
+        - Scripts:
+          - Functions: docs/hedgehog-engine/rangers/scripts/funcs.md
   - Discoveries:
     - discoveries/index.md
     - Sonic Unleashed:
@@ -113,6 +122,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+  - tables
 extra_css:
   - assets/stylesheets/extra.css
 extra_javascript:
@@ -120,6 +130,7 @@ extra_javascript:
 plugins:
   - search
   - git-committers:
+      enabled: !ENV [ENABLE_GIT_PLUGINS, False]
       repository: HedgeDocs/HedgeDocs.github.io
       branch: main
       exclude: 
@@ -127,13 +138,16 @@ plugins:
         - tools/*
         - guides/index.md
         - discoveries/index.md
+        - docs/index.md
   - git-revision-date-localized:
+      enabled: !ENV [ENABLE_GIT_PLUGINS, False]
       type: timeago
       exclude:
         - index.md
         - tools/*
         - guides/index.md
         - discoveries/index.md
+        - docs/index.md
 theme:
   logo: assets/images/icon.svg
   favicon: assets/images/favicon.png
