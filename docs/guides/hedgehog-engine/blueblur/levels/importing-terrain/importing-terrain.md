@@ -10,7 +10,7 @@ description: Importing Terrain tutorial for Sonic Generations
 # How to import custom terrain in Sonic Generations
 
 #### Part 1 (Creating terrain in Blender)
-First off, you need terrain for your level. You can do the terrain yourself, or take already created terrain.
+First of all, you need terrain for your level. You can do the terrain yourself, or take already created terrain.
 If your level contains transparent materials, find this material, and add <code style="color: red;">"@LYR(trans)"</code> int the end of the name.
 
 ![Transparent material example](assets/importing-terrain/transparent_material_example.png)
