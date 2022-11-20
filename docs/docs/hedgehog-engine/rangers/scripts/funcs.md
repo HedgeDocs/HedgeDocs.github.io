@@ -114,8 +114,6 @@ This function is unused.
 #### Return Value
 
 ### 🗒️ ChangeEventCamera(string)
-!!! warning
-    This function might not exist anymore! Please update when there's a confirmation!
 #### Description
 Change to an event camera.
 
