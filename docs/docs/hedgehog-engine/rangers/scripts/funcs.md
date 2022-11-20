@@ -113,12 +113,19 @@ This function is unused.
 
 #### Return Value
 
-### 🗒️ ChangeMotion(string) : unknown
+### 🗒️ ChangeEventCamera(string)
+!!! warning
+    This function might not exist anymore! Please update when there's a confirmation!
+#### Description
+Change to an event camera.
+
+#### Parameters
+- (^^**string**^^): Camera name
+
+### 🗒️ ChangeMotion(string)
 #### Description
 
 #### Parameters
-
-#### Return Value
 
 ### 🗒️ ChangePlayerAnimInHold(string, number) : unknown
 #### Description
@@ -228,12 +235,9 @@ This function is unused.
 
 #### Return Value
 
-### 🗒️ Exit() : unknown
+### 🗒️ Exit()
 #### Description
-
-#### Parameters
-
-#### Return Value
+End the script.
 
 ### 🗒️ FadeIn(number) : unknown
 #### Description
@@ -414,10 +418,14 @@ This function is unused.
 
 ### 🗒️ GetValue(string, number) : number
 #### Description
+Get the value of a flag based on the flag name and flag number
 
 #### Parameters
+- (^^**string**^^, number): Flag name
+- (string, ^^**number**^^): Flag number
 
 #### Return Value
+The value of the requested flag
 
 ### 🗒️ GiantOrbReleaseTemporarilyReset() : unknown
 #### Description
@@ -448,12 +456,9 @@ This function is unused.
 
 #### Return Value
 
-### 🗒️ HoldPlayer() : unknown
+### 🗒️ HoldPlayer()
 #### Description
-
-#### Parameters
-
-#### Return Value
+Disable all player movement
 
 ### 🗒️ IsAvailableKodamaElderLvUp() : number
 #### Description
@@ -609,12 +614,9 @@ This function is unused.
 
 #### Return Value
 
-### 🗒️ ReleaseHoldPlayer() : unknown
+### 🗒️ ReleaseHoldPlayer()
 #### Description
-
-#### Parameters
-
-#### Return Value
+Enables player movement.
 
 ### 🗒️ ReleasePresentSkill(string) : unknown
 #### Description
@@ -622,6 +624,12 @@ This function is unused.
 #### Parameters
 
 #### Return Value
+
+### 🗒️ ResetCamera()
+!!! warning
+    This function might not exist anymore! Please update when there's a confirmation!
+#### Description
+Changes camera to the player-operated camera.
 
 ### 🗒️ ResetMenuDisabledMinigameQuest() : unknown
 #### Description
@@ -650,6 +658,19 @@ This function is unused.
 #### Parameters
 
 #### Return Value
+
+### 🗒️ SendMsgToObj(string, string) : unknown
+!!! warning
+    This function might not exist anymore! Please update when there's a confirmation!
+#### Description
+Send a message to the specified GameObject.
+
+#### Parameters
+- (^^**string**^^, string): *Unknown...*
+- (string, ^^**string**^^): *Unknown...*
+
+#### Return Value
+*Unknown...*
 
 ### 🗒️ SetBossKnightLayerEnabled(boolean) : unknown
 #### Description
@@ -735,12 +756,14 @@ This function is unused.
 
 #### Return Value
 
-### 🗒️ SetValue(string, number, number) : unknown
+### 🗒️ SetValue(string, number, number)
 #### Description
+Sets a value for the specified flag.
 
 #### Parameters
-
-#### Return Value
+- (^^**string**^^, number, number): Flag name
+- (string, ^^**number**^^, number): Flag number
+- (string, number, ^^**number**^^): Value
 
 ### 🗒️ SetVisibleKodama() : unknown
 #### Description
@@ -813,12 +836,10 @@ This function is unused.
 
 #### Return Value
 
-### 🗒️ ShowTalkCaption(string) : unknown
+### 🗒️ ShowTalkCaption(string)
 #### Description
 
 #### Parameters
-
-#### Return Value
 
 ### 🗒️ ShowTalkCaptionOverFade() : unknown
 #### Description
@@ -969,9 +990,9 @@ This function is unused.
 #### Return Value
 *Unknown...*
 
-### 🗒️ WaitTime(number) : unknown
+### 🗒️ WaitTime(number)
 #### Description
+Wait for a specified time (seconds)
 
 #### Parameters
-
-#### Return Value
+- (^^**number**^^): Time, in seconds, to wait
