@@ -624,8 +624,6 @@ Enables player movement.
 #### Return Value
 
 ### 🗒️ ResetCamera()
-!!! warning
-    This function might not exist anymore! Please update when there's a confirmation!
 #### Description
 Changes camera to the player-operated camera.
 
