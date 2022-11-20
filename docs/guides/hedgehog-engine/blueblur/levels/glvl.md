@@ -4,7 +4,7 @@ description: Sonic GLvl tutorial for Sonic Generations
 !!! info
     This guide uses the following tools:
 
-    - [Sonic GLvl](tools/hedgehog-engine/blueblur/levels/){ target="_blank"}
+    - [Sonic GLvl](/tools/hedgehog-engine/blueblur/levels/){ target="_blank"}
 
 !!! note
     These video guides are old and are for Sonic GLvl 0.5.7. It's recommended you use the latest 0.9 version instead.
