@@ -8,9 +8,9 @@ description: Importing Terrain tutorial for Sonic Generations
 	- [Blender](/tools/hedgehog-engine/blueblur/levels/#blender){ target="_blank"}
 	- [HedgeArcPack](/tools/hedgehog-engine/common/files/#hedgearcpack){ target="_blank"}
 
-# How to import custom terrain in Sonic Generations
+# How To Import Custom Terrain in Sonic Generations
 
-#### Part 1 (Creating terrain in Blender)
+#### Part 1 (Creating Terrain in Blender)
 First of all, you need terrain for your level. You can do the terrain yourself, or take already created terrain.
 If your level contains transparent materials you need to add a proper layer tag to it. For transparency, you have two available layers, and you should pick the one that's best suited for your use case in order to avoid issues.
 
@@ -25,7 +25,7 @@ In order to specify a layer for a material, use the `@LYR` prefix, with the laye
 
 You can export your terrain in the FBX format. 
 
-#### Part 2 (Importing your level in the game)
+#### Part 2 (Importing the Level to the Game)
 Download SonicGlvl, and run <code style="color: green;">bin/HedgehogConverter.exe</code>. Fill up the following entries:
 
 - Source 3D model files - Your terrain model files
@@ -38,12 +38,7 @@ Be sure to also turn on the following options under "Materials":
 - Copy and convert materials"
 - Force tags from Source 3D models' material names as submesh layer
 
-...and to turn off these options under "Tags":
-
-- Models
-- Materials
-
-In the end, you should have it setup like this:
+In the end, you should have a similar setup to this:
 
 ![HedgehogConverter settings](assets/importing-terrain/hedgehog_converter_window.png)
 
@@ -55,19 +50,18 @@ Next, you'll need to unpack the # file which is localed in the root of cpk. In m
 
 ![Light in Terrain.stg.xml](assets/importing-terrain/light_dataname.png)
 
-Pack this archive and drop it in your mod's folder.
+Pack this archive and drop it in your mod's folder. Now you should have your mod files with a setup that looks something like this:
 
-Root folder: 
+???+info "Root folder"
+    ![Root Folder](assets/importing-terrain/mod_folder_root.png)
 
-![Root Folder](assets/importing-terrain/mod_folder_root.png)
+???+info ""disk" folder"
+    ![Disk folder](assets/importing-terrain/mod_folder_disk.png)
 
-"disk" folder:
+???+info ""Packed/LevelSlot" folder"
+    ![Packed - LevelSlot folder](assets/importing-terrain/mod_folder_packed.png)
 
-![Disk folder](assets/importing-terrain/mod_folder_disk.png)
-
-"Packed/LevelSlot" folder:
-
-![Packed - LevelSlot folder](assets/importing-terrain/mod_folder_packed.png)
+#### Part 3 (Sonic GLvl Basic Setup)
 
 Next up, open your level in SonicGlvl by opening the # file, and press Ctrl+A, Delete. It'll delete all the objects from your level. Find <code style="color: green;">"SonicSpawn"</code> in the objects menu and place it anywhere. 
 Be sure to set "Active" to "true" in the settings of <code style="color: green;">"SonicSpawn"</code> object. 
@@ -77,7 +71,7 @@ Be sure to set "Active" to "true" in the settings of <code style="color: green;"
 After that, press "File", "Save Stage Data" and "Save Stage Terrain".
 
 
-#### Part 3 (Creating skybox)
+#### Part 4 (Creating Skybox)
 
 Skyboxes in Sonic Generations is just regular model files. You can take them from the original levels or create them yourself. 
 Take your skybox's files and drop them into your level archive. Then, open # file, and open <code style="color: green;">Terrain.stg.xml</code> again. Find Model and paste your skybox's model name here without the extension and save it.
