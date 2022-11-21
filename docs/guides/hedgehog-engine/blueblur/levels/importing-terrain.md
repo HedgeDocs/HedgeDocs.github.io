@@ -4,8 +4,9 @@ description: Importing Terrain tutorial for Sonic Generations
 !!! info
     This guide uses the following tools:
 
-    - [Sonic GLvl](/tools/hedgehog-engine/blueblur/levels/){ target="_blank"}
-	- [Blender (You can use any other 3D editor)](https://www.blender.org/){ target="_blank"}
+    - [Sonic GLvl](/tools/hedgehog-engine/blueblur/levels/#sonicglvl){ target="_blank"}
+	- [Blender](/tools/hedgehog-engine/blueblur/levels/#blender){ target="_blank"}
+	- [HedgeArcPack](/tools/hedgehog-engine/common/files/#hedgearcpack){ target="_blank"}
 
 # How to import custom terrain in Sonic Generations
 
@@ -39,8 +40,8 @@ And turn off:
 
 Next, click <code style="color: red;">"Convert"</code> button and just wait. 
 
-After converting, go to your level's directory and extract any .ar archive. After that, extract archives from original level in bb or bb2.cpk/Packed/ folder. I'll be using ghz200 stage.
-Take <code style="color: green;">ghz200_Direct01.light</code> and drop this file in your level's archive and save it.
+After converting, go to your level's directory and extract any .ar archive using HedgeArcPack. After that, extract archives from original level in bb or bb2.cpk/Packed/ folder. I'll be using ghz200 stage.
+Take <code style="color: green;">ghz200_Direct01.light</code> and drop this file in your level's archive and pack it.
 Next, you'll need to unpack # file which is localed in the root of cpk. In my case, it is <code style="color: green;">#ghz200.ar.00</code>. Unpack it, and open <code style="color: green;">"Terrain.stg.xml"</code>, find DataName, paste your light file's name without the extension and save it.
 
 ![Light in Terrain.stg.xml](assets/importing-terrain/light_dataname.png)
@@ -75,4 +76,4 @@ Take your skybox's files and drop them into your level archive. Then, open # fil
 
 ![Skybox in Terrain.stg.xml](assets/importing-terrain/skybox_model.png) 
 
-But this is only the terrain and skybox, now you need to create collision for your level. You can see this tutorial [here](/guides/hedgehog-engine/blueblur/levels/importing-collision/importing-collision).
+But this is only the terrain and skybox, now you need to create collision for your level. You can see this tutorial [here](/guides/hedgehog-engine/blueblur/levels/importing-collision).
