@@ -11,7 +11,7 @@ description: Importing Collision tutorial for Sonic Generations
 # How to import custom collision in Sonic Generations
 
 #### Part 1 (Creating collision in Blender)
-You'll need model for the collision. If you want collision with different parameters (or tags), you'll need special ini file for HavokConverter with tags. You can download it [here](https://cdn.discordapp.com/attachments/946312699497840700/982272485858897991/HavokConverter.ini).
+You'll need model for the collision. If you want collision with different parameters (or tags), you'll need special ini file for HavokConverter with tags. You can download it [here](assets/importing-collision/HavokConverter.ini).
 Let me show you how to apply tags in your collision: 
 
 First, you need to find mesh on which you want to apply tags. 
