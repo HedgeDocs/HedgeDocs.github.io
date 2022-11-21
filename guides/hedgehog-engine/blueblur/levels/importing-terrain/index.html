@@ -2837,35 +2837,67 @@
 <h1 id="how-to-import-custom-terrain-in-sonic-generations">How to import custom terrain in Sonic Generations<a class="headerlink" href="#how-to-import-custom-terrain-in-sonic-generations" title="Permanent link">&para;</a></h1>
 <h4 id="part-1-creating-terrain-in-blender">Part 1 (Creating terrain in Blender)<a class="headerlink" href="#part-1-creating-terrain-in-blender" title="Permanent link">&para;</a></h4>
 <p>First of all, you need terrain for your level. You can do the terrain yourself, or take already created terrain.
-If your level contains transparent materials, find this material, and add <code style="color: red;">"@LYR(trans)"</code> int the end of the name.</p>
+If your level contains transparent materials you need to add a proper layer tag to it. For transparency, you have two available layers, and you should pick the one that's best suited for your use case in order to avoid issues.</p>
+<table>
+<thead>
+<tr>
+<th>Layers</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>trans</td>
+<td>Used for translucent materials, as in, materials which are not 100% opaque but also not 100% transparent (ex. windows)</td>
+</tr>
+<tr>
+<td>punch</td>
+<td>Used for materials which have binary transparency (one part is 100% opaque, another is 100% transparent). Useful for most kinds of textures, like leaves or grass</td>
+</tr>
+</tbody>
+</table>
+<p>In order to specify a layer for a material, use the <code>@LYR</code> prefix, with the layer name between parenthesis after it.</p>
+<div class="admonition info">
+<p class="admonition-title">Example</p>
 <p><img alt="Transparent material example" src="../assets/importing-terrain/transparent_material_example.png" /></p>
-<p>You can export your terrain in FBX format. </p>
+</div>
+<p>You can export your terrain in the FBX format. </p>
 <h4 id="part-2-importing-your-level-in-the-game">Part 2 (Importing your level in the game)<a class="headerlink" href="#part-2-importing-your-level-in-the-game" title="Permanent link">&para;</a></h4>
-<p>Download SonicGlvl, and run <code style="color: green;">"bin/HedgehogConverter.exe"</code>. Fill:</p>
-<p>"Source 3D model files"</p>
-<p>"Source textures directory"</p>
-<p>"Terrain output directory"</p>
-<p>Be sure to turn on:</p>
-<p>"Generate materials", "Copy and convert materials", "Force tags from Source 3D models' material names as submesh layer" in "Materials".</p>
-<p>And turn off:</p>
-<p>"Models", "Materials" in "Tags". </p>
+<p>Download SonicGlvl, and run <code style="color: green;">bin/HedgehogConverter.exe</code>. Fill up the following entries:</p>
+<ul>
+<li>Source 3D model files - Your terrain model files</li>
+<li>Source textures directory - Directory containing the texture files of your terrain</li>
+<li>Terrain output directory - Directory which will contain the converted terrain</li>
+</ul>
+<p>Be sure to also turn on the following options under "Materials":</p>
+<ul>
+<li>Generate materials</li>
+<li>Copy and convert materials"</li>
+<li>Force tags from Source 3D models' material names as submesh layer</li>
+</ul>
+<p>...and to turn off these options under "Tags":</p>
+<ul>
+<li>Models</li>
+<li>Materials</li>
+</ul>
+<p>In the end, you should have it setup like this:</p>
 <p><img alt="HedgehogConverter settings" src="../assets/importing-terrain/hedgehog_converter_window.png" /></p>
 <p>Next, click <code style="color: red;">"Convert"</code> button and just wait. </p>
 <p>After converting, go to your level's directory and extract any .ar archive using HedgeArcPack. After that, extract archives from original level in bb or bb2.cpk/Packed/ folder. I'll be using ghz200 stage.
 Take <code style="color: green;">ghz200_Direct01.light</code> and drop this file in your level's archive and pack it.
-Next, you'll need to unpack # file which is localed in the root of cpk. In my case, it is <code style="color: green;">#ghz200.ar.00</code>. Unpack it, and open <code style="color: green;">"Terrain.stg.xml"</code>, find DataName, paste your light file's name without the extension and save it.</p>
+Next, you'll need to unpack the # file which is localed in the root of cpk. In my case, it is <code style="color: green;">#ghz200.ar.00</code>. Unpack it, and open <code style="color: green;">"Terrain.stg.xml"</code>, find DataName, paste your light file's name without the extension and save it.</p>
 <p><img alt="Light in Terrain.stg.xml" src="../assets/importing-terrain/light_dataname.png" /></p>
-<p>Pack this archive and drop it in your mod's folder.  </p>
+<p>Pack this archive and drop it in your mod's folder.</p>
 <p>Root folder: </p>
 <p><img alt="Root Folder" src="../assets/importing-terrain/mod_folder_root.png" /></p>
 <p>"disk" folder:</p>
 <p><img alt="Disk folder" src="../assets/importing-terrain/mod_folder_disk.png" /></p>
 <p>"Packed/LevelSlot" folder:</p>
 <p><img alt="Packed - LevelSlot folder" src="../assets/importing-terrain/mod_folder_packed.png" /></p>
-<p>Next up, open your level in SonicGlvl by opening # file, and press Ctrl+A, Delete. It'll delete all the objects from your level. Find <code style="color: green;">"SonicSpawn"</code> in the objects menu and place it anywhere. 
+<p>Next up, open your level in SonicGlvl by opening the # file, and press Ctrl+A, Delete. It'll delete all the objects from your level. Find <code style="color: green;">"SonicSpawn"</code> in the objects menu and place it anywhere. 
 Be sure to set "Active" to "true" in the settings of <code style="color: green;">"SonicSpawn"</code> object. </p>
 <p><img alt="SonicSpawn object and settings" src="../assets/importing-terrain/sonicspawn_glvl.png" /></p>
-<p>After that, press "File" - "Save Stage Data" and "Save Stage Terrain".</p>
+<p>After that, press "File", "Save Stage Data" and "Save Stage Terrain".</p>
 <h4 id="part-3-creating-skybox">Part 3 (Creating skybox)<a class="headerlink" href="#part-3-creating-skybox" title="Permanent link">&para;</a></h4>
 <p>Skyboxes in Sonic Generations is just regular model files. You can take them from the original levels or create them yourself. 
 Take your skybox's files and drop them into your level archive. Then, open # file, and open <code style="color: green;">Terrain.stg.xml</code> again. Find Model and paste your skybox's model name here without the extension and save it.</p>
@@ -2877,7 +2909,7 @@ Take your skybox's files and drop them into your level archive. Then, open # fil
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-11-21T09:23:08+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-11-21</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-11-21T10:30:59+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-11-21</span>
       
     
   </small>
@@ -2893,6 +2925,11 @@ Take your skybox's files and drop them into your level archive. Then, open # fil
     <div class="metadata page-metadata">
       <span class="contributors-text">Authors:</span>
       <ul class="contributors" data-bi-name="contributors"><li class="contributor-entry">
+          <a class="contributor" href="https://github.com/PTKickass">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/20132880" alt="PTKickass">
+            PTKickass
+          </a>
+        </li><li class="contributor-entry">
           <a class="contributor" href="https://github.com/TheExentist151">
             <img class="github-avatar" src="https://avatars.githubusercontent.com/u/91889396" alt="TheExentist151">
             TheExentist151
