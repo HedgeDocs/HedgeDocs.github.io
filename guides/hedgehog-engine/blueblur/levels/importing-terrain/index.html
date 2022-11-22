@@ -2875,9 +2875,9 @@ If your level contains transparent materials you need to add a proper layer tag 
 <p class="admonition-title">Example</p>
 <p><img alt="Transparent material example" src="../assets/importing-terrain/transparent_material_example.png" /></p>
 </div>
-<p>You can export your terrain in the FBX format. </p>
+<p>You can then export your terrain as an FBX file.</p>
 <h4 id="part-2-importing-the-level-to-the-game">Part 2 (Importing the Level to the Game)<a class="headerlink" href="#part-2-importing-the-level-to-the-game" title="Permanent link">&para;</a></h4>
-<p>Download SonicGlvl, and run <code style="color: green;">bin/HedgehogConverter.exe</code>. Fill up the following entries:</p>
+<p>Download SonicGLvl, and run <code>bin/HedgehogConverter.exe</code>. Fill up the following entries:</p>
 <ul>
 <li>Source 3D model files - Your terrain model files</li>
 <li>Source textures directory - Directory containing the texture files of your terrain</li>
@@ -2886,13 +2886,12 @@ If your level contains transparent materials you need to add a proper layer tag 
 <p>Be sure to also turn on the following options under "Materials":</p>
 <ul>
 <li>Generate materials</li>
-<li>Copy and convert materials"</li>
+<li>Copy and convert materials</li>
 <li>Force tags from Source 3D models' material names as submesh layer</li>
 </ul>
-<p>In the end, you should have a similar setup to this:</p>
+<p>In the end, you should have something similar to this:</p>
 <p><img alt="HedgehogConverter settings" src="../assets/importing-terrain/hedgehog_converter_window.png" /></p>
-<p>Next, click <code style="color: red;">"Convert"</code> button and just wait. </p>
-<p>After converting, go to your level's directory and extract any .ar archive using HedgeArcPack. After that, extract archives from original level in bb or bb2.cpk/Packed/ folder. I'll be using ghz200 stage.
+<p>Next, click <code>Convert</code> button and wait. Once that's done, go to your level's directory and extract any .ar archive using HedgeArcPack. After that, extract archives from the original level in bb or bb2.cpk/Packed/ folder. I'll be using ghz200 stage.
 Take <code style="color: green;">ghz200_Direct01.light</code> and drop this file in your level's archive and pack it.
 Next, you'll need to unpack the # file which is localed in the root of cpk. In my case, it is <code style="color: green;">#ghz200.ar.00</code>. Unpack it, and open <code style="color: green;">"Terrain.stg.xml"</code>, find DataName, paste your light file's name without the extension and save it.</p>
 <p><img alt="Light in Terrain.stg.xml" src="../assets/importing-terrain/light_dataname.png" /></p>
@@ -2925,7 +2924,7 @@ Take your skybox's files and drop them into your level archive. Then, open # fil
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-11-21T10:59:13+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-11-21</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-11-22T01:18:19+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-11-22</span>
       
     
   </small>
