@@ -23,10 +23,10 @@ In order to specify a layer for a material, use the `@LYR` prefix, with the laye
 !!! info "Example"
     ![Transparent material example](assets/importing-terrain/transparent_material_example.png)
 
-You can export your terrain in the FBX format. 
+You can then export your terrain as an FBX file.
 
 #### Part 2 (Importing the Level to the Game)
-Download SonicGlvl, and run <code style="color: green;">bin/HedgehogConverter.exe</code>. Fill up the following entries:
+Download SonicGLvl, and run `bin/HedgehogConverter.exe`. Fill up the following entries:
 
 - Source 3D model files - Your terrain model files
 - Source textures directory - Directory containing the texture files of your terrain
@@ -35,16 +35,14 @@ Download SonicGlvl, and run <code style="color: green;">bin/HedgehogConverter.ex
 Be sure to also turn on the following options under "Materials":
 
 - Generate materials
-- Copy and convert materials"
+- Copy and convert materials
 - Force tags from Source 3D models' material names as submesh layer
 
-In the end, you should have a similar setup to this:
+In the end, you should have something similar to this:
 
 ![HedgehogConverter settings](assets/importing-terrain/hedgehog_converter_window.png)
 
-Next, click <code style="color: red;">"Convert"</code> button and just wait. 
-
-After converting, go to your level's directory and extract any .ar archive using HedgeArcPack. After that, extract archives from original level in bb or bb2.cpk/Packed/ folder. I'll be using ghz200 stage.
+Next, click `Convert` button and wait. Once that's done, go to your level's directory and extract any .ar archive using HedgeArcPack. After that, extract archives from the original level in bb or bb2.cpk/Packed/ folder. I'll be using ghz200 stage.
 Take <code style="color: green;">ghz200_Direct01.light</code> and drop this file in your level's archive and pack it.
 Next, you'll need to unpack the # file which is localed in the root of cpk. In my case, it is <code style="color: green;">#ghz200.ar.00</code>. Unpack it, and open <code style="color: green;">"Terrain.stg.xml"</code>, find DataName, paste your light file's name without the extension and save it.
 
