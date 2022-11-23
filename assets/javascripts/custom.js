@@ -10,6 +10,7 @@ var observer = new MutationObserver(function (mutations, observer) {
     if (mutations.find((elem) => elem.attributeName == 'data-md-scrollfix') != undefined) {
         // Mutation was caused by a page change (SPA or Reload)
         replacePermalinkIcon()
+        addCssClasses()
 
         if (document.querySelectorAll('.md-nav__link.md-nav__link--index.md-nav__link--active').length >= 1) {
             // page change was caused by a tab change
@@ -24,14 +25,16 @@ observer.observe(document, {
 
 /* --------- FUNCTIONS ----------- */
 
-
-function addFadeAnim() {
-    const links = document.querySelectorAll('.md-nav')
+function addCssClasses() {
+    // Add active class
+    const links = document.querySelectorAll('.md-tabs__link--active')
 
     for (let i = 0, length = links.length; i < length; i++) {
         const link = links[i]
-        if (!link.classList.contains('slide-fadein')) {
-            link.classList.add('slide-fadein')
+        link.parentElement.classList.add('md-tabs__item--active')
+        if (link.parentElement.tagName.toUpperCase() == 'H1') {
+            // Remove permalink from the first link of the page
+            link.parentElement.removeChild(link)
         }
     }
 }
@@ -54,6 +57,17 @@ function replacePermalinkIcon() {
                         </path> \
                     </svg> \
                 </span>'
+        }
+    }
+}
+
+function addFadeAnim() {
+    const links = document.querySelectorAll('.md-nav')
+
+    for (let i = 0, length = links.length; i < length; i++) {
+        const link = links[i]
+        if (!link.classList.contains('slide-fadein')) {
+            link.classList.add('slide-fadein')
         }
     }
 }

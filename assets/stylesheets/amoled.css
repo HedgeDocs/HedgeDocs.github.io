@@ -1,0 +1,32 @@
+[data-md-color-scheme='amoled'] {
+    --md-hue: 232;
+    --md-default-fg-color: #d8d8d8;
+    --md-default-fg-color--light: #e6e6e6;
+    --md-default-fg-color--lighter: #efefef;
+    --md-default-fg-color--lightest: #505050;
+    --md-default-bg-color: #000000;
+    --md-primary-fg-color: #2f6ff8;
+    --md-primary-fg-color--light: #75b6e7;
+    --md-admonition-bg-color: #0f0f0f;
+    --md-typeset-table-color: #303030;
+    --md-code-fg-color: #d8d8d8;
+    --md-code-bg-color: #151515;
+    --md-typeset-color: var(--md-default-fg-color);
+    --md-typeset-a-color: #2162ec;
+    --md-admonition-fg-color: var(--md-default-fg-color);
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-operator-color: var(--md-default-fg-color--light);
+    --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+    --md-code-hl-comment-color: var(--md-default-fg-color--light);
+    --md-code-hl-generic-color: var(--md-default-fg-color--light);
+    --md-code-hl-variable-color: var(--md-default-fg-color--light);
+}
+
+[data-md-color-scheme='amoled'] th {
+    background-color: #151515;
+}
+
+[data-md-color-scheme='amoled'] .md-typeset table:not([class]) tbody tr:hover {
+    background-color: rgba(255, 255, 255, .055);
+    box-shadow: 0 .05rem 0 var(--md-default-bg-color) inset;
+}
