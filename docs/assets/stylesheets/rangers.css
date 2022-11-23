@@ -51,6 +51,15 @@
     color: var(--md-default-fg-color--lighter);
 }
 
+[data-md-color-scheme='rangers'] th {
+    background-color: var(--md-primary-fg-color);
+    color: #f2f8f8;
+}
+
+[data-md-color-scheme='rangers'] tr {
+    background-color: var(--md-admonition-bg-color);
+}
+
 @media screen and (min-width: 76.25em) {
     [data-md-color-scheme='rangers'] .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
         background: var(--rangers-header-color);
@@ -115,6 +124,8 @@
 
 [data-md-color-scheme='rangers'] a.md-tabs__link.md-tabs__link--active {
     color: #56bff0;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
 }
 
 [data-md-color-scheme='rangers'] a.md-tabs__link.md-tabs__link--active:after {
@@ -124,6 +135,28 @@
 [data-md-color-scheme='rangers'] .md-tabs__link:hover {
     background-color: #56bff0;
     color: #d8f6f6;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    padding-bottom: 1rem;
+    transition: font-size 0.1s;
+}
+
+[data-md-color-scheme='rangers'] .md-tabs__link--active:hover {
+    background-color: #56bff0;
+    color: #d8f6f6;
+    text-align: center;
+    animation: none;
+}
+
+
+[data-md-color-scheme='rangers'] .md-tabs__link {
+    opacity: 1;
+    outline-color: var(--md-accent-fg-color);
+    outline-offset: 0.2rem;
+    line-height: 0.8rem;
+    border-bottom: 0px transparent;
+    transition: transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1), opacity 0s, font-size 0.1s, border-bottom 0.25s ease;
 }
 
 [data-md-color-scheme='rangers'] .md-tabs__link.md-tabs__link--active:hover {
@@ -134,14 +167,6 @@
 [data-md-color-scheme='rangers'] .md-tabs__item.md-tabs__item--active:hover {
     color: #d8f6f6;
     background-color: #00000000 !important;
-}
-
-[data-md-color-scheme='rangers'] .md-tabs__link {
-    opacity: 1;
-    outline-color: var(--md-accent-fg-color);
-    outline-offset: 0.2rem;
-    border-bottom: 0px transparent;
-    transition: transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1), opacity 0s, border-bottom 0.25s ease;
 }
 
 [data-md-color-scheme='rangers'] .md-tabs__link:after {
