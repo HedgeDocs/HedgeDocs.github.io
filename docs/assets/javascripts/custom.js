@@ -16,6 +16,7 @@ var observer = new MutationObserver(function (mutations, observer) {
         }
         replacePermalinkIcon()
         addFadeAnim()
+        makeImagesClickable()
         //addCssClasses()
 
         if (document.querySelectorAll('.md-nav__link.md-nav__link--index.md-nav__link--active').length >= 1) {
@@ -31,6 +32,42 @@ observer.observe(document, {
 
 /* --------- FUNCTIONS ----------- */
 
+function makeImagesClickable() {
+    const background = document.querySelector('.imagePreview-background')
+    background.addEventListener('click', hideImagePreview)
+
+    const images = document.querySelector('.md-main').querySelectorAll('img')
+
+    for(let i = 0; i < images.length; i++) {
+        const image = images[i]
+        if (image.classList.contains('not-clickable')) continue
+        image.setAttribute('style', 'cursor: pointer')
+        image.addEventListener('click', imageClicked)
+    }
+}
+
+function hideImagePreview(event) {
+    const imageDiv = document.querySelector('.imagePreview-image')
+    imageDiv.style.animation = 'scaledown 0.25s'
+
+    const background = document.querySelector('.imagePreview')
+    background.style.opacity = '0%'
+    setTimeout(() => {
+        background.style.display = 'none'
+    }, 250)
+}
+
+function imageClicked(event) {
+    const image = event.target
+    const background = document.querySelector('.imagePreview')
+    background.style.display = 'inherit'
+    background.style.opacity = '100%'
+
+    const imageDiv = document.querySelector('.imagePreview-image')
+    imageDiv.style.display = 'block'
+    imageDiv.style.animation = 'scaleup 0.25s'
+    imageDiv.src = image.src
+}
 
 function enableAnimatedBackground() {
     animatedBackgroundIsEnabled = true
