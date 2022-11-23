@@ -136,10 +136,8 @@
     background-color: #56bff0;
     color: #d8f6f6;
     text-align: center;
-    font-size: 0.8rem;
-    line-height: 0.8rem;
-    padding-bottom: 1rem;
-    transition: font-size 0.1s;
+    padding-bottom: 0.7rem;
+    transition: font-size 0.05s;
 }
 
 [data-md-color-scheme='rangers'] .md-tabs__link--active:hover {
@@ -156,7 +154,7 @@
     outline-offset: 0.2rem;
     line-height: 0.8rem;
     border-bottom: 0px transparent;
-    transition: transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1), opacity 0s, font-size 0.1s, border-bottom 0.25s ease;
+    transition: transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1), opacity 0s, border-bottom 0.25s ease;
 }
 
 [data-md-color-scheme='rangers'] .md-tabs__link.md-tabs__link--active:hover {

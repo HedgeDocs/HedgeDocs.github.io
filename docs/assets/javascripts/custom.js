@@ -1,16 +1,21 @@
 /* 
     HedgeDocs Custom JavaScript
 */
+let animatedBackgroundIsEnabled = false
 
 /* --------- ON PAGE LOAD ----------- */
+
 MutationObserver = window.MutationObserver || window.WebKitMutationObserver
 var observer = new MutationObserver(function (mutations, observer) {
     if (mutations.find((elem) => elem.attributeName == 'data-md-scrollfix') != undefined) {
         // Mutation was caused by a page change (SPA or Reload)
         
         // Add Sonic Frontiers styled background animation
-        // addAnimatedBackground()
+        if (animatedBackgroundIsEnabled) {
+            enableAnimatedBackground()
+        }
         replacePermalinkIcon()
+        addFadeAnim()
         //addCssClasses()
 
         if (document.querySelectorAll('.md-nav__link.md-nav__link--index.md-nav__link--active').length >= 1) {
@@ -26,10 +31,9 @@ observer.observe(document, {
 
 /* --------- FUNCTIONS ----------- */
 
-function addAnimatedBackground() {
-    const particlesDiv = document.getElementById('tsparticles')
-    particlesDiv.childNodes[0].classList.add('tsparticles')
 
+function enableAnimatedBackground() {
+    animatedBackgroundIsEnabled = true
     const options = {
         fpsLimit: 60,
         particles: {
@@ -53,6 +57,9 @@ function addAnimatedBackground() {
     }
       
     tsParticles.load("tsparticles", options);
+    
+    const particlesDiv = document.getElementById('tsparticles')
+    particlesDiv.childNodes[0].classList.add('tsparticles')
 }
 
 function addCssClasses() {
