@@ -1,4 +1,18 @@
 /* GENERAL */
+
+.tsparticles {
+    filter: blur(12px)
+}
+
+body {
+    background-attachment: fixed;
+    background-image: var(--background-color);
+}
+
+.md-footer {
+    z-index: 1;
+}
+
 .md-typeset p {
     font-size: 16px;
 }

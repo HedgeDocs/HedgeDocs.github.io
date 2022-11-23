@@ -5,6 +5,7 @@
     --md-default-fg-color--lighter: #efefef;
     --md-default-fg-color--lightest: #505050;
     --md-default-bg-color: #000000;
+    --background-color: var(--md-default-bg-color);
     --md-primary-fg-color: #2f6ff8;
     --md-primary-fg-color--light: #75b6e7;
     --md-admonition-bg-color: #0f0f0f;
