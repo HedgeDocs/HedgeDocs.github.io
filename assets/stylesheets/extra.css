@@ -37,6 +37,10 @@ body {
     width: auto;
 }
 
+.md-typeset h1, .md-typeset h2 {
+    font-weight: bold;
+}
+
 /* TABS */
 
 .md-tabs__item {
@@ -80,7 +84,7 @@ a.md-tabs__link.md-tabs__link--active:after {
     display: block;
     content: '';
     border-bottom: 3px solid;
-    padding-bottom: 0.7em;
+    padding-bottom: 0.75em;
     transform: scaleX(1);
     transition: transform 250ms ease-in-out;
 }
