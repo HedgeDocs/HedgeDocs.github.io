@@ -57,7 +57,10 @@
 
 @media screen and (min-width: 60em) {
     [data-md-color-scheme='rangers'] .md-nav--secondary .md-nav__title {
-        background: transparent;
+        background: var(--rangers-header-color);
+        color: #f2f8f8;
+        padding-top: 5px;
+        padding-bottom: 5px;
         box-shadow: 0 0 0 0;
     }
 }
