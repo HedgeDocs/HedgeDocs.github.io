@@ -29,12 +29,18 @@
     --md-code-hl-variable-color: var(--md-default-fg-color--light);
     --rangers-background-color: #f0f3f5;
     --rangers-header-color: #3e7e9e;
-    --rangers-background: radial-gradient(farthest-corner at 25vw 15vh, #ced4d5 25%, #879295 100%)
+    --rangers-background: radial-gradient(farthest-corner at 25vw 25vh, #ced4d5 10%, #879295 100%);
 }
 
 [data-md-color-scheme='rangers'] .contributor {
     color: var(--md-footer-fg-color--light);
     word-break: break-word;
+}
+
+[data-md-color-scheme='rangers'] .md-typeset hr {
+    border-bottom: .05rem solid var(--md-default-fg-color--lighter);
+    display: flow-root;
+    margin: 1.5em 0;
 }
 
 [data-md-color-scheme='rangers'] a.contributor:hover {
@@ -47,11 +53,12 @@
 
 @media screen and (min-width: 76.25em) {
     [data-md-color-scheme='rangers'] .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
-        background: #56bff0;
+        background: var(--rangers-header-color);
         color: #f2f8f8;
         padding-top: 5px;
         padding-bottom: 5px;
         box-shadow: 0 0 0 0;
+        border-left: 0px;
     }
 }
 
