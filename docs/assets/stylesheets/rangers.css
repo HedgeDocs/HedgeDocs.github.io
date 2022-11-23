@@ -29,7 +29,7 @@
     --md-code-hl-variable-color: var(--md-default-fg-color--light);
     --rangers-background-color: #f0f3f5;
     --rangers-header-color: #3e7e9e;
-    --rangers-background: radial-gradient(farthest-corner at 25vw 15vh, #f0f3f5, #879295);
+    --rangers-background: radial-gradient(farthest-corner at 25vw 15vh, #ced4d5 25%, #879295 100%)
 }
 
 [data-md-color-scheme='rangers'] .contributor {
