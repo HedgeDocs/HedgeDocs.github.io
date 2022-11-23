@@ -33,7 +33,7 @@
 }
 
 [data-md-color-scheme='rangers'] .contributor {
-    color: var(--md-footer-fg-color--light);
+    color: var(--md-default-fg-color);
     word-break: break-word;
 }
 
@@ -124,8 +124,10 @@
 
 [data-md-color-scheme='rangers'] a.md-tabs__link.md-tabs__link--active {
     color: #56bff0;
-    font-size: 0.8rem;
-    line-height: 0.8rem;
+}
+
+[data-md-color-scheme='rangers'] a.md-nav__link.md-nav__link--passed.md-nav__link--active {
+    color: var(--md-primary-fg-color);
 }
 
 [data-md-color-scheme='rangers'] a.md-tabs__link.md-tabs__link--active:after {
