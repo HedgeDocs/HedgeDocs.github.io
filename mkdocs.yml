@@ -127,6 +127,9 @@ markdown_extensions:
   - tables
 extra_css:
   - assets/stylesheets/extra.css
+  - assets/stylesheets/amoled.css
+  - assets/stylesheets/dark.css
+  - assets/stylesheets/rangers.css
 extra_javascript:
   - assets/javascripts/custom.js
 plugins:
@@ -169,8 +172,7 @@ theme:
         icon: material/brightness-4
         name: Switch to AMOLED mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: blue
+      scheme: rangers
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode

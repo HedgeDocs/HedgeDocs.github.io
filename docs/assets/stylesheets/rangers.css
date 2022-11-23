@@ -1,0 +1,135 @@
+[data-md-color-scheme='rangers'] {
+    --md-hue: 232;
+    --md-default-fg-color: #333333;
+    --md-default-fg-color--light: #666666;
+    --md-default-fg-color--lighter: #999999;
+    --md-default-fg-color--lightest: #CCCCCC;
+    --md-default-bg-color: var(--rangers-background);
+    --md-primary-fg-color: #3e7f9f;
+    --md-primary-fg-color--light: #75b6e7;
+    --md-admonition-bg-color: #e9ebec;
+    --md-typeset-table-color: #303030;
+    --md-code-fg-color: #333333;
+    --md-code-bg-color: #e9ebec;
+    --md-typeset-color: var(--md-default-fg-color);
+    --md-typeset-a-color: #58c0f0;
+    --md-accent-fg-color: #00aedf;
+    --md-admonition-fg-color: var(--md-default-fg-color);
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-operator-color: var(--md-default-fg-color--light);
+    --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+    --md-code-hl-comment-color: var(--md-default-fg-color--light);
+    --md-code-hl-generic-color: var(--md-default-fg-color--light);
+    --md-code-hl-variable-color: var(--md-default-fg-color--light);
+    --rangers-background: #f0f3f5;
+}
+
+[data-md-color-scheme='rangers'] .md-search__form:hover {
+    background-color: hsla(0,0%,10%,.12);
+}
+
+@media screen and (max-width: 76.1875em) {
+    [data-md-color-scheme='rangers'] .md-nav--primary .md-nav__link {
+        margin-top: 0;
+        padding: .6rem .8rem;
+        font-weight: bold;
+        opacity: 75%;
+    }
+    
+    [data-md-color-scheme='rangers'] .md-nav--primary .md-nav__item--active>.md-nav__link {
+        color: var(--md-typeset-a-color);
+        border-left: 3px solid;
+        opacity: 100%;
+    }
+}
+
+
+[data-md-color-scheme='rangers'] .md-search__input {
+    color: var(--md-default-fg-color--lighter);
+    font-size: .8rem;
+}
+
+[data-md-color-scheme='rangers'] .md-tabs {
+    background-color: var(--rangers-background);
+    color: #889090;
+    font-weight: bold;
+}
+
+[data-md-color-scheme='rangers'] .md-nav--primary .md-nav__title[for=__drawer] {
+    background-color: var(--rangers-background);
+    color: #889090;
+    font-weight: bold;
+}
+[data-md-color-scheme='rangers'] .md-logo {
+    filter: invert(50%)
+}
+
+[data-md-color-scheme='rangers'] a.md-tabs__link.md-tabs__link--active {
+    color: #56bff0;
+}
+
+[data-md-color-scheme='rangers'] a.md-tabs__link.md-tabs__link--active:after {
+    color: #56bff0;
+}
+
+[data-md-color-scheme='rangers'] .md-tabs__item:hover {
+    background-color: #56bff0;
+    color: #d8f6f6;
+}
+
+[data-md-color-scheme='rangers'] .md-tabs__item.md-tabs__item--active:hover {
+    color: #d8f6f6;
+    background-color: #00000000 !important;
+}
+
+[data-md-color-scheme='rangers'] a.md-tabs__link.md-tabs__link--active:after {
+    border-bottom: 3px solid;
+    padding-bottom: 0.85em;
+}
+
+[data-md-color-scheme='rangers'] .md-tabs__link {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: block;
+    font-size: 0.7rem;
+    margin-top: 0.8rem;
+    opacity: 1;
+    outline-color: var(--md-accent-fg-color);
+    outline-offset: 0.2rem;
+    border-bottom: 0px transparent;
+    transition: transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1), opacity 0s, border-bottom 0.25s ease;
+}
+
+[data-md-color-scheme='rangers'] .md-tabs__link:after {
+    border-bottom: 0px #56bff0;
+    transform: scaleX(1);
+}
+
+[data-md-color-scheme='rangers'] .md-header {
+    background-color: var(--rangers-background);
+    color: #889090;
+    font-weight: bold;
+}
+
+[data-md-color-scheme='rangers'] .md-typeset .md-button {
+    border: 0px;
+    border-bottom: .15rem solid;
+    border-color: var(--md-primary-fg-color);
+    border-radius: 0rem;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    padding: .625em 2em;
+    transition: color 125ms,background-color 125ms,border-color 125ms;
+}
+
+[data-md-color-scheme='rangers'] .md-typeset .md-button:is(:focus,:hover) {
+    background-color: var(--md-primary-fg-color);
+    border-color: #56bff0;
+    color: var(--md-accent-bg-color);
+}
+[data-md-color-scheme='rangers'] .md-typeset .md-button:-webkit-any(:focus,:hover) {
+    background-color: var(--md-primary-fg-color);
+    border-color: #56bff0;
+    color: var(--md-accent-bg-color);
+}
