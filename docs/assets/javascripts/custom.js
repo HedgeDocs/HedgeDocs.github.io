@@ -11,7 +11,7 @@ var observer = new MutationObserver(function (mutations, observer) {
         // Add Sonic Frontiers styled background animation
         // addAnimatedBackground()
         replacePermalinkIcon()
-        addCssClasses()
+        //addCssClasses()
 
         if (document.querySelectorAll('.md-nav__link.md-nav__link--index.md-nav__link--active').length >= 1) {
             // page change was caused by a tab change
@@ -27,6 +27,9 @@ observer.observe(document, {
 /* --------- FUNCTIONS ----------- */
 
 function addAnimatedBackground() {
+    const particlesDiv = document.getElementById('tsparticles')
+    particlesDiv.childNodes[0].classList.add('tsparticles')
+
     const options = {
         fpsLimit: 60,
         particles: {
@@ -64,9 +67,6 @@ function addCssClasses() {
             link.parentElement.removeChild(link)
         }
     }
-
-    const particlesDiv = document.getElementById('tsparticles')
-    particlesDiv.childNodes[0].classList.add('tsparticles')
 }
 
 function replacePermalinkIcon() {
