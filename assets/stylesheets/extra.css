@@ -39,15 +39,29 @@ body {
 
 /* TABS */
 
+.md-tabs__item {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 3rem;
+}
+
+.md-tabs {
+    /* Might cause the tabs to disappear at certain scaling... */
+    margin-top: -.7em;
+}
+
 .md-tabs__link {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: block;
     font-size: 0.7rem;
-    margin-top: 0.8rem;
+    margin-top: 0.9rem;
     opacity: 0.7;
     outline-color: var(--md-accent-fg-color);
     outline-offset: 0.2rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    padding-top: .6rem;
     border-bottom: 0px transparent;
     transition: transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1), opacity 0.25s,
         border-bottom 0.25s ease;
@@ -65,8 +79,8 @@ a.md-tabs__link.md-tabs__link--active {
 a.md-tabs__link.md-tabs__link--active:after {
     display: block;
     content: '';
-    border-bottom: 2px solid;
-    padding-bottom: 0.9em;
+    border-bottom: 3px solid;
+    padding-bottom: 0.7em;
     transform: scaleX(1);
     transition: transform 250ms ease-in-out;
 }
