@@ -74,8 +74,8 @@ body {
     position: fixed;
     margin: auto;
     cursor: default !important;
-    max-width: 60% !important;
-    max-height: 60% !important;
+    max-width: 80% !important;
+    max-height: 80% !important;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -262,27 +262,27 @@ video {
 @keyframes scaleup {
     0% {
         opacity: 0% ;
-        transform: translate(-50%, -50%) scale(0) ;
+        transform: translate(-50%, -50%) scale(0);
     } 
     80% {
         opacity: 100%;
-        transform: translate(-50%, -50%) scale(1.025) ;
+        transform: translate(-50%, -50%) scale(1.015);
     }
     100% {
-        transform: translate(-50%, -50%) scale(1) ;
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
 @keyframes scaledown {
     0% {
         opacity: 100% ;
-        transform: translate(-50%, -50%) scale(1) ;
+        transform: translate(-50%, -50%) scale(1);
     }
     50% {
         opacity: 0%;
     }
     100% {
-        transform: translate(-50%, -50%) scale(0) ;
+        transform: translate(-50%, -50%) scale(0);
     }
 }
 
