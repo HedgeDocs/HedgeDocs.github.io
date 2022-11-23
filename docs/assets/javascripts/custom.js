@@ -3,12 +3,13 @@
 */
 
 /* --------- ON PAGE LOAD ----------- */
-
-
 MutationObserver = window.MutationObserver || window.WebKitMutationObserver
 var observer = new MutationObserver(function (mutations, observer) {
     if (mutations.find((elem) => elem.attributeName == 'data-md-scrollfix') != undefined) {
         // Mutation was caused by a page change (SPA or Reload)
+        
+        // Add Sonic Frontiers styled background animation
+        // addAnimatedBackground()
         replacePermalinkIcon()
         addCssClasses()
 
@@ -25,6 +26,32 @@ observer.observe(document, {
 
 /* --------- FUNCTIONS ----------- */
 
+function addAnimatedBackground() {
+    const options = {
+        fpsLimit: 60,
+        particles: {
+            number: {
+                value: 150
+            },
+            color: {
+                value: "#000"
+            },
+            links: {
+                enable: true,
+                distance: 250,
+                speed: 6,
+                color: "#000"
+            },
+            move: {
+                enable: true,
+                speed: 1
+            }
+        }
+    }
+      
+    tsParticles.load("tsparticles", options);
+}
+
 function addCssClasses() {
     // Add active class
     const links = document.querySelectorAll('.md-tabs__link--active')
@@ -37,6 +64,9 @@ function addCssClasses() {
             link.parentElement.removeChild(link)
         }
     }
+
+    const particlesDiv = document.getElementById('tsparticles')
+    particlesDiv.childNodes[0].classList.add('tsparticles')
 }
 
 function replacePermalinkIcon() {

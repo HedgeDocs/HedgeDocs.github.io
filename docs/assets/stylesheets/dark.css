@@ -4,6 +4,7 @@
     --md-default-fg-color--light: #e0e6e6;
     --md-default-fg-color--lighter: #e6e6e6;
     --md-default-bg-color: #151515;
+    --background-color: var(--md-default-bg-color);
     --md-primary-fg-color: #2162ec;
     --md-primary-fg-color--light: #75b6e7;
     --md-typeset-color: var(--md-default-fg-color);
