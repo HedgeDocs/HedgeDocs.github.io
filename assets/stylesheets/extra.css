@@ -83,7 +83,7 @@ a.md-tabs__link.md-tabs__link--active {
 a.md-tabs__link.md-tabs__link--active:after {
     display: block;
     content: '';
-    border-bottom: 3px solid;
+    border-bottom: 4px solid;
     padding-bottom: 0.75em;
     transform: scaleX(1);
     transition: transform 250ms ease-in-out;
