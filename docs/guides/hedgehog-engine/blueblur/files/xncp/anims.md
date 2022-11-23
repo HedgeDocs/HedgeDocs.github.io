@@ -1,12 +1,11 @@
 ---
 description: XNCP Animation guide for Sonic Generations, using 010 Editor
 ---
+# XNCP Animations
 !!! info
     This guide uses the following tools:
 
     - [010 Editor (with XNCP Template)](/tools/hedgehog-engine/blueblur/files/xncp){ target="_blank"}
-
-# XNCP Animations
 
 XNCP animations for a specific scene are listed in **AnimationDictionary**, which behaves the same way as the CastDictionary:
 

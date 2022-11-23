@@ -1,14 +1,13 @@
 ---
 description: Importing Collision tutorial for Sonic Generations
 ---
+# How to import custom collision in Sonic Generations
 !!! info
     This guide uses the following tools:
 
     - [Sonic GLvl](/tools/hedgehog-engine/blueblur/levels/#sonicglvl){ target="_blank"}
 	- [Blender](/tools/hedgehog-engine/blueblur/levels/#blender){ target="_blank"}
 	- [HedgeArcPack](/tools/hedgehog-engine/common/files/#hedgearcpack){ target="_blank"}
-
-# How to import custom collision in Sonic Generations
 
 #### Part 1 (Creating collision in Blender)
 You'll need model for the collision. If you want collision with different parameters (or tags), you'll need special ini file for HavokConverter with tags. You can download it [here](assets/importing-collision/HavokConverter.ini).

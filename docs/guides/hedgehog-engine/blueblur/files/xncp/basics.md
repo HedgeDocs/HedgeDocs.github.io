@@ -1,12 +1,13 @@
 ---
 description: XNCP Basics, using 010 Editor
 ---
+
+# The Basics of XNCP Editing
 !!! info
     This guide uses the following tools:
 
     - [010 Editor (with XNCP Template)](/tools/hedgehog-engine/blueblur/files/xncp){ target="_blank"}
 
-# The Basics of XNCP Editing
 **XNCP** is the file format of Sonic Generations's UI. In this guide, I'll explain the general things you need to get started.
 
 ## Requirements

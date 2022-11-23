@@ -1,15 +1,14 @@
 ---
 description: Importing Terrain tutorial for Sonic Generations
 ---
+# How To Import Custom Terrain in Sonic Generations
 !!! info
     This guide uses the following tools:
 
     - [Sonic GLvl](/tools/hedgehog-engine/blueblur/levels/#sonicglvl){ target="_blank"}
 	- [Blender](/tools/hedgehog-engine/blueblur/levels/#blender){ target="_blank"}
 	- [HedgeArcPack](/tools/hedgehog-engine/common/files/#hedgearcpack){ target="_blank"}
-
-# How To Import Custom Terrain in Sonic Generations
-
+    
 #### Part 1 (Creating Terrain in Blender)
 First of all, you need terrain for your level. You can do the terrain yourself, or take already created terrain.
 If your level contains transparent materials you need to add a proper layer tag to it. For transparency, you have two available layers, and you should pick the one that's best suited for your use case in order to avoid issues.
