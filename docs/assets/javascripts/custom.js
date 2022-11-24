@@ -66,7 +66,11 @@ function imageClicked(event) {
     const imageDiv = document.querySelector('.imagePreview-image')
     imageDiv.style.display = 'block'
     imageDiv.style.animation = 'scaleup 0.25s'
-    imageDiv.src = image.src
+    const imageElem = document.querySelector('.imagePreview-image-element')
+    imageElem.src = image.src
+    imageElem.alt = image.alt
+    const imageCaption = document.querySelector('.imagePreview-image-caption')
+    imageCaption.href = image.src
 }
 
 function enableAnimatedBackground() {

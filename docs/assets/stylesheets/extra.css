@@ -56,7 +56,7 @@ body {
     z-index: 9;
     transition: opacity 2s;
     animation: fadein 0.25s;
-    cursor: pointer;
+    cursor: default;
 }
 
 .imagePreview {
@@ -73,13 +73,27 @@ body {
     z-index: 9;
     position: fixed;
     margin: auto;
-    cursor: default !important;
-    max-width: 80% !important;
-    max-height: 80% !important;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: scaleup 0.275s;
+}
+
+.imagePreview-image-element {
+    cursor: default !important;
+}
+
+.imagePreview-image-caption {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: var(--md-default-fg-color--lighter) !important;
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+}
+
+.imagePreview-image-caption:hover {
+    color: var(--md-default-fg-color--lightest) !important;
 }
 
 /* TABS */
