@@ -78,6 +78,11 @@ body {
         --imagePreview-finalScale: 1.75;
         --imagePreview-finalScale-bounce: 1.765
     }
+
+    .imagePreview-image-caption {
+        font-size: 0.5rem !important;
+        line-height: 0.5rem !important;
+    }
 }
 
 .scaleup {
@@ -106,13 +111,13 @@ body {
     display: block;
     width: -moz-fit-content;
     width: fit-content;
-    color: var(--md-default-fg-color--lighter) !important;
+    color: #888888 !important;
     font-size: 0.6rem;
     line-height: 0.6rem;
 }
 
 .imagePreview-image-caption:hover {
-    color: var(--md-default-fg-color--lightest) !important;
+    color: #CCCCCC !important;
 }
 
 /* TABS */
