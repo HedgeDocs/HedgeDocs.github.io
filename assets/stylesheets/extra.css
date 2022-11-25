@@ -1,5 +1,10 @@
 /* GENERAL */
 
+:root {
+    --imagePreview-finalScale: 1.2;
+    --imagePreview-finalScale-bounce: 1.215
+}
+
 .tsparticles {
     filter: blur(12px)
 }
@@ -68,6 +73,21 @@ body {
     transition: opacity 0.25s;
 }
 
+@media screen and (max-width: 76.25em) {
+    :root {
+        --imagePreview-finalScale: 1.75;
+        --imagePreview-finalScale-bounce: 1.765
+    }
+}
+
+.scaleup {
+    animation: scaleup 0.25s;
+}
+
+.scaledown {
+    animation: scaledown 0.25s;
+}
+
 .imagePreview-image {
     display: none;
     z-index: 9;
@@ -75,8 +95,7 @@ body {
     margin: auto;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    animation: scaleup 0.275s;
+    transform: translate(-50%, -50%) scale(var(--imagePreview-finalScale));
 }
 
 .imagePreview-image-element {
@@ -280,17 +299,17 @@ video {
     } 
     80% {
         opacity: 100%;
-        transform: translate(-50%, -50%) scale(1.015);
+        transform: translate(-50%, -50%) scale(var(--imagePreview-finalScale-bounce));
     }
     100% {
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(var(--imagePreview-finalScale));
     }
 }
 
 @keyframes scaledown {
     0% {
         opacity: 100% ;
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(var(--imagePreview-finalScale));
     }
     50% {
         opacity: 0%;
