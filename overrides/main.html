@@ -14,17 +14,17 @@
 {% endif %}
   <meta property="og:image:width" content="512" />
   <meta property="og:image:height" content="512" />
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 {% endblock %}
 
 {% block content %}
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
   <div class="imagePreview">
     <div class="imagePreview-background"></div>
     <div class="imagePreview-image">
       <img class="imagePreview-image-element"></img>
       <a target="_blank" class="imagePreview-image-caption">Open original</a>
     </div>
-    <img class="imagePreview-exit"></img>
   </div>
   {{ super() }}
   <div id="tsparticles"></div>
