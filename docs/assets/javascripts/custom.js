@@ -40,7 +40,7 @@ function makeImagesClickable() {
 
     for(let i = 0; i < images.length; i++) {
         const image = images[i]
-        if (image.classList.contains('not-clickable')) continue
+        if (image.classList.contains('not-clickable') || image.parentElement.classList.contains('md-logo')) continue
         image.setAttribute('style', 'cursor: pointer')
         image.addEventListener('click', imageClicked)
     }
