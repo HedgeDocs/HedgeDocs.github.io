@@ -86,7 +86,7 @@ body {
 }
 
 .scaleup {
-    animation: scaleup 0.3s forwards;
+    animation: scaleup 0.25s forwards;
 }
 
 .scaledown {
