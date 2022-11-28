@@ -86,11 +86,11 @@ body {
 }
 
 .scaleup {
-    animation: scaleup 0.25s;
+    animation: scaleup 0.3s forwards;
 }
 
 .scaledown {
-    animation: scaledown 0.25s;
+    animation: scaledown 0.3s forwards;
 }
 
 .imagePreview-image {
@@ -100,7 +100,7 @@ body {
     margin: auto;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(var(--imagePreview-finalScale));
+    transform: translate(-50%, -50%) scale(0);
 }
 
 .imagePreview-image-element {
@@ -299,7 +299,7 @@ video {
 
 @keyframes scaleup {
     0% {
-        opacity: 0% ;
+        opacity: 0%;
         transform: translate(-50%, -50%) scale(0);
     } 
     80% {
@@ -307,6 +307,7 @@ video {
         transform: translate(-50%, -50%) scale(var(--imagePreview-finalScale-bounce));
     }
     100% {
+        opacity: 100%;
         transform: translate(-50%, -50%) scale(var(--imagePreview-finalScale));
     }
 }
@@ -316,10 +317,11 @@ video {
         opacity: 100% ;
         transform: translate(-50%, -50%) scale(var(--imagePreview-finalScale));
     }
-    50% {
+    80% {
         opacity: 0%;
     }
     100% {
+        opacity: 0%;
         transform: translate(-50%, -50%) scale(0);
     }
 }
