@@ -86,7 +86,7 @@ body {
 }
 
 .scaleup {
-    animation: scaleup 0.25s forwards;
+    animation: scaleup 0.2s forwards;
 }
 
 .scaledown {
@@ -172,7 +172,7 @@ a.md-tabs__link.md-tabs__link--active:after {
     display: block;
     content: '';
     border-bottom: 2px solid;
-    padding-bottom: 0.9em;
+    padding-bottom: 0.7em;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
