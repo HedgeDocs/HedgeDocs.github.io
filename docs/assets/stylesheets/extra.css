@@ -120,7 +120,88 @@ body {
     color: #CCCCCC !important;
 }
 
+/* CARDS AND HOMEPAGE */
+
+.card {
+    display: grid;
+    border-radius: 5px;
+    background-color: var(--md-code-bg-color);
+    padding: 30px;
+}
+
+.card-header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card-description {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: justify;
+}
+
+.card-button {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+@media screen and (max-width: 76.25em) {
+    .card-header {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .card-description {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .card-button {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .homepage-link {
+        width: 100% !important;
+        margin-bottom: .5em;
+        margin-top: .5em;
+        margin-left: 0em !important;
+        margin-right: 0em !important;
+    }
+
+    .homepage-buttons {
+        display: block !important;
+    }
+}
+
 /* TABS */
+
+.homepage-link {
+    width: 100% !important;
+    margin-left: .5em;
+    margin-right: .5em
+}
+
+.homepage-buttons {
+    display: flex;
+}
 
 .md-tabs__item {
     padding-left: 0rem;
