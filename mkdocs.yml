@@ -27,6 +27,7 @@ nav:
       - Sonic Frontiers:
         - File Formats: 
           - RFL: tools/hedgehog-engine/rangers/files/rfl.md
+          - CEMT: tools/hedgehog-engine/rangers/files/cemt.md
         - Models: tools/hedgehog-engine/rangers/models.md
     - Renderware:
       - Common: 
