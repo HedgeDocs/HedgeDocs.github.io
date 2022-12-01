@@ -1,8 +1,7 @@
-
-
-
-
-
+---
+description: Material tools for Sonic Frontiers
+---
+# Material Tools
 
 ## HedgeEdit
 Editor tool, is used to edit material for frontiers.
