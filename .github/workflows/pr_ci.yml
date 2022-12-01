@@ -1,6 +1,6 @@
-name: ci 
+name: pr_ci 
 on:
-  push:
+  pull_request:
     branches: 
       - main
 
@@ -21,4 +21,4 @@ jobs:
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: pip install lxml
       - run: pip install git+https://github.com/PTKickass/mkdocs-git-committers-plugin-2
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs build -s -v
