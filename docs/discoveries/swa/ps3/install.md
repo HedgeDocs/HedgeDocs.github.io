@@ -15,7 +15,7 @@ USRDIR
 │   ├── install_005.dds
 │   ├── install_006.dds
 │   ├── install_007.dds
-│   ├── install_008.dds
+│   └── install_008.dds
 ├── Install.ar.00
 ├── Install.arl
 ├── install.files.xml
