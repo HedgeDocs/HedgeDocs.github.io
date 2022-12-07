@@ -34,6 +34,41 @@ d             | Cyber Space
 f             | Fishing (always w1)
 h             | Hacking (always w1)
 
+### Stages (Cyberspace)
+
+Stage Name | Level ID
+---------- | -----------
+1-1        | w6d01
+1-2        | w8d01
+1-3        | w9d04
+1-4        | w6d02
+1-5        | w7d04
+1-6        | w6d06
+1-7        | w9d06
+2-1        | w6d05
+2-2        | w8d03
+2-3        | w7d02
+2-4        | w7d06
+2-5        | w8d04
+2-6        | w6d03
+2-7        | w8d05
+3-1        | w6d04
+3-2        | w6d08
+3-3        | w8d02
+3-4        | w6d09
+3-5        | w6d07
+3-6        | w8d06
+3-7        | w7d03
+4-1        | w7d08
+4-2        | w9d02
+4-3        | w7d01
+4-4        | w9d03
+4-5        | w6d10
+4-6        | w7d07
+4-7        | w9d05
+4-8        | w7d05
+4-9        | w9d07
+
 ## Oddities
 Due to Ouranos and Rhea actually being part of Kronos, their map files are stored in w1:
 
