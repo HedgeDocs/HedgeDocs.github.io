@@ -6,7 +6,7 @@ description: Importing Terrain tutorial for Sonic Generations
     This guide uses the following tools:
 
     - [Sonic GLvl](/tools/hedgehog-engine/blueblur/levels/#sonicglvl){ target="_blank"}
-	- [Blender](/tools/hedgehog-engine/blueblur/levels/#blender){ target="_blank"}
+	- [Blender](https://blender.org){ target="_blank"}
 	- [HedgeArcPack](/tools/hedgehog-engine/common/files/#hedgearcpack){ target="_blank"}
     
 #### Part 1 (Creating Terrain in Blender)
