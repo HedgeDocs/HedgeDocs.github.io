@@ -1607,14 +1607,14 @@
       
         <li class="md-nav__item">
   <a href="#part-1-creating-collision-in-blender" class="md-nav__link">
-    Part 1 (Creating collision in Blender)
+    Part 1 (Creating Collision in Blender)
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#part-2-importing-your-custom-collision-in-the-game" class="md-nav__link">
-    Part 2 (Importing your custom collision in the game)
+    Part 2 (Importing Your Custom Collision in the Game)
   </a>
   
 </li>
@@ -2786,14 +2786,14 @@
       
         <li class="md-nav__item">
   <a href="#part-1-creating-collision-in-blender" class="md-nav__link">
-    Part 1 (Creating collision in Blender)
+    Part 1 (Creating Collision in Blender)
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#part-2-importing-your-custom-collision-in-the-game" class="md-nav__link">
-    Part 2 (Importing your custom collision in the game)
+    Part 2 (Importing Your Custom Collision in the Game)
   </a>
   
 </li>
@@ -2826,43 +2826,52 @@
   </a>
 
 
-<h1 id="how-to-import-custom-collision-in-sonic-generations">How to import custom collision in Sonic Generations<a class="headerlink" href="#how-to-import-custom-collision-in-sonic-generations" title="Permanent link">&para;</a></h1>
+<h1 id="how-to-import-custom-collision-in-sonic-generations">How To Import Custom Collision in Sonic Generations<a class="headerlink" href="#how-to-import-custom-collision-in-sonic-generations" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>This guide uses the following tools:</p>
 <ul>
 <li><a href="/tools/hedgehog-engine/blueblur/levels/#sonicglvl" target="_blank">Sonic GLvl</a></li>
-<li><a href="/tools/hedgehog-engine/blueblur/levels/#blender" target="_blank">Blender</a></li>
+<li><a href="https://blender.org" target="_blank">Blender</a></li>
 <li><a href="/tools/hedgehog-engine/common/files/#hedgearcpack" target="_blank">HedgeArcPack</a></li>
 </ul>
 </div>
-<h4 id="part-1-creating-collision-in-blender">Part 1 (Creating collision in Blender)<a class="headerlink" href="#part-1-creating-collision-in-blender" title="Permanent link">&para;</a></h4>
+<h4 id="part-1-creating-collision-in-blender">Part 1 (Creating Collision in Blender)<a class="headerlink" href="#part-1-creating-collision-in-blender" title="Permanent link">&para;</a></h4>
 <p>You'll need model for the collision. If you want collision with different parameters (or tags), you'll need special ini file for HavokConverter with tags. You can download it <a href="../assets/importing-collision/HavokConverter.ini">here</a>.
 Let me show you how to apply tags in your collision: </p>
 <p>First, you need to find mesh on which you want to apply tags. </p>
-<p>Second, you need to add the tag in the end of the name. (for example: level_stone<code style="color: red;">@STONE</code>). </p>
-<p><img alt="Tag Example" src="../assets/importing-collision/tag_example.png" /></p>
-<p>You can find other tags in HavokConverter if you drop this ini file in <code style="color: green;">"libgens-sonicglvl-master/bin"</code>.</p>
-<h4 id="part-2-importing-your-custom-collision-in-the-game">Part 2 (Importing your custom collision in the game)<a class="headerlink" href="#part-2-importing-your-custom-collision-in-the-game" title="Permanent link">&para;</a></h4>
-<p>Open "libgens-sonicglvl-master/bin" folder and drop special ini file in it. Open "HavokConverter.exe" and fill:</p>
-<p>"Source 3D model files"</p>
-<p>"Output file" (add phy.hkx in the end of the name)</p>
-<p><img alt="Havok converter settings" src="../assets/importing-collision/havok_converter_window.png" /></p>
-<p>Next, you'll need to unpack original level's file which is located in the root of .cpk file (for example: <code style="color: green;">#ghz200.ar.00</code>). Unpack it with HedgeArcPack, and drop your collision file. Open <code style="color: green;">"Terrain.stg.xml"</code>, find RigidBodyContainer, and paste here your collision's name without the extension and save it.</p>
+<p>Second, you need to add the tag in the end of the name. (for example: level_stone<code>@STONE</code>). </p>
+<div class="admonition info">
+<p class="admonition-title">Example</p>
+<p><img alt="Tag example" src="../assets/importing-collision/tag_example.png" /></p>
+</div>
+<p>You can find other tags in <code>HavokConverter</code> if you drop this ini file in <code>"libgens-sonicglvl-master/bin"</code>.</p>
+<h4 id="part-2-importing-your-custom-collision-in-the-game">Part 2 (Importing Your Custom Collision in the Game)<a class="headerlink" href="#part-2-importing-your-custom-collision-in-the-game" title="Permanent link">&para;</a></h4>
+<p>Open <code>libgens-sonicglvl-master/bin</code> folder and drop special ini file in it. Open <code>HavokConverter.exe</code> and fill:</p>
+<ul>
+<li>Source 3D model files - Your collision model files</li>
+<li>Output file - Directory which will contain the converted collision (add phy.hkx in the end of the name)</li>
+</ul>
+<p><img alt="Havok Converter Settings" src="../assets/importing-collision/havok_converter_window.png" /></p>
+<p>Now you can click <code>Convert</code> button and wait. </p>
+<p>Next, you'll need to unpack original level's file which is located in the root of .cpk file (for example: <code>#ghz200.ar.00</code>). Unpack it with <code>HedgeArcPack</code>, and drop your collision file. Open <code>Terrain.stg.xml</code>, find <code>RigidBodyContainer</code>, and paste here your collision's name without the extension and save it. You can also enable <code>Collision Render</code> to see your collision in-game. </p>
 <p><img alt="Rigid Body Container" src="../assets/importing-collision/rigid_body_container.png" /></p>
-<p>By the way, you can turn on <code style="color: green;">Collision Render</code> to see your collision in-game.</p>
-<p>Pack this archive using HedgeArcPack and drop it in your mod's folder.</p>
-<p>Root folder: </p>
+<p>Pack this archive using <code>HedgeArcPack</code> and drop it in your mod's folder.</p>
+<details class="info" open="open">
+<summary>Root folder</summary>
 <p><img alt="Root folder" src="../assets/importing-collision/mod_folder_root.png" /></p>
-<p>"disk" folder: </p>
+</details>
+<details class="info" open="open">
+<summary>"disk" folder</summary>
 <p><img alt="Disk folder" src="../assets/importing-collision/mod_folder_disk.png" /></p>
+</details>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-11-23T23:49:07+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-11-23</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-12-08T20:19:20+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-12-08</span>
       
     
   </small>
