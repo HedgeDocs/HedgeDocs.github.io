@@ -32,11 +32,9 @@ Open `libgens-sonicglvl-master/bin` folder and drop special ini file in it. Open
 
 Now you can click `Convert` button and wait. 
 
-Next, you'll need to unpack original level's file which is located in the root of .cpk file (for example: <code style="color: green;">#ghz200.ar.00</code>). Unpack it with `HedgeArcPack`, and drop your collision file. Open <code style="color: green;">"Terrain.stg.xml"</code>, find `RigidBodyContainer`, and paste here your collision's name without the extension and save it.
+Next, you'll need to unpack original level's file which is located in the root of .cpk file (for example: `#ghz200.ar.00`). Unpack it with `HedgeArcPack`, and drop your collision file. Open `Terrain.stg.xml`, find `RigidBodyContainer`, and paste here your collision's name without the extension and save it. You can also enable `Collision Render` to see your collision in-game. 
 
 ![Rigid Body Container](assets/importing-collision/rigid_body_container.png)
-
-By the way, you can turn on Collision Render to see your collision in-game.
 
 Pack this archive using `HedgeArcPack` and drop it in your mod's folder.
 
