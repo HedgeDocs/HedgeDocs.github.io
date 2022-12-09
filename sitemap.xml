@@ -116,6 +116,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hedgedocs.com/guides/hedgehog-engine/rangers/materials/advanced-mats/</loc>
+         <lastmod>2022-12-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hedgedocs.com/guides/others/marathon/levels/glvl/</loc>
          <lastmod>2022-12-09</lastmod>
          <changefreq>daily</changefreq>
@@ -157,6 +162,11 @@
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/common/files/</loc>
+         <lastmod>2022-12-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.com/tools/hedgehog-engine/common/levels/</loc>
          <lastmod>2022-12-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
