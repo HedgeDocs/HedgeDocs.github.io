@@ -60,6 +60,8 @@ nav:
           - Replacing Audio: guides/hedgehog-engine/rangers/audio/replacing.md
         - Animation:
           - Importing & Exporting: guides/hedgehog-engine/rangers/animation/import-export.md
+        - Materials:
+          - Advanced Material Editing Tutorial: guides/hedgehog-engine/rangers/materials/advanced-mats.md
     - Other Engines:
       - Sonic The Hedgehog (2006):
         - Level Editing:
