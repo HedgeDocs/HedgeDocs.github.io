@@ -16,6 +16,7 @@ nav:
         - Lighting/GI: tools/hedgehog-engine/common/lighting.md
         - Models: tools/hedgehog-engine/common/models.md
         - Text: tools/hedgehog-engine/common/text.md
+        - Level Editing: tools/hedgehog-engine/common/levels.md
       - Sonic Generations:
         - File Formats: 
           - XNCP: tools/hedgehog-engine/blueblur/files/xncp.md
