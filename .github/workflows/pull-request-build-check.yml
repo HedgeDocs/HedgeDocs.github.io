@@ -5,7 +5,7 @@ on:
       - main
 
 env:
-  ENABLE_GIT_PLUGINS: True
+  ENABLE_GIT_PLUGINS: False
 
 jobs:
   deploy:
