@@ -18,7 +18,7 @@ First, download the required tools and extract them. Open Blender and go to `Edi
 Locate the pac file that contains the animations you want to change. For this example, we'll use `sonic.pac`. First, make sure you create a copy of `sonic.pac` in a folder somewhere so you don't accidentally replace your game files. Drag and drop `sonic.pac` onto HedgeArcPack.exe to extract the file into a folder called sonic.
 
 ### Conversion
-Open sonic.pac and find the animation you want to change. These animation files have the extension `.anm.pxd`. For this example I shall use `chr_sonic@boost_loop.anm.pxd`. Drag and drop the `.anm.pxd` file onto FrontiersAnimDecompress.exe. This will create a new file called `chr_sonic@boost_loop.anm.pxd.outanim`.
+Open the `sonic` folder and find the animation you want to change. These animation files have the extension `.anm.pxd`. For this example I shall use `chr_sonic@boost_loop.anm.pxd`. Drag and drop the `.anm.pxd` file onto FrontiersAnimDecompress.exe. This will create a new file called `chr_sonic@boost_loop.anm.pxd.outanim`.
 
 ### Importing the Animation
 Open Blender again, and go to `File`, `Import`, then select `Hedgehog Engine (.model)` and browse for your model file.

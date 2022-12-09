@@ -1,5 +1,5 @@
 ---
-description: AMN.PXD Tools for Sonic Frontiers
+description: ANM.PXD Tools for Sonic Frontiers
 ---
 # ANM.PXD Tools
 
