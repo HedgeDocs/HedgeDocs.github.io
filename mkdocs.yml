@@ -27,6 +27,7 @@ nav:
       - Sonic Frontiers:
         - File Formats: 
           - RFL: tools/hedgehog-engine/rangers/files/rfl.md
+          - ANM.PXD: tools/hedgehog-engine/rangers/files/anmpxd.md
         - Models: tools/hedgehog-engine/rangers/models.md
     - Renderware:
       - Common: 
