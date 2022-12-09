@@ -7,8 +7,8 @@ This guide will assume you have at least some understanding of animating in Blen
 !!! info
     This guide uses the following tools:
 
-    - [HedgeArcPack](/tools/general/files){ target="_blank"}
-    - [FrontiersAnimDecompress](https://github.com/WistfulHopes/FrontiersAnimDecompress/archive/refs/heads/master.zip){ target="_blank"}
+    - [HedgeArcPack](/tools/hedgehog-engine/common/files/#hedgearcpack){ target="_blank"}
+    - [FrontiersAnimDecompress](/tools/hedgehog-engine/rangers/files/#anmpxd){ target="_blank"}
     - [Blender](https://www.blender.org/download/){ target="_blank"}
 
 ### Setting Up
