@@ -58,6 +58,8 @@ nav:
           - Replacing Cyloop Color: guides/hedgehog-engine/rangers/cyloop/color.md
         - Audio:
           - Replacing Audio: guides/hedgehog-engine/rangers/audio/replacing.md
+        - Animation:
+          - Importing & Exporting: guides/hedgehog-engine/rangers/animation/import-export.md
     - Other Engines:
       - Sonic The Hedgehog (2006):
         - Level Editing:
