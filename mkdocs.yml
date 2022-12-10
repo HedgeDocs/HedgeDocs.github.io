@@ -16,6 +16,7 @@ nav:
         - Lighting/GI: tools/hedgehog-engine/common/lighting.md
         - Models: tools/hedgehog-engine/common/models.md
         - Text: tools/hedgehog-engine/common/text.md
+        - Level Editing: tools/hedgehog-engine/common/levels.md
       - Sonic Generations:
         - File Formats: 
           - XNCP: tools/hedgehog-engine/blueblur/files/xncp.md
@@ -61,6 +62,8 @@ nav:
           - Replacing Audio: guides/hedgehog-engine/rangers/audio/replacing.md
         - Animation:
           - Importing & Exporting: guides/hedgehog-engine/rangers/animation/import-export.md
+        - Materials:
+          - Advanced Material Editing Tutorial: guides/hedgehog-engine/rangers/materials/advanced-mats.md
     - Other Engines:
       - Sonic The Hedgehog (2006):
         - Level Editing:
