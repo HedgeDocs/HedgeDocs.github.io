@@ -3027,31 +3027,31 @@
 <p>This guide uses the following tools:</p>
 <ul>
 <li><a href="/tools/hedgehog-engine/common/files/#hedgearcpack" target="_blank">HedgeArcPack</a></li>
-<li><a href="/tools/hedgehog-engine/rangers/files/#anmpxd" target="_blank">FrontiersAnimDecompress</a></li>
+<li><a href="/tools/hedgehog-engine/rangers/files/anmpxd" target="_blank">FrontiersAnimDecompress</a></li>
 <li><a href="https://www.blender.org/download/" target="_blank">Blender</a></li>
 </ul>
 </div>
 <h3 id="setting-up">Setting Up<a class="headerlink" href="#setting-up" title="Permanent link">&para;</a></h3>
-<p>First, download the required tools and extract them. Open Blender and go to <code>Edit</code>, then <code>Preferences</code>. Click on <code>Add-ons</code>, and then <code>Install...</code>. Browse to the FrontiersAnimDecompress folder, and install each of the 4 plugins in this directory, then minimise Blender.</p>
+<p>First, download the required tools and extract them. Open Blender and go to <code>Edit &gt; Preferences</code>. Click on <code>Add-ons</code>, and then <code>Install...</code>. Browse to the FrontiersAnimDecompress folder, and install each of the 4 plugins in this directory, then minimise Blender.</p>
 <h3 id="extracting-the-animation-files">Extracting the Animation Files<a class="headerlink" href="#extracting-the-animation-files" title="Permanent link">&para;</a></h3>
-<p>Locate the pac file that contains the animations you want to change. For this example, we'll use <code>sonic.pac</code>. First, make sure you create a copy of <code>sonic.pac</code> in a folder somewhere so you don't accidentally replace your game files. Drag and drop <code>sonic.pac</code> onto HedgeArcPack.exe to extract the file into a folder called sonic.</p>
+<p>Locate the pac file that contains the animations you want to change. For sonic's animations, look for <code>raw\character\sonic.pac</code>. First, make sure you create a copy of the pac file of your choice in a folder somewhere so you don't accidentally replace your game files. Drag and drop the pac file onto HedgeArcPack.exe to extract the file into a folder.</p>
 <h3 id="conversion">Conversion<a class="headerlink" href="#conversion" title="Permanent link">&para;</a></h3>
-<p>Open the <code>sonic</code> folder and find the animation you want to change. These animation files have the extension <code>.anm.pxd</code>. For this example I shall use <code>chr_sonic@boost_loop.anm.pxd</code>. Drag and drop the <code>.anm.pxd</code> file onto FrontiersAnimDecompress.exe. This will create a new file called <code>chr_sonic@boost_loop.anm.pxd.outanim</code>.</p>
+<p>Open the newly created folder and find the animation you want to change. These animation files have the extension <code>.anm.pxd</code>. Drag and drop the <code>.anm.pxd</code> file onto FrontiersAnimDecompress.exe. This will create a new file with the extension <code>.anm.pxd.outanim</code>.</p>
 <h3 id="importing-the-animation">Importing the Animation<a class="headerlink" href="#importing-the-animation" title="Permanent link">&para;</a></h3>
-<p>Open Blender again, and go to <code>File</code>, <code>Import</code>, then select <code>Hedgehog Engine (.model)</code> and browse for your model file.</p>
+<p>Open Blender again, and go to <code>File &gt; Import</code>, then select <code>Hedgehog Engine (.model)</code> and browse for your model file.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>If you don't have a model file, first watch the <a href="https://www.youtube.com/watch?v=B_-YJ2I1_M4" target="_blank">Model Import Tutorial</a></p>
+<p>If you don't know how to get your model, first watch the <a href="https://www.youtube.com/watch?v=B_-YJ2I1_M4" target="_blank">Model Import Tutorial</a></p>
 </div>
-<p>After importing, select the Armature and go to <code>File</code>, <code>Import</code>, and this time select <code>Hedgehog Engine Compressed (.outanim)</code>, and browse for your <code>.outanim</code> file we created in the previous step. You should now see the animation within Blender!</p>
+<p>After importing, select the Armature and go to <code>File &gt; Import</code>, and this time select <code>Hedgehog Engine Compressed (.outanim)</code>, and browse for your <code>.outanim</code> file we created in the previous step. You should now see the animation within Blender!</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>If you don't know how to edit the animation, please look for a Blender tutorial to learn the basics in order to continue. The animation process is not specific to Sonic Frontiers.</p>
 </div>
 <h3 id="exporting-the-animation">Exporting the Animation<a class="headerlink" href="#exporting-the-animation" title="Permanent link">&para;</a></h3>
-<p>When you have finished making your changes to the animation, go to <code>File</code>, <code>Export</code> and select <code>Hedgehog Engine Compressed (.outanim)</code>, then browse for somewhere to save your file. You may overwrite the <code>.outanim</code> file you imported if you like. You may close Blender now. </p>
-<h2 id="finishing-up">Finishing Up<a class="headerlink" href="#finishing-up" title="Permanent link">&para;</a></h2>
-<p>Drag and drop the newly exported <code>.outanim</code> onto FrontiersAnimDecompress.exe to create a new <code>.anm.pxd</code> containing your animation. Rename this file to be exactly the same as the original file you decompressed, in my example this was <code>chr_sonic@boost_loop.anm.pxd</code>. If you haven't already, place it back in it's pac folder, in my case this was <code>sonic</code>, and replace the existing file. </p>
+<p>When you have finished making your changes to the animation, go to <code>File &gt; Export</code> and select <code>Hedgehog Engine Compressed (.outanim)</code>, then browse for somewhere to save your file. You may overwrite the <code>.outanim</code> file you imported if you like. You may close Blender now. </p>
+<h3 id="finishing-up">Finishing Up<a class="headerlink" href="#finishing-up" title="Permanent link">&para;</a></h3>
+<p>Drag and drop the newly exported <code>.outanim</code> onto FrontiersAnimDecompress.exe to create a new <code>.anm.pxd</code> containing your animation. Rename this file to be exactly the same as the original file you decompressed. If you haven't already, place it back in it's pac folder, and replace the existing file. </p>
 <p>Now drag the pac folder onto HedgeArcPack.exe to repack the file, which you can then use in your mod!</p>
 
   <hr>
@@ -3059,7 +3059,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-12-09T23:13:59+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-12-09</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-12-11T16:32:05+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-12-11</span>
       
     
   </small>
