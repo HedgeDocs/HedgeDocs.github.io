@@ -731,9 +731,9 @@ Send a message to the specified GameObject.
 
 #### Return Value
 
-### 🗒️ SetPlayerAbilityEnabled(string, boolean) : unknown
+### 🗒️ SetPlayerAbilityEnabled(string, boolean)
 #### Description
-Toggles whether or not the specified ability can be used by the player.
+Toggles whether the specified ability can be used by the player.
 
 #### Parameters
 - (^^**string**^^, boolean): Ability name
@@ -751,6 +751,7 @@ Jump          | Toggles the ability to jump.
 Lockon        | Toggles the ability to lock onto enemies.
 Parry         | Toggles the ability to parry.
 WallAction    | Toggles the ability to climb walls.
+
 ---
 
 - (string, ^^**boolean**^^): Value
