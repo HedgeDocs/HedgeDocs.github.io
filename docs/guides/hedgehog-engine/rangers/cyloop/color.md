@@ -6,7 +6,7 @@ description: Cyloop color replacement guide for Sonic Frontiers
 !!! info
     This guide uses the following tools:
 
-    - [HedgeArcPack](/tools/general/files){ target="_blank"}
+    - [HedgeArcPack](/tools/hedgehog-engine/common/files/#hedgearcpack){ target="_blank"}
     - [010 Editor (with RFL templates)](/tools/hedgehog-engine/rangers/files/rfl){ target="_blank"}
 
 ### Getting the File
