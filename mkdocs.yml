@@ -41,6 +41,8 @@ nav:
       - Sonic The Hedgehog (2006):
         - File Formats: tools/others/marathon/files.md
         - Level Editing: tools/others/marathon/levels.md
+      - 'Sonic Colors: Ultimate':
+        - File Formats: tools/others/rainbow/files.md
   - Guides:
     - guides/index.md
     - Hedgehog Engine:
