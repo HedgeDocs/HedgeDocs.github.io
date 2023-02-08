@@ -6,7 +6,7 @@ description: Sonic GLvl tutorial for Sonic '06
     This guide uses the following tools:
 
     - [Sonic GLvl](/tools/hedgehog-engine/blueblur/levels/){ target="_blank"}
-    - [Sonic '06 Stage Editing Archive](/tools/others/marathon/levels/){ target="_blank" }
+    - [Sonic '06 Stage Editing Archive](/tools/nn/marathon/levels/){ target="_blank" }
     - Sonic '06 GLvl Converter (included with Sonic '06 Stage Editing Archive)
 
 !!! note

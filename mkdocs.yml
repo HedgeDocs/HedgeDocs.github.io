@@ -30,6 +30,10 @@ nav:
           - RFL: tools/hedgehog-engine/rangers/files/rfl.md
           - ANM.PXD: tools/hedgehog-engine/rangers/files/anmpxd.md
         - Models: tools/hedgehog-engine/rangers/models.md
+    - Sega NN:
+        - Sonic The Hedgehog (2006):
+          - File Formats: tools/nn/marathon/files.md
+          - Level Editing: tools/nn/marathon/levels.md
     - Renderware:
       - Common: 
         - File Formats:
@@ -40,9 +44,6 @@ nav:
         - File Formats: 
           - XNCP: tools/others/sonic2010/files/xncp.md
         - Level Editing: tools/others/sonic2010/levels.md
-      - Sonic The Hedgehog (2006):
-        - File Formats: tools/others/marathon/files.md
-        - Level Editing: tools/others/marathon/levels.md
       - 'Sonic Colors: Ultimate':
         - File Formats: tools/others/rainbow/files.md
   - Guides:
@@ -66,10 +67,10 @@ nav:
           - Importing & Exporting: guides/hedgehog-engine/rangers/animation/import-export.md
         - Materials:
           - Advanced Material Editing Tutorial: guides/hedgehog-engine/rangers/materials/advanced-mats.md
-    - Other Engines:
+    - Sega NN:
       - Sonic The Hedgehog (2006):
         - Level Editing:
-          - Sonic GLvl: guides/others/marathon/levels/glvl.md
+          - Sonic GLvl: guides/nn/marathon/levels/glvl.md
   - Documentation:
     - docs/index.md
     - Hedgehog Engine:
