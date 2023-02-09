@@ -1,7 +1,8 @@
 ---
-description: Sega NN Texture List Chunks
+description: Sega NN TEXLIST Data Chunk Format Specification
 ---
-# Texture Lists
+
+# TEXLIST
 
 ## NNS_TEXFILELIST
 

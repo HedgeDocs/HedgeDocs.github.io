@@ -1,8 +1,9 @@
 ---
-description: Sega NN Chunk Format
+description: Sega NN Chunk Format Specification
 ---
 
 # NN Chunk Format
+
 !!! warning
     This page is still a work in progress! Any additions and updates are greatly appreciated!
 
