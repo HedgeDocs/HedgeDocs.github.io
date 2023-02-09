@@ -87,6 +87,11 @@ nav:
           - Level ID Map: docs/hedgehog-engine/rangers/levels/ids.md
         - Scripts:
           - Functions: docs/hedgehog-engine/rangers/scripts/funcs.md
+    - Sega NN:
+      - Common:
+        - NN Chunk Format:
+          - docs/nn/common/chunk-format/index.md
+          - TEXLIST: docs/nn/common/chunk-format/texlist.md
   - Discoveries:
     - discoveries/index.md
     - Sonic Unleashed:
