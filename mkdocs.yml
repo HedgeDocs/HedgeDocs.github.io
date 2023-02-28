@@ -73,6 +73,8 @@ nav:
           - Sonic GLvl: guides/nn/marathon/levels/glvl.md
   - Documentation:
     - docs/index.md
+    - Various Engines:
+      - HSON Format: docs/general/hson.md
     - Hedgehog Engine:
       - Sonic Frontiers:
         - Enemies:
