@@ -34,6 +34,20 @@ top-level of your HSON file(s), before the HSON file format [version parameter](
 
 If writing tooling that generates HSON, consider having your tooling write this line to generated files.
 
+## Implementations
+
+As of the time of writing, the following known implementations exist:
+
+### C&#35 {#csharp}
+
+- **[libHSON](https://github.com/hedge-dev/libHSON-csharp):**
+    The official C# implementation of HSON. Allows for simple, efficient, feature-complete, two-way serialization of HSON data.
+
+### C++ {#cpp}
+
+- **[HedgeLib](https://github.com/Radfordhound/HedgeLib):**
+    Radfordhound's open-source library and collection of tools that aims to makes modding games in the Sonic the Hedgehog franchise easier. It contains a feature-complete two-way HSON implementation, which is used in its level-editing tooling.
+
 ## Example
 
 The following is an example file in the HSON Format, which represents a "project" called "Sample Project"
