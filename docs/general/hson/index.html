@@ -1,0 +1,4325 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="HSON Format Specification">
+      
+      
+      
+        <link rel="canonical" href="https://hedgedocs.com/docs/general/hson/">
+      
+      
+        <link rel="prev" href="../../">
+      
+      
+        <link rel="next" href="../../hedgehog-engine/rangers/enemies/guardians/names/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
+    
+    
+      
+        <title>HSON Format - HedgeDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.113286f1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/timeago.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/amoled.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/dark.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/rangers.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <meta property="og:title" content="HSON Format - HedgeDocs" />
+  <meta property="og:type" content="webpage" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://hedgedocs.com/docs/general/hson/" />
+  <meta property="og:image" content="https://hedgedocs.com/assets/images/favicon.png" />
+  <meta property="og:image:type" content="image/png" />
+
+  <meta property="og:description" content="HSON Format Specification">
+
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hson-format" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="HedgeDocs" class="md-header__button md-logo" aria-label="HedgeDocs" data-md-component="logo">
+      
+  <img src="../../../assets/images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HedgeDocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              HSON Format
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to AMOLED mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to AMOLED mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="rangers" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="amoled" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/hedgedocs/hedgedocs.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../tools/" class="md-tabs__link">
+        Tools
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../guides/" class="md-tabs__link">
+        Guides
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
+        Documentation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../discoveries/" class="md-tabs__link">
+        Discoveries
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="HedgeDocs" class="md-nav__button md-logo" aria-label="HedgeDocs" data-md-component="logo">
+      
+  <img src="../../../assets/images/icon.svg" alt="logo">
+
+    </a>
+    HedgeDocs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/hedgedocs/hedgedocs.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../tools/">Tools</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          Various Engines
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Various Engines
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/general/files/" class="md-nav__link">
+        File Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/general/audio/" class="md-nav__link">
+        Audio
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          Hedgehog Engine
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Hedgehog Engine
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+          Common
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Common
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/common/files/" class="md-nav__link">
+        File Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/common/lighting/" class="md-nav__link">
+        Lighting/GI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/common/models/" class="md-nav__link">
+        Models
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/common/text/" class="md-nav__link">
+        Text
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/common/levels/" class="md-nav__link">
+        Level Editing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+          Sonic Generations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic Generations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_1" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_2_1" id="__nav_2_3_2_1_label" tabindex="0">
+          File Formats
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          File Formats
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/blueblur/files/xncp/" class="md-nav__link">
+        XNCP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/blueblur/files/gte/" class="md-nav__link">
+        GTE/GTM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/blueblur/files/ar/" class="md-nav__link">
+        AR/ARL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/blueblur/levels/" class="md-nav__link">
+        Level Editing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_3" id="__nav_2_3_3_label" tabindex="0">
+          Sonic Lost World
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic Lost World
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/sonic2013/levels/" class="md-nav__link">
+        Level Editing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_4" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_4" id="__nav_2_3_4_label" tabindex="0">
+          Sonic Frontiers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic Frontiers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_4_1" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_4_1" id="__nav_2_3_4_1_label" tabindex="0">
+          File Formats
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_4_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          File Formats
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/rangers/files/rfl/" class="md-nav__link">
+        RFL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/rangers/files/anmpxd/" class="md-nav__link">
+        ANM.PXD
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/hedgehog-engine/rangers/models/" class="md-nav__link">
+        Models
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          Sega NN
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Sega NN
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+          Sonic The Hedgehog (2006)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic The Hedgehog (2006)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/nn/marathon/files/" class="md-nav__link">
+        File Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/nn/marathon/levels/" class="md-nav__link">
+        Level Editing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          Renderware
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Renderware
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_1" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_5_1" id="__nav_2_5_1_label" tabindex="0">
+          Common
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          Common
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_1_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_5_1_1" id="__nav_2_5_1_1_label" tabindex="0">
+          File Formats
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_1_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_5_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          File Formats
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/renderware/common/files/one/" class="md-nav__link">
+        ONE
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/renderware/common/levels/" class="md-nav__link">
+        Level Editing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+          Other Engines
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Other Engines
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+          Sonic Colors
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic Colors
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_1_1" id="__nav_2_6_1_1_label" tabindex="0">
+          File Formats
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_1_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_6_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          File Formats
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/others/sonic2010/files/xncp/" class="md-nav__link">
+        XNCP
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/others/sonic2010/levels/" class="md-nav__link">
+        Level Editing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
+          Sonic Colors: Ultimate
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic Colors: Ultimate
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/others/rainbow/files/" class="md-nav__link">
+        File Formats
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../guides/">Guides</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          Hedgehog Engine
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Hedgehog Engine
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+          Sonic Generations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic Generations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1_1" id="__nav_3_2_1_1_label" tabindex="0">
+          File Formats
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_1_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          File Formats
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1_1_1" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1_1_1" id="__nav_3_2_1_1_1_label" tabindex="0">
+          XNCP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_2_1_1_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_1_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          XNCP
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/hedgehog-engine/blueblur/files/xncp/basics/" class="md-nav__link">
+        Basics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/hedgehog-engine/blueblur/files/xncp/anims/" class="md-nav__link">
+        Animations
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1_2" id="__nav_3_2_1_2_label" tabindex="0">
+          Level Editing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_1_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          Level Editing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/hedgehog-engine/blueblur/levels/glvl/" class="md-nav__link">
+        Sonic GLvl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/hedgehog-engine/blueblur/levels/importing-terrain/" class="md-nav__link">
+        Importing Terrain
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/hedgehog-engine/blueblur/levels/importing-collision/" class="md-nav__link">
+        Importing Collision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+          Sonic Frontiers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic Frontiers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_1" id="__nav_3_2_2_1_label" tabindex="0">
+          Cyloop
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Cyloop
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/hedgehog-engine/rangers/cyloop/color/" class="md-nav__link">
+        Replacing Cyloop Color
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_2" id="__nav_3_2_2_2_label" tabindex="0">
+          Audio
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Audio
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/hedgehog-engine/rangers/audio/replacing/" class="md-nav__link">
+        Replacing Audio
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_3" id="__nav_3_2_2_3_label" tabindex="0">
+          Animation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Animation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/hedgehog-engine/rangers/animation/import-export/" class="md-nav__link">
+        Importing & Exporting
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_4" id="__nav_3_2_2_4_label" tabindex="0">
+          Materials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/hedgehog-engine/rangers/materials/advanced-mats/" class="md-nav__link">
+        Advanced Material Editing Tutorial
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          Sega NN
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Sega NN
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+          Sonic The Hedgehog (2006)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic The Hedgehog (2006)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_1" id="__nav_3_3_1_1_label" tabindex="0">
+          Level Editing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          Level Editing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/nn/marathon/levels/glvl/" class="md-nav__link">
+        Sonic GLvl
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../">Documentation</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          Various Engines
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Various Engines
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          HSON Format
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        HSON Format
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#json-schema" class="md-nav__link">
+    JSON Schema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format-specification" class="md-nav__link">
+    Format Specification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-version" class="md-nav__link">
+    1. version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-metadata" class="md-nav__link">
+    2. metadata
+  </a>
+  
+    <nav class="md-nav" aria-label="2. metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-name" class="md-nav__link">
+    2.1. name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-author" class="md-nav__link">
+    2.2. author
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-date" class="md-nav__link">
+    2.3. date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-version" class="md-nav__link">
+    2.4. version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-description" class="md-nav__link">
+    2.5. description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-objects" class="md-nav__link">
+    3. objects
+  </a>
+  
+    <nav class="md-nav" aria-label="3. objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-id" class="md-nav__link">
+    3.1. id
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-name" class="md-nav__link">
+    3.2. name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-parentid" class="md-nav__link">
+    3.3. parentId
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-instanceof" class="md-nav__link">
+    3.4. instanceOf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-type" class="md-nav__link">
+    3.5. type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-position" class="md-nav__link">
+    3.6. position
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-rotation" class="md-nav__link">
+    3.7. rotation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-scale" class="md-nav__link">
+    3.8. scale
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-iseditorvisible" class="md-nav__link">
+    3.9. isEditorVisible
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-isexcluded" class="md-nav__link">
+    3.10. isExcluded
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#311-parameters" class="md-nav__link">
+    3.11. parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-properties" class="md-nav__link">
+    Custom Properties
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          Hedgehog Engine
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Hedgehog Engine
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3_1" id="__nav_4_3_1_label" tabindex="0">
+          Sonic Frontiers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic Frontiers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3_1_1" id="__nav_4_3_1_1_label" tabindex="0">
+          Enemies
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          Enemies
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_1_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3_1_1_1" id="__nav_4_3_1_1_1_label" tabindex="0">
+          Guardians
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_3_1_1_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_1_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          Guardians
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hedgehog-engine/rangers/enemies/guardians/names/" class="md-nav__link">
+        Internal Names
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3_1_2" id="__nav_4_3_1_2_label" tabindex="0">
+          Events
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          Events
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hedgehog-engine/rangers/events/ids/" class="md-nav__link">
+        Event ID Map
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3_1_3" id="__nav_4_3_1_3_label" tabindex="0">
+          File Formats
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          File Formats
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_3_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3_1_3_1" id="__nav_4_3_1_3_1_label" tabindex="0">
+          RFL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_3_1_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_1_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          RFL
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hedgehog-engine/rangers/files/rfl/mapping/" class="md-nav__link">
+        RFL Binary Template Map
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3_1_4" id="__nav_4_3_1_4_label" tabindex="0">
+          Levels
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          Levels
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hedgehog-engine/rangers/levels/ids/" class="md-nav__link">
+        Level ID Map
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_5" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3_1_5" id="__nav_4_3_1_5_label" tabindex="0">
+          Scripts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          Scripts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hedgehog-engine/rangers/scripts/funcs/" class="md-nav__link">
+        Functions
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          Sega NN
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Sega NN
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_4_1" id="__nav_4_4_1_label" tabindex="0">
+          Common
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Common
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../nn/common/chunk-format/">NN Chunk Format</a>
+          
+            <label for="__nav_4_4_1_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_4_1_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_4_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          NN Chunk Format
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nn/common/chunk-format/texlist/" class="md-nav__link">
+        TEXLIST
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../discoveries/">Discoveries</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Discoveries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+          Sonic Unleashed
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic Unleashed
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_2_1" id="__nav_5_2_1_label" tabindex="0">
+          PlayStation 3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          PlayStation 3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../discoveries/swa/ps3/install/" class="md-nav__link">
+        Leftover Install Assets
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+          Sonic Generations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic Generations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_3_1" id="__nav_5_3_1_label" tabindex="0">
+          HUD
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          HUD
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../discoveries/blueblur/hud/blb_gauge/" class="md-nav__link">
+        Unused Time Eater Gauge
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+          Sonic Lost World
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Sonic Lost World
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_1" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_4_1" id="__nav_5_4_1_label" tabindex="0">
+          Levels
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Levels
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../discoveries/sonic2013/levels/colors/" class="md-nav__link">
+        Colors Leftovers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../discoveries/sonic2013/levels/test/" class="md-nav__link">
+        Test Levels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../discoveries/sonic2013/levels/deleted/" class="md-nav__link">
+        Deleted Levels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../discoveries/sonic2013/levels/original-order/" class="md-nav__link">
+        Original Level Order
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#json-schema" class="md-nav__link">
+    JSON Schema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format-specification" class="md-nav__link">
+    Format Specification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-version" class="md-nav__link">
+    1. version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-metadata" class="md-nav__link">
+    2. metadata
+  </a>
+  
+    <nav class="md-nav" aria-label="2. metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-name" class="md-nav__link">
+    2.1. name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-author" class="md-nav__link">
+    2.2. author
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-date" class="md-nav__link">
+    2.3. date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-version" class="md-nav__link">
+    2.4. version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-description" class="md-nav__link">
+    2.5. description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-objects" class="md-nav__link">
+    3. objects
+  </a>
+  
+    <nav class="md-nav" aria-label="3. objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-id" class="md-nav__link">
+    3.1. id
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-name" class="md-nav__link">
+    3.2. name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-parentid" class="md-nav__link">
+    3.3. parentId
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-instanceof" class="md-nav__link">
+    3.4. instanceOf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-type" class="md-nav__link">
+    3.5. type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-position" class="md-nav__link">
+    3.6. position
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-rotation" class="md-nav__link">
+    3.7. rotation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-scale" class="md-nav__link">
+    3.8. scale
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-iseditorvisible" class="md-nav__link">
+    3.9. isEditorVisible
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-isexcluded" class="md-nav__link">
+    3.10. isExcluded
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#311-parameters" class="md-nav__link">
+    3.11. parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-properties" class="md-nav__link">
+    Custom Properties
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+  <div class="imagePreview">
+    <div class="imagePreview-background"></div>
+    <div class="imagePreview-image">
+      <img class="imagePreview-image-element"></img>
+      <a target="_blank" class="imagePreview-image-caption">Open original</a>
+    </div>
+  </div>
+  
+                  
+
+  
+  
+
+
+<h1 id="hson-format">HSON Format<a class="headerlink" href="#hson-format" title="Permanent link">&para;</a></h1>
+<p><strong>The Hedgehog Set Object Notation Format</strong> ("HSON") is a custom JSON-based file format
+designed collaboratively by <strong>Dario</strong>, <strong>Radfordhound</strong>, <strong>ĐeäTh</strong>, <strong>Skyth</strong>, and
+<strong>Sajid</strong> to represent object placement in a "universal" (non-game/editor-specific) way.</p>
+<p>It was designed with the following principles in-mind:</p>
+<ul>
+<li><strong>Be universal.</strong> Specifically, it must be able to represent object placement data from <em>at least</em> any mainline 3D Sonic game in a non-game/editor-specific way.</li>
+<li><strong>Be simple.</strong> Specifically, it must not be difficult to parse and to generate.</li>
+<li><strong>Be flexible.</strong> Specifically, it must be able to be adapted to do anything future games and tools may require.</li>
+</ul>
+<h2 id="json-schema">JSON Schema<a class="headerlink" href="#json-schema" title="Permanent link">&para;</a></h2>
+<p>The official JSON Schema for the HSON Format can be found at the <a href="https://github.com/hedge-dev/hson-schema">hson-schema GitHub repository</a>.</p>
+<p>It's useful (but not necessary) to validate .hson files against this schema in editors which support
+this feature, as doing so allows you to have autocompletion, descriptions of each property, and
+data validation.</p>
+<p>To validate <em>all</em> .hson files against the schema in your editor of choice, refer to the instructions
+in the README from the above repository.</p>
+<p>To manually validate against the schema on a per-file basis, include the following line at the
+top-level of your HSON file(s), before the HSON file format <a href="#1-version">version parameter</a>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://raw.githubusercontent.com/hedge-dev/hson-schema/main/hson.schema.json&quot;</span><span class="p">,</span>
+</code></pre></div>
+<p>If writing tooling that generates HSON, consider having your tooling write this line to generated files.</p>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<p>The following is an example file in the HSON Format, which represents a "project" called "Sample Project"
+that contains 5 objects.</p>
+<p>This example file will be referenced periodically throughout the <a href="#format-specification">format specification</a>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://raw.githubusercontent.com/hedge-dev/hson-schema/main/hson.schema.json&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">&quot;metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Sample Project&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Takashi Iizuka, Morio Kishimoto&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-02-09T22:38:42Z&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;green hill is looking a lot more like sand hill rn&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="nt">&quot;myCustomEditor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">      </span><span class="nt">&quot;viewportTabIndex&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="nt">&quot;objects&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{fd3e6bc9-5d2d-4da8-a22d-f88e709b3e48}&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Spring #1&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Spring&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">      </span><span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mf">100.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="w"> </span><span class="p">],</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">      </span><span class="nt">&quot;rotation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="w"> </span><span class="p">],</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">      </span><span class="nt">&quot;scale&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="w"> </span><span class="p">],</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">      </span><span class="nt">&quot;isEditorVisible&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">      </span><span class="nt">&quot;isExcluded&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">      </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">        </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">          </span><span class="nt">&quot;RangeSpawning&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">            </span><span class="nt">&quot;rangeIn&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">100.0</span><span class="p">,</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">            </span><span class="nt">&quot;rangeOut&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">20.0</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">        </span><span class="nt">&quot;visual&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Normal&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">        </span><span class="nt">&quot;firstSpeed&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">420</span><span class="p">,</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">        </span><span class="nt">&quot;outOfControl&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">2.5</span><span class="p">,</span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="w">        </span><span class="nt">&quot;isHorming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">        </span><span class="nt">&quot;actions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="w">          </span><span class="p">{</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;On&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="w">            </span><span class="nt">&quot;objectIds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="w">                </span><span class="s2">&quot;{2737e92f-4842-46cb-a590-e074f7b882f0}&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="w">                </span><span class="s2">&quot;{38285a58-9969-4c5f-a649-b91440962a71}&quot;</span>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="w">            </span><span class="p">],</span>
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="w">            </span><span class="nt">&quot;delayTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span>
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="w">          </span><span class="p">},</span>
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a><span class="w">          </span><span class="p">{</span>
+<a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Off&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a><span class="w">            </span><span class="nt">&quot;objectIds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a><span class="w">            </span><span class="nt">&quot;delayTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span>
+<a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a><span class="w">          </span><span class="p">},</span>
+<a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a><span class="w">          </span><span class="p">{</span>
+<a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Off&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a><span class="w">            </span><span class="nt">&quot;objectIds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a><span class="w">            </span><span class="nt">&quot;delayTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span>
+<a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a><span class="w">        </span><span class="p">],</span>
+<a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ring&quot;</span>
+<a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{2737e92f-4842-46cb-a590-e074f7b882f0}&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a><span class="w">      </span><span class="nt">&quot;parentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{fd3e6bc9-5d2d-4da8-a22d-f88e709b3e48}&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ring&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a><span class="w">      </span><span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="w"> </span><span class="p">],</span>
+<a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a><span class="w">      </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a><span class="w">        </span><span class="nt">&quot;visibility&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Visible&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a><span class="w">        </span><span class="nt">&quot;respawnTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span>
+<a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a><span class="w">      </span><span class="nt">&quot;myCustomValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">893.5</span><span class="p">,</span>
+<a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a><span class="w">      </span><span class="nt">&quot;myCustomEditor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a><span class="w">        </span><span class="nt">&quot;presetPlacementType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LINE&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a><span class="w">        </span><span class="nt">&quot;presetPlacementDistance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span>
+<a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{38285a58-9969-4c5f-a649-b91440962a71}&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a><span class="w">      </span><span class="nt">&quot;instanceOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{2737e92f-4842-46cb-a590-e074f7b882f0}&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a><span class="w">      </span><span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="w"> </span><span class="p">],</span>
+<a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a><span class="w">      </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a><span class="w">        </span><span class="nt">&quot;respawnTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span>
+<a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-1-83" name="__codelineno-1-83" href="#__codelineno-1-83"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-84" name="__codelineno-1-84" href="#__codelineno-1-84"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{81fdcaff-aa37-4c47-a665-5b6265a6b780}&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-85" name="__codelineno-1-85" href="#__codelineno-1-85"></a><span class="w">      </span><span class="nt">&quot;parentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{00000000-0000-0000-0000-000000000000}&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-86" name="__codelineno-1-86" href="#__codelineno-1-86"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DashPanel&quot;</span>
+<a id="__codelineno-1-87" name="__codelineno-1-87" href="#__codelineno-1-87"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-88" name="__codelineno-1-88" href="#__codelineno-1-88"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-1-89" name="__codelineno-1-89" href="#__codelineno-1-89"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="format-specification">Format Specification<a class="headerlink" href="#format-specification" title="Permanent link">&para;</a></h2>
+<p>What follows is a specification of all standard properties supported by the HSON Format.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>All of the following properties are <strong>OPTIONAL</strong>, unless otherwise specified.</p>
+</div>
+<h2 id="1-version">1. version<a class="headerlink" href="#1-version" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>number</code></li>
+<li><strong>Minimum</strong>: 1</li>
+</ul>
+<p>This value is <strong>REQUIRED</strong> to be present in all HSON files.</p>
+</div>
+<p><strong>The version of the HSON format being used by this file.</strong> It is represented as a number that is restricted in the following ways:</p>
+<ul>
+<li>It must have a zero fractional part (e.g. <code>1.5</code> would not be allowed, but <code>1.0</code> or <code>1</code> are).</li>
+<li>It must be greater than or equal to 1.</li>
+</ul>
+<p>Because of these restrictions, it is valid for tooling to parse this value into an <code>unsigned int</code>.</p>
+<p>Currently, version 1 is the latest version.</p>
+<h2 id="2-metadata">2. metadata<a class="headerlink" href="#2-metadata" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>object</code></li>
+</ul>
+</div>
+<p><strong>Metadata for the project represented by this file.</strong></p>
+<p>It is intended to be used purely for tooling display purposes.</p>
+<p>metadata is represented as a JSON <code>object</code> consisting of the following properties:</p>
+<h3 id="21-name">2.1. name<a class="headerlink" href="#21-name" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+</ul>
+</div>
+<p><strong>The name of the project represented by this file.</strong></p>
+<h3 id="22-author">2.2. author<a class="headerlink" href="#22-author" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+</ul>
+</div>
+<p><strong>The author(s) of the project represented by this file.</strong></p>
+<p>If the project has multiple authors, we recommend writing each author's
+name with a comma and space separating them, like so:</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Me, Myself, I&quot;</span>
+</code></pre></div>
+</div>
+<p>With that said, this is a recommendation and by no means a requirement.</p>
+<p><strong>Tooling should treat this as an arbitrary string in no particular format.</strong></p>
+<h3 id="23-date">2.3. date<a class="headerlink" href="#23-date" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+</ul>
+</div>
+<p><strong>The date/time the project was created at</strong>, represented as a string in the <a href="https://www.rfc-editor.org/rfc/rfc3339">RFC 3339 format</a>
+(a similar standard to ISO 8601).</p>
+<p><strong>It is invalid to represent the date using any other format.</strong></p>
+<p>This limitation makes parsing dates in tooling a lot easier.</p>
+<div class="admonition example">
+<p class="admonition-title">Getting the current DateTime in RFC 3339 format programmatically</p>
+<p>Feel free to copy-paste any of these code snippets and do what you want with them.</p>
+<p><strong>C#:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nf">GetRFC3339Time</span><span class="p">()</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">.</span><span class="n">ToString</span><span class="p">(</span><span class="s">&quot;yyyy-MM-ddTHH:mm:ssK&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="n">CultureInfo</span><span class="p">.</span><span class="n">InvariantCulture</span><span class="p">);</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>C++11:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdexcept&gt;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;ctime&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">getRFC3339Time</span><span class="p">()</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">{</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">buf</span><span class="p">[</span><span class="mi">32</span><span class="p">];</span><span class="w"> </span><span class="c1">// This is a few extra characters than should be necessary, just to be safe.</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">time</span><span class="p">(</span><span class="k">nullptr</span><span class="p">);</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">strftime</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;%FT%TZ&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">gmtime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">time</span><span class="p">));</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">len</span><span class="p">)</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;Failed to get RFC 3339 format time&quot;</span><span class="p">);</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="n">len</span><span class="p">);</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>C:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;time.h&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="cm">/*</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="cm">  Returns 0 on failure, or the number of bytes written</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="cm">  into buf (not including the null terminator) on success.</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="cm">*/</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="kt">int</span><span class="w"> </span><span class="nf">getRFC3339Time</span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">bufSize</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">buf</span><span class="p">)</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="p">{</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">time_t</span><span class="w"> </span><span class="n">time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">strftime</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="n">bufSize</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%FT%TZ&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">gmtime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">time</span><span class="p">));</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="24-version">2.4. version<a class="headerlink" href="#24-version" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+</ul>
+</div>
+<p><strong>The version number of the project</strong>, represented as a string.</p>
+<p>How you want to version your project is up to you; these are all valid:</p>
+<div class="admonition example">
+<p class="admonition-title">Examples</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beta release&quot;</span>
+</code></pre></div></p>
+</div>
+<p><strong>Tooling should treat this as an arbitrary string in no particular format.</strong></p>
+<h3 id="25-description">2.5. description<a class="headerlink" href="#25-description" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+</ul>
+</div>
+<p><strong>The description of the project represented by this file.</strong></p>
+<h2 id="3-objects">3. objects<a class="headerlink" href="#3-objects" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>array</code></li>
+</ul>
+</div>
+<p><strong>An array containing all of the objects contained within the project.</strong></p>
+<p>Each object is represented as a JSON <code>object</code> consisting of the following properties:</p>
+<h3 id="31-id">3.1. id<a class="headerlink" href="#31-id" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+</ul>
+</div>
+<p><strong>The UUID (aka GUID) of the object</strong>, represented as a case-insensitive string
+formatted like this: <code>{11111111-2222-3333-4444-555555555555}</code>.</p>
+<p>Note that it is enclosed in curly brackets; this is to make it clear that it is
+supposed to be parsed as a UUID, and <strong>NOT</strong> as a number.</p>
+<p>The object's UUID is used to reference the object throughout the project.</p>
+<p>It must be unique throughout the project; that is, <strong>no two objects within the same
+project are allowed to have the same UUID.</strong> That's what makes them <em>UUIDs</em>.</p>
+<p>It also <strong>cannot be set to the following value</strong>: <code>{00000000-0000-0000-0000-000000000000}</code>,
+as this value is reserved for "null" object references.</p>
+<p>This property can be omitted (leaving the object without a specified UUID) if
+the object never needs to be referenced. This helps to save some space.</p>
+<p>Tools are free to generate their own UUIDs for objects without a specified UUID, or
+to just think of the object as not having a UUID. Whichever is more convenient.</p>
+<div class="admonition example">
+<p class="admonition-title">Examples</p>
+<p><strong>Valid UUID</strong> (lowercase):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{fd3e6bc9-5d2d-4da8-a22d-f88e709b3e48}&quot;</span>
+</code></pre></div>
+<p><strong>Valid UUID</strong> (uppercase):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{FD3E6BC9-5D2D-4DA8-A22D-F88E709B3E48}&quot;</span>
+</code></pre></div>
+<p><strong>Invalid UUID</strong> (no enclosing curly brackets):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fd3e6bc9-5d2d-4da8-a22d-f88e709b3e48&quot;</span>
+</code></pre></div>
+<p><strong>Invalid UUID</strong> (not a UUID):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{2}&quot;</span>
+</code></pre></div>
+<p><strong>Invalid UUID</strong> (the special "null" UUID value is not valid to use as the object's id):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{00000000-0000-0000-0000-000000000000}&quot;</span>
+</code></pre></div>
+<p><strong>Valid object references</strong> (the special "null" UUID value is valid to use in object references):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nt">&quot;parentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{00000000-0000-0000-0000-000000000000}&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nt">&quot;instanceOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{00000000-0000-0000-0000-000000000000}&quot;</span>
+</code></pre></div>
+</div>
+<h3 id="32-name">3.2. name<a class="headerlink" href="#32-name" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+</ul>
+</div>
+<p><strong>The name of the object.</strong> This is an arbitrary string that can be anything you want.</p>
+<p>It is intended to be used purely for tooling display purposes.</p>
+<h3 id="33-parentid">3.3. parentId<a class="headerlink" href="#33-parentid" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+</ul>
+</div>
+<p><strong>The <a href="#31-id">id</a> of this object's parent object</strong>, or a null UUID.</p>
+<p>If specified as a valid, non-null UUID, this object is a child of the object with the
+given UUID, meaning that the object's transform (represented via <a href="#36-position"><code>position</code></a>,
+<a href="#37-rotation"><code>rotation</code></a>, and <a href="#38-scale"><code>scale</code></a>) is relative to the parent's transform
+(which is relative to its parent's transform, and so on).</p>
+<p>Otherwise, if it is not specified, or is specified as a null UUID,
+this object has no parent object, and the transform is global.</p>
+<div class="admonition example">
+<p class="admonition-title">Parenting Example</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">{</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{2737e92f-4842-46cb-a590-e074f7b882f0}&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span><span class="nt">&quot;parentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{fd3e6bc9-5d2d-4da8-a22d-f88e709b3e48}&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ring&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">  </span><span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="w"> </span><span class="p">],</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">  </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">    </span><span class="nt">&quot;visibility&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Visible&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">    </span><span class="nt">&quot;respawnTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">  </span><span class="nt">&quot;myCustomValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">893.5</span><span class="p">,</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="w">  </span><span class="nt">&quot;myCustomEditor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">    </span><span class="nt">&quot;presetPlacementType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LINE&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="w">    </span><span class="nt">&quot;presetPlacementDistance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="p">}</span>
+</code></pre></div>
+<p>In this snippet from <a href="#example">the example file</a>, the object has specified
+a position of <code>[ 0.0, 1.0, 0.0 ]</code>, and a parentId of <code>{fd3e6bc9-5d2d-4da8-a22d-f88e709b3e48}</code>,
+which means that its transform is local to the transform of the
+object which uses that UUID (not included in this snippet).</p>
+<p>This parent object has a position of <code>[ 100.0, 0.0, 0.0 ]</code>.</p>
+<p>So, the above object's global position is <code>[ 100.0, 1.0, 0.0 ]</code>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Null Reference Example</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">{</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{81fdcaff-aa37-4c47-a665-5b6265a6b780}&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span><span class="nt">&quot;parentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{00000000-0000-0000-0000-000000000000}&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DashPanel&quot;</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="p">}</span>
+</code></pre></div>
+<p>In this snippet from <a href="#example">the example file</a>, the object has specified
+a parentId of <code>{00000000-0000-0000-0000-000000000000}</code> (the special UUID
+null value), which is equivalent to not specifying a parentId. This means
+that this object has no parent.</p>
+</div>
+<h3 id="34-instanceof">3.4. instanceOf<a class="headerlink" href="#34-instanceof" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+</ul>
+</div>
+<p><strong>The <a href="#31-id">id</a> of the object to be instanced</strong>, or a null UUID.</p>
+<p>If specified as a valid, non-null UUID, this object is an instance of the object with the
+given UUID, meaning that it will inherit <strong>ALL</strong> <em>unspecified properties</em> from the
+instanced object, <strong>with the notable exception of the <a href="#31-id"><code>id</code></a> property</strong>, instead
+of falling back to the usual defaults.</p>
+<p>Note that it will <strong>NOT</strong> affect the object's <em>specified properties</em>; these will
+effectively "override" any properties taken from the instanced object.</p>
+<p>Otherwise, if it is not specified, or is specified as a null UUID,
+this object is not an instance.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">{</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{2737e92f-4842-46cb-a590-e074f7b882f0}&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">  </span><span class="nt">&quot;parentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{fd3e6bc9-5d2d-4da8-a22d-f88e709b3e48}&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ring&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">  </span><span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="w"> </span><span class="p">],</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">  </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">    </span><span class="nt">&quot;visibility&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Visible&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">    </span><span class="nt">&quot;respawnTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">  </span><span class="nt">&quot;myCustomValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">893.5</span><span class="p">,</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="w">  </span><span class="nt">&quot;myCustomEditor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="w">    </span><span class="nt">&quot;presetPlacementType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LINE&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="w">    </span><span class="nt">&quot;presetPlacementDistance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="p">},</span>
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="p">{</span>
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{38285a58-9969-4c5f-a649-b91440962a71}&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="w">  </span><span class="nt">&quot;instanceOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{2737e92f-4842-46cb-a590-e074f7b882f0}&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="w">  </span><span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="w"> </span><span class="p">],</span>
+<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a><span class="w">  </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a><span class="w">    </span><span class="nt">&quot;respawnTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span>
+<a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a><span class="p">}</span>
+</code></pre></div>
+<p>In this snippet from <a href="#example">the example file</a>, the second listed object (UUID:
+<code>38285a58-9969-4c5f-a649-b91440962a71</code>) is an instance of the first listed object
+(UUID: <code>2737e92f-4842-46cb-a590-e074f7b882f0</code>).</p>
+<p>As such, it will inherit all of the <em>unspecified properties</em> from the first object, including
+the <a href="#33-parentid"><code>parentId</code></a>, <a href="#35-type"><code>type</code></a>, <code>myCustomValue</code>, and <code>myCustomEditor</code>
+properties, as well as the <code>visibility</code> parameter.</p>
+<p>It will <strong>NOT</strong>, however, inherit the <em>specified properties</em>, including the <a href="#31-id"><code>id</code></a>,
+<a href="#34-instanceof"><code>instanceOf</code></a>, and <a href="#36-position"><code>position</code></a> properties, as well as the
+<code>respawnTime</code> parameter.</p>
+<p>This means that the second object in the above snippet will be equivalent to the following object:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">{</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{38285a58-9969-4c5f-a649-b91440962a71}&quot;</span><span class="p">,</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">  </span><span class="nt">&quot;parentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{fd3e6bc9-5d2d-4da8-a22d-f88e709b3e48}&quot;</span><span class="p">,</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ring&quot;</span><span class="p">,</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">  </span><span class="nt">&quot;instanceOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{2737e92f-4842-46cb-a590-e074f7b882f0}&quot;</span><span class="p">,</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">  </span><span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="w"> </span><span class="p">],</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="w">  </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">    </span><span class="nt">&quot;visibility&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Visible&quot;</span><span class="p">,</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">    </span><span class="nt">&quot;respawnTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="w">  </span><span class="nt">&quot;myCustomValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">893.5</span><span class="p">,</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="w">  </span><span class="nt">&quot;myCustomEditor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="w">    </span><span class="nt">&quot;presetPlacementType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LINE&quot;</span><span class="p">,</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="w">    </span><span class="nt">&quot;presetPlacementDistance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a><span class="p">}</span>
+</code></pre></div>
+<p>As you can see, this is a simple, yet powerful system that allows for many possibilities.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>UUIDs have a special exception; they <strong>never</strong> get inherited from the instanced object.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">{</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA}&quot;</span><span class="p">,</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ring&quot;</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="p">},</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="p">{</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">  </span><span class="nt">&quot;instanceOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA}&quot;</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="p">}</span>
+</code></pre></div>
+<p>The second object listed in the above example will inherit all
+properties from the first object, <em>except</em> for the <a href="#31-id"><code>id</code></a>.</p>
+<p>This is due to the fact that every valid object must have its
+own unique UUID.</p>
+</div>
+<h3 id="35-type">3.5. type<a class="headerlink" href="#35-type" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+</ul>
+<p>This value is <strong>REQUIRED</strong> to be present, <strong>unless this object is an
+<a href="#34-instanceof">instance of</a> another object</strong>, in which case, it is
+optional, as the type will just be taken from the instanced object.</p>
+</div>
+<p><strong>The type of the object</strong> (e.g. "Spring", "Ring", etc.).</p>
+<p>Note that this value is not game-specific and can be set to anything,
+with one exception: <strong>it is not valid for type to be an empty string</strong>.</p>
+<h3 id="36-position">3.6. position<a class="headerlink" href="#36-position" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>array</code></li>
+<li><strong>Default</strong>: <code>[ 0.0, 0.0, 0.0 ]</code></li>
+</ul>
+</div>
+<p><strong>The position of the object within 3D space.</strong> Represented as a three-dimensional array
+of <code>number</code>s, representing a vector3 using left-handed coordinates (X-right, Y-up, and Z-forward),
+and meters as its units.</p>
+<p>If this object is a child of another object, this position value is local to the transform
+of the parent object (which is local to the transform of its parent, and so on).</p>
+<p>Otherwise, this position value is global.</p>
+<p>If this property is not specified, the value <code>[ 0.0, 0.0, 0.0 ]</code> will be used as a fallback.</p>
+<h3 id="37-rotation">3.7. rotation<a class="headerlink" href="#37-rotation" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>array</code></li>
+<li><strong>Default</strong>: <code>[ 0.0, 0.0, 0.0, 1.0 ]</code></li>
+</ul>
+</div>
+<p><strong>The rotation of the object within 3D space.</strong> Represented as a four-dimensional array
+of <code>number</code>s, representing a quaternion using left-handed coordinates.</p>
+<p>If this object is a child of another object, this rotation value is local to the transform
+of the parent object (which is local to the transform of its parent, and so on).</p>
+<p>Otherwise, this rotation value is global.</p>
+<p>If this property is not specified, the value <code>[ 0.0, 0.0, 0.0, 1.0 ]</code> will be used as a fallback.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Rotation values <strong>must</strong> be represented as a four-dimensional array representing a quaternion.</p>
+<p>It is not valid to represent rotation values using other methods, such as by using
+three-dimensional arrays representing euler angles or binary angle measurement (BAMS).</p>
+<p>When dealing with formats that utilize these (or other) methods, tooling must
+convert to/from quaternions as necessary.</p>
+</div>
+<h3 id="38-scale">3.8. scale<a class="headerlink" href="#38-scale" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>array</code></li>
+<li><strong>Default</strong>: <code>[ 1.0, 1.0, 1.0 ]</code></li>
+</ul>
+</div>
+<p><strong>The scale of the object within 3D space.</strong> Represented as a three-dimensional array
+of <code>number</code>s, representing a vector3 using left-handed coordinates (X-right, Y-up, and Z-forward),
+and meters as its units.</p>
+<p>If this object is a child of another object, this scale value is local to the transform
+of the parent object (which is local to the transform of its parent, and so on).</p>
+<p>Otherwise, this scale value is global.</p>
+<p>If this property is not specified, the value <code>[ 1.0, 1.0, 1.0 ]</code> will be used as a fallback.</p>
+<h3 id="39-iseditorvisible">3.9. isEditorVisible<a class="headerlink" href="#39-iseditorvisible" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>boolean</code></li>
+<li><strong>Default</strong>: <code>true</code></li>
+</ul>
+</div>
+<p><strong>Whether the object should be visible in the editor's 3D display</strong> (as applicable).
+Note that this is purely for editors, and has no effect on whether the object is visible in-game.</p>
+<p>When converting from HSON to game-specific file(s), tooling should ignore this value.</p>
+<p>If this property is not specified, the value <code>true</code> will be used as a fallback.</p>
+<h3 id="310-isexcluded">3.10. isExcluded<a class="headerlink" href="#310-isexcluded" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>boolean</code></li>
+<li><strong>Default</strong>: <code>false</code></li>
+</ul>
+</div>
+<p><strong>Whether the object should be excluded from game data.</strong></p>
+<p>If specified as <code>true</code>, editors should (as applicable) hide the object from 3D display,
+but still show it in the object hierarchy as a disabled object, and provide a mechanism
+for users to un-exclude it.</p>
+<p>When converting from HSON to a game format, tooling should treat excluded objects as if
+they do not exist, by simply not writing them to the resulting game-specific file(s).</p>
+<p>If this property is not specified, the value <code>false</code> will be used as a fallback.</p>
+<h3 id="311-parameters">3.11. parameters<a class="headerlink" href="#311-parameters" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>Type</strong>: <code>object</code></li>
+</ul>
+</div>
+<p><strong>All named parameters specific to this object type and/or game.</strong> For example, the <code>firstSpeed</code>
+parameter for objects of the <code>Spring</code> type in Sonic Frontiers, which specifies the speed
+the object will launch the player off with.</p>
+<p>This is the place to put all parameters that are specific to objects of the specified <a href="#35-type"><code>type</code></a>.
+It's also a great place to put game-specific parameters, such as object visibility ranges.</p>
+<p>Any number of properties of any JSON type are allowed here, all of which are always entirely optional.</p>
+<p>Tooling should treat this as an arbitrary list of key-value pairs, and provide some mechanism that
+allows the user to modify <strong>ALL</strong> of them as they please. It does not, however, have to provide a
+mechanism to add, remove, or edit the type of these parameters, as this may be undesirable depending
+on your use-case.</p>
+<p>Tooling should not require any of these parameters to be present. When converting, tooling should,
+instead, lookup each parameter by its name as needed, and either error-out or fallback to a
+default value if a required parameter is not present.</p>
+<p><strong>Note that the following are not allowed to be used as parameter names:</strong></p>
+<ul>
+<li>Empty strings</li>
+<li>Strings which contain forward slashes</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The "no forward slash" rule allows tooling to access parameters by "path", like so:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">  </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">    </span><span class="nt">&quot;RangeSpawning&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">      </span><span class="nt">&quot;rangeIn&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">100.0</span><span class="p">,</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">      </span><span class="nt">&quot;rangeOut&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">20.0</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="p">}</span>
+</code></pre></div></p>
+<ul>
+<li>"<code>tags/RangeSpawning/rangeIn</code>": <code>100.0</code></li>
+<li>"<code>tags/RangeSpawning/rangeIn</code>": <code>20.0</code></li>
+</ul>
+</div>
+<h2 id="custom-properties">Custom Properties<a class="headerlink" href="#custom-properties" title="Permanent link">&para;</a></h2>
+<p>In addition to all of the standard properties listed in the above specification, it is also
+completely valid to have your own custom properties which are not part of the specification,
+as demonstrated with the <code>myCustomEditor</code> and <code>myCustomValue</code> properties shown
+in <a href="#example">the example file</a>.</p>
+<p>If you use custom properties, it's highly recommended to place them in a property named after
+your tooling, as demonstrated with the <code>myCustomEditor</code> properties in the example.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="nt">&quot;myCustomEditor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">  </span><span class="nt">&quot;presetPlacementType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LINE&quot;</span><span class="p">,</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">  </span><span class="nt">&quot;presetPlacementDistance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="p">}</span>
+</code></pre></div>
+<p>Doing this helps to reduce potential name collisions with custom properties from other
+tools, which might end up sharing the same name(s).</p>
+<p>If your custom property is intended to be used across multiple tools (e.g. an unofficial
+"extension" to the HSON format), then it's recommended to ignore the above advice and just
+use the custom property directly instead, as demonstrated with the <code>myCustomValue</code>
+property in the example.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nt">&quot;myCustomValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">893.5</span><span class="p">,</span>
+</code></pre></div>
+<p><strong>Note that the following are not allowed to be used as custom properties names:</strong></p>
+<ul>
+<li>Names which are used for properties that are part of the HSON specification</li>
+<li>Empty strings</li>
+<li>Strings which contain forward slashes</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The "no forward slash" rule allows tooling to access custom properties by "path", like so:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="nt">&quot;myCustomEditor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">  </span><span class="nt">&quot;presetPlacementType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LINE&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">  </span><span class="nt">&quot;presetPlacementDistance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="p">}</span>
+</code></pre></div></p>
+<ul>
+<li>"<code>myCustomEditor/presetPlacementType</code>": <code>"LINE"</code></li>
+<li>"<code>myCustomEditor/presetPlacementDistance</code>": <code>1.0</code></li>
+</ul>
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-02-28T04:50:52+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-02-28</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+  <div id="tsparticles"></div>
+  
+    <div class="metadata page-metadata">
+      <span class="contributors-text">Authors:</span>
+      <ul class="contributors" data-bi-name="contributors"><li class="contributor-entry">
+          <a class="contributor" href="https://github.com/Radfordhound">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/10536295" alt="Radfordhound">
+            Radfordhound
+          </a>
+        </li></ul>
+      </li>
+    </div>
+  
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+  <footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-copyright">
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        </div>
+
+        <div class="md-social">
+          <a href="https://github.com/hedgedocs/hedgedocs.github.io" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+
+              </path>
+            </svg>
+          </a>
+        </div>
+  </footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.indexes", "navigation.sections"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+        <script src="../../../js/timeago.min.js"></script>
+      
+        <script src="../../../js/timeago_mkdocs_material.js"></script>
+      
+        <script src="../../../assets/javascripts/custom.js"></script>
+      
+    
+  </body>
+</html>

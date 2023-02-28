@@ -46,6 +46,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hedgedocs.com/docs/general/hson/</loc>
+         <lastmod>2023-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/rangers/enemies/guardians/names/</loc>
          <lastmod>2023-02-28</lastmod>
          <changefreq>daily</changefreq>
