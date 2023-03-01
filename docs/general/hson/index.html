@@ -3672,7 +3672,7 @@
 
 <h1 id="hson-format">HSON Format<a class="headerlink" href="#hson-format" title="Permanent link">&para;</a></h1>
 <p><strong>The Hedgehog Set Object Notation Format</strong> ("HSON") is a custom JSON-based file format
-designed collaboratively by <strong>Dario</strong>, <strong>Radfordhound</strong>, <strong>ĐeäTh</strong>, <strong>Skyth</strong>, and
+designed collaboratively by <strong>Darío</strong>, <strong>Radfordhound</strong>, <strong>ĐeäTh</strong>, <strong>Skyth</strong>, and
 <strong>Sajid</strong> to represent object placement in a "universal" (non-game/editor-specific) way.</p>
 <p>It was designed with the following principles in-mind:</p>
 <ul>
@@ -4248,11 +4248,14 @@ on your use-case.</p>
 <p>Tooling should not require any of these parameters to be present. When converting, tooling should,
 instead, lookup each parameter by its name as needed, and either error-out or fallback to a
 default value if a required parameter is not present.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p><strong>Note that the following are not allowed to be used as parameter names:</strong></p>
 <ul>
-<li>Empty strings</li>
-<li>Strings which contain forward slashes</li>
+<li>Empty strings.</li>
+<li>Strings which contain forward slashes.</li>
 </ul>
+</div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The "no forward slash" rule allows tooling to access parameters by "path", like so:
@@ -4290,12 +4293,15 @@ use the custom property directly instead, as demonstrated with the <code>myCusto
 property in the example.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nt">&quot;myCustomValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">893.5</span><span class="p">,</span>
 </code></pre></div>
-<p><strong>Note that the following are not allowed to be used as custom properties names:</strong></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Note that the following are not allowed to be used as custom property names:</strong></p>
 <ul>
-<li>Names which are used for properties that are part of the HSON specification</li>
-<li>Empty strings</li>
-<li>Strings which contain forward slashes</li>
+<li>Names which directly collide with properties that are part of the HSON specification (e.g. you can have a custom property called "position", but it has to be placed such that it does not collide with <a href="#36-position">HSON's position property</a>).</li>
+<li>Empty strings.</li>
+<li>Strings which contain forward slashes.</li>
 </ul>
+</div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The "no forward slash" rule allows tooling to access custom properties by "path", like so:
@@ -4315,7 +4321,7 @@ property in the example.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-02-28T05:12:19+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-02-28</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-03-01T05:34:56+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-03-01</span>
       
     
   </small>
