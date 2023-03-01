@@ -5,7 +5,7 @@ description: HSON Format Specification
 # HSON Format
 
 **The Hedgehog Set Object Notation Format** ("HSON") is a custom JSON-based file format
-designed collaboratively by **Dario**, **Radfordhound**, **ĐeäTh**, **Skyth**, and
+designed collaboratively by **Darío**, **Radfordhound**, **ĐeäTh**, **Skyth**, and
 **Sajid** to represent object placement in a "universal" (non-game/editor-specific) way.
 
 It was designed with the following principles in-mind:
@@ -666,10 +666,11 @@ Tooling should not require any of these parameters to be present. When convertin
 instead, lookup each parameter by its name as needed, and either error-out or fallback to a
 default value if a required parameter is not present.
 
-**Note that the following are not allowed to be used as parameter names:**
+!!! important
+    **Note that the following are not allowed to be used as parameter names:**
 
-- Empty strings
-- Strings which contain forward slashes
+    - Empty strings.
+    - Strings which contain forward slashes.
 
 !!! info
     The "no forward slash" rule allows tooling to access parameters by "path", like so:
@@ -716,11 +717,12 @@ property in the example.
 "myCustomValue": 893.5,
 ```
 
-**Note that the following are not allowed to be used as custom properties names:**
+!!! important
+    **Note that the following are not allowed to be used as custom property names:**
 
-- Names which are used for properties that are part of the HSON specification
-- Empty strings
-- Strings which contain forward slashes
+    - Names which directly collide with properties that are part of the HSON specification (e.g. you can have a custom property called "position", but it has to be placed such that it does not collide with [HSON's position property](#36-position)).
+    - Empty strings.
+    - Strings which contain forward slashes.
 
 !!! info
     The "no forward slash" rule allows tooling to access custom properties by "path", like so:
