@@ -561,7 +561,7 @@ with one exception: **it is not valid for type to be an empty string**.
     - **Default**: `[ 0.0, 0.0, 0.0 ]`
 
 **The position of the object within 3D space.** Represented as a three-dimensional array
-of `number`s, representing a vector3 using left-handed coordinates (X-right, Y-up, and Z-forward),
+of `number`s, representing a vector3 using Y-Up right-handed coordinates (X-right, Y-up, and Z-backwards),
 and meters as its units.
 
 If this object is a child of another object, this position value is local to the transform
@@ -578,7 +578,7 @@ If this property is not specified, the value `[ 0.0, 0.0, 0.0 ]` will be used as
     - **Default**: `[ 0.0, 0.0, 0.0, 1.0 ]`
 
 **The rotation of the object within 3D space.** Represented as a four-dimensional array
-of `number`s, representing a quaternion using left-handed coordinates.
+of `number`s, representing a quaternion using Y-up right-handed coordinates.
 
 If this object is a child of another object, this rotation value is local to the transform
 of the parent object (which is local to the transform of its parent, and so on).
@@ -603,7 +603,7 @@ If this property is not specified, the value `[ 0.0, 0.0, 0.0, 1.0 ]` will be us
     - **Default**: `[ 1.0, 1.0, 1.0 ]`
 
 **The scale of the object within 3D space.** Represented as a three-dimensional array
-of `number`s, representing a vector3 using left-handed coordinates (X-right, Y-up, and Z-forward),
+of `number`s, representing a vector3 using Y-up right-handed coordinates (X-right, Y-up, and Z-backwards),
 and meters as its units.
 
 If this object is a child of another object, this scale value is local to the transform
