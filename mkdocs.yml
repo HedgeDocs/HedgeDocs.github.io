@@ -22,6 +22,7 @@ nav:
           - XNCP: tools/hedgehog-engine/blueblur/files/xncp.md
           - GTE/GTM: tools/hedgehog-engine/blueblur/files/gte.md
           - AR/ARL: tools/hedgehog-engine/blueblur/files/ar.md
+          - FCO: tools/hedgehog-engine/blueblur/files/fco.md
         - Level Editing: tools/hedgehog-engine/blueblur/levels.md
       - Sonic Lost World:
         - Level Editing: tools/hedgehog-engine/sonic2013/levels.md
