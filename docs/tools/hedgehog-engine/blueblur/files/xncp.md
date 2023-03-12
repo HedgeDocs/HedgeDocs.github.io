@@ -12,4 +12,4 @@ Allows editing various file formats, in particular the XNCP format through the u
 ## Shuriken
 XNCP Editor with graphical user interface. 
 
-[Source code :fontawesome-solid-download:](https://github.com/crash5band/Shuriken){ .md-button .md-button--primary target="_blank"}
+[Source Code :fontawesome-brands-github:](https://github.com/crash5band/Shuriken){ .md-button target="_blank"}
