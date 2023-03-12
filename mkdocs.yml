@@ -44,6 +44,7 @@ nav:
       - Sonic Colors:
         - File Formats: 
           - XNCP: tools/others/sonic2010/files/xncp.md
+          - ARC: tools/others/sonic2010/files/arc.md
         - Level Editing: tools/others/sonic2010/levels.md
       - 'Sonic Colors: Ultimate':
         - File Formats: tools/others/rainbow/files.md
