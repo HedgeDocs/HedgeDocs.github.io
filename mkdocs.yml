@@ -22,6 +22,7 @@ nav:
           - XNCP: tools/hedgehog-engine/blueblur/files/xncp.md
           - GTE/GTM: tools/hedgehog-engine/blueblur/files/gte.md
           - AR/ARL: tools/hedgehog-engine/blueblur/files/ar.md
+          - FCO: tools/hedgehog-engine/blueblur/files/fco.md
         - Level Editing: tools/hedgehog-engine/blueblur/levels.md
       - Sonic Lost World:
         - Level Editing: tools/hedgehog-engine/sonic2013/levels.md
@@ -43,6 +44,7 @@ nav:
       - Sonic Colors:
         - File Formats: 
           - XNCP: tools/others/sonic2010/files/xncp.md
+          - ARC: tools/others/sonic2010/files/arc.md
         - Level Editing: tools/others/sonic2010/levels.md
       - 'Sonic Colors: Ultimate':
         - File Formats: tools/others/rainbow/files.md
