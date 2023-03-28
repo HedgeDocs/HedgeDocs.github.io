@@ -91,6 +91,9 @@ nav:
           - Level ID Map: docs/hedgehog-engine/rangers/levels/ids.md
         - Scripts:
           - Functions: docs/hedgehog-engine/rangers/scripts/funcs.md
+      - Sonic Generations: 
+        - Levels: 
+          - Level ID Map: docs/hedgehog-engine/blueblur/levels/ids.md
     - Sega NN:
       - Common:
         - NN Chunk Format:
