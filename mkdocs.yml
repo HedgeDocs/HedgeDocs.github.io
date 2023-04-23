@@ -24,8 +24,15 @@ nav:
           - AR/ARL: tools/hedgehog-engine/blueblur/files/ar.md
           - FCO: tools/hedgehog-engine/blueblur/files/fco.md
         - Level Editing: tools/hedgehog-engine/blueblur/levels.md
+      - Sonic Colors:
+        - File Formats: 
+          - XNCP: tools/hedgehog-engine/sonic2010/files/xncp.md
+          - ARC: tools/hedgehog-engine/sonic2010/files/arc.md
+        - Level Editing: tools/hedgehog-engine/sonic2010/levels.md
       - Sonic Lost World:
         - Level Editing: tools/hedgehog-engine/sonic2013/levels.md
+      - 'Sonic Colors: Ultimate':
+        - File Formats: tools/hedgehog-engine/rainbow/files.md
       - Sonic Frontiers:
         - File Formats: 
           - RFL: tools/hedgehog-engine/rangers/files/rfl.md
@@ -40,14 +47,6 @@ nav:
         - File Formats:
           - ONE: tools/renderware/common/files/one.md
         - Level Editing: tools/renderware/common/levels.md
-    - Other Engines:
-      - Sonic Colors:
-        - File Formats: 
-          - XNCP: tools/others/sonic2010/files/xncp.md
-          - ARC: tools/others/sonic2010/files/arc.md
-        - Level Editing: tools/others/sonic2010/levels.md
-      - 'Sonic Colors: Ultimate':
-        - File Formats: tools/others/rainbow/files.md
   - Guides:
     - guides/index.md
     - Hedgehog Engine:
@@ -78,6 +77,10 @@ nav:
     - Various Engines:
       - HSON Format: docs/general/hson.md
     - Hedgehog Engine:
+      - Game List: docs/hedgehog-engine/gamelist.md
+      - Sonic Generations: 
+        - Levels: 
+          - Level ID Map: docs/hedgehog-engine/blueblur/levels/ids.md
       - Sonic Frontiers:
         - Enemies:
           - Guardians:
@@ -91,9 +94,6 @@ nav:
           - Level ID Map: docs/hedgehog-engine/rangers/levels/ids.md
         - Scripts:
           - Functions: docs/hedgehog-engine/rangers/scripts/funcs.md
-      - Sonic Generations: 
-        - Levels: 
-          - Level ID Map: docs/hedgehog-engine/blueblur/levels/ids.md
     - Sega NN:
       - Common:
         - NN Chunk Format:
