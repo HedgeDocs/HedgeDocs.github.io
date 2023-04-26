@@ -5,7 +5,7 @@ description: A list of games that are using Hedgehog Engine.
 # Game List
 
 ## Hedgehog Engine
-| Name                                    | Internal Name |
+| Game Name                               | Internal Name |
 | --------------------------------------- | ------------- |
 | Sonic Unleashed (Sonic World Adventure) | SWA           |
 | Sonic Colors                            | sonic2010     |
