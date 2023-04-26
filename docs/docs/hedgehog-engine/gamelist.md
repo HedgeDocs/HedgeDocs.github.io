@@ -1,4 +1,5 @@
 ---
+title: Hedgehog Engine Game List
 description: A list of games that are using Hedgehog Engine.
 ---
 # Game List
