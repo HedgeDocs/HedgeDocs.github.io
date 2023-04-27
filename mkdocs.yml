@@ -82,6 +82,8 @@ nav:
         - Levels: 
           - Level ID Map: docs/hedgehog-engine/blueblur/levels/ids.md
       - Sonic Frontiers:
+        - DLC:
+          - DLC ID Map: docs/hedgehog-engine/rangers/dlc/ids.md
         - Enemies:
           - Guardians:
             - Internal Names: docs/hedgehog-engine/rangers/enemies/guardians/names.md
