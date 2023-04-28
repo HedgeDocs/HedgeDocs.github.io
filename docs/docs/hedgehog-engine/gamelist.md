@@ -15,6 +15,8 @@ description: A list of games that are using Hedgehog Engine.
 
 \* Sonic Colors: Ultimate also makes use of a forked version of Godot 3.
 
+\* Sonic Colors also makes use of NintendoWare middleware engine. 
+
 ## Hedgehog Engine 2
 | Game Name                                                      | Internal Name   |
 | -------------------------------------------------------------- | --------------- |
