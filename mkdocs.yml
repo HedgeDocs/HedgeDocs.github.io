@@ -61,7 +61,7 @@ nav:
           - Importing Collision: guides/hedgehog-engine/blueblur/levels/importing-collision.md
       - Sonic Frontiers:
         - Models:
-          - Importing Models: guides/hedgehog-engine/rangers/cyloop/ModelIMP.md
+          - Importing Models: guides/hedgehog-engine/rangers/modelimports/modelimport.md
         - Cyloop:
           - Replacing Cyloop Color: guides/hedgehog-engine/rangers/cyloop/color.md
         - Audio:
