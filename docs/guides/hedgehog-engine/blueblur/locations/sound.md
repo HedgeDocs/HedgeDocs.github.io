@@ -101,6 +101,6 @@ Music and sound effects use the "CSB" format, these can be opened with [SonicAud
 | 41OBJ_CMN     | Miscellaneous Object Sounds #1     |
 | 42OBJ_CMN     | Miscellaneous Object Sounds #2     |
 | 61CTS_CMN     | Skill Sounds #1                    |
-| 62CTS_CMN     | Skill Sounds #1                    |
+| 62CTS_CMN     | Skill Sounds #2                    |
 
  
