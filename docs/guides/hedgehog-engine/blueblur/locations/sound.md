@@ -89,7 +89,7 @@ Music and sound effects use the "CSB" format, these can be opened with [SonicAud
 | ------------- | ------------ |
 | 22PLY_SNC_PAM | Sonic Sounds |
 
-## disk/bb3/Sonic
+## disk/bb3/cmn100 (or cmn200)
 
 | File Name     | Description                        |
 | ------------- | ---------------------------------- |
