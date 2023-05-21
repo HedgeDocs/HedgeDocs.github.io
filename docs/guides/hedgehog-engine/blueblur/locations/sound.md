@@ -76,3 +76,31 @@ Music and sound effects use the "CSB" format, these can be opened with [SonicAud
 | File Name | Description           |
 | --------- | --------------------- |
 | 10SYS_ACT | Results Screen Sounds |
+
+## disk/bb3/Application
+
+| File Name | Description |
+| --------- | ----------- |
+| 10SYS_CMN | HUD Sounds  |
+
+## disk/bb3/Sonic
+
+| File Name     | Description  |
+| ------------- | ------------ |
+| 22PLY_SNC_PAM | Sonic Sounds |
+
+## disk/bb3/Sonic
+
+| File Name     | Description                        |
+| ------------- | ---------------------------------- |
+| 21PLY_SNC     | Gimmick Sounds #1                  |
+| 22PLY_SNC     | Gimmick Sounds #2                  |
+| 41AMB_CMN     | Common Ambiance Sounds #1          |
+| 42AMB_CMN     | Common Ambiance Sounds #2          |
+| 40OBJ_CMN_PAM | Common Object Sounds (White World) |
+| 41OBJ_CMN     | Miscellaneous Object Sounds #1     |
+| 42OBJ_CMN     | Miscellaneous Object Sounds #2     |
+| 61CTS_CMN     | Skill Sounds #1                    |
+| 62CTS_CMN     | Skill Sounds #1                    |
+
+ 
