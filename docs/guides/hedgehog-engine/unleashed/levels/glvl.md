@@ -1,0 +1,54 @@
+---
+description: Sonic GLvl setup tutorial for Sonic Unleashed
+---
+
+# How to use Sonic GLvl with Sonic Unleashed
+
+!!! note
+    This guide covers how to get unleashed levels working in order to edit them, this guide does not cover how to use GLvl. its recommended you also read the [Generations GLvl guide.](/guides/hedgehog-engine/blueblur/levels/glvl.md){ target="_blank"}
+
+
+    
+!!! info
+
+    This guide uses the following tools:
+
+    - [Sonic GLvl](/tools/hedgehog-engine/blueblur/levels/){ target="_blank"}
+    
+    - [Unleashed Mod Toolbox](/tools/hedgehog-engine/unleashed/files){ target="_blank"}  
+
+    - [Unleashed Object Template](assets/glvl/UnleashedObjectTemplate.zip)
+
+    - Xbox 360 SDK, find this yourself
+
+
+
+
+
+
+
+#### Part 1 (Preparing .ar Files)
+This example will be editing  Windmill Isle Act 1 Day. Open your extracted unleashed game folder and locate your files. In my case the files are #ActD_MykonosAct1.ar.00, #ActD_MykonosAct1.arl, ActD_MykonosAct1.ar.00, ActD_MykonosAct1.ar.01, ActD_MykonosAct1.arl.
+
+Once located you will need to copy those files to the #files folder inside your Mod Toolbox directory. now open #SUModToolbox.bat and press 3 and enter to decompress the files, press 1 or 2 depending on the system and press enter.
+ 
+Now copy the files inside #output/DecompressedFiles to a seperate folder. In order for GLvl to read the model you need to make a folder called "Packed" and inside your unleashed game folder go to "Packed" and copy the level folder to the new "Packed" folder next to your decompressed .ar files.
+
+#### Part 2 (Preparing GLvl)
+Locate your Xbox 360 SDK's bin/win32 folder and copy xbcompress.exe, xbdecompress.exe, xbdm.dll, msvcp71.dll and msvcr71.dll and paste them into your GLvls "bin" directory.
+
+Open your GLvl folder and go to /database/LevelDatabase.xml, you will need to add your entry for the level, in my case it would be:
+
+"Entry name="ActD_MykonosAct1" geometry="ActD_MykonosAct1"    layout_merge=""     slot="WindmillIsle 1"     game="Unleashed""
+
+ Open "Unleashed Object Template.zip" and extract the contents here, Replace files if asked.
+
+Save the file and open GLvl and press Ctrl+O and find your decompressed .ar files. click "Ok" on the first prompt and click "Yes" on the prompt asking about unpacking terrain.
+
+#### Part 3 (Extracting Textures and adding them to GLvl)
+Inside Unleashed Mod Toolbox delete the files inside #files and #output.
+From your Unleashed game folder copy the various Cmn.ar files for your level and paste them inside the #files of the Unleashed ToolBox.
+
+open #SUModToolbox.bat and press 4 and enter to decompress the files, press 1 and enter and press 1 or 2 depending on the system and press enter. go to #files and delete the contents of the folder. Inside #output you might notice some files have not been extracted. This is because files other than ar.00 and arl don't extract, however you fix this by simply changing the file extension to ar.00, changing the file name and re-extracting them in the ToolBox.
+
+Copy the contents of each folder in #output/ExtractedFiles into GLvl/cache/your-level/resources, replacing files if asked.

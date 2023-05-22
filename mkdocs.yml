@@ -17,6 +17,8 @@ nav:
         - Models: tools/hedgehog-engine/common/models.md
         - Text: tools/hedgehog-engine/common/text.md
         - Level Editing: tools/hedgehog-engine/common/levels.md
+      - Sonic Unleashed:
+        - File Formats: tools/hedgehog-engine/unleashed/files.md
       - Sonic Generations:
         - File Formats: 
           - XNCP: tools/hedgehog-engine/blueblur/files/xncp.md
@@ -50,6 +52,9 @@ nav:
   - Guides:
     - guides/index.md
     - Hedgehog Engine:
+      - Sonic Unleashed:
+          Level Editing: 
+          - Sonic GLvl: guides/hedgehog-engine/unleashed/levels/glvl.md
       - Sonic Generations: 
         - File Formats:
           - XNCP: 
