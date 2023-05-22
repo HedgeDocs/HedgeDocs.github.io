@@ -53,8 +53,8 @@ nav:
     - guides/index.md
     - Hedgehog Engine:
       - Sonic Unleashed:
-          Level Editing: 
-          - Sonic GLvl: guides/hedgehog-engine/unleashed/levels/glvl.md
+          - Level Editing: 
+            - Sonic GLvl: guides/hedgehog-engine/unleashed/levels/glvl.md
       - Sonic Generations: 
         - File Formats:
           - XNCP: 
