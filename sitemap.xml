@@ -91,6 +91,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hedgedocs.com/docs/hedgehog-engine/swa/cutscenes/ids/</loc>
+         <lastmod>2023-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.com/docs/hedgehog-engine/swa/levels/ids/</loc>
+         <lastmod>2023-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.com/docs/hedgehog-engine/swa/towns/ids/</loc>
+         <lastmod>2023-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/wars/levels/ids/</loc>
          <lastmod>2023-05-23</lastmod>
          <changefreq>daily</changefreq>
