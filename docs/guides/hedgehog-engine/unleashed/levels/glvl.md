@@ -16,7 +16,7 @@ description: Sonic GLvl setup tutorial for Sonic Unleashed
     - Xbox 360 SDK, find this yourself
 
 #### Preparing .ar Files
-This example will be editing Windmill Isle Act 1 Day. Open your extracted Unleashed game folder and locate your files. In my case the files are 
+This example will be editing Windmill Isle Act 1 Day. Open your extracted Unleashed game folder and locate your files. In my case, the files are 
 ````
 #ActD_MykonosAct1.ar.00
 #ActD_MykonosAct1.arl
@@ -24,6 +24,7 @@ ActD_MykonosAct1.ar.00
 ActD_MykonosAct1.ar.01
 ActD_MykonosAct1.arl
 ````
+
 Once located you will need to copy those files to the #files folder inside your Mod Toolbox directory. now open #SUModToolbox.bat and press 3 and enter to decompress the files, press 1 or 2 depending on the system and press enter.
  
 Now copy the files inside #output/DecompressedFiles to a seperate folder. In order for GLvl to read the model you need to make a folder called "Packed" and inside your Unleashed game folder go to "Packed" and copy the level folder to the new "Packed" folder next to your decompressed .ar files.
@@ -44,8 +45,9 @@ Afterwards the file should look something like this:
   <Entry name="ActD_Beach" geometry="ActD_Beach"    layout_merge=""     slot="JungleJoyride"     game="Unleashed" />
   <Entry name="ActD_Africa" geometry="ActD_Africa"    layout_merge=""     slot="SavanaCitadel"     game="Unleashed" />
   <Entry name="ActD_MykonosAct1" geometry="ActD_MykonosAct1"    layout_merge=""     slot="WindmillIsle 1"     game="Unleashed"/>
-  </LevelDatabase>
+</LevelDatabase>
 ````
+
 Open "Unleashed Object Template.zip" and extract the contents here, Replace files if asked.
 
 Save the file, open GLvl, press Ctrl+O and find your decompressed .ar files. Click "Ok" on the first prompt and click "Yes" on the prompt asking about unpacking terrain.
