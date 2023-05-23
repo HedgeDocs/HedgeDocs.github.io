@@ -88,6 +88,12 @@ nav:
       - Sonic Generations: 
         - Levels: 
           - Level ID Map: docs/hedgehog-engine/blueblur/levels/ids.md
+      - Sonic Unleashed: 
+        - Levels: 
+          - Level ID Map: docs/hedgehog-engine/swa/levels/ids.md
+          - Town ID Map: docs/hedgehog-engine/swa/towns/ids.md
+        - Cutscenes: 
+          - Cutscene ID Map: docs/hedgehog-engine/swa/cutscenes/ids.md
       - Sonic Forces: 
         - Levels: 
           - Level ID Map: docs/hedgehog-engine/wars/levels/ids.md
