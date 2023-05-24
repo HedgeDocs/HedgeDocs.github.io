@@ -5,7 +5,7 @@ description: Sonic Unleashed Level ID Map
 
 !!! info
     Thanks to Archxe and Hedgeturdd for writing these documents!
-    
+
 ## Mapping
 Level IDs are defined like this:
 ```
@@ -13,7 +13,7 @@ Act{Day/Night}_{region}Act{stage_number}
 or
 Act{Day/Night}_{sub}{region}_{substage_number}
 ```
-!!! info "Note"
+!!! note Note 
     Not all stages follow this format, exceptions include:
 
     ActD_EU -> Rooftop Run Day 1
