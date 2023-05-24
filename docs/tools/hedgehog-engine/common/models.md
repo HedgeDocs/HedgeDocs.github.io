@@ -12,5 +12,5 @@ Converts Hedgehog Engine model files into the FBX format. Part of libgens.
 
 Converts Assimp supported model formats into a Hedgehog Engine model file, with various batch scripts for the different games.
 
-[Download :fontawesome-solid-download:](https://github.com/blueskythlikesclouds/ModelConverter/releases){ .md-button .md-button--primary}
+[Download :fontawesome-solid-download:](https://github.com/blueskythlikesclouds/ModelConverter/releases/latest){ .md-button .md-button--primary}
 [Source Code :fontawesome-brands-github:](https://github.com/blueskythlikesclouds/ModelConverter){ .md-button target="_blank"}
