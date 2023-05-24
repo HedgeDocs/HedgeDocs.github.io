@@ -3,6 +3,9 @@ description: Sonic Unleashed Cutscene ID Map
 ---
 # Cutscene IDs for Sonic Unleashed
 
+!!! info
+    Thanks to Archxe and Hedgeturdd for writing these documents!
+
 Here's a list with all the cutscenes and their respective archive names in Sonic Unleashed.
 
 | Cutscene Name                | Cutscene ID |

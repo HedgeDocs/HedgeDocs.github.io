@@ -3,6 +3,9 @@ description: Sonic Unleashed Level ID Map
 ---
 # Level IDs for Sonic Unleashed
 
+!!! info
+    Thanks to Archxe and Hedgeturdd for writing these documents!
+    
 ## Mapping
 Level IDs are defined like this:
 ```
