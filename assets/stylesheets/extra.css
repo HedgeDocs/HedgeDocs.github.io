@@ -194,7 +194,7 @@ body {
 /* TABS */
 
 .homepage-link {
-    width: 100% !important;
+    width: 100%;
     margin-left: .5em;
     margin-right: .5em
 }
