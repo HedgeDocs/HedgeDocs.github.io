@@ -10,7 +10,7 @@ description: Importing Collision tutorial for Sonic Generations
 	- [HedgeArcPack](/tools/hedgehog-engine/common/files/#hedgearcpack){ target="_blank"}
 
 #### Part 1 (Creating Collision in Blender)
-You'll need model for the collision. If you want collision with different parameters (or tags), you'll need special ini file for HavokConverter with tags. You can download it [here](assets/importing-collision/HavokConverter.ini).
+You'll need model for the collision. If you want collision with different parameters (or tags), you'll need special ini file for HavokConverter with tags. You can download it [here](https://gist.github.com/TheExentist151/8e4896b807d49cd86ff2b643d34c7aa2).
 Let me show you how to apply tags in your collision: 
 
 First, you need to find mesh on which you want to apply tags. 
