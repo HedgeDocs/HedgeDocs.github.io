@@ -64,7 +64,8 @@ nav:
         - Level Editing:
           - Sonic GLvl: guides/hedgehog-engine/blueblur/levels/glvl.md
           - Importing Terrain: guides/hedgehog-engine/blueblur/levels/importing-terrain.md
-          - Importing Collision: guides/hedgehog-engine/blueblur/levels/importing-collision.md                  
+          - Importing Collision: guides/hedgehog-engine/blueblur/levels/importing-collision.md        
+          - Porting the directional light in Blender: guides/hedgehog-engine/blueblur/levels/Porting the directional light in Blender.md          
         - File Locations: 
           - Sounds: guides/hedgehog-engine/blueblur/locations/sound.md
       - Sonic Frontiers:
