@@ -67,38 +67,6 @@ This function is unused.
 
 #### Return Value
 
-### 🗒️ AmbSoundCoordinator() : unknown
-#### Description
-This function is unused.
-#### Parameters
-*Unknown...*
-#### Return Value
-*Unknown...*
-
-### 🗒️ AmbSoundEmitterBaseNoise() : unknown
-#### Description
-This function is unused.
-#### Parameters
-*Unknown...*
-#### Return Value
-*Unknown...*
-
-### 🗒️ AmbSoundEmitterNearPoint() : unknown
-#### Description
-This function is unused.
-#### Parameters
-*Unknown...*
-#### Return Value
-*Unknown...*
-
-### 🗒️ AmbSoundEmitterRelativeWind() : unknown
-#### Description
-This function is unused.
-#### Parameters
-*Unknown...*
-#### Return Value
-*Unknown...*
-
 ### 🗒️ AutoSave(string) : unknown
 #### Description
 
@@ -888,14 +856,6 @@ This function is unused.
 #### Return Value
 
 ### 🗒️ ShowYesNoWindowUI() : unknown
-#### Description
-This function is unused.
-#### Parameters
-*Unknown...*
-#### Return Value
-*Unknown...*
-
-### 🗒️ SoundDirector() : unknown
 #### Description
 This function is unused.
 #### Parameters
