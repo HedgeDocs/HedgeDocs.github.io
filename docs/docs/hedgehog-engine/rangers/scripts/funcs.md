@@ -531,12 +531,26 @@ Disable all player movement
 
 #### Return Value
 
-### 🗒️ NotifyAction(string, string) : unknown
+### 🗒️ NotifyAction(string, string)
 #### Description
+Sends a message to the specified object in the `*.gedit` files. Typically used to turn camera volumes on or off.
 
 #### Parameters
+- (^^**string**^^, string): Internal name of the object to signal.
+- (string, ^^**string**^^): Message to send to the object.
+
+---
+
+Name          | Description
+------------- | ----------
+on            | Activates the object.
+off           | Deactivates the object.
+start         | Unknown.
+
+---
 
 #### Return Value
+None.
 
 ### 🗒️ PlayDiEvent(string) : unknown
 #### Description
