@@ -19,7 +19,7 @@
         <link rel="next" href="../../../../../docs/">
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.eebd395e.min.css">
       
         
         <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ecc896b0.min.css">
@@ -3999,11 +3999,11 @@
 <h2 id="groups">Groups<a class="headerlink" href="#groups" title="Permanent link">&para;</a></h2>
 <p>Objects in '06 make frequent usage of grouping, allowing objects to influence each other in some way (such as an Egg Chaser commanding a squad of Egg Liners or defeating an enemy unlocking a cage). To set these up, create an XML in your stage's cache directory called <code>groupdata_[x].group.xml</code> (where [x] is a name, such as <code>base</code>). Then lay them out as shown below.</p>
 <p><img alt="" src="../assets/glvl/image1.png" /></p>
-<p>Each &lt;Group> key is... Well... A Group that will be compiled into the converted SET.</p>
-<p>The &lt;Name> key seems to just be for identification, so here (for Ocean Palace) I called it <code>CageGroup01</code> as it was the first group I made that unlocked a cage.</p>
-<p>The &lt;Type> key is the name of the lua event that this group will activate, this key can be left empty if the group doesn't need to activate anything. In this example, it's called Cage01, so it will fire the event called Cage01 in the stage's lua file; which, as you can probably guess, signalled a cage to open.</p>
-<p>The &lt;ObjectCount> key simply lists how many objects this group has (and honestly shouldn't have even been a thing, but I wrote this thing incredibly badly).</p>
-<p>The subkeys within the &lt;ObjectIDs> key simply give the ID of an object that should be in this group. These IDs are shown in the conversion log, and are also patched into the Generations SET if the <code>Patch Generations SET</code> option is used in the Converter (see below).</p>
+<p>Each &lt;Group&gt; key is... Well... A Group that will be compiled into the converted SET.</p>
+<p>The &lt;Name&gt; key seems to just be for identification, so here (for Ocean Palace) I called it <code>CageGroup01</code> as it was the first group I made that unlocked a cage.</p>
+<p>The &lt;Type&gt; key is the name of the lua event that this group will activate, this key can be left empty if the group doesn't need to activate anything. In this example, it's called Cage01, so it will fire the event called Cage01 in the stage's lua file; which, as you can probably guess, signalled a cage to open.</p>
+<p>The &lt;ObjectCount&gt; key simply lists how many objects this group has (and honestly shouldn't have even been a thing, but I wrote this thing incredibly badly).</p>
+<p>The subkeys within the &lt;ObjectIDs&gt; key simply give the ID of an object that should be in this group. These IDs are shown in the conversion log, and are also patched into the Generations SET if the <code>Patch Generations SET</code> option is used in the Converter (see below).</p>
 <h2 id="06-set-conversion">'06 SET Conversion<a class="headerlink" href="#06-set-conversion" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../assets/glvl/image2.png" /></p>
 <p>For converting between Generations and '06, we use the GLvl Converter. In the Source SET, select your Generations <code>.set.xml</code> file from your stage's cache directory in your GLvl location (will be named <code>setdata_base.set.xml</code> by default). If you've created any groups for your object layout (which need to be made manually, see above), then select the approriate <code>groupdata_[x].group.xml</code> file for the Groups XML option, otherwise, leave it blank.</p>
