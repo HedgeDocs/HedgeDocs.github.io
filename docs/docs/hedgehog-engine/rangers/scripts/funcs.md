@@ -196,12 +196,9 @@ Clears the Training Simulator notification on the top-right of the heads-up disp
 
 #### Return Value
 
-### 🗒️ ClearUserGuidUI() : unknown
+### 🗒️ ClearUserGuidUI() : yield
 #### Description
-
-#### Parameters
-
-#### Return Value
+Clears an input guide.
 
 ### 🗒️ DebugPrint() : number
 #### Description
@@ -416,7 +413,7 @@ OnGround | Checks if the player is grounded
 ---
 
 #### Return Value
-A 0/1 representation of the requested status.
+A 0/1 number representing the requested state.
 
 ### 🗒️ GetPowerLevel(number) : number
 #### Description
@@ -524,7 +521,7 @@ Returns whether a level is actively being loaded via the LoadLevel() function fo
 #### Return Value
 A 0/1 number representing if a level is being loaded.
 
-### 🗒️ IsPlayingDiEvent(string) : unknown
+### 🗒️ IsPlayingDiEvent(string) : number
 #### Description
 Returns whether the specified event is currently playing.
 
@@ -957,12 +954,44 @@ This function is unused.
 
 #### Return Value
 
-### 🗒️ ShowUserGuidUI(string) : unknown
+### 🗒️ ShowUserGuidUI(string)
 #### Description
+Displays an input guide for the specified control method.
 
 #### Parameters
+- (^^**string**^^): Name
 
-#### Return Value
+!!! info "Notice"
+    Only three of these are *actually* used, as Sonic Team moved to using internal methods for displaying these guides, rather than using Lua.
+    
+    Some names are unknown as they use string hashes that have no source yet.
+
+---
+
+Name                | Internal ID | Description
+------------------- | ----------- | -----------
+CameraControl       | 0           | Displays a graphic for the right stick with the text "Camera".
+*Unknown...*        | 1           | Displays a quad direction graphic with no text.
+Jump *(unused)*     | 2           | Displays a graphic for the A button with no text.
+Boost *(unused)*    | 3           | Displays a graphic for the right trigger with no text.
+HomingAttack        | 4           | Displays a graphic for the X button with the text "Homing Attack".
+Lockon *(unused)*   | 5           | Displays a graphic for the right stick button with the text "Lock On".
+Cyloop *(unused)*   | 6           | Displays a graphic for the Y button with the text "Cyloop (while moving)".
+CyloopBattle        | 7           | Displays a graphic for the Y button with the text "Cyloop (while moving)".
+*Unknown...*        | 8           | Displays a graphic for the left bumper with no text.
+WallRun *(unused)*  | 9           | Displays two graphics, one with a quad direction graphic with the text "Climb", and another with a graphic for the right trigger with the text "Wall Run (while climbing)".
+Boarding *(unused)* | 10          | Displays two graphics, one with a quad direction graphic with the text "Climb", and another with a graphic for the A button with no text.
+*Unknown...*        | 11          | Displays two graphics, one with a left/right direction graphic with no text, and another with a graphic for the left trigger with no text.
+Diving *(unused)*   | 12          | Displays a graphic for the right trigger with no text.
+*Unknown...*        | 13          | Displays two graphics, one with a quad direction graphic with the text "Move the target", and another with a graphic for the A button with the text "Cast the line".
+*Unknown...*        | 14          | Displays a graphic for the B button with the text "Quit".
+*Unknown...*        | 15          | Displays a graphic for the A button with the text "Reel it in".
+*Unknown...*        | 16          | Displays a graphic for the A button with the text "Hook the fish".
+*Unknown...*        | 17          | Displays a graphic for the A button with no text.
+*Unknown...*        | 18          | Displays a graphic for the A button with no text.
+
+---
+
 
 ### 🗒️ ShowYesNoWindowUI(string, string) : yield
 #### Description
