@@ -122,7 +122,7 @@ Plays an animation from an `*.asm` file using the friendly (upper-case) name whe
 
 #### Parameters
 - (^^**string**^^, string): Animation name
-- (string, ^^**number**^^): *Unknown...*
+- (string, ^^**number**^^): Duration (seconds)
 
 ### 🗒️ ChangePlayerMotion(string, number) : yield
 #### Description
@@ -130,7 +130,7 @@ Plays an animation from an `*.asm` file using the friendly (upper-case) name whe
 
 #### Parameters
 - (^^**string**^^, string): Animation name
-- (string, ^^**number**^^): *Unknown...*
+- (string, ^^**number**^^): Duration (seconds)
 
 ### 🗒️ ChangeSavePermission(string)
 #### Description
