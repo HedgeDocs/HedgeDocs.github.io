@@ -989,6 +989,8 @@ Diving *(unused)*   | 12          | Displays a graphic for the right trigger wit
 *Unknown...*        | 16          | Displays a graphic for the A button with the text "Hook the fish".
 *Unknown...*        | 17          | Displays a graphic for the A button with no text.
 *Unknown...*        | 18          | Displays a graphic for the A button with no text.
+*Unknown...*        | 19          | Displays a graphic for the X button with the text "Place cannonball".
+*Unknown...*        | 20          | Displays a graphic for the X button with the text "Load cannon".
 
 ---
 
