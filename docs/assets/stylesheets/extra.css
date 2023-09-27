@@ -85,14 +85,6 @@ body {
     }
 }
 
-.scaleup {
-    animation: scaleup 0.2s forwards;
-}
-
-.scaledown {
-    animation: scaledown 0.3s forwards;
-}
-
 .imagePreview-image {
     display: none;
     z-index: 9;
@@ -347,6 +339,14 @@ video {
 }
 
 /* ANIMATIONS */
+
+.scaleup {
+    animation: scaleup 0.2s forwards;
+}
+
+.scaledown {
+    animation: scaledown 0.3s forwards;
+}
 
 .slide-fadein {
     animation: slidefadein 0.15s;
