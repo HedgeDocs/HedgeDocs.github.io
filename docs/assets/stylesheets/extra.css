@@ -46,6 +46,10 @@ body {
     font-weight: bold;
 }
 
+[dir=ltr] .md-typeset .headerlink {
+    margin-left: .25rem;
+}
+
 /* IMAGE PREVIEW */
 
 .imagePreview-background {
