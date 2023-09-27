@@ -15,8 +15,8 @@ var observer = new MutationObserver(function (mutations, observer) {
             enableAnimatedBackground()
         }
         replacePermalinkIcon()
-        addFadeAnim()
         makeImagesClickable()
+        //addFadeAnim()
         //addCssClasses()
 
         if (document.querySelectorAll('.md-nav__link.md-nav__link--index.md-nav__link--active').length >= 1) {
