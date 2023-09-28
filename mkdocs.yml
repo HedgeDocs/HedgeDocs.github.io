@@ -80,6 +80,8 @@ nav:
       - Sonic The Hedgehog (2006):
         - Level Editing:
           - Sonic GLvl: guides/nn/marathon/levels/glvl.md
+    - Hedge Mod Manager: 
+      - Wiki (GitHub): https://github.com/thesupersonic16/HedgeModManager/wiki
   - Documentation:
     - docs/index.md
     - Various Engines:

@@ -50,6 +50,12 @@ body {
     margin-left: .25rem;
 }
 
+@media screen and (max-width: 44.9375em) {
+    .md-content__inner>.highlight {
+        margin: auto;
+    }
+}
+
 /* IMAGE PREVIEW */
 
 .imagePreview-background {
@@ -108,8 +114,8 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     color: #888888 !important;
-    font-size: 0.6rem;
-    line-height: 0.6rem;
+    font-size: 14px;
+    line-height: 12px;
 }
 
 .imagePreview-image-caption:hover {
@@ -345,7 +351,7 @@ video {
 /* ANIMATIONS */
 
 .scaleup {
-    animation: scaleup 0.2s forwards;
+    animation: scaleup 0.25s forwards;
 }
 
 .scaledown {
