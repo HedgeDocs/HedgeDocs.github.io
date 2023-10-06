@@ -67,3 +67,4 @@ ga1220    | open the waterfall
 ga1225    | pre-giganto
 ga1410    | tutorial island enemies spawn in house
 ga1620    | starfall event but on ouranos/rhea?
+ev0020    | Prerecorded opening scene (Sonic and friends arrive to the Starfall Islands). Needs the level "ui_gamemodeopening" to be loaded to not crash.
