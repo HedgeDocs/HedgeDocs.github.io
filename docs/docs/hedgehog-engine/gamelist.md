@@ -29,4 +29,4 @@ description: A list of games that are using Hedgehog Engine.
 | Sonic Frontiers: Digital Art Book with Mini Digital Soundtrack | rangers_artbook |
 | Sonic Origins Plus\*                                           | hiteplus        |
 
-\* Sonic Origins also makes use of Retro Engine v5U.
+\* Sonic Origins (Plus) also makes use of Retro Engine v5U.
