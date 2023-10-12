@@ -74,6 +74,7 @@ Due to Ouranos and Rhea actually being part of Kronos, their map files are store
 
 - w1r04 - Ouranos
 - w1r05 - Rhea (uses final Kronos terrain)
+- w1r06 - Ouranos (Another Story, uses original Ouranos terrain)
 
 There are also various versions of Kronos in the game files (not present in the PC release), those being:
 
