@@ -1,6 +1,8 @@
 name: pull-request-build-check
 on:
   pull_request:
+    paths:
+      - hedgedocs/**
     branches: 
       - main
 
