@@ -16,6 +16,7 @@ var observer = new MutationObserver(function (mutations, observer) {
         }
         replacePermalinkIcon()
         makeImagesClickable()
+        sidebarExternalLinksNewTab()
         //addFadeAnim()
         //addCssClasses()
 
@@ -150,6 +151,15 @@ function addFadeAnim() {
         if (!link.classList.contains('slide-fadein')) {
             link.classList.add('slide-fadein')
         }
+    }
+}
+
+function sidebarExternalLinksNewTab() {
+    const links = document.querySelectorAll('a[href^="htt"].md-nav__link')
+
+    for (let i = 0, length = links.length; i < length; i++) {
+        const link = links[i]
+        link.target = '_blank'
     }
 }
 
