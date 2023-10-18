@@ -32,3 +32,10 @@
     background-color: rgba(255, 255, 255, .055);
     box-shadow: 0 .05rem 0 var(--md-default-bg-color) inset;
 }
+
+/* EXTERNAL LINKS IN SIDEBAR */
+
+[data-md-color-scheme='amoled'] a[href^="htt"].md-nav__link::before {
+    opacity: 75%;
+    filter: invert(100%);
+}

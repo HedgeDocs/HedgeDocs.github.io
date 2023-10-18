@@ -199,6 +199,20 @@
     border-radius: 0rem;
 }
 
+/* EXTERNAL LINKS IN SIDEBAR */
+
+[data-md-color-scheme='rangers'] a[href^="htt"].md-nav__link::before {
+    opacity: 75%;
+    filter: invert(25%);
+}
+
+@media screen and (max-width: 76.1875em) { 
+    [data-md-color-scheme='rangers'] a[href^="htt"].md-nav__link::before {
+        opacity: 100%;
+        filter: invert(25%);
+    }
+}
+
 /*
 DISABLED FOR ALIGNMENT PURPOSES
 
