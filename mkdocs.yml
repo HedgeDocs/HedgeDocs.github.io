@@ -1,7 +1,7 @@
 site_name: HedgeDocs
 site_url: https://hedgedocs.com
 repo_url: https://github.com/hedgedocs/hedgedocs.github.io
-edit_uri: edit/main/docs/
+edit_uri: edit/main/hedgedocs/
 site_description: Sonic the Hedgehog modding guides and tools
 docs_dir: hedgedocs
 nav:
@@ -200,7 +200,7 @@ theme:
   logo: web/images/icon.svg
   favicon: web/images/favicon.png
   name: material
-  custom_dir: docs/web/overrides
+  custom_dir: hedgedocs/web/overrides
   features:
     - navigation.instant
     - navigation.tabs
