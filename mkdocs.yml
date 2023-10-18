@@ -3,6 +3,7 @@ site_url: https://hedgedocs.com
 repo_url: https://github.com/hedgedocs/hedgedocs.github.io
 edit_uri: edit/main/docs/
 site_description: Sonic the Hedgehog modding guides and tools
+docs_dir: hedgedocs
 nav:
   - Home: index.md
   - Tools:
@@ -168,12 +169,12 @@ markdown_extensions:
       permalink: true
   - tables
 extra_css:
-  - assets/stylesheets/extra.css
-  - assets/stylesheets/amoled.css
-  - assets/stylesheets/dark.css
-  - assets/stylesheets/rangers.css
+  - web/stylesheets/extra.css
+  - web/stylesheets/amoled.css
+  - web/stylesheets/dark.css
+  - web/stylesheets/rangers.css
 extra_javascript:
-  - assets/javascripts/custom.js
+  - web/javascripts/custom.js
 plugins:
   - search
   - git-committers:
@@ -196,10 +197,10 @@ plugins:
         - discoveries/index.md
         - docs/index.md
 theme:
-  logo: assets/images/icon.svg
-  favicon: assets/images/favicon.png
+  logo: web/images/icon.svg
+  favicon: web/images/favicon.png
   name: material
-  custom_dir: overrides
+  custom_dir: docs/web/overrides
   features:
     - navigation.instant
     - navigation.tabs

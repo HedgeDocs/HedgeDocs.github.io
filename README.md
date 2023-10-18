@@ -7,6 +7,15 @@
 
 GitHub Page with tools and guides for modding Sonic games, powered by [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
+## Project Structure
+
+```
+┌─── 📁assets      ────────► Assets used for this README file.
+└─── 📁hedgedocs   ────────► Data for the HedgeDocs website.
+     ├─── 📁web    ────────► Files for custom themes themes, scripts and other page functionality.
+     └─── 📁(...)  ────────► Rest of the folders are directly related to documentation.
+```
+
 ## Editing and Creating Pages
 HedgeDocs pages are written in markdown, just like GitHub's own markdown files! One of the best ways to write markdown text files is to use [Visual Studio Code](https://code.visualstudio.com/), which allows you to preview the page you are currently typing by pressing CTRL+Shift+V, making it easy to see how your page might look like on the website. For a more accurate look, you absolutely should setup the website locally by following the instructions in the **Testing** chapter.
 
