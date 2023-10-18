@@ -1,6 +1,6 @@
 <h1>
     <a href="#hedgedocs">
-        <img width="95" align="left" src="https://raw.githubusercontent.com/HedgeDocs/HedgeDocs.github.io/main/docs/assets/images/favicon.png">
+        <img width="95" align="left" src="https://raw.githubusercontent.com/HedgeDocs/HedgeDocs.github.io/main/docs/web/images/favicon.png">
     </a>
     HedgeDocs
 </h1>
