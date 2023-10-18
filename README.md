@@ -12,8 +12,8 @@ GitHub Page with tools and guides for modding Sonic games, powered by [Material 
 ```
 ┌─── 📁assets      ────────► Assets used for this README file.
 └─── 📁hedgedocs   ────────► Data for the HedgeDocs website.
-     ├─── 📁web    ────────► Files for custom themes themes, scripts and other page functionality.
-     └─── 📁(...)  ────────► Rest of the folders are directly related to documentation.
+     ├─── 📁web    ────────► Custom themes, scripts and other files unrelated to documentation.
+     └─── 📁...    ────────► Rest of the folders are directly related to documentation.
 ```
 
 ## Editing and Creating Pages
