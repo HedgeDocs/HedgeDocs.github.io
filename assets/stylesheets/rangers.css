@@ -99,14 +99,18 @@
 @media screen and (max-width: 76.1875em) {
     [data-md-color-scheme='rangers'] .md-nav--primary .md-nav__link {
         margin-top: 0;
-        padding: .6rem .8rem;
         font-weight: bold;
         opacity: 75%;
     }
     
+    [data-md-color-scheme='rangers'] .md-nav__item .md-nav__link--active {
+        border-left: none;
+        padding-left: inherit;
+    }
+
     [data-md-color-scheme='rangers'] .md-nav--primary .md-nav__item--active>.md-nav__link {
         color: var(--md-typeset-a-color);
-        border-left: 3px solid;
+        border-left: 5px solid;
         opacity: 100%;
     }
 }
