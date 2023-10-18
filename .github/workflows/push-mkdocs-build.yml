@@ -1,7 +1,9 @@
 name: push-mkdocs-build 
 on:
   push:
-    branches: 
+    paths:
+      - hedgedocs/**
+    branches:
       - main
 
 env:
