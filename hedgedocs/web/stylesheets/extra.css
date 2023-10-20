@@ -52,7 +52,7 @@ body {
 
 [dir=ltr] .md-header__title {
     margin: 0em;
-    padding-top: .12em;
+    padding-top: .1em;
 }
 
 body > header > nav.md-header__inner.md-grid > div.md-header__title > div > div:nth-child(2) {
