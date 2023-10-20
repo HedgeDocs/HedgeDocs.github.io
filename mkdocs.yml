@@ -204,6 +204,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.indexes
     - navigation.sections
   icon:

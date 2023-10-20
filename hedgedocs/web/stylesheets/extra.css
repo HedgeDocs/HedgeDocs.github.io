@@ -50,6 +50,21 @@ body {
     margin-left: .25rem;
 }
 
+[dir=ltr] .md-header__title {
+    margin: 0em;
+    padding-top: .12em;
+}
+
+body > header > nav.md-header__inner.md-grid > div.md-header__title > div > div:nth-child(2) {
+    font-weight: normal;
+}
+
+@media screen and (max-width: 76.25em) {
+    [dir=ltr] .md-header__title {
+        padding-top: .02em;
+    }
+}
+
 @media screen and (max-width: 44.9375em) {
     .md-content__inner>.highlight {
         margin: auto;

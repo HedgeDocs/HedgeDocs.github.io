@@ -2,6 +2,8 @@
 hide:
   - navigation
   - toc
+search:
+  exclude: true
 ---
 <style>
   .md-content__button {

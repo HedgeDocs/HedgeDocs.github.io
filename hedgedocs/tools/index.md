@@ -1,5 +1,7 @@
 ---
 title: Tools
+search:
+  exclude: true
 ---
 <style>
   .md-content__button {
