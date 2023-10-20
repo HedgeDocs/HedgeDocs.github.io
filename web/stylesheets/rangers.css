@@ -116,6 +116,10 @@
 }
 
 
+[data-md-color-scheme='rangers']  .md-search__form {
+    border-radius: 0;
+}
+
 [data-md-color-scheme='rangers'] .md-search__input {
     color: var(--md-default-fg-color--lighter);
     font-size: .8rem;
