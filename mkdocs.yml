@@ -98,6 +98,9 @@ nav:
           - Town ID Map: docs/hedgehog-engine/swa/towns/ids.md
         - Cutscenes: 
           - Cutscene ID Map: docs/hedgehog-engine/swa/cutscenes/ids.md
+      - Sonic Colors:
+        - File Formats:
+          - Light Field: docs/hedgehog-engine/sonic2010/files/lightfield.md
       - Sonic Forces: 
         - Levels: 
           - Level ID Map: docs/hedgehog-engine/wars/levels/ids.md
