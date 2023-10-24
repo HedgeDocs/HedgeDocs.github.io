@@ -8,17 +8,21 @@ Light fields are invisible pieces of geometry utilized by Sonic Colors to tint t
 
 ## Light Field Format
 
-Light Field data is stored in "stgxxx_lfield.orc" BINA containers, which can be found in "stgxxx_obj.arc" archives for a given stage. The format for these files is as follows:
+Light field data is stored in "stgxxx_lfield.orc" BINA containers, which can be found in "stgxxx_obj.arc" archives for a given stage. In the original Wii release, the data is stored in big-endian format.
+
+The format for these files is as follows:
 
 ```csharp
-class LightFieldHeader {
+class LightFieldData {
     uint signature; // "RLFS"
     uint version = 1; // Always "1".
-    uint lfArrayHierarchyDepth; // The depth of the Light Field object entry array hierarchy.
-    uint lfArrayCount; // The number of entries in the Light Field object entry array.
-    uint lfArrayOffset; // The non-absolute offset to the Light Field object entry array.
-    uint aabbTreeCount; // The number of entries in the Light Field AABB (Axis Aligned Bounding Box) tree.
+    uint lfArrayHierarchyDepth; // The depth count of the Light Field object array hierarchy.
+    uint lfArrayCount; // The number of entries in the Light Field object array.
+    uint lfArrayOffset; // The non-absolute offset to the Light Field object array.
+    uint lfAabbTreeCount; // The number of entries in the Light Field AABB (Axis Aligned Bounding Box) tree.
     uint lfAabbTreeOffset; // The non-absolute offset to the Light Field AABB tree.
+    LightFieldObject[lfArrayCount] lfObjectArray;
+    LightFieldAABBTreeNode[lfAabbTreeCount] lfaabbTree;
 }
 
 enum LightFieldObjectType : uint8 {
@@ -28,7 +32,7 @@ enum LightFieldObjectType : uint8 {
     OMNIBOX = 3
 }
 
-class LightFieldObjectEntry {
+class LightFieldObject {
     uint nameOffset; // The non-absolute offset to the object name in the BINA string table.
     int index; // The index of the Light Field object, to be referenced in "stgxxx_config.lua" files.
     LightFieldObjectType type; // The type of the Light Field object.
@@ -49,7 +53,7 @@ class LightFieldAABBTreeNode {
 
 ### Light Field Object Scale
 
-The contents of the "scale" float array in a LightFieldObjectEntry varies depending on the type of LightField object that has been specified.
+The contents of the "scale" float array in a LightFieldObject varies depending on the type specified in the LightFieldObjectType field.
 
 Type     | Layout
 -------- | -----------
@@ -60,7 +64,7 @@ Omnibox  | length, width, height, margin, 0.0
 
 ## LightFieldConv XML Layout
 
-LightFieldConv was a tool used by Sonic Team to convert Light Field XML data into "binarc" .src files, in preparation for packing the data into a BINA container. The following example XML data can be used to generate an .src file, similar to that which would have been used to create "stg901_lfield.orc" for the test level discovered in Sonic Colors: Ultimate:
+LightFieldConv was a tool used by Sonic Team to convert light field XML data into "binarc" .src files, in preparation for packing the data into a BINA container. The following example XML data can be used to generate an .src file, similar to that which would have been used to create "stg901_lfield.orc" for the test level discovered in Sonic Colors: Ultimate:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
