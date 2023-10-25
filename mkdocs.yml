@@ -101,6 +101,7 @@ nav:
       - Sonic Colors:
         - File Formats:
           - Light Field: docs/hedgehog-engine/sonic2010/files/lightfield.md
+          - Set Object: docs/hedgehog-engine/sonic2010/files/setobject.md
       - Sonic Forces: 
         - Levels: 
           - Level ID Map: docs/hedgehog-engine/wars/levels/ids.md
