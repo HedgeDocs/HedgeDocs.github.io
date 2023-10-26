@@ -14,7 +14,7 @@ The format for these files is as follows:
 
 ```csharp
 class LightFieldData {
-    uint signature; // "RLFS"
+    uint signature = 1380730451; // "RLFS" ASCII in big-endian.
     uint version = 1; // Always "1".
     uint lfArrayHierarchyDepth; // The depth count of the Light Field object array hierarchy.
     uint lfArrayCount; // The number of entries in the Light Field object array.
@@ -22,7 +22,7 @@ class LightFieldData {
     uint lfAabbTreeCount; // The number of entries in the Light Field AABB (Axis Aligned Bounding Box) tree.
     uint lfAabbTreeOffset; // The non-absolute offset to the Light Field AABB tree.
     LightFieldObject[lfArrayCount] lfObjectArray;
-    LightFieldAABBTreeNode[lfAabbTreeCount] lfaabbTree;
+    LightFieldAABBTreeNode[lfAabbTreeCount] lfAabbTree;
 }
 
 enum LightFieldObjectType : uint8 {
