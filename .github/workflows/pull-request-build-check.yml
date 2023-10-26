@@ -10,7 +10,7 @@ env:
   ENABLE_GIT_PLUGINS: False
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -24,11 +24,3 @@ jobs:
       - run: pip install lxml
       - run: pip install git+https://github.com/PTKickass/mkdocs-git-committers-plugin-2
       - run: mkdocs build -s -v
-      - uses: "finnp/create-file-action@master"
-        env:
-          FILE_NAME: "/home/runner/work/HedgeDocs.github.io/HedgeDocs.github.io/site/start-local-server.bat"
-          FILE_DATA: "npx browser-sync start --server"
-      - uses: actions/upload-artifact@v3
-        with:
-          name: static-website
-          path: /home/runner/work/HedgeDocs.github.io/HedgeDocs.github.io/site
