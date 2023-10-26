@@ -16,7 +16,7 @@
         <link rel="prev" href="../../../swa/cutscenes/ids/">
       
       
-        <link rel="next" href="../../../wars/levels/ids/">
+        <link rel="next" href="../setobject/">
       
       
       <link rel="icon" href="../../../../../web/images/favicon.png">
@@ -3631,6 +3631,8 @@
       
         
       
+        
+      
     
     
     
@@ -3743,6 +3745,26 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setobject/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Object
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -5214,7 +5236,7 @@
 <p>Light field data is stored in "stgxxx_lfield.orc" BINA containers, which can be found in "stgxxx_obj.arc" archives for a given stage. In the original Wii release, the data is stored in big-endian format.</p>
 <p>The format for these files is as follows:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">LightFieldData</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="kt">uint</span><span class="w"> </span><span class="n">signature</span><span class="p">;</span><span class="w"> </span><span class="c1">// &quot;RLFS&quot;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="kt">uint</span><span class="w"> </span><span class="n">signature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1380730451</span><span class="p">;</span><span class="w"> </span><span class="c1">// &quot;RLFS&quot; ASCII in big-endian.</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="kt">uint</span><span class="w"> </span><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// Always &quot;1&quot;.</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="kt">uint</span><span class="w"> </span><span class="n">lfArrayHierarchyDepth</span><span class="p">;</span><span class="w"> </span><span class="c1">// The depth count of the Light Field object array hierarchy.</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="kt">uint</span><span class="w"> </span><span class="n">lfArrayCount</span><span class="p">;</span><span class="w"> </span><span class="c1">// The number of entries in the Light Field object array.</span>
@@ -5222,7 +5244,7 @@
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="kt">uint</span><span class="w"> </span><span class="n">lfAabbTreeCount</span><span class="p">;</span><span class="w"> </span><span class="c1">// The number of entries in the Light Field AABB (Axis Aligned Bounding Box) tree.</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="kt">uint</span><span class="w"> </span><span class="n">lfAabbTreeOffset</span><span class="p">;</span><span class="w"> </span><span class="c1">// The non-absolute offset to the Light Field AABB tree.</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="n">LightFieldObject</span><span class="p">[</span><span class="n">lfArrayCount</span><span class="p">]</span><span class="w"> </span><span class="n">lfObjectArray</span><span class="p">;</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="n">LightFieldAABBTreeNode</span><span class="p">[</span><span class="n">lfAabbTreeCount</span><span class="p">]</span><span class="w"> </span><span class="n">lfaabbTree</span><span class="p">;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="n">LightFieldAABBTreeNode</span><span class="p">[</span><span class="n">lfAabbTreeCount</span><span class="p">]</span><span class="w"> </span><span class="n">lfAabbTree</span><span class="p">;</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="k">enum</span><span class="w"> </span><span class="n">LightFieldObjectType</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">uint8</span><span class="w"> </span><span class="p">{</span>
@@ -5364,7 +5386,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-10-24T06:55:52+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-10-24</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-10-26T14:30:05+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-10-26</span>
       
     
   </small>
