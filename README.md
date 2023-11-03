@@ -84,8 +84,7 @@ You can test your changes locally before committing. To do so:
 - Install Material For MkDocs: `pip install mkdocs-material --upgrade`
 - Install necessary MkDocs Plugins
     - git-revision-date-localized-plugin: `pip install mkdocs-git-revision-date-localized-plugin --upgrade`
-    - lxml (required by committers plugin): `pip install lxml --upgrade`
-    - git-committers-plugin-2: `pip install mkdocs-git-committers-plugin-2 --upgrade`
+    - git-committers-plugin-2: `pip install git+https://github.com/PTKay/mkdocs-git-committers-plugin-2 --upgrade`
 - Serve webpage locally: `mkdocs serve`
     - You can also build a static site instead, using `mkdocs build`
  

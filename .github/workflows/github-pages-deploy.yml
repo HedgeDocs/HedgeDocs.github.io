@@ -1,17 +1,20 @@
-name: pull-request-build-check
+name: github-pages-deploy
 on:
-  pull_request:
+  push:
     paths:
       - hedgedocs/**
-    branches: 
+    branches:
       - main
+  workflow_dispatch:
 
 env:
-  ENABLE_GIT_PLUGINS: False
+  ENABLE_GIT_PLUGINS: True
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    env:
+      MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -21,6 +24,5 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: pip install mkdocs-git-revision-date-localized-plugin
-      - run: pip install lxml
-      - run: pip install git+https://github.com/PTKickass/mkdocs-git-committers-plugin-2
-      - run: mkdocs build -s -v
+      - run: pip install git+https://github.com/PTKay/mkdocs-git-committers-plugin-2 --upgrade
+      - run: mkdocs gh-deploy --force

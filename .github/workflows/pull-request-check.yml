@@ -1,18 +1,19 @@
-name: push-mkdocs-build
+name: pull-request-check
 on:
-  push:
+  pull_request:
     paths:
       - hedgedocs/**
-    branches:
+    branches: 
       - main
-  workflow_dispatch:
 
 env:
-  ENABLE_GIT_PLUGINS: True
+  ENABLE_GIT_PLUGINS: False
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+    env:
+      MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -22,6 +23,5 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: pip install mkdocs-git-revision-date-localized-plugin
-      - run: pip install lxml
-      - run: pip install mkdocs-git-committers-plugin-2
-      - run: mkdocs gh-deploy --force
+      - run: pip install git+https://github.com/PTKay/mkdocs-git-committers-plugin-2
+      - run: mkdocs build -s -v
