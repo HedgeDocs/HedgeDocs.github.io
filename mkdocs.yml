@@ -106,6 +106,8 @@ nav:
         - Levels: 
           - Level ID Map: docs/hedgehog-engine/wars/levels/ids.md
       - Sonic Frontiers:
+        - Models:
+          - Importing Models: guides/hedgehog-engine/rangers/models/import.md
         - DLC:
           - DLC ID Map: docs/hedgehog-engine/rangers/dlc/ids.md
         - Enemies:
