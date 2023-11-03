@@ -2,7 +2,7 @@
     <a href="#hedgedocs">
         <img width="95" align="left" src="https://raw.githubusercontent.com/HedgeDocs/HedgeDocs.github.io/main/hedgedocs/web/images/favicon.png">
     </a>
-    HedgeDocs
+    Hedge<span style="font-weight: 200;">Docs</span>
 </h1>
 
 GitHub Page with tools and guides for modding Sonic games, powered by [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
