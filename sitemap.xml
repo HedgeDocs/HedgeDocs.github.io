@@ -86,6 +86,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hedgedocs.com/docs/hedgehog-engine/rangers/models/import/</loc>
+         <lastmod>2023-11-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/rangers/scripts/funcs/</loc>
          <lastmod>2023-11-03</lastmod>
          <changefreq>daily</changefreq>
