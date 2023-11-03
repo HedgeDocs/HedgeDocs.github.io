@@ -1,4 +1,5 @@
 /* GENERAL */
+body { display:none; } /* For initial JS Load. Changes to "flex" after custom.js executes */
 
 :root {
     --imagePreview-finalScale: 1.2;
@@ -12,6 +13,10 @@
 body {
     background-attachment: fixed;
     background-image: var(--background-color);
+}
+
+.md-main__inner {
+    margin-top: .5rem;
 }
 
 .md-footer {
@@ -69,6 +74,16 @@ body > header > nav.md-header__inner.md-grid > div.md-header__title > div > div:
     .md-content__inner>.highlight {
         margin: auto;
     }
+}
+
+@media screen and (max-width: 76.234375em) {
+    .md-nav--primary .md-nav__title[for=__drawer] {
+        height: 5em;
+    }
+}
+
+input:placeholder-shown {
+    font-style: italic;
 }
 
 /* EXTERNAL LINKS IN SIDEBAR */
@@ -217,6 +232,8 @@ a[href^="htt"].md-nav__link::before {
 
     .homepage-buttons {
         display: block !important;
+        margin-right: 0em !important;
+        margin-left: 0em !important;
     }
 }
 
@@ -230,6 +247,8 @@ a[href^="htt"].md-nav__link::before {
 
 .homepage-buttons {
     display: flex;
+    margin-right: -.5em;
+    margin-left: -.5em;
 }
 
 .md-tabs__item {

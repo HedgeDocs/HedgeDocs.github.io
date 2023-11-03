@@ -4,7 +4,6 @@
 let animatedBackgroundIsEnabled = false
 
 /* --------- ON PAGE LOAD ----------- */
-
 MutationObserver = window.MutationObserver || window.WebKitMutationObserver
 var observer = new MutationObserver(function (mutations, observer) {
     if (mutations.find((elem) => elem.attributeName == 'data-md-scrollfix') != undefined) {
@@ -17,6 +16,7 @@ var observer = new MutationObserver(function (mutations, observer) {
         replacePermalinkIcon()
         makeImagesClickable()
         sidebarExternalLinksNewTab()
+        onInitialLoad()
         //addFadeAnim()
         //addCssClasses()
 
@@ -25,11 +25,18 @@ var observer = new MutationObserver(function (mutations, observer) {
         }
     }
 })
+
+function onInitialLoad() {
+    headerStyling()
+}
+
+
+/* ON JS LOAD */
 observer.observe(document, {
     subtree: true,
     attributes: true,
 })
-
+onInitialLoad()
 
 /* --------- FUNCTIONS ----------- */
 
@@ -163,6 +170,21 @@ function sidebarExternalLinksNewTab() {
     }
 }
 
+function headerStyling() {
+    const header = document.querySelectorAll('body > header > nav.md-header__inner.md-grid > div.md-header__title > div > div:nth-child(1) > span')
+
+    if (header.length > 0) {
+        header[0].innerHTML = 
+            '<span class="md-ellipsis" style="/* font-weight: 900; */">Hedge</span><span class="md-ellipsis" style="font-weight: 100;">Docs</span>'
+    }
+    
+    const mobileSidebarHeader = document.querySelector('body > div.md-container > main > div > div.md-sidebar.md-sidebar--primary > div > div > nav > label')
+
+    mobileSidebarHeader.innerHTML = '<a href="/" title="HedgeDocs" class="md-nav__button md-logo" aria-label="HedgeDocs" data-md-component="logo">\
+                                        <img src="/web/images/icon.svg" alt="logo">\
+                                    </a>'
+}
+
 function replaceNavLinks() {
     const links = document.querySelectorAll('.md-nav__link')
     for (let i = 0, length = links.length; i < length; i++) {
@@ -193,3 +215,7 @@ function replaceNavLinks() {
         */
     }
 }
+
+
+/* SHOW BODY WHEN SCRIPT LOADS */
+document.body.style.display = 'flex'
