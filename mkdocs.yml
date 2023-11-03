@@ -51,7 +51,14 @@ nav:
       - Common: 
         - File Formats:
           - ONE: tools/renderware/common/files/one.md
+          - PAC: tools/renderware/common/files/pac.md
+          - TXD: tools/renderware/common/files/txd.md
         - Level Editing: tools/renderware/common/levels.md
+    - Retro Engine:
+      - Common:
+        - File Formats: tools/retro-engine/common/files.md
+        - Models: tools/retro-engine/common/models.md
+        - Animation: tools/retro-engine/common/animation.md
   - Guides:
     - guides/index.md
     - Hedgehog Engine:
