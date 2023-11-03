@@ -3,6 +3,9 @@ description: Sonic Unleashed Town ID Map
 ---
 # Town IDs for Sonic Unleashed
 
+!!! info
+    Thanks to Archxe and Hedgeturdd for writing these documents!
+
 Here's a list with all the towns and their respective archive names in Sonic Unleashed.
 
 ### Towns (Day)

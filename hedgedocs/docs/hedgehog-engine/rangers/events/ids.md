@@ -16,6 +16,7 @@ chl1090   | open zone timer mission
 chl1130   | open zone timer mission
 chl1170   | open zone timer mission
 chl1200   | open zone timer mission
+ev0020    | Prerecorded opening scene (Sonic and friends arrive to the Starfall Islands). Needs the level "ui_gamemodeopening" to be loaded to not crash.
 ga1010    | sonic entering cyberspace for the first time
 ga1011    | sonic returns from cyberspace
 ga1012    | different version of ga1010
