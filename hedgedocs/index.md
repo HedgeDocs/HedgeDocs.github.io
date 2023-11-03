@@ -46,7 +46,7 @@ search:
 
 <div class="card">
   <div class="card-header">
-    <h1>Make your own contributions to the HedgeDocs GitHub Repository!</h1>
+    <h1>Make your own contributions to the HedgeDocs GitHub repository!</h1>
   </div>
   <div class="card-description">
     <p>Contribute to HedgeDocs by writing your own guides, documentation, and adding your tools to the GitHub repository. Adding your own pages is extremely easy, and editing existing ones is even simpler!</p>
@@ -63,10 +63,10 @@ search:
 
 <div class="card">
   <div class="card-header">
-    <h1>Join the conversation on HedgeServer!</h1>
+    <h1>Join the conversation in HedgeServer!</h1>
   </div>
   <div class="card-description">
-    <p>Discuss your mods and get help from other Sonic modders in HedgeServer, a Discord server especially dedicated to modding and modding only!</p>
+    <p>Discuss your mods and get help from other Sonic modders in HedgeServer, a Discord server especially dedicated to Hedgehog Engine modding!</p>
   </div>
   <div class="card-button">
     <a class="md-button md-button--primary homepage-link" href="https://discord.gg/yDbhWwzndm" target="_blank" style="text-align: center; width: 17em; margin-left: auto; margin-top: auto; margin-bottom: auto">
