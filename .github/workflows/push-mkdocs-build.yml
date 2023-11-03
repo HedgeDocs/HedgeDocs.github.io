@@ -1,10 +1,11 @@
-name: push-mkdocs-build 
+name: push-mkdocs-build
 on:
   push:
     paths:
       - hedgedocs/**
     branches:
       - main
+  workflow_dispatch
 
 env:
   ENABLE_GIT_PLUGINS: True
