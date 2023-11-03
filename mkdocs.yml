@@ -39,8 +39,9 @@ nav:
         - File Formats: tools/hedgehog-engine/rainbow/files.md
       - Sonic Frontiers:
         - File Formats: 
-          - RFL: tools/hedgehog-engine/rangers/files/rfl.md
           - ANM.PXD: tools/hedgehog-engine/rangers/files/anmpxd.md
+          - CEMT: tools/hedgehog-engine/rangers/files/cemt.md
+          - RFL: tools/hedgehog-engine/rangers/files/rfl.md
         - Models: tools/hedgehog-engine/rangers/models.md
     - Sega NN:
         - Sonic The Hedgehog (2006):
