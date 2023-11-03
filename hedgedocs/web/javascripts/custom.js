@@ -45,10 +45,16 @@ function makeImagesClickable() {
     background.addEventListener('click', hideImagePreview)
 
     const images = document.querySelector('.md-main').querySelectorAll('img')
-
+    
     for(let i = 0; i < images.length; i++) {
         const image = images[i]
-        if (image.classList.contains('not-clickable') || image.parentElement.classList.contains('md-logo')) continue
+        
+        if (
+            image.classList.contains('not-clickable') 
+            || image.parentElement.classList.contains('md-logo')
+            || image.parentElement.classList.contains('github-avatar')
+        ) continue
+
         image.setAttribute('style', 'cursor: pointer')
         image.addEventListener('click', imageClicked)
     }
