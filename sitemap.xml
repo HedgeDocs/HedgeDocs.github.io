@@ -340,4 +340,24 @@
          <lastmod>2023-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://hedgedocs.com/tools/renderware/common/files/pac/</loc>
+         <lastmod>2023-11-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.com/tools/retro-engine/common/animation/</loc>
+         <lastmod>2023-11-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.com/tools/retro-engine/common/files/</loc>
+         <lastmod>2023-11-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.com/tools/retro-engine/common/models/</loc>
+         <lastmod>2023-11-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>

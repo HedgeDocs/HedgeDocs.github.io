@@ -6,28 +6,32 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Model Importing guide for Sonic Frontiers">
+        <meta name="description" content="File format tools for the Retro Engine">
       
       
       
-        <link rel="canonical" href="https://hedgedocs.com/docs/hedgehog-engine/rangers/models/import/">
+        <link rel="canonical" href="https://hedgedocs.com/tools/retro-engine/common/files/">
       
       
+        <link rel="prev" href="../../../renderware/common/levels/">
       
       
-      <link rel="icon" href="../../../../../web/images/favicon.png">
+        <link rel="next" href="../models/">
+      
+      
+      <link rel="icon" href="../../../../web/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.7">
     
     
       
-        <title>Model Importing - HedgeDocs</title>
+        <title>File Formats - HedgeDocs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.4b4a2bd9.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4b4a2bd9.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -46,31 +50,31 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../css/timeago.css">
+      <link rel="stylesheet" href="../../../../css/timeago.css">
     
-      <link rel="stylesheet" href="../../../../../web/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../web/stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../../../../../web/stylesheets/amoled.css">
+      <link rel="stylesheet" href="../../../../web/stylesheets/amoled.css">
     
-      <link rel="stylesheet" href="../../../../../web/stylesheets/dark.css">
+      <link rel="stylesheet" href="../../../../web/stylesheets/dark.css">
     
-      <link rel="stylesheet" href="../../../../../web/stylesheets/rangers.css">
+      <link rel="stylesheet" href="../../../../web/stylesheets/rangers.css">
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  <meta property="og:title" content="Model Importing - HedgeDocs" />
+  <meta property="og:title" content="File Formats - HedgeDocs" />
   <meta property="og:type" content="webpage" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://hedgedocs.com/docs/hedgehog-engine/rangers/models/import/" />
+  <meta property="og:url" content="https://hedgedocs.com/tools/retro-engine/common/files/" />
   <meta property="og:image" content="https://hedgedocs.com/web/images/favicon.png" />
   <meta property="og:image:type" content="image/png" />
 
-  <meta property="og:description" content="Model Importing guide for Sonic Frontiers">
+  <meta property="og:description" content="File format tools for the Retro Engine">
 
   <meta property="og:image:width" content="512" />
   <meta property="og:image:height" content="512" />
@@ -99,7 +103,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#model-importing" class="md-skip">
+        <a href="#file-format-tools" class="md-skip">
           Skip to content
         </a>
       
@@ -115,9 +119,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../.." title="HedgeDocs" class="md-header__button md-logo" aria-label="HedgeDocs" data-md-component="logo">
+    <a href="../../../.." title="HedgeDocs" class="md-header__button md-logo" aria-label="HedgeDocs" data-md-component="logo">
       
-  <img src="../../../../../web/images/icon.svg" alt="logo">
+  <img src="../../../../web/images/icon.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -134,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Model Importing
+              File Formats
             
           </span>
         </div>
@@ -242,7 +246,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
     
@@ -257,11 +261,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../../tools/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
           
   
     
@@ -281,7 +287,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../guides/" class="md-tabs__link">
+        <a href="../../../../guides/" class="md-tabs__link">
           
   
     
@@ -301,7 +307,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../" class="md-tabs__link">
+        <a href="../../../../docs/" class="md-tabs__link">
           
   
     
@@ -321,7 +327,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../discoveries/" class="md-tabs__link">
+        <a href="../../../../discoveries/" class="md-tabs__link">
           
   
     
@@ -362,9 +368,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="HedgeDocs" class="md-nav__button md-logo" aria-label="HedgeDocs" data-md-component="logo">
+    <a href="../../../.." title="HedgeDocs" class="md-nav__button md-logo" aria-label="HedgeDocs" data-md-component="logo">
       
-  <img src="../../../../../web/images/icon.svg" alt="logo">
+  <img src="../../../../web/images/icon.svg" alt="logo">
 
     </a>
     HedgeDocs
@@ -390,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -407,6 +413,8 @@
       
   
   
+    
+  
   
     
     
@@ -432,17 +440,17 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../tools/" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -459,7 +467,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -519,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/general/files/" class="md-nav__link">
+      <a href="../../../general/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -539,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/general/audio/" class="md-nav__link">
+      <a href="../../../general/audio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -670,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/common/files/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/common/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -690,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/common/lighting/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/common/lighting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -710,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/common/models/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/common/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -730,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/common/text/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/common/text/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -750,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/common/levels/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/common/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -818,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/unleashed/files/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/unleashed/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -934,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/blueblur/files/xncp/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/blueblur/files/xncp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -954,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/blueblur/files/gte/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/blueblur/files/gte/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -974,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/blueblur/files/ar/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/blueblur/files/ar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -994,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/blueblur/files/fco/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/blueblur/files/fco/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1022,7 +1030,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/blueblur/levels/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/blueblur/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1136,7 +1144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/sonic2010/files/xncp/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/sonic2010/files/xncp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1156,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/sonic2010/files/arc/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/sonic2010/files/arc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1176,7 +1184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/sonic2010/files/xtb/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/sonic2010/files/xtb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1204,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/sonic2010/levels/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/sonic2010/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1272,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/sonic2013/levels/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/sonic2013/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1340,7 +1348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/rainbow/files/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/rainbow/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1454,7 +1462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/rangers/files/anmpxd/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/rangers/files/anmpxd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1474,7 +1482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/rangers/files/cemt/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/rangers/files/cemt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1494,7 +1502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/rangers/files/rfl/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/rangers/files/rfl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1522,7 +1530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/hedgehog-engine/rangers/models/" class="md-nav__link">
+      <a href="../../../hedgehog-engine/rangers/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1643,7 +1651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/nn/marathon/files/" class="md-nav__link">
+      <a href="../../../nn/marathon/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1663,7 +1671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/nn/marathon/levels/" class="md-nav__link">
+      <a href="../../../nn/marathon/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1828,7 +1836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/renderware/common/files/one/" class="md-nav__link">
+      <a href="../../../renderware/common/files/one/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1848,7 +1856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/renderware/common/files/pac/" class="md-nav__link">
+      <a href="../../../renderware/common/files/pac/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1868,7 +1876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/renderware/common/files/txd.md" class="md-nav__link">
+      <a href="../../../renderware/common/files/txd.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1896,7 +1904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/renderware/common/levels/" class="md-nav__link">
+      <a href="../../../renderware/common/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1930,6 +1938,8 @@
                 
   
   
+    
+  
   
     
     
@@ -1943,12 +1953,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
         
           
           <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
@@ -1962,7 +1972,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             Retro Engine
@@ -1973,6 +1983,8 @@
                 
   
   
+    
+  
   
     
     
@@ -1987,12 +1999,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
@@ -2006,7 +2018,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_6_1">
             <span class="md-nav__icon md-icon"></span>
             Common
@@ -2017,9 +2029,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../../../tools/retro-engine/common/files/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    File Formats
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -2028,6 +2060,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#retroed" class="md-nav__link">
+    RetroED
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2039,7 +2098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/retro-engine/common/models/" class="md-nav__link">
+      <a href="../models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2059,7 +2118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/retro-engine/common/animation/" class="md-nav__link">
+      <a href="../animation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2131,7 +2190,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../guides/" class="md-nav__link ">
+            <a href="../../../../guides/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2290,7 +2349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/hedgehog-engine/unleashed/levels/glvl/" class="md-nav__link">
+      <a href="../../../../guides/hedgehog-engine/unleashed/levels/glvl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2452,7 +2511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/hedgehog-engine/blueblur/files/xncp/basics/" class="md-nav__link">
+      <a href="../../../../guides/hedgehog-engine/blueblur/files/xncp/basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2472,7 +2531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/hedgehog-engine/blueblur/files/xncp/anims/" class="md-nav__link">
+      <a href="../../../../guides/hedgehog-engine/blueblur/files/xncp/anims/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2552,7 +2611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/hedgehog-engine/blueblur/levels/glvl/" class="md-nav__link">
+      <a href="../../../../guides/hedgehog-engine/blueblur/levels/glvl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2572,7 +2631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/hedgehog-engine/blueblur/levels/importing-terrain/" class="md-nav__link">
+      <a href="../../../../guides/hedgehog-engine/blueblur/levels/importing-terrain/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2592,7 +2651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/hedgehog-engine/blueblur/levels/importing-collision/" class="md-nav__link">
+      <a href="../../../../guides/hedgehog-engine/blueblur/levels/importing-collision/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2660,7 +2719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/hedgehog-engine/blueblur/locations/sound/" class="md-nav__link">
+      <a href="../../../../guides/hedgehog-engine/blueblur/locations/sound/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2782,7 +2841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/hedgehog-engine/rangers/cyloop/color/" class="md-nav__link">
+      <a href="../../../../guides/hedgehog-engine/rangers/cyloop/color/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2850,7 +2909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/hedgehog-engine/rangers/audio/replacing/" class="md-nav__link">
+      <a href="../../../../guides/hedgehog-engine/rangers/audio/replacing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2918,7 +2977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/hedgehog-engine/rangers/animation/import-export/" class="md-nav__link">
+      <a href="../../../../guides/hedgehog-engine/rangers/animation/import-export/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2986,7 +3045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/hedgehog-engine/rangers/materials/advanced-mats/" class="md-nav__link">
+      <a href="../../../../guides/hedgehog-engine/rangers/materials/advanced-mats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3153,7 +3212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/nn/marathon/levels/glvl/" class="md-nav__link">
+      <a href="../../../../guides/nn/marathon/levels/glvl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3304,7 +3363,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../" class="md-nav__link ">
+            <a href="../../../../docs/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3379,7 +3438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../general/hson/" class="md-nav__link">
+      <a href="../../../../docs/general/hson/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3460,7 +3519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../gamelist/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/gamelist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3560,7 +3619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blueblur/levels/ids/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/blueblur/levels/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3680,7 +3739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../swa/levels/ids/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/swa/levels/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3700,7 +3759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../swa/towns/ids/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/swa/towns/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3768,7 +3827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../swa/cutscenes/ids/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/swa/cutscenes/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3886,7 +3945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sonic2010/files/lightfield/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/sonic2010/files/lightfield/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3906,7 +3965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sonic2010/files/setobject/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/sonic2010/files/setobject/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4022,7 +4081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../wars/levels/ids/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/wars/levels/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4150,7 +4209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../guides/hedgehog-engine/rangers/models/import.md" class="md-nav__link">
+      <a href="../../../../guides/hedgehog-engine/rangers/models/import.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4218,7 +4277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dlc/ids/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/rangers/dlc/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4326,7 +4385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../enemies/guardians/names/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/rangers/enemies/guardians/names/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4402,7 +4461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../events/ids/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/rangers/events/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4510,7 +4569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../files/rfl/mapping/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/rangers/files/rfl/mapping/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4586,7 +4645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../levels/ids/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/rangers/levels/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4654,7 +4713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../scripts/funcs/" class="md-nav__link">
+      <a href="../../../../docs/hedgehog-engine/rangers/scripts/funcs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4803,7 +4862,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../nn/common/chunk-format/" class="md-nav__link ">
+            <a href="../../../../docs/nn/common/chunk-format/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -4835,7 +4894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../nn/common/chunk-format/texlist/" class="md-nav__link">
+      <a href="../../../../docs/nn/common/chunk-format/texlist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4915,7 +4974,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../discoveries/" class="md-nav__link ">
+            <a href="../../../../discoveries/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -5030,7 +5089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../discoveries/swa/ps3/install/" class="md-nav__link">
+      <a href="../../../../discoveries/swa/ps3/install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5149,7 +5208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../discoveries/blueblur/hud/blb_gauge/" class="md-nav__link">
+      <a href="../../../../discoveries/blueblur/hud/blb_gauge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5274,7 +5333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../discoveries/sonic2013/levels/colors/" class="md-nav__link">
+      <a href="../../../../discoveries/sonic2013/levels/colors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5294,7 +5353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../discoveries/sonic2013/levels/test/" class="md-nav__link">
+      <a href="../../../../discoveries/sonic2013/levels/test/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5314,7 +5373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../discoveries/sonic2013/levels/deleted/" class="md-nav__link">
+      <a href="../../../../discoveries/sonic2013/levels/deleted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5334,7 +5393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../discoveries/sonic2013/levels/original-order/" class="md-nav__link">
+      <a href="../../../../discoveries/sonic2013/levels/original-order/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5391,6 +5450,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#retroed" class="md-nav__link">
+    RetroED
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -5415,60 +5489,10 @@
   
 
 
-<h1 id="model-importing">Model Importing<a class="headerlink" href="#model-importing" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This guide uses the following tools:</p>
-<ul>
-<li><a href="/tools/hedgehog-engine/common/files/#hedgearcpack" target="_blank">HedgeArcPack</a></li>
-<li><a href="https://www.blender.org/download/">Blender</a></li>
-<li><a href="/tools/hedgehog-engine/common/models/#modelconverter">ModelConverter.exe</a></li>
-<li><a href="/tools/hedgehog-engine/common/models/#modelfbx">modelfbx</a></li>
-<li><a href="https://github.com/Turk645/Hedgehog-Engine-2-Mesh-Blender-Importer">.modelImporter add-on for Blender</a></li>
-<li><a href="https://github.com/Radfordhound/HedgeLib/tree/HedgeLib%2B%2B/HedgeTools">HedgeNeedle</a></li>
-</ul>
-</div>
-<h1 id="extracting-models">Extracting Models<a class="headerlink" href="#extracting-models" title="Permanent link">&para;</a></h1>
-<h3 id="creating-and-extracting-the-pac-file">Creating and Extracting the PAC File<a class="headerlink" href="#creating-and-extracting-the-pac-file" title="Permanent link">&para;</a></h3>
-<p>Firstly, create a PAC file named after the character and proceed to extract the contents of the archive utilizing the HedgeArcPack tool.</p>
-<h3 id="converting-to-fbx-and-importing-into-blender">Converting to FBX and Importing into Blender<a class="headerlink" href="#converting-to-fbx-and-importing-into-blender" title="Permanent link">&para;</a></h3>
-<p>Next, convert the <code>chr_character.model</code> file into the FBX format using the ModelFBX tool. 
-Please note that certain models may not necessitate conversion into FBX format. 
-If you don't need to use the FBX format, use the HedgeNeedle tool, extract the various levels of detail from the <code>.model</code> file, and rename <code>chr_character.0.model</code> to <code>chr_character</code>. 
-Subsequently, utilize the model importer add-on to import the model into Blender.</p>
-<h3 id="rigging-and-vertex-count">Rigging and Vertex Count<a class="headerlink" href="#rigging-and-vertex-count" title="Permanent link">&para;</a></h3>
-<p>After the model is imported into Blender, introduce your own model that is intended to be utilized in-game, and proceed to rig it to the original model's skeleton. 
-It is crucial to ensure that the vertex count of your model does not surpass the maximum requirements of the model converter, which is approximately 21,000 vertices per object.</p>
-<h3 id="assigning-weights-and-resources">Assigning Weights and Resources<a class="headerlink" href="#assigning-weights-and-resources" title="Permanent link">&para;</a></h3>
-<p>As weights primarily refer to Blender rather than the Hedgehog Engine itself, you should use the following resources as they may be useful in learning how to manage weights:</p>
-<p><a href="https://youtu.be/bR_Vke__voU">Weight Transfer Guide</a>
-<a href="https://youtu.be/4fICQmBEt4Y">Weight Painting Guide</a></p>
-<h3 id="rigging-and-exporting-the-model">Rigging and Exporting the Model<a class="headerlink" href="#rigging-and-exporting-the-model" title="Permanent link">&para;</a></h3>
-<p>Once the character model has been rigged, select the model and the original skeleton, and proceed to export them as an FBX file. In case the original model is not deleted, choose 'selected objects only' in the export settings. 
-Although the other export settings are generally insignificant, it may be necessary to modify the scale to 0.01. </p>
-<h3 id="converting-to-model-and-creating-pac-file">Converting to .model and Creating PAC File<a class="headerlink" href="#converting-to-model-and-creating-pac-file" title="Permanent link">&para;</a></h3>
-<p>Utilizing the <code>ModelConverter</code> tool, drag the FBX file onto ModelConverter.exe to turn it into a .model file.
-Subsequently, place the new .model file into the previously extracted PAC folder. 
-To generate a new PAC file, drop the folder onto <code>HedgeArcPack</code>. 
-The PAC file may then be used in your mod to observe the changes made. 
-Although the other export settings are generally insignificant, it may be necessary to modify the scale to 0.01.</p>
-<h3 id="converting-to-model-and-creating-pac-file_1">Converting to .model and Creating PAC File<a class="headerlink" href="#converting-to-model-and-creating-pac-file_1" title="Permanent link">&para;</a></h3>
-<p>Utilizing the <code>ModelConverter</code> tool, drag the FBX file onto ModelConverter.exe to turn it into a .model file.
-Subsequently, place the new .model file into the previously extracted PAC folder. 
-To generate a new PAC file, drop the folder onto <code>HedgeArcPack</code>. The PAC file may then be used in your mod to observe the changes made.</p>
-<h3 id="materials-and-textures">Materials and Textures<a class="headerlink" href="#materials-and-textures" title="Permanent link">&para;</a></h3>
-<p>For assistance with preparing materials and texture for Sonic Frontiers, refer to the <a href="/guides/hedgehog-engine/rangers/materials/advanced-mats">Advanced Material Editing Tutorial</a>.</p>
-
-  <hr>
-<div class="md-source-file">
-  <small>
-    
-      Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-11-03T21:03:48+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-11-03</span>
-      
-    
-  </small>
-</div>
+<h1 id="file-format-tools">File Format Tools<a class="headerlink" href="#file-format-tools" title="Permanent link">&para;</a></h1>
+<h2 id="retroed">RetroED<a class="headerlink" href="#retroed" title="Permanent link">&para;</a></h2>
+<p>A general purpose editor for all RSDK versions below RSDKv5.</p>
+<p><a class="md-button" href="https://github.com/Rubberduckycooly/RetroED" target="_blank">GitHub Repository <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span></a></p>
 
 
 
@@ -5521,16 +5545,16 @@ To generate a new PAC file, drop the folder onto <code>HedgeArcPack</code>. The 
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections"], "search": "../../../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections"], "search": "../../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
-        <script src="../../../../../js/timeago.min.js"></script>
+        <script src="../../../../js/timeago.min.js"></script>
       
-        <script src="../../../../../js/timeago_mkdocs_material.js"></script>
+        <script src="../../../../js/timeago_mkdocs_material.js"></script>
       
-        <script src="../../../../../web/javascripts/custom.js"></script>
+        <script src="../../../../web/javascripts/custom.js"></script>
       
     
   </body>
