@@ -84,6 +84,8 @@ nav:
           - Importing & Exporting: guides/hedgehog-engine/rangers/animation/import-export.md
         - Materials:
           - Advanced Material Editing Tutorial: guides/hedgehog-engine/rangers/materials/advanced-mats.md
+        - Models:
+          - Importing Models: guides/hedgehog-engine/rangers/models/import.md
     - Sega NN:
       - Sonic The Hedgehog (2006):
         - Level Editing:
@@ -113,8 +115,6 @@ nav:
         - Levels: 
           - Level ID Map: docs/hedgehog-engine/wars/levels/ids.md
       - Sonic Frontiers:
-        - Models:
-          - Importing Models: guides/hedgehog-engine/rangers/models/import.md
         - DLC:
           - DLC ID Map: docs/hedgehog-engine/rangers/dlc/ids.md
         - Enemies:
