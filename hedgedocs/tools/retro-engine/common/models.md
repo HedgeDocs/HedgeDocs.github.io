@@ -6,4 +6,4 @@ description: Model tools for the Retro Engine Sonic
 ## ModelManiac
 Importer and exporter for RSDK model formats.
 
-[GitHub Repository :fontawesome-brands-github:](https://github.com/Rubberduckycooly/ModelManiac){ .md-button target="_blank"}
+[Source Code :fontawesome-brands-github:](https://github.com/Rubberduckycooly/ModelManiac){ .md-button .md-button--primary target="_blank"}
