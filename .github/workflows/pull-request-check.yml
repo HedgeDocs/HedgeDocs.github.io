@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - hedgedocs/**
+      - mkdocs.yml
     branches: 
       - main
 
