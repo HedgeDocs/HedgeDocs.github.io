@@ -177,11 +177,23 @@ function sidebarExternalLinksNewTab() {
 }
 
 function headerStyling() {
-    const header = document.querySelectorAll('body > header > nav.md-header__inner.md-grid > div.md-header__title > div > div:nth-child(1) > span')
+    const header = document.querySelector('body > header > nav.md-header__inner.md-grid > a')
 
-    if (header.length > 0) {
-        header[0].innerHTML = 
-            '<span class="md-ellipsis" style="/* font-weight: 900; */">Hedge</span><span class="md-ellipsis" style="font-weight: 100;">Docs</span>'
+    if (header && header.children.length == 1) {
+        const div = document.createElement('div')
+        div.classList.add('logo-text')
+        div.innerHTML = '<span class="md-ellipsis" style="font-weight: 900;">Hedge</span><span class="md-ellipsis" style="font-weight: 100;">Docs</span>'
+
+        header.appendChild(div)
+        /*header[0].innerHTML = 
+            '<img class="logo-image" src="/web/images/icon.svg" alt="logo">\
+            <div class="logo-text"><span class="md-ellipsis" style="font-weight: 900;">Hedge</span><span class="md-ellipsis" style="font-weight: 100;">Docs</span></div>'*/
+    }
+
+    const oldHeader = document.querySelector('.md-header__topic')
+
+    if (oldHeader) {
+        oldHeader.remove()
     }
     
     const mobileSidebarHeader = document.querySelector('body > div.md-container > main > div > div.md-sidebar.md-sidebar--primary > div > div > nav > label')

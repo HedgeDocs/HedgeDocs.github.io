@@ -51,6 +51,8 @@ body {
     font-weight: bold;
 }
 
+/* HEADER */
+
 [dir=ltr] .md-typeset .headerlink {
     margin-left: .25rem;
 }
@@ -84,6 +86,31 @@ body > header > nav.md-header__inner.md-grid > div.md-header__title > div > div:
 
 input:placeholder-shown {
     font-style: italic;
+}
+
+.md-header__button.md-logo {
+    font-size: 17pt;
+    display: inline-flex !important;
+    align-items: center;
+}
+
+@media screen and (max-width: 76.234375em) {
+    .md-header__button.md-logo { 
+        display: none !important;
+    }
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    margin-right: .2em;
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    width: 1.2em;
+}
+
+.logo-text {
+    display: inline-block;
+    padding-top: .1em;
 }
 
 /* EXTERNAL LINKS IN SIDEBAR */
