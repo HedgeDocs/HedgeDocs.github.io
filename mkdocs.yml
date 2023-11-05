@@ -26,6 +26,7 @@ nav:
           - GTE/GTM: tools/hedgehog-engine/blueblur/files/gte.md
           - AR/ARL: tools/hedgehog-engine/blueblur/files/ar.md
           - FCO: tools/hedgehog-engine/blueblur/files/fco.md
+          - SAV: tools/hedgehog-engine/blueblur/files/sav.md
         - Level Editing: tools/hedgehog-engine/blueblur/levels.md
       - Sonic Colors:
         - File Formats: 
