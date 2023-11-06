@@ -188,6 +188,11 @@ function headerStyling() {
         /*header[0].innerHTML = 
             '<img class="logo-image" src="/web/images/icon.svg" alt="logo">\
             <div class="logo-text"><span class="md-ellipsis" style="font-weight: 900;">Hedge</span><span class="md-ellipsis" style="font-weight: 100;">Docs</span></div>'*/
+
+        const headerDiv = document.querySelector('.md-header__inner')
+        if (headerDiv) {
+            headerDiv.insertBefore(headerDiv.children[1], headerDiv.children[0])
+        }
     }
 
     const oldHeader = document.querySelector('.md-header__topic')

@@ -94,12 +94,6 @@ input:placeholder-shown {
     align-items: center;
 }
 
-@media screen and (max-width: 76.234375em) {
-    .md-header__button.md-logo { 
-        display: none !important;
-    }
-}
-
 .md-header__button.md-logo img, .md-header__button.md-logo svg {
     margin-right: .2em;
 }
