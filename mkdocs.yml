@@ -53,6 +53,7 @@ nav:
         - File Formats:
           - ONE: tools/renderware/common/files/one.md
           - PAC: tools/renderware/common/files/pac.md
+          - TXD: tools/renderware/common/files/txd.md
         - Level Editing: tools/renderware/common/levels.md
     - Retro Engine:
       - Common:
