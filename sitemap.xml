@@ -351,6 +351,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hedgedocs.com/tools/renderware/common/files/txd/</loc>
+         <lastmod>2023-11-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hedgedocs.com/tools/retro-engine/common/animation/</loc>
          <lastmod>2023-11-07</lastmod>
          <changefreq>daily</changefreq>
