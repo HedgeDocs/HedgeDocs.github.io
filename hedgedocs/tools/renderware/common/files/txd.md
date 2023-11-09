@@ -3,7 +3,7 @@ description: TXD tools for Renderware Sonic games
 ---
 # TXD Tools
 
-## TXD_Hack
-TXD texture archive editor writen with meticulous documentation.
+## Magic.TXD
+Universal RenderWare TXD tool that supports creating, viewing and editing texture files.
 
-[GitHub Repository :fontawesome-brands-github:](https://github.com/lifning/TXD_Hack){ .md-button target="_blank"}
+[Download :fontawesome-brands-github:](https://gamebanana.com/tools/5948){ .md-button .md-button--primary target="_blank"}
