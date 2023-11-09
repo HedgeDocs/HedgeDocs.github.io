@@ -6,4 +6,4 @@ description: SAV tools for Sonic Generations
 ## GenerationsSkillEdit
 Skill Set Editor for Sonic Generations save files.
 
-[GitHub Repository :fontawesome-brands-github:](https://github.com/sonicretro/GenerationsSkillEdit){ .md-button target="_blank"}
+[Source Code :fontawesome-brands-github:](https://github.com/sonicretro/GenerationsSkillEdit){ .md-button target="_blank"}
