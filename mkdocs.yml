@@ -30,6 +30,7 @@ nav:
         - Level Editing: tools/hedgehog-engine/blueblur/levels.md
       - Sonic Colors:
         - File Formats: 
+          - General: tools/hedgehog-engine/sonic2010/files/general.md
           - XNCP: tools/hedgehog-engine/sonic2010/files/xncp.md
           - ARC: tools/hedgehog-engine/sonic2010/files/arc.md
           - XTB: tools/hedgehog-engine/sonic2010/files/xtb.md
