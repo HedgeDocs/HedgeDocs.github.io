@@ -390,3 +390,49 @@ test_mission_all = {
    },
 }
 ```
+
+Empty folders can be found for some of the test levels in the raw found within the Wii U release of the game. These folders are listed below.
+``` text
+raw
+├── test
+│   ├── stg811
+│   ├── stg812
+│   ├── stg813
+│   ├── stg814
+│   ├── stg815
+│   ├── stg817
+│   ├── stg818
+│   ├── stg819
+│   ├── stg820
+│   ├── stg821
+│   ├── stg822
+│   ├── stg823
+│   ├── stg901
+│   ├── stg902
+│   ├── stg978
+│   ├── stg981
+│   ├── stg985
+│   ├── stg988
+│   ├── stg989
+│   ├── w0a01
+│   ├── w0a02
+│   ├── w0a03
+│   ├── w0a04
+│   ├── w0a05
+│   ├── w0a06
+│   ├── w0a07
+│   ├── w0a08
+│   ├── w0a09
+│   ├── w0a10
+│   ├── w0a11
+│   ├── w0a12
+│   ├── w0a13
+│   ├── w0a14
+│   ├── w0a15
+│   ├── w0a16
+│   ├── w0a90
+│   ├── w0a96
+│   ├── w0a97
+│   ├── w0a98
+│   ├── w0a99
+```
