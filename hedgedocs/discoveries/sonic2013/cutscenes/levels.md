@@ -4,7 +4,7 @@ description: Information on the cutscenes before they were pre-rendered for Soni
 ---
 # Real-Time Cutscene Levels
 
-Empty folders can be found for the real-time cutscene levels in the raw found within the Wii U release of the game. These folders are listed below.
+Empty folders can be found for the real-time cutscene levels in the raw folder found within the Wii U release of the game. These folders are listed below.
 ``` text
 raw
 ├── event

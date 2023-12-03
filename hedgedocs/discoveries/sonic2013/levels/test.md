@@ -391,7 +391,7 @@ test_mission_all = {
 }
 ```
 
-Empty folders can be found for some of the test levels in the raw found within the Wii U release of the game. These folders are listed below.
+Empty folders can be found for some of the test levels in the raw folder found within the Wii U release of the game. These folders are listed below.
 ``` text
 raw
 ├── test
