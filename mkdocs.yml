@@ -146,6 +146,8 @@ nav:
       - HUD:
         - Unused Time Eater Gauge: discoveries/blueblur/hud/blb_gauge.md
     - Sonic Lost World:
+      - Cutscenes:
+        - Real-Time Cutscene Levels: discoveries/sonic2013/cutscenes/levels.md
       - Levels:
         - Colors Leftovers: discoveries/sonic2013/levels/colors.md
         - Test Levels: discoveries/sonic2013/levels/test.md
