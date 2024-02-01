@@ -25,5 +25,5 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: pip install mkdocs-git-revision-date-localized-plugin
-      - run: pip install git+https://github.com/PTKay/mkdocs-git-committers-plugin-2 --upgrade
+      - run: pip install mkdocs-git-committers-plugin-2 --upgrade
       - run: mkdocs gh-deploy --force
