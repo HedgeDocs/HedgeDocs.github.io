@@ -15,7 +15,7 @@ var observer = new MutationObserver(function (mutations, observer) {
         }
         replacePermalinkIcon()
         makeImagesClickable()
-        sidebarExternalLinksNewTab()
+        //sidebarExternalLinksNewTab()
         onInitialLoad()
         //addFadeAnim()
         //addCssClasses()
