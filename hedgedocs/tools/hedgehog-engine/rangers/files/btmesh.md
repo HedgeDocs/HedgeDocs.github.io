@@ -1,5 +1,5 @@
 ---
-description: BTMesh Tools for Sonic Frontiers
+description: BTMesh tools for Sonic Frontiers
 ---
 # BTMesh Tools
 
