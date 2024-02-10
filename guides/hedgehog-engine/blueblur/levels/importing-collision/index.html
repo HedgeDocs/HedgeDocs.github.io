@@ -3015,9 +3015,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-2-importing-your-custom-collision-in-the-game" class="md-nav__link">
+  <a href="#part-2-converting-your-model-into-a-collision-file" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 2 (Importing Your Custom Collision in the Game)
+      Part 2 (Converting Your Model Into a Collision File)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-importing-your-collision-into-the-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 3 (Importing Your Collision into the Game)
     </span>
   </a>
   
@@ -6103,9 +6112,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-2-importing-your-custom-collision-in-the-game" class="md-nav__link">
+  <a href="#part-2-converting-your-model-into-a-collision-file" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 2 (Importing Your Custom Collision in the Game)
+      Part 2 (Converting Your Model Into a Collision File)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-importing-your-collision-into-the-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 3 (Importing Your Collision into the Game)
     </span>
   </a>
   
@@ -6148,34 +6166,26 @@
 </ul>
 </div>
 <h4 id="part-1-creating-collision-in-blender">Part 1 (Creating Collision in Blender)<a class="headerlink" href="#part-1-creating-collision-in-blender" title="Permanent link">&para;</a></h4>
-<p>You'll need model for the collision. If you want collision with different parameters (or tags), you'll need special ini file for HavokConverter with tags. You can download it <a href="https://gist.github.com/TheExentist151/8e4896b807d49cd86ff2b643d34c7aa2">here</a>.
-Let me show you how to apply tags in your collision: </p>
-<p>First, you need to find mesh on which you want to apply tags. </p>
-<p>Second, you need to add the tag in the end of the name. (for example: level_stone<code>@STONE</code>). </p>
+<p>You'll need a separate model for the collision. While it is possible to use your stage's model files as a collision, we still recommend that you create a separate project/model for it, even if it's a copy of it. </p>
+<p>It is possible to specify tags for your collision, which control the type of collision it has. For this, you'll need a special ini file for HavokConverter with tags. You can download it <a href="https://gist.github.com/TheExentist151/8e4896b807d49cd86ff2b643d34c7aa2">here</a>.
+To apply these tags to your collision model, you can simply rename the meshes and add the tag as a prefix to its name. Below is an example of how you can do this, in case you want a mesh to have the "Stone" collision tag:</p>
 <div class="admonition info">
 <p class="admonition-title">Example</p>
 <p><img alt="Tag example" src="../assets/importing-collision/tag_example.png" /></p>
 </div>
-<p>You can find other tags in <code>HavokConverter</code> if you drop this ini file in <code>"libgens-sonicglvl-master/bin"</code>.</p>
-<h4 id="part-2-importing-your-custom-collision-in-the-game">Part 2 (Importing Your Custom Collision in the Game)<a class="headerlink" href="#part-2-importing-your-custom-collision-in-the-game" title="Permanent link">&para;</a></h4>
-<p>Open <code>libgens-sonicglvl-master/bin</code> folder and drop special ini file in it. Open <code>HavokConverter.exe</code> and fill:</p>
+<p>You can find all the available tags by opening <code>HavokConverter</code> after placing the mentioned INI file in the same folder as its executable.</p>
+<h4 id="part-2-converting-your-model-into-a-collision-file">Part 2 (Converting Your Model Into a Collision File)<a class="headerlink" href="#part-2-converting-your-model-into-a-collision-file" title="Permanent link">&para;</a></h4>
+<p>Open <code>HavokConverter.exe</code> and fill the following options:</p>
 <ul>
 <li>Source 3D model files - Your collision model files</li>
 <li>Output file - Directory which will contain the converted collision (add phy.hkx in the end of the name)</li>
 </ul>
 <p><img alt="Havok Converter Settings" src="../assets/importing-collision/havok_converter_window.png" /></p>
-<p>Now you can click <code>Convert</code> button and wait. </p>
-<p>Next, you'll need to unpack original level's file which is located in the root of .cpk file (for example: <code>#ghz200.ar.00</code>). Unpack it with <code>HedgeArcPack</code>, and drop your collision file. Open <code>Terrain.stg.xml</code>, find <code>RigidBodyContainer</code>, and paste here your collision's name without the extension and save it. You can also enable <code>Collision Render</code> to see your collision in-game. </p>
+<p>Now you can click the <code>Convert</code> button and wait. </p>
+<h4 id="part-3-importing-your-collision-into-the-game">Part 3 (Importing Your Collision into the Game)<a class="headerlink" href="#part-3-importing-your-collision-into-the-game" title="Permanent link">&para;</a></h4>
+<p>When the conversion process finishes, extract your custom stage's <code>#</code> file, and place the generated <code>phy.hkx</code> file there. Afterwards, open the <code>Terrain.stg.xml</code> file, and edit the collision file that is mentioned. This is mentioned in the <code>RigidBodyContainer</code> tag. Change its value to your <code>phy.hkx</code> filename, without the extension. Below is an example for a file name <code>MyCollision.phy.hkx</code>:</p>
 <p><img alt="Rigid Body Container" src="../assets/importing-collision/rigid_body_container.png" /></p>
-<p>Pack this archive using <code>HedgeArcPack</code> and drop it in your mod's folder.</p>
-<details class="info" open="open">
-<summary>Root folder</summary>
-<p><img alt="Root folder" src="../assets/importing-collision/mod_folder_root.png" /></p>
-</details>
-<details class="info" open="open">
-<summary>"disk" folder</summary>
-<p><img alt="Disk folder" src="../assets/importing-collision/mod_folder_disk.png" /></p>
-</details>
+<p>Now re-pack this file and replace the original. After booting into the game, you should now notice that your level has working collision.</p>
 
 
 
@@ -6196,7 +6206,7 @@ Let me show you how to apply tags in your collision: </p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-10-18T09:36:37+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-10-18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-02-10T23:31:50+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-02-10</span>
   </span>
 
     
