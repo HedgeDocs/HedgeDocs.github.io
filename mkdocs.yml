@@ -18,6 +18,7 @@ nav:
         - Models: tools/hedgehog-engine/common/models.md
         - Text: tools/hedgehog-engine/common/text.md
         - Level Editing: tools/hedgehog-engine/common/levels.md
+        - Animation: tools/hedgehog-engine/common/animation.md
       - Sonic Unleashed:
         - File Formats: tools/hedgehog-engine/swa/files.md
       - Sonic Generations:
@@ -44,6 +45,7 @@ nav:
           - ANM.PXD: tools/hedgehog-engine/rangers/files/anmpxd.md
           - CEMT: tools/hedgehog-engine/rangers/files/cemt.md
           - RFL: tools/hedgehog-engine/rangers/files/rfl.md
+          - BTMESH: tools/hedgehog-engine/rangers/files/btmesh.md
         - Models: tools/hedgehog-engine/rangers/models.md
     - Sega NN:
         - Sonic The Hedgehog (2006):
