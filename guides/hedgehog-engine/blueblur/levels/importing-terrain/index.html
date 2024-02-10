@@ -3021,15 +3021,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#fix-up-terrainstgxml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fix-up Terrain.stg.xml
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -3045,13 +3036,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-4-creating-skybox-recommended" class="md-nav__link">
+  <a href="#part-4-creating-skybox-optional-but-recommended" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 4 (Creating Skybox - Recommended)
+      Part 4 (Creating Skybox - Optional but Recommended)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Part 4 (Creating Skybox - Recommended)">
+    <nav class="md-nav" aria-label="Part 4 (Creating Skybox - Optional but Recommended)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -6214,15 +6205,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#fix-up-terrainstgxml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fix-up Terrain.stg.xml
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -6238,13 +6220,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-4-creating-skybox-recommended" class="md-nav__link">
+  <a href="#part-4-creating-skybox-optional-but-recommended" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 4 (Creating Skybox - Recommended)
+      Part 4 (Creating Skybox - Optional but Recommended)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Part 4 (Creating Skybox - Recommended)">
+    <nav class="md-nav" aria-label="Part 4 (Creating Skybox - Optional but Recommended)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -6365,30 +6347,12 @@ If your level contains transparent materials you need to add a proper layer tag 
 <p>Once the conversion is done, we need to get files that might be missing from your stage.</p>
 <h5 id="stagear-file">#stage.ar file<a class="headerlink" href="#stagear-file" title="Permanent link">&para;</a></h5>
 <p>Your stage needs a <code>\#</code> file in order to store set-data, collision, and other stage information. We can use the file from the stage we're replacing. If you're replacing Green Hill Modern, go to <code>disk/bb.cpk</code> (extract using PackCpk), and copy the <code>#ghz200.ar.00</code> and <code>#ghz200.arl</code> files into your stage mod files (<code>disk/bb</code> folder).</p>
-<h5 id="fix-up-terrainstgxml">Fix-up Terrain.stg.xml<a class="headerlink" href="#fix-up-terrainstgxml" title="Permanent link">&para;</a></h5>
-<p>The <code>Terrain.stg.xml</code> file contains information about the stage's terrain. This includes what sky model to use and what sunlight to use. If you did not setup any sunlight for your stage, and do not have a separate sky model for your stage's skybox, you'll need to remove these references from this file, otherwise the game will crash. To do this, extract <code>#ghz200.ar.00</code>, and edit the file using your editor of choice (I recommend Notepad++ or Visual Studio Code). Now you'll want to remove the <code>Sky</code> XML section and/or <code>Light</code> section, depending on the files that you don't have. Here's an example of a before and after, to better illustrate what you need to remove:</p>
-<p><img alt="Terrain.stg.xml" src="../assets/importing-terrain/light_dataname.png" />
-<img alt="Terrain.stg.xml after removing sections" src="../assets/importing-terrain/light_dataname_after.png" /></p>
-<p>After making the necessary fixes, re-pack <code>#ghz200</code> and replace the original file.</p>
-<p>Now you should have your mod files with a setup that looks something like this:</p>
-<details class="info" open="open">
-<summary>Root folder</summary>
-<p><img alt="Root Folder" src="../assets/importing-terrain/mod_folder_root.png" /></p>
-</details>
-<details class="info" open="open">
-<summary>"disk" folder</summary>
-<p><img alt="Disk folder" src="../assets/importing-terrain/mod_folder_disk.png" /></p>
-</details>
-<details class="info" open="open">
-<summary>"Packed/StageName" folder</summary>
-<p><img alt="Packed - StageName folder" src="../assets/importing-terrain/mod_folder_packed.png" /></p>
-</details>
 <h4 id="part-4-sonic-glvl-basic-setup">Part 4 (Sonic GLvl Basic Setup)<a class="headerlink" href="#part-4-sonic-glvl-basic-setup" title="Permanent link">&para;</a></h4>
 <p>Next up, we need to do some very basic setup of your level's set data in SonicGlvl. Open the app, and open your stage's <code>#</code> archive from there. Once the level has been imported into SonicGlvl, press Ctrl+A and then Delete. This will delete all the objects that are present in your level's set data, which are the original objects from the stage we are replacing. Now, find <code style="color: green;">"SonicSpawn"</code> in the objects menu on the left, and place it anywhere you want. This will be where Sonic will spawn in your level. Also, be sure to set the "Active" property to "true" in the settings of the <code style="color: green;">"SonicSpawn"</code> object. </p>
 <p><img alt="SonicSpawn object and settings" src="../assets/importing-terrain/sonicspawn_glvl.png" /></p>
 <p>After that, go to "File" and press "Save Stage Data" and "Save Stage Terrain".</p>
-<h4 id="part-4-creating-skybox-recommended">Part 4 (Creating Skybox - Recommended)<a class="headerlink" href="#part-4-creating-skybox-recommended" title="Permanent link">&para;</a></h4>
-<p>Skyboxes in Sonic Generations are just regular .model files. Though not mandatory for the game to boot, they are recommended so that your level at least has a sky to look at. You can take these from the original levels or create one yourself.</p>
+<h4 id="part-4-creating-skybox-optional-but-recommended">Part 4 (Creating Skybox - Optional but Recommended)<a class="headerlink" href="#part-4-creating-skybox-optional-but-recommended" title="Permanent link">&para;</a></h4>
+<p>Skyboxes in Sonic Generations are just regular .model files. Though not mandatory for the game to boot, they are recommended so that your level at least has a sky for you to look at. You can take these from the original levels or create one yourself.</p>
 <h5 id="making-one-yourself">Making one yourself<a class="headerlink" href="#making-one-yourself" title="Permanent link">&para;</a></h5>
 <p>Export your skybox model from Blender into an Assimp compatible file format. Then, using ModelConverter, drag and drop the model file into the Sonic Generations .bat file. This will generate the .model file, as well as material files. You will need to convert the textures of your skybox manually into the DDS format.</p>
 <h5 id="grabbing-one-from-a-level">Grabbing one from a level<a class="headerlink" href="#grabbing-one-from-a-level" title="Permanent link">&para;</a></h5>
@@ -6417,7 +6381,7 @@ If your level contains transparent materials you need to add a proper layer tag 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-02-10T23:31:50+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-02-10</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-02-10T23:38:43+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-02-10</span>
   </span>
 
     
