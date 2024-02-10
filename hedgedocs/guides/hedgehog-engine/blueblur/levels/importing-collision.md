@@ -10,36 +10,29 @@ description: Importing Collision tutorial for Sonic Generations
 	- [HedgeArcPack](/tools/hedgehog-engine/common/files/#hedgearcpack){ target="_blank"}
 
 #### Part 1 (Creating Collision in Blender)
-You'll need model for the collision. If you want collision with different parameters (or tags), you'll need special ini file for HavokConverter with tags. You can download it [here](https://gist.github.com/TheExentist151/8e4896b807d49cd86ff2b643d34c7aa2).
-Let me show you how to apply tags in your collision: 
+You'll need a separate model for the collision. While it is possible to use your stage's model files as a collision, we still recommend that you create a separate project/model for it, even if it's a copy of it. 
 
-First, you need to find mesh on which you want to apply tags. 
-
-Second, you need to add the tag in the end of the name. (for example: level_stone`@STONE`). 
+It is possible to specify tags for your collision, which control the type of collision it has. For this, you'll need a special ini file for HavokConverter with tags. You can download it [here](https://gist.github.com/TheExentist151/8e4896b807d49cd86ff2b643d34c7aa2).
+To apply these tags to your collision model, you can simply rename the meshes and add the tag as a prefix to its name. Below is an example of how you can do this, in case you want a mesh to have the "Stone" collision tag:
 
 !!! info "Example"
     ![Tag example](assets/importing-collision/tag_example.png)
 
-You can find other tags in `HavokConverter` if you drop this ini file in `"libgens-sonicglvl-master/bin"`.
+You can find all the available tags by opening `HavokConverter` after placing the mentioned INI file in the same folder as its executable.
 
-#### Part 2 (Importing Your Custom Collision in the Game)
-Open `libgens-sonicglvl-master/bin` folder and drop special ini file in it. Open `HavokConverter.exe` and fill:
+#### Part 2 (Converting Your Model Into a Collision File)
+Open `HavokConverter.exe` and fill the following options:
 
 - Source 3D model files - Your collision model files
 - Output file - Directory which will contain the converted collision (add phy.hkx in the end of the name)
 
 ![Havok Converter Settings](assets/importing-collision/havok_converter_window.png)
 
-Now you can click `Convert` button and wait. 
+Now you can click the `Convert` button and wait. 
 
-Next, you'll need to unpack original level's file which is located in the root of .cpk file (for example: `#ghz200.ar.00`). Unpack it with `HedgeArcPack`, and drop your collision file. Open `Terrain.stg.xml`, find `RigidBodyContainer`, and paste here your collision's name without the extension and save it. You can also enable `Collision Render` to see your collision in-game. 
+#### Part 3 (Importing Your Collision into the Game)
+When the conversion process finishes, extract your custom stage's `#` file, and place the generated `phy.hkx` file there. Afterwards, open the `Terrain.stg.xml` file, and edit the collision file that is mentioned. This is mentioned in the `RigidBodyContainer` tag. Change its value to your `phy.hkx` filename, without the extension. Below is an example for a file name `MyCollision.phy.hkx`:
 
 ![Rigid Body Container](assets/importing-collision/rigid_body_container.png)
 
-Pack this archive using `HedgeArcPack` and drop it in your mod's folder.
-
-???+info "Root folder"
-    ![Root folder](assets/importing-collision/mod_folder_root.png)
-
-???+info ""disk" folder"
-    ![Disk folder](assets/importing-collision/mod_folder_disk.png)
+Now re-pack this file and replace the original. After booting into the game, you should now notice that your level has working collision.
