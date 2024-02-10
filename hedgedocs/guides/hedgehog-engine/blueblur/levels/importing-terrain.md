@@ -53,25 +53,6 @@ Once the conversion is done, we need to get files that might be missing from you
 ##### \#stage.ar file
 Your stage needs a `\#` file in order to store set-data, collision, and other stage information. We can use the file from the stage we're replacing. If you're replacing Green Hill Modern, go to `disk/bb.cpk` (extract using PackCpk), and copy the `#ghz200.ar.00` and `#ghz200.arl` files into your stage mod files (`disk/bb` folder).
 
-##### Fix-up Terrain.stg.xml
-The `Terrain.stg.xml` file contains information about the stage's terrain. This includes what sky model to use and what sunlight to use. If you did not setup any sunlight for your stage, and do not have a separate sky model for your stage's skybox, you'll need to remove these references from this file, otherwise the game will crash. To do this, extract `#ghz200.ar.00`, and edit the file using your editor of choice (I recommend Notepad++ or Visual Studio Code). Now you'll want to remove the `Sky` XML section and/or `Light` section, depending on the files that you don't have. Here's an example of a before and after, to better illustrate what you need to remove:
-
-![Terrain.stg.xml](assets/importing-terrain/light_dataname.png)
-![Terrain.stg.xml after removing sections](assets/importing-terrain/light_dataname_after.png)
-
-After making the necessary fixes, re-pack `#ghz200` and replace the original file.
-
-Now you should have your mod files with a setup that looks something like this:
-
-???+info "Root folder"
-    ![Root Folder](assets/importing-terrain/mod_folder_root.png)
-
-???+info ""disk" folder"
-    ![Disk folder](assets/importing-terrain/mod_folder_disk.png)
-
-???+info ""Packed/StageName" folder"
-    ![Packed - StageName folder](assets/importing-terrain/mod_folder_packed.png)
-
 #### Part 4 (Sonic GLvl Basic Setup)
 
 Next up, we need to do some very basic setup of your level's set data in SonicGlvl. Open the app, and open your stage's `#` archive from there. Once the level has been imported into SonicGlvl, press Ctrl+A and then Delete. This will delete all the objects that are present in your level's set data, which are the original objects from the stage we are replacing. Now, find <code style="color: green;">"SonicSpawn"</code> in the objects menu on the left, and place it anywhere you want. This will be where Sonic will spawn in your level. Also, be sure to set the "Active" property to "true" in the settings of the <code style="color: green;">"SonicSpawn"</code> object. 
@@ -80,9 +61,9 @@ Next up, we need to do some very basic setup of your level's set data in SonicGl
 
 After that, go to "File" and press "Save Stage Data" and "Save Stage Terrain".
 
-#### Part 4 (Creating Skybox - Recommended)
+#### Part 4 (Creating Skybox - Optional but Recommended)
 
-Skyboxes in Sonic Generations are just regular .model files. Though not mandatory for the game to boot, they are recommended so that your level at least has a sky to look at. You can take these from the original levels or create one yourself.
+Skyboxes in Sonic Generations are just regular .model files. Though not mandatory for the game to boot, they are recommended so that your level at least has a sky for you to look at. You can take these from the original levels or create one yourself.
 
 ##### Making one yourself
 Export your skybox model from Blender into an Assimp compatible file format. Then, using ModelConverter, drag and drop the model file into the Sonic Generations .bat file. This will generate the .model file, as well as material files. You will need to convert the textures of your skybox manually into the DDS format.
