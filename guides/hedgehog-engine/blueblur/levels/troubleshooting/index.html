@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Importing Collision tutorial for Sonic Generations">
+        <meta name="description" content="Troubleshooting guide for Sonic Generations level imports">
       
       
       
-        <link rel="canonical" href="https://hedgedocs.com/guides/hedgehog-engine/blueblur/levels/importing-collision/">
+        <link rel="canonical" href="https://hedgedocs.com/guides/hedgehog-engine/blueblur/levels/troubleshooting/">
       
       
-        <link rel="prev" href="../importing-terrain/">
+        <link rel="prev" href="../importing-collision/">
       
       
-        <link rel="next" href="../troubleshooting/">
+        <link rel="next" href="../../locations/sound/">
       
       
       <link rel="icon" href="../../../../../web/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Importing Collision - HedgeDocs</title>
+        <title>Troubleshooting - HedgeDocs</title>
       
     
     
@@ -67,14 +67,14 @@
     
     
     
-  <meta property="og:title" content="Importing Collision - HedgeDocs" />
+  <meta property="og:title" content="Troubleshooting - HedgeDocs" />
   <meta property="og:type" content="webpage" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://hedgedocs.com/guides/hedgehog-engine/blueblur/levels/importing-collision/" />
+  <meta property="og:url" content="https://hedgedocs.com/guides/hedgehog-engine/blueblur/levels/troubleshooting/" />
   <meta property="og:image" content="https://hedgedocs.com/web/images/favicon.png" />
   <meta property="og:image:type" content="image/png" />
 
-  <meta property="og:description" content="Importing Collision tutorial for Sonic Generations">
+  <meta property="og:description" content="Troubleshooting guide for Sonic Generations level imports">
 
   <meta property="og:image:width" content="512" />
   <meta property="og:image:height" content="512" />
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-import-custom-collision-in-sonic-generations" class="md-skip">
+        <a href="#troubleshooting" class="md-skip">
           Skip to content
         </a>
       
@@ -135,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Importing Collision
+              Troubleshooting
             
           </span>
         </div>
@@ -2784,6 +2784,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-collision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Importing Collision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -2800,7 +2821,7 @@
           
   
   <span class="md-ellipsis">
-    Importing Collision
+    Troubleshooting
   </span>
   
 
@@ -2811,7 +2832,7 @@
         
   
   <span class="md-ellipsis">
-    Importing Collision
+    Troubleshooting
   </span>
   
 
@@ -2833,20 +2854,176 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#part-1-creating-collision-in-blender" class="md-nav__link">
+  <a href="#common-issues" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 1 (Creating Collision in Blender)
+      Common Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#black-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Black Textures
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#part-2-importing-your-custom-collision-in-the-game" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#rainbow-flashing-textures" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 2 (Importing Your Custom Collision in the Game)
+      Rainbow Flashing Textures
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomly-switching-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Randomly Switching Textures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-terrain-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Terrain Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#red-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Red Materials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low-quality-or-missing-gi-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low Quality or Missing GI Textures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-direct-light" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Direct Light
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-sky-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Sky Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enemies-from-other-stages-not-appearing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enemies From Other Stages Not Appearing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-crash-reasons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Crash Reasons
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Crash Reasons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#missing-material-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Material Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#periods-in-file-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Periods in File Names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-names-starting-with-ins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance Names Starting with "ins"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-gi-texturegi-texture-group-info-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing "gi-texture.gi-texture-group-info" File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-light-listlight-list-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing "light-list.light-list" File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mismatching-pfdpfi-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mismatching PFD/PFI Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unloaded-sonic-animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unloaded Sonic Animations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2854,27 +3031,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Troubleshooting
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -5921,20 +6077,176 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#part-1-creating-collision-in-blender" class="md-nav__link">
+  <a href="#common-issues" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 1 (Creating Collision in Blender)
+      Common Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#black-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Black Textures
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#part-2-importing-your-custom-collision-in-the-game" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#rainbow-flashing-textures" class="md-nav__link">
     <span class="md-ellipsis">
-      Part 2 (Importing Your Custom Collision in the Game)
+      Rainbow Flashing Textures
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomly-switching-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Randomly Switching Textures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-terrain-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Terrain Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#red-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Red Materials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low-quality-or-missing-gi-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low Quality or Missing GI Textures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-direct-light" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Direct Light
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-sky-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Sky Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enemies-from-other-stages-not-appearing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enemies From Other Stages Not Appearing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-crash-reasons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Crash Reasons
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Crash Reasons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#missing-material-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Material Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#periods-in-file-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Periods in File Names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-names-starting-with-ins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance Names Starting with "ins"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-gi-texturegi-texture-group-info-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing "gi-texture.gi-texture-group-info" File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-light-listlight-list-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing "light-list.light-list" File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mismatching-pfdpfi-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mismatching PFD/PFI Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unloaded-sonic-animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unloaded Sonic Animations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5964,45 +6276,96 @@
   
 
 
-<h1 id="how-to-import-custom-collision-in-sonic-generations">How To Import Custom Collision in Sonic Generations<a class="headerlink" href="#how-to-import-custom-collision-in-sonic-generations" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This guide uses the following tools:</p>
+<h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h1>
+<h2 id="common-issues">Common Issues<a class="headerlink" href="#common-issues" title="Permanent link">&para;</a></h2>
+<h3 id="black-textures">Black Textures<a class="headerlink" href="#black-textures" title="Permanent link">&para;</a></h3>
+<p>Textures must have power of two resolutions. For example, 512x512, 1024x1024, 2048x4096, etc. An arbitrary resolution like 600x600 is not supported by the game when using compressed textures.</p>
+<h3 id="rainbow-flashing-textures">Rainbow Flashing Textures<a class="headerlink" href="#rainbow-flashing-textures" title="Permanent link">&para;</a></h3>
+<p>The game shows a rainbow flashing texture if the texture assigned to a material is missing. Ensure you included the texture in the AR and didn't make a typo in the material.</p>
+<h3 id="randomly-switching-textures">Randomly Switching Textures<a class="headerlink" href="#randomly-switching-textures" title="Permanent link">&para;</a></h3>
+<p>The material might not have any textures assigned at all. You need to at least assign one diffuse texture, otherwise the game is going to use the texture of whatever was rendered last.</p>
+<h3 id="missing-terrain-models">Missing Terrain Models<a class="headerlink" href="#missing-terrain-models" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="/tools/hedgehog-engine/blueblur/levels/#sonicglvl" target="_blank">Sonic GLvl</a></li>
-<li><a href="https://blender.org" target="_blank">Blender</a></li>
-<li><a href="/tools/hedgehog-engine/common/files/#hedgearcpack" target="_blank">HedgeArcPack</a></li>
+<li><code>Terrain.prm.xml</code> file might require higher memory sizes. Look for the <code>g_TerrainModelLimitSizeDefault</code> and <code>g_TerrainModelLimitSizeWin32</code> parameters, and increase them. If your stage requires more memory than what is defined in this file, some of your models might not render.</li>
+<li>There is a limit of 8192 instances in the game. If you are trying to render more instances, the game is going to hit this limit and stop rendering.</li>
+<li>Material files might be missing. There is a chance it might not crash and display nothing instead.</li>
 </ul>
-</div>
-<h4 id="part-1-creating-collision-in-blender">Part 1 (Creating Collision in Blender)<a class="headerlink" href="#part-1-creating-collision-in-blender" title="Permanent link">&para;</a></h4>
-<p>You'll need model for the collision. If you want collision with different parameters (or tags), you'll need special ini file for HavokConverter with tags. You can download it <a href="https://gist.github.com/TheExentist151/8e4896b807d49cd86ff2b643d34c7aa2">here</a>.
-Let me show you how to apply tags in your collision: </p>
-<p>First, you need to find mesh on which you want to apply tags. </p>
-<p>Second, you need to add the tag in the end of the name. (for example: level_stone<code>@STONE</code>). </p>
-<div class="admonition info">
-<p class="admonition-title">Example</p>
-<p><img alt="Tag example" src="../assets/importing-collision/tag_example.png" /></p>
-</div>
-<p>You can find other tags in <code>HavokConverter</code> if you drop this ini file in <code>"libgens-sonicglvl-master/bin"</code>.</p>
-<h4 id="part-2-importing-your-custom-collision-in-the-game">Part 2 (Importing Your Custom Collision in the Game)<a class="headerlink" href="#part-2-importing-your-custom-collision-in-the-game" title="Permanent link">&para;</a></h4>
-<p>Open <code>libgens-sonicglvl-master/bin</code> folder and drop special ini file in it. Open <code>HavokConverter.exe</code> and fill:</p>
-<ul>
-<li>Source 3D model files - Your collision model files</li>
-<li>Output file - Directory which will contain the converted collision (add phy.hkx in the end of the name)</li>
-</ul>
-<p><img alt="Havok Converter Settings" src="../assets/importing-collision/havok_converter_window.png" /></p>
-<p>Now you can click <code>Convert</code> button and wait. </p>
-<p>Next, you'll need to unpack original level's file which is located in the root of .cpk file (for example: <code>#ghz200.ar.00</code>). Unpack it with <code>HedgeArcPack</code>, and drop your collision file. Open <code>Terrain.stg.xml</code>, find <code>RigidBodyContainer</code>, and paste here your collision's name without the extension and save it. You can also enable <code>Collision Render</code> to see your collision in-game. </p>
-<p><img alt="Rigid Body Container" src="../assets/importing-collision/rigid_body_container.png" /></p>
-<p>Pack this archive using <code>HedgeArcPack</code> and drop it in your mod's folder.</p>
-<details class="info" open="open">
-<summary>Root folder</summary>
-<p><img alt="Root folder" src="../assets/importing-collision/mod_folder_root.png" /></p>
-</details>
-<details class="info" open="open">
-<summary>"disk" folder</summary>
-<p><img alt="Disk folder" src="../assets/importing-collision/mod_folder_disk.png" /></p>
-</details>
+<h3 id="red-materials">Red Materials<a class="headerlink" href="#red-materials" title="Permanent link">&para;</a></h3>
+<p>The game fallbacks to displaying a red emissive material if the shader assigned to a material does not exist. If you want to see every available shader in the game, unpack <code>shader_r_add.ar.00</code> located inside <code>bb3.cpk</code>, and look for files with <code>.shader-list</code> extension.</p>
+<h3 id="low-quality-or-missing-gi-textures">Low Quality or Missing GI Textures<a class="headerlink" href="#low-quality-or-missing-gi-textures" title="Permanent link">&para;</a></h3>
+<p><code>Terrain.prm.xml</code> file might require higher memory sizes. Look for the <code>g_GITextureLimitSizeDefault</code> and <code>g_GITextureLimitSizeWin32</code> parameters, and increase them.</p>
+<h3 id="missing-direct-light">Missing Direct Light<a class="headerlink" href="#missing-direct-light" title="Permanent link">&para;</a></h3>
+<p>If you add a new direct light with a different name, you need to edit <code>Terrain.stg.xml</code> to make the stage use it. For example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;Light&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&lt;DataName&gt;</span>MyDirectLight<span class="nt">&lt;/DataName&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">&lt;/Light&gt;</span>
+</code></pre></div>
+<h3 id="missing-sky-model">Missing Sky Model<a class="headerlink" href="#missing-sky-model" title="Permanent link">&para;</a></h3>
+<p>If you add a new sky model with a different name, you need to edit <code>Terrain.stg.xml</code> to make the stage use it. For example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">&lt;Sky&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&lt;Model&gt;</span>MySkyModel<span class="nt">&lt;/Model&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nt">&lt;/Sky&gt;</span>
+</code></pre></div>
+<p>Ensure that the materials of the sky model also use sky shaders such as <code>Sky_d</code>.</p>
+<h3 id="enemies-from-other-stages-not-appearing">Enemies From Other Stages Not Appearing<a class="headerlink" href="#enemies-from-other-stages-not-appearing" title="Permanent link">&para;</a></h3>
+<p>Certain enemies are loaded manually in stages to save memory. If an enemy does not appear in your stage, you can fix it by editing <code>EnemyArchiveTree.xml</code> inside <code>#Application.ar.00</code>. In this example, <code>ghz_cmn</code> entry was modified to include data from <code>EnemyEFighter</code>, which allows egg fighters to be used in both <code>ghz100</code> and <code>ghz200</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&lt;DefAppend&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&lt;Name&gt;</span>ghz_cmn<span class="nt">&lt;/Name&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">&lt;Archive&gt;</span>EnemyCommon<span class="nt">&lt;/Archive&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">&lt;Archive&gt;</span>EnemyBeeton<span class="nt">&lt;/Archive&gt;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">&lt;Archive&gt;</span>EnemyBatabata<span class="nt">&lt;/Archive&gt;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nt">&lt;Archive&gt;</span>EnemyGanigani<span class="nt">&lt;/Archive&gt;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nt">&lt;Archive&gt;</span>EnemyMotora<span class="nt">&lt;/Archive&gt;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="nt">&lt;Archive&gt;</span>EnemyEFighter<span class="nt">&lt;/Archive&gt;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="nt">&lt;/DefAppend&gt;</span>
+</code></pre></div>
+<h2 id="common-crash-reasons">Common Crash Reasons<a class="headerlink" href="#common-crash-reasons" title="Permanent link">&para;</a></h2>
+<h3 id="missing-material-files">Missing Material Files<a class="headerlink" href="#missing-material-files" title="Permanent link">&para;</a></h3>
+<p>Unlike later games, missing materials can cause a crash in Sonic Generations and Sonic Unleashed.</p>
+<h3 id="periods-in-file-names">Periods in File Names<a class="headerlink" href="#periods-in-file-names" title="Permanent link">&para;</a></h3>
+<p>Having periods in your file names can confuse the game and cause crashes. For example, having a material named <code>Material.000.material</code> would make the game think the file has a <code>.000.material</code> extension, and not recognize it as a material file.</p>
+<h3 id="instance-names-starting-with-ins">Instance Names Starting with "ins"<a class="headerlink" href="#instance-names-starting-with-ins" title="Permanent link">&para;</a></h3>
+<p>Instances starting with <code>ins</code> are treated differently, and require specialized material shaders. Using any other shader causes a crash. Ensure that none of the instances in your stage start with this word.</p>
+<h3 id="missing-gi-texturegi-texture-group-info-file">Missing "gi-texture.gi-texture-group-info" File<a class="headerlink" href="#missing-gi-texturegi-texture-group-info-file" title="Permanent link">&para;</a></h3>
+<p>Run <a href="/tools/hedgehog-engine/blueblur/levels">GI Atlas Converter</a> on Pre-Render mode to have this file created automatically.</p>
+<h3 id="missing-light-listlight-list-file">Missing "light-list.light-list" File<a class="headerlink" href="#missing-light-listlight-list-file" title="Permanent link">&para;</a></h3>
+<p>Copy paste <code>.light</code> and <code>.light-list</code> files from another stage, or add a direct light to your level in the 3D software you use. Latest <a href="/tools/hedgehog-engine/blueblur/levels">Hedgehog Converter</a> can import direct lights, so ensure your tools are up to date. Use <a href="/tools/hedgehog-engine/common/lighting">HedgeGI</a> for advanced light editing.</p>
+<h3 id="mismatching-pfdpfi-files">Mismatching PFD/PFI Files<a class="headerlink" href="#mismatching-pfdpfi-files" title="Permanent link">&para;</a></h3>
+<p>PFD files are loaded through PFI files. If the <code>Stage.pfi</code>/<code>Stage-Add.pfi</code> files don't match with the <code>Stage.pfd</code>/<code>Stage-Add.pfd</code> files in the stage, this causes a crash. Unpack the PFD files, and repack them back with <a href="/tools/hedgehog-engine/common/files">HedgeArcPack</a> using <code>-T=pfd</code> command-line option to generate matching PFI files.</p>
+<h3 id="unloaded-sonic-animations">Unloaded Sonic Animations<a class="headerlink" href="#unloaded-sonic-animations" title="Permanent link">&para;</a></h3>
+<p>The game doesn't load certain Sonic animations to save memory if the gimmick in question is never used. For example, diving animations stored in <code>SonicDiving.ar.00</code> are only loaded in Chemical Plant, Speed Highway and Planet Wisp. If diving is used in any other stage, the game is going to crash due to unloaded animations. This behavior can be configured by editing <code>ArchiveTree.xml</code> inside <code>#Application.ar.00</code>. In this example, <code>SonicDiving</code> entry was edited to load in the <code>ghz200</code> stage slot:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">&lt;Node&gt;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&lt;Name&gt;</span>SonicDiving<span class="nt">&lt;/Name&gt;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">&lt;Archive&gt;</span>SonicDiving<span class="nt">&lt;/Archive&gt;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">&lt;Order&gt;</span>0<span class="nt">&lt;/Order&gt;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nt">&lt;DefAppend&gt;</span>SonicDiving<span class="nt">&lt;/DefAppend&gt;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="nt">&lt;Node&gt;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="nt">&lt;Name&gt;</span>bne<span class="nt">&lt;/Name&gt;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="nt">&lt;Archive&gt;</span>bne<span class="nt">&lt;/Archive&gt;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="nt">&lt;Order&gt;</span>0<span class="nt">&lt;/Order&gt;</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="nt">&lt;/Node&gt;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span><span class="nt">&lt;Node&gt;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="nt">&lt;Name&gt;</span>cpz200<span class="nt">&lt;/Name&gt;</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="nt">&lt;Archive&gt;</span>cpz200<span class="nt">&lt;/Archive&gt;</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="nt">&lt;Order&gt;</span>0<span class="nt">&lt;/Order&gt;</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">  </span><span class="nt">&lt;/Node&gt;</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">  </span><span class="nt">&lt;Node&gt;</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="nt">&lt;Name&gt;</span>pla200<span class="nt">&lt;/Name&gt;</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="nt">&lt;Archive&gt;</span>pla200<span class="nt">&lt;/Archive&gt;</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span><span class="nt">&lt;Order&gt;</span>0<span class="nt">&lt;/Order&gt;</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">  </span><span class="nt">&lt;/Node&gt;</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">  </span><span class="nt">&lt;Node&gt;</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">    </span><span class="nt">&lt;Name&gt;</span>sph200<span class="nt">&lt;/Name&gt;</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">    </span><span class="nt">&lt;Archive&gt;</span>sph200<span class="nt">&lt;/Archive&gt;</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">    </span><span class="nt">&lt;Order&gt;</span>0<span class="nt">&lt;/Order&gt;</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">  </span><span class="nt">&lt;/Node&gt;</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">  </span><span class="nt">&lt;Node&gt;</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">    </span><span class="nt">&lt;Name&gt;</span>ghz200<span class="nt">&lt;/Name&gt;</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">    </span><span class="nt">&lt;Archive&gt;</span>ghz200<span class="nt">&lt;/Archive&gt;</span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">    </span><span class="nt">&lt;Order&gt;</span>0<span class="nt">&lt;/Order&gt;</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">  </span><span class="nt">&lt;/Node&gt;</span><span class="w">  </span>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="nt">&lt;/Node&gt;</span>
+</code></pre></div>
 
 
 
@@ -6023,40 +6386,12 @@ Let me show you how to apply tags in your collision: </p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-10-18T09:36:37+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-10-18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-02-10T22:36:39+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-02-10</span>
   </span>
 
     
     
     
-    
-      
-  <span class="md-source-file__fact">
-    
-      
-  <span class="md-icon" title="Contributors">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-  </span>
-  <span>GitHub</span>
-
-    
-    <nav>
-      
-        <a href="https://github.com/PTKay" class="md-author" title="@PTKay">
-          
-          <img src="https://avatars.githubusercontent.com/u/20132880?v=4&size=72" alt="PTKay">
-        </a>
-      
-        <a href="https://github.com/TheExentist151" class="md-author" title="@TheExentist151">
-          
-          <img src="https://avatars.githubusercontent.com/u/91889396?v=4&size=72" alt="TheExentist151">
-        </a>
-      
-      
-      
-    </nav>
-  </span>
-
     
   </aside>
 
@@ -6066,22 +6401,6 @@ Let me show you how to apply tags in your collision: </p>
 
                 
   <div id="tsparticles"></div>
-  
-    <div class="metadata page-metadata">
-      <span class="contributors-text">Authors:</span>
-      <ul class="contributors" data-bi-name="contributors"><li class="contributor-entry">
-          <a class="contributor" href="https://github.com/PTKay">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/20132880?v=4" alt="PTKay">
-            PTKay
-          </a>
-        </li><li class="contributor-entry">
-          <a class="contributor" href="https://github.com/TheExentist151">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/91889396?v=4" alt="TheExentist151">
-            TheExentist151
-          </a>
-        </li></ul>
-      </li>
-    </div>
   
 
               </article>
