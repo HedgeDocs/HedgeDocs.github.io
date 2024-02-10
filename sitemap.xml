@@ -216,11 +216,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hedgedocs.com/tools/adventure/files/</loc>
-         <lastmod>2024-02-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://hedgedocs.com/tools/general/audio/</loc>
          <lastmod>2024-02-10</lastmod>
          <changefreq>daily</changefreq>
@@ -362,6 +357,11 @@
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/nn/marathon/levels/</loc>
+         <lastmod>2024-02-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.com/tools/others/adventure/files/</loc>
          <lastmod>2024-02-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
