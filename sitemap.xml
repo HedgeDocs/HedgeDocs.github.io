@@ -256,6 +256,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hedgedocs.com/tools/hedgehog-engine/common/animation/</loc>
+         <lastmod>2024-02-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/common/files/</loc>
          <lastmod>2024-02-10</lastmod>
          <changefreq>daily</changefreq>
@@ -292,6 +297,11 @@
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/rangers/files/anmpxd/</loc>
+         <lastmod>2024-02-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.com/tools/hedgehog-engine/rangers/files/btmesh/</loc>
          <lastmod>2024-02-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
