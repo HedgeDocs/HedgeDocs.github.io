@@ -18,34 +18,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 {% endblock %}
 
-{% block content %}
-  <div class="imagePreview">
-    <div class="imagePreview-background"></div>
-    <div class="imagePreview-image">
-      <img class="imagePreview-image-element"></img>
-      <a target="_blank" class="imagePreview-image-caption">Open in new tab</a>
-    </div>
-  </div>
-  {{ super() }}
-  <div id="tsparticles"></div>
-  {% if committers %}
-    <div class="metadata page-metadata">
-      <span class="contributors-text">Authors:</span>
-      <ul class="contributors" data-bi-name="contributors">
-        {%- for user in committers -%}
-        <li class="contributor-entry">
-          <a class="contributor" href="https://github.com/{{ user.name }}">
-            <img class="github-avatar" src="{{ user.avatar }}" alt="{{ user.name }}">
-            {{ user.name }}
-          </a>
-        </li>
-        {%- endfor -%}
-      </ul>
-      </li>
-    </div>
-  {% endif %}
-{% endblock %}
-
 {% block footer %}
   <footer class="md-footer">
     <div class="md-footer-meta md-typeset">
