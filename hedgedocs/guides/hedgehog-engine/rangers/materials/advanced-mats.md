@@ -21,8 +21,8 @@ This guide expects you to have a model that loads ingame and 5 texture maps for 
 - A `Metallic` Map *(if you do not want this make a solid `0` texture)*
 - A `f0 Specular` Map *(if you do not want this make a solid `0.25` texture)*
 - A `Roughness` Map *(if you do not want this make a solid `0.8` texture)*
-- A `DirectX Normal` Map *(if you do not want this make a solid `0.5, 0.5, 1` texture)*
-
+- An `OpenGL, Y+/Y up, Green+/Green up` Map *(if you do not want this make a solid `0.5, 0.5, 1` texture)*
+![](./assets/advanced-mats/normalmap.png)
 ![](./assets/advanced-mats/01-textures.png)
 
 ## Making a PRM map
