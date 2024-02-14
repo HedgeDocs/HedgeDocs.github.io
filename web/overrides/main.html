@@ -18,6 +18,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 {% endblock %}
 
+
+{% block content %}
+  <div class="imagePreview">
+    <div class="imagePreview-background"></div>
+    <div class="imagePreview-image">
+      <img class="imagePreview-image-element"></img>
+      <a target="_blank" class="imagePreview-image-caption">Open in new tab</a>
+    </div>
+  </div>
+  {{ super() }}
+  <div id="tsparticles"></div>
+{% endblock %}
+
 {% block footer %}
   <footer class="md-footer">
     <div class="md-footer-meta md-typeset">
