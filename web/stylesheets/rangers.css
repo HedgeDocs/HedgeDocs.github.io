@@ -170,6 +170,18 @@
     animation: none;
 }
 
+[data-md-color-scheme='rangers'] .md-tabs__item--active .md-tabs__link--active {
+    color: inherit;
+    background-color: #4ea5cf;
+    padding-bottom: .7rem;
+}
+
+[data-md-color-scheme='rangers'] .md-tabs__item--active .md-tabs__link--active:hover {
+    color: inherit;
+    background-color: #4ea5cf;
+    padding-bottom: .7rem;
+}
+
 
 [data-md-color-scheme='rangers'] .md-tabs__link {
     opacity: 1;

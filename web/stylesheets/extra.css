@@ -332,6 +332,11 @@ a.md-tabs__link.md-tabs__link--active:after {
     transform: scaleX(1);
 }
 
+.md-tabs__item--active .md-tabs__link:after {
+    transform: scaleX(1);
+    transition: none;
+}
+
 /* DISABLE GIT REPO PREVIEW */
 
 .md-header__source {
