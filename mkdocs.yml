@@ -110,6 +110,8 @@ nav:
       - Sonic Generations: 
         - Levels: 
           - Level ID Map: docs/hedgehog-engine/blueblur/levels/ids.md
+        - Event List: docs/hedgehog-engine/blueblur/events.md
+        - Camera Types: docs/hedgehog-engine/blueblur/cameras.md
       - Sonic Unleashed: 
         - Levels: 
           - Level ID Map: docs/hedgehog-engine/swa/levels/ids.md
