@@ -15,7 +15,7 @@ var observer = new MutationObserver(function (mutations, observer) {
         }
         replacePermalinkIcon()
         makeImagesClickable()
-        //sidebarExternalLinksNewTab()
+        sidebarExternalLinksNewTab()
         onInitialLoad()
         //addFadeAnim()
         //addCssClasses()
@@ -172,7 +172,10 @@ function sidebarExternalLinksNewTab() {
 
     for (let i = 0, length = links.length; i < length; i++) {
         const link = links[i]
-        link.target = '_blank'
+        if (!link.href.includes('hedgedocs') && !link.href.includes('127.0.0.1')) { // Include localhost as local link
+            link.target = '_blank'
+            link.classList.add('external-link')
+        }   
     }
 }
 
@@ -191,7 +194,8 @@ function headerStyling() {
 
         const headerDiv = document.querySelector('.md-header__inner')
         if (headerDiv) {
-            headerDiv.insertBefore(headerDiv.children[1], headerDiv.children[0])
+            const headerButton = document.querySelector('.md-icon')
+            headerDiv.insertBefore(headerButton, headerDiv.children[0])
         }
     }
 
