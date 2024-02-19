@@ -2,402 +2,412 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://hedgedocs.com/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/discoveries/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/discoveries/blueblur/hud/blb_gauge/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/discoveries/sonic2013/cutscenes/levels/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/discoveries/sonic2013/levels/colors/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/discoveries/sonic2013/levels/deleted/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/discoveries/sonic2013/levels/original-order/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/discoveries/sonic2013/levels/test/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/discoveries/swa/ps3/install/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/general/hson/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/gamelist/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.com/docs/hedgehog-engine/blueblur/cameras/</loc>
+         <lastmod>2024-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.com/docs/hedgehog-engine/blueblur/events/</loc>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/blueblur/levels/ids/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/rangers/dlc/ids/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/rangers/enemies/guardians/names/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/rangers/events/ids/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/rangers/files/rfl/mapping/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/rangers/levels/ids/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/rangers/scripts/funcs/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/sonic2010/files/lightfield/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/sonic2010/files/setobject/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/swa/cutscenes/ids/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/swa/levels/ids/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/swa/towns/ids/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/hedgehog-engine/wars/levels/ids/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/nn/common/chunk-format/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/docs/nn/common/chunk-format/texlist/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/blueblur/files/xncp/anims/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/blueblur/files/xncp/basics/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/blueblur/levels/glvl/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/blueblur/levels/importing-collision/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/blueblur/levels/importing-terrain/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/blueblur/levels/troubleshooting/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/blueblur/locations/sound/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/rangers/animation/import-export/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/rangers/audio/replacing/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/rangers/cyloop/color/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/rangers/materials/advanced-mats/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/rangers/models/import/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/hedgehog-engine/swa/levels/glvl/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/guides/nn/marathon/levels/glvl/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/general/audio/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/general/files/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/blueblur/levels/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/blueblur/files/ar/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/blueblur/files/fco/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/blueblur/files/gte/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/blueblur/files/sav/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/blueblur/files/xncp/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/common/animation/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/common/files/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/common/levels/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/common/lighting/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/common/models/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/common/text/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/rainbow/files/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/rangers/models/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/rangers/files/anmpxd/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/rangers/files/btmesh/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/rangers/files/cemt/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/rangers/files/rfl/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/sonic2010/levels/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/sonic2010/files/arc/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/sonic2010/files/general/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/sonic2010/files/xncp/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/sonic2010/files/xtb/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/sonic2013/levels/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/hedgehog-engine/swa/files/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/nn/marathon/files/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/nn/marathon/levels/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/others/adventure/files/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/renderware/common/levels/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/renderware/common/files/one/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/renderware/common/files/pac/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/renderware/common/files/txd/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/retro-engine/common/animation/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/retro-engine/common/files/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hedgedocs.com/tools/retro-engine/common/models/</loc>
-         <lastmod>2024-02-14</lastmod>
+         <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
