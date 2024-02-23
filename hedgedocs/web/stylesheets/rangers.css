@@ -75,7 +75,7 @@
     }
     [data-md-color-scheme='rangers'] main>div>div.md-sidebar.md-sidebar--primary>div>div>nav>ul>li.md-nav__item.md-nav__item--active.md-nav__item--section.md-nav__item--nested>div>a {
         color: #f2f8f8 !important;
-        padding: 5px;
+        padding: 5px 5px 5px 10px;
     }
     [data-md-color-scheme='rangers'] main>div>div.md-sidebar.md-sidebar--primary>div>div>nav>ul>li.md-nav__item.md-nav__item--active.md-nav__item--section.md-nav__item--nested>div>a:is(:focus,:hover) {
         color: #f2f8f8 !important;
