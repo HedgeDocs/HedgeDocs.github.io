@@ -134,4 +134,4 @@ The game doesn't load certain Sonic animations to save memory if the gimmick in 
 ```
 
 ### Lightfield File Too Large
-Your game might crash randomly when booting your level if the level's lightfield (.lft) file is too large. Try reducing the sample count or the minimum cell radius in HedgeGI to reduce the lightfield's file size.
+Your game might crash randomly when booting your level if the level's lightfield (.lft) file is too large. Try increasing the minimum cell radius in HedgeGI to reduce the lightfield's file size.
