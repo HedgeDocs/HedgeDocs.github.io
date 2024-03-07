@@ -23,17 +23,17 @@ nav:
         - File Formats: tools/hedgehog-engine/swa/files.md
       - Sonic Generations:
         - File Formats: 
-          - XNCP: tools/hedgehog-engine/blueblur/files/xncp.md
-          - GTE/GTM: tools/hedgehog-engine/blueblur/files/gte.md
-          - AR/ARL: tools/hedgehog-engine/blueblur/files/ar.md
-          - FCO: tools/hedgehog-engine/blueblur/files/fco.md
-          - SAV: tools/hedgehog-engine/blueblur/files/sav.md
+          - XNCP (UI): tools/hedgehog-engine/blueblur/files/xncp.md
+          - GTE/GTM (Particle): tools/hedgehog-engine/blueblur/files/gte.md
+          - AR/ARL (Archive): tools/hedgehog-engine/blueblur/files/ar.md
+          - FCO (Text): tools/hedgehog-engine/blueblur/files/fco.md
+          - SAV (Save File): tools/hedgehog-engine/blueblur/files/sav.md
         - Level Editing: tools/hedgehog-engine/blueblur/levels.md
       - Sonic Colors:
         - File Formats: 
           - General: tools/hedgehog-engine/sonic2010/files/general.md
-          - XNCP: tools/hedgehog-engine/sonic2010/files/xncp.md
-          - ARC: tools/hedgehog-engine/sonic2010/files/arc.md
+          - XNCP (UI): tools/hedgehog-engine/sonic2010/files/xncp.md
+          - ARC (Archive): tools/hedgehog-engine/sonic2010/files/arc.md
           - XTB: tools/hedgehog-engine/sonic2010/files/xtb.md
         - Level Editing: tools/hedgehog-engine/sonic2010/levels.md
       - Sonic Lost World:
@@ -42,10 +42,10 @@ nav:
         - File Formats: tools/hedgehog-engine/rainbow/files.md
       - Sonic Frontiers:
         - File Formats: 
-          - ANM.PXD: tools/hedgehog-engine/rangers/files/anmpxd.md
+          - ANM.PXD (Animation): tools/hedgehog-engine/rangers/files/anmpxd.md
           - CEMT: tools/hedgehog-engine/rangers/files/cemt.md
           - RFL: tools/hedgehog-engine/rangers/files/rfl.md
-          - BTMESH: tools/hedgehog-engine/rangers/files/btmesh.md
+          - BTMESH (Collision): tools/hedgehog-engine/rangers/files/btmesh.md
         - Models: tools/hedgehog-engine/rangers/models.md
     - Sega NN:
         - Sonic The Hedgehog (2006):
@@ -74,7 +74,7 @@ nav:
             - Sonic GLvl: guides/hedgehog-engine/swa/levels/glvl.md
       - Sonic Generations: 
         - File Formats:
-          - XNCP: 
+          - XNCP (UI): 
             - Basics: guides/hedgehog-engine/blueblur/files/xncp/basics.md
             - Animations: guides/hedgehog-engine/blueblur/files/xncp/anims.md
         - Level Editing:
