@@ -108,8 +108,8 @@ Here's a list with all the levels and their respective archive names in Sonic Un
 | Dragon Road Night Act 2        | ActN_SubChina_01   |
 | Dragon Road Night Act 3        | ActN_SubChina_02   |
 | Arid Sands Night Act 1         | ActN_PetraEvil     |
-| Arid Sands Night Act 2         | ActD_SubPetra_04   |
-| Arid Sands Night Act 3         | ActD_SubPetra_04   |
+| Arid Sands Night Act 2         | ActN_SubPetra_03   |
+| Arid Sands Night Act 3         | ActN_SubPetra_02   |
 | Cool Edge Night Act 1          | ActN_SnowEvil      |
 | Cool Edge Night Act 2          | ActN_SubSnow_01    |
 | Cool Edge Night Act 3          | ActN_SubSnow_02    |
