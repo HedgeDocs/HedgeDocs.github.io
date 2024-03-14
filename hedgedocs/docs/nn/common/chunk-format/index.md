@@ -83,7 +83,7 @@ All known data chunk types are listed in the following chart:
 | -- | -- | ----------------------------------- | ----------------------------------------------------------------- |
 | TL | t  | [TEXLIST](texlist.md)               | A list of textures.                                               |
 | EF | ?  | EFFECTLIST                          | A list of effects (shaders).                                      |
-| NN | a  | NODENAMELIST                        | A list of names for the nodes (bones) within an object (a model). |
+| NN | a  | [NODENAMELIST](nodenamelist.md)     | A list of names for the nodes (bones) within an object (a model). |
 | OB | o  | OBJECT                              | A model.                                                          |
 | CA | ?  | CAMERA                              | Camera parameters.                                                |
 | MO | m  | MOTION (node)                       | A node (bone) animation.                                          |
