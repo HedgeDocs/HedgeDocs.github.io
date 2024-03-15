@@ -18,6 +18,7 @@ struct NNS_NODENAMELIST
     /* The size of [pNodeNameList] array */
     uint32_t nNode;
 
+    /* An array of NNS_NODENAME structs */ 
     NNS_NODENAME* pNodeNameList;
 };
 ```
@@ -33,7 +34,7 @@ The actual node (bone) name
 struct NNS_NODENAME
 {
     /* The node index */
-    int iNode;
+    uint32_t iNode;
 
     /* The node name */
     char* Name;
