@@ -144,6 +144,7 @@ nav:
       - Common:
         - NN Chunk Format:
           - docs/nn/common/chunk-format/index.md
+          - NODENAMELIST: docs/nn/common/chunk-format/nodenamelist.md
           - TEXLIST: docs/nn/common/chunk-format/texlist.md
   - Discoveries:
     - discoveries/index.md
