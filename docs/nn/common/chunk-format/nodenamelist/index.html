@@ -6,32 +6,32 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Sega NN Chunk Format Specification">
+        <meta name="description" content="Sega NN NODENAMELIST Data Chunk Format Specification">
       
       
       
-        <link rel="canonical" href="https://hedgedocs.com/docs/nn/common/chunk-format/">
+        <link rel="canonical" href="https://hedgedocs.com/docs/nn/common/chunk-format/nodenamelist/">
       
       
-        <link rel="prev" href="../../../hedgehog-engine/rangers/scripts/funcs/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="nodenamelist/">
+        <link rel="next" href="../texlist/">
       
       
-      <link rel="icon" href="../../../../web/images/favicon.png">
+      <link rel="icon" href="../../../../../web/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.9">
     
     
       
-        <title>NN Chunk Format - HedgeDocs</title>
+        <title>NODENAMELIST - HedgeDocs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.f2e4d321.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.f2e4d321.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,31 +50,31 @@
       
     
     
-      <link rel="stylesheet" href="../../../../css/timeago.css">
+      <link rel="stylesheet" href="../../../../../css/timeago.css">
     
-      <link rel="stylesheet" href="../../../../web/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../../web/stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../../../../web/stylesheets/amoled.css">
+      <link rel="stylesheet" href="../../../../../web/stylesheets/amoled.css">
     
-      <link rel="stylesheet" href="../../../../web/stylesheets/dark.css">
+      <link rel="stylesheet" href="../../../../../web/stylesheets/dark.css">
     
-      <link rel="stylesheet" href="../../../../web/stylesheets/rangers.css">
+      <link rel="stylesheet" href="../../../../../web/stylesheets/rangers.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  <meta property="og:title" content="NN Chunk Format - HedgeDocs" />
+  <meta property="og:title" content="NODENAMELIST - HedgeDocs" />
   <meta property="og:type" content="webpage" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://hedgedocs.com/docs/nn/common/chunk-format/" />
+  <meta property="og:url" content="https://hedgedocs.com/docs/nn/common/chunk-format/nodenamelist/" />
   <meta property="og:image" content="https://hedgedocs.com/web/images/favicon.png" />
   <meta property="og:image:type" content="image/png" />
 
-  <meta property="og:description" content="Sega NN Chunk Format Specification">
+  <meta property="og:description" content="Sega NN NODENAMELIST Data Chunk Format Specification">
 
   <meta property="og:image:width" content="512" />
   <meta property="og:image:height" content="512" />
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nn-chunk-format" class="md-skip">
+        <a href="#nodenamelist" class="md-skip">
           Skip to content
         </a>
       
@@ -116,9 +116,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="HedgeDocs" class="md-header__button md-logo" aria-label="HedgeDocs" data-md-component="logo">
+    <a href="../../../../.." title="HedgeDocs" class="md-header__button md-logo" aria-label="HedgeDocs" data-md-component="logo">
       
-  <img src="../../../../web/images/icon.svg" alt="logo">
+  <img src="../../../../../web/images/icon.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -135,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              NN Chunk Format
+              NODENAMELIST
             
           </span>
         </div>
@@ -246,7 +246,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
     
@@ -265,7 +265,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../tools/" class="md-tabs__link">
+        <a href="../../../../../tools/" class="md-tabs__link">
           
   
     
@@ -285,7 +285,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../guides/" class="md-tabs__link">
+        <a href="../../../../../guides/" class="md-tabs__link">
           
   
     
@@ -307,7 +307,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../" class="md-tabs__link">
+        <a href="../../../../" class="md-tabs__link">
           
   
     
@@ -327,7 +327,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../discoveries/" class="md-tabs__link">
+        <a href="../../../../../discoveries/" class="md-tabs__link">
           
   
     
@@ -368,9 +368,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="HedgeDocs" class="md-nav__button md-logo" aria-label="HedgeDocs" data-md-component="logo">
+    <a href="../../../../.." title="HedgeDocs" class="md-nav__button md-logo" aria-label="HedgeDocs" data-md-component="logo">
       
-  <img src="../../../../web/images/icon.svg" alt="logo">
+  <img src="../../../../../web/images/icon.svg" alt="logo">
 
     </a>
     HedgeDocs
@@ -397,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -452,7 +452,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../tools/" class="md-nav__link ">
+            <a href="../../../../../tools/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -531,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/general/files/" class="md-nav__link">
+      <a href="../../../../../tools/general/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -552,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/general/audio/" class="md-nav__link">
+      <a href="../../../../../tools/general/audio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -691,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/common/files/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/common/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -712,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/common/lighting/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/common/lighting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -733,7 +733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/common/models/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/common/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -754,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/common/text/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/common/text/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -775,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/common/levels/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/common/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -796,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/common/animation/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/common/animation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -869,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/swa/files/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/swa/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -996,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/blueblur/files/xncp/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/blueblur/files/xncp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1017,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/blueblur/files/gte/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/blueblur/files/gte/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1038,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/blueblur/files/ar/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/blueblur/files/ar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1059,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/blueblur/files/fco/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/blueblur/files/fco/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1080,7 +1080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/blueblur/files/sav/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/blueblur/files/sav/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1109,7 +1109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/blueblur/levels/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/blueblur/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1234,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/sonic2010/files/general/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/sonic2010/files/general/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1255,7 +1255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/sonic2010/files/xncp/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/sonic2010/files/xncp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1276,7 +1276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/sonic2010/files/arc/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/sonic2010/files/arc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1297,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/sonic2010/files/xtb/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/sonic2010/files/xtb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1326,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/sonic2010/levels/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/sonic2010/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1399,7 +1399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/sonic2013/levels/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/sonic2013/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1472,7 +1472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/rainbow/files/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/rainbow/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1597,7 +1597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/rangers/files/anmpxd/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/rangers/files/anmpxd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1618,7 +1618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/rangers/files/cemt/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/rangers/files/cemt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1639,7 +1639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/rangers/files/rfl/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/rangers/files/rfl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1660,7 +1660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/rangers/files/btmesh/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/rangers/files/btmesh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1689,7 +1689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/hedgehog-engine/rangers/models/" class="md-nav__link">
+      <a href="../../../../../tools/hedgehog-engine/rangers/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1816,7 +1816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/nn/marathon/files/" class="md-nav__link">
+      <a href="../../../../../tools/nn/marathon/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1837,7 +1837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/nn/marathon/levels/" class="md-nav__link">
+      <a href="../../../../../tools/nn/marathon/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2012,7 +2012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/renderware/common/files/one/" class="md-nav__link">
+      <a href="../../../../../tools/renderware/common/files/one/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2033,7 +2033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/renderware/common/files/pac/" class="md-nav__link">
+      <a href="../../../../../tools/renderware/common/files/pac/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2054,7 +2054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/renderware/common/files/txd/" class="md-nav__link">
+      <a href="../../../../../tools/renderware/common/files/txd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2083,7 +2083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/renderware/common/levels/" class="md-nav__link">
+      <a href="../../../../../tools/renderware/common/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2212,7 +2212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/retro-engine/common/files/" class="md-nav__link">
+      <a href="../../../../../tools/retro-engine/common/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2233,7 +2233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/retro-engine/common/models/" class="md-nav__link">
+      <a href="../../../../../tools/retro-engine/common/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2254,7 +2254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/retro-engine/common/animation/" class="md-nav__link">
+      <a href="../../../../../tools/retro-engine/common/animation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2379,7 +2379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/others/adventure/files/" class="md-nav__link">
+      <a href="../../../../../tools/others/adventure/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2452,7 +2452,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../guides/" class="md-nav__link ">
+            <a href="../../../../../guides/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2621,7 +2621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/swa/levels/glvl/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/swa/levels/glvl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2796,7 +2796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/blueblur/files/xncp/basics/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/blueblur/files/xncp/basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2817,7 +2817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/blueblur/files/xncp/anims/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/blueblur/files/xncp/anims/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2904,7 +2904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/blueblur/levels/glvl/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/blueblur/levels/glvl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2925,7 +2925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/blueblur/levels/importing-terrain/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/blueblur/levels/importing-terrain/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2946,7 +2946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/blueblur/levels/importing-collision/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/blueblur/levels/importing-collision/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2967,7 +2967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/blueblur/levels/troubleshooting/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/blueblur/levels/troubleshooting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3040,7 +3040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/blueblur/locations/sound/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/blueblur/locations/sound/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3173,7 +3173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/rangers/cyloop/color/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/rangers/cyloop/color/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3246,7 +3246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/rangers/audio/replacing/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/rangers/audio/replacing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3319,7 +3319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/rangers/animation/import-export/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/rangers/animation/import-export/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3392,7 +3392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/rangers/materials/advanced-mats/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/rangers/materials/advanced-mats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3465,7 +3465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/hedgehog-engine/rangers/models/import/" class="md-nav__link">
+      <a href="../../../../../guides/hedgehog-engine/rangers/models/import/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3642,7 +3642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guides/nn/marathon/levels/glvl/" class="md-nav__link">
+      <a href="../../../../../guides/nn/marathon/levels/glvl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3801,7 +3801,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../" class="md-nav__link ">
+            <a href="../../../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3881,7 +3881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../general/hson/" class="md-nav__link">
+      <a href="../../../../general/hson/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3967,7 +3967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/gamelist/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/gamelist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4080,7 +4080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/blueblur/levels/ids/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/blueblur/levels/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4109,7 +4109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/blueblur/events/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/blueblur/events/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4130,7 +4130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/blueblur/cameras/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/blueblur/cameras/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4251,7 +4251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/swa/levels/ids/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/swa/levels/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4272,7 +4272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/swa/towns/ids/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/swa/towns/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4345,7 +4345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/swa/cutscenes/ids/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/swa/cutscenes/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4472,7 +4472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/sonic2010/files/lightfield/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/sonic2010/files/lightfield/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4493,7 +4493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/sonic2010/files/setobject/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/sonic2010/files/setobject/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4618,7 +4618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/wars/levels/ids/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/wars/levels/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4753,7 +4753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/rangers/dlc/ids/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/rangers/dlc/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4870,7 +4870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/rangers/enemies/guardians/names/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/rangers/enemies/guardians/names/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4951,7 +4951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/rangers/events/ids/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/rangers/events/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5068,7 +5068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/rangers/files/rfl/mapping/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/rangers/files/rfl/mapping/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5149,7 +5149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/rangers/levels/ids/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/rangers/levels/ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5222,7 +5222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hedgehog-engine/rangers/scripts/funcs/" class="md-nav__link">
+      <a href="../../../../hedgehog-engine/rangers/scripts/funcs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5391,7 +5391,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -5402,7 +5402,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_4_4_1_1" id="__nav_4_4_1_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_4_1_1" id="__nav_4_4_1_1_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -5421,10 +5421,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="nodenamelist/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    NODENAMELIST
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -5433,6 +5453,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nns_nodenamelist" class="md-nav__link">
+    <span class="md-ellipsis">
+      NNS_NODENAMELIST
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nns_nodename" class="md-nav__link">
+    <span class="md-ellipsis">
+      NNS_NODENAME
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nne_nodename_sorttype" class="md-nav__link">
+    <span class="md-ellipsis">
+      NNE_NODENAME_SORTTYPE
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -5445,7 +5512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="texlist/" class="md-nav__link">
+      <a href="../texlist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5526,7 +5593,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../discoveries/" class="md-nav__link ">
+            <a href="../../../../../discoveries/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -5647,7 +5714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discoveries/swa/ps3/install/" class="md-nav__link">
+      <a href="../../../../../discoveries/swa/ps3/install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5772,7 +5839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discoveries/blueblur/hud/blb_gauge/" class="md-nav__link">
+      <a href="../../../../../discoveries/blueblur/hud/blb_gauge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5899,7 +5966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discoveries/sonic2013/cutscenes/levels/" class="md-nav__link">
+      <a href="../../../../../discoveries/sonic2013/cutscenes/levels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5978,7 +6045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discoveries/sonic2013/levels/colors/" class="md-nav__link">
+      <a href="../../../../../discoveries/sonic2013/levels/colors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5999,7 +6066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discoveries/sonic2013/levels/test/" class="md-nav__link">
+      <a href="../../../../../discoveries/sonic2013/levels/test/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6020,7 +6087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discoveries/sonic2013/levels/deleted/" class="md-nav__link">
+      <a href="../../../../../discoveries/sonic2013/levels/deleted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6041,7 +6108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discoveries/sonic2013/levels/original-order/" class="md-nav__link">
+      <a href="../../../../../discoveries/sonic2013/levels/original-order/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6105,96 +6172,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#platforms" class="md-nav__link">
+  <a href="#nns_nodenamelist" class="md-nav__link">
     <span class="md-ellipsis">
-      Platforms
+      NNS_NODENAMELIST
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-chunks" class="md-nav__link">
+  <a href="#nns_nodename" class="md-nav__link">
     <span class="md-ellipsis">
-      Data Chunks
+      NNS_NODENAME
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#file-types" class="md-nav__link">
+  <a href="#nne_nodename_sorttype" class="md-nav__link">
     <span class="md-ellipsis">
-      File Types
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#binary-form-file-format" class="md-nav__link">
-    <span class="md-ellipsis">
-      Binary-Form File Format
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Binary-Form File Format">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#info-chunk" class="md-nav__link">
-    <span class="md-ellipsis">
-      Info Chunk
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-chunk-header" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Chunk Header
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#offsets-list-chunk" class="md-nav__link">
-    <span class="md-ellipsis">
-      Offsets List Chunk
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#file-name-chunk" class="md-nav__link">
-    <span class="md-ellipsis">
-      File Name Chunk
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#end-chunk" class="md-nav__link">
-    <span class="md-ellipsis">
-      End Chunk
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#text-form-file-format" class="md-nav__link">
-    <span class="md-ellipsis">
-      Text-Form File Format
+      NNE_NODENAME_SORTTYPE
     </span>
   </a>
   
@@ -6226,645 +6224,53 @@
   
 
 
-<h1 id="nn-chunk-format">NN Chunk Format<a class="headerlink" href="#nn-chunk-format" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This page is still a work in progress! Any additions and updates are greatly appreciated!</p>
+<h1 id="nodenamelist">NODENAMELIST<a class="headerlink" href="#nodenamelist" title="Permanent link">&para;</a></h1>
+<h2 id="nns_nodenamelist">NNS_NODENAMELIST<a class="headerlink" href="#nns_nodenamelist" title="Permanent link">&para;</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This is the "main" (root) struct for all NN node (bone) name list chunks.</p>
 </div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>HedgeDocs' initial Sega NN documentation was written by: <strong>Radfordhound</strong>.</p>
-<p>Thanks to:</p>
-<ul>
-<li>
-<p><strong>ItsEasyActually</strong>: For sharing his Sega NN findings with me, which
-helped immensely in getting me started on my journey to reverse-engineer
-and document all of Sega NN across all of its many crazy iterations
-and platforms.</p>
-</li>
-<li>
-<p><strong>ArMM1998</strong>: For sharing his documentation on some more obscure
-NN file types with me (specifically Puyo Puyo stuff, including DS games
-that used NN which I didn't know was a thing); I never would've known about
-these otherwise!</p>
-</li>
-<li>
-<p><strong>TGE</strong> and <strong>WamWooWam</strong>: For decompiling SEGA's <del>unholy</del> port of Sonic 4
-Episode I to Windows Phone 7, which used the Sega NN library, and just-so-happened
-to include complete symbols for everything (even enum values)! I can't understate
-how much this information has helped me!</p>
-</li>
-<li>
-<p><strong>SEGA</strong>: For making these games, and for letting us freely mod them.
-Seriously, not many companies let us do this stuff openly, and I think it's awesome.
-(Also, for releasing that awful version of Sonic 4 Episode I on Windows Phone 7 which
-had all the symbols in it. Thanks guys, you're the best!! &lt;3)</p>
-</li>
-</ul>
-</div>
-<p>The Sega NN Chunk Format is a generic "container" format developed by Sega
-somewhere around 2002-2004. It originally appeared in 2004's "Sega Superstars"
-(to our knowledge), and has been heavily utilized in many Sega games released since.</p>
-<p>The format is heavily based on the older "Sega Ninja Chunk Model" format, which was
-originally developed for the Sega Dreamcast and was utilized in many Dreamcast
-games (it was even included as part of the Dreamcast's "Katana" SDK).</p>
-<p>While the exact meaning of the "NN" in "Sega NN" is still currently unknown, given
-that it is so heavily based off of the older Ninja format, it's almost certainly
-an acronym for something like "New Ninja" or "Ninja Next".</p>
-<h2 id="platforms">Platforms<a class="headerlink" href="#platforms" title="Permanent link">&para;</a></h2>
-<p>The NN Chunk Format, much like the older Ninja format it's based on, is
-designed heavily around the specific hardware/software requirements of whatever
-platform it is intended to be used on.</p>
-<p>Unlike the older Ninja format, however (which only supports one platform: the
-Sega Dreamcast), the NN Chunk Format is "multi-platform", and therefore comes
-in many different platform-specific variants.</p>
-<p>All known supported platforms are listed in the following chart:</p>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Meaning</th>
-<th>CC</th>
-<th>NN Library Version</th>
-<th>Endianness</th>
-<th>Alignment</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>NX</td>
-<td>Ninja Xbox</td>
-<td>x</td>
-<td>DirectX G1.1</td>
-<td>Little</td>
-<td>16</td>
-<td>Xbox/Xbox 360</td>
-</tr>
-<tr>
-<td>NS</td>
-<td>Ninja Sony</td>
-<td>s</td>
-<td>PlayStation 2</td>
-<td>Little</td>
-<td>16 ?</td>
-<td>PlayStation 2</td>
-</tr>
-<tr>
-<td>NG</td>
-<td>Ninja Gamecube</td>
-<td>g</td>
-<td>GAMECUBE</td>
-<td>Big</td>
-<td>32</td>
-<td>Gamecube/Wii</td>
-</tr>
-<tr>
-<td>NC</td>
-<td>Ninja Cell</td>
-<td>c ?</td>
-<td>PS3</td>
-<td>Little ?</td>
-<td>16 ?</td>
-<td>PlayStation 3</td>
-</tr>
-<tr>
-<td>NU</td>
-<td>Ninja Umd ?</td>
-<td>u/s</td>
-<td>PSP</td>
-<td>Little</td>
-<td>16 ?</td>
-<td>PlayStation Portable</td>
-</tr>
-<tr>
-<td>DS</td>
-<td>DS</td>
-<td>?</td>
-<td>?</td>
-<td>Little</td>
-<td>16 ?</td>
-<td>Nintendo DS/3DS</td>
-</tr>
-<tr>
-<td>NI</td>
-<td>Ninja Ios</td>
-<td>i ?</td>
-<td>OpenGL ES 1.1</td>
-<td>Little</td>
-<td>16 ?</td>
-<td>iOS/Android/Windows Phone</td>
-</tr>
-<tr>
-<td>NE</td>
-<td>?</td>
-<td>?</td>
-<td>DirectX G2.0 on XBOX360</td>
-<td>Little ?</td>
-<td>16 ?</td>
-<td>Xbox 360</td>
-</tr>
-<tr>
-<td>NY</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-<td>Big</td>
-<td>16 ?</td>
-<td>Xbox 360/PlayStation 3</td>
-</tr>
-<tr>
-<td>NZ</td>
-<td>Ninja [Other]</td>
-<td>z</td>
-<td>DirectX G2.0</td>
-<td>Little</td>
-<td>16</td>
-<td>Other platforms, such as PC</td>
-</tr>
-</tbody>
-</table>
-<h2 id="data-chunks">Data Chunks<a class="headerlink" href="#data-chunks" title="Permanent link">&para;</a></h2>
-<p>As the name implies, files in the NN Chunk Format are comprised
-of a series of one or more "data chunks", one after another.</p>
-<p>A "data chunk" is simply a block of data (structs, arrays, strings, etc.)
-that represents a single resource of a specific type.</p>
-<p>All known data chunk types are listed in the following chart:</p>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>CC</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>TL</td>
-<td>t</td>
-<td><a href="texlist/">TEXLIST</a></td>
-<td>A list of textures.</td>
-</tr>
-<tr>
-<td>EF</td>
-<td>?</td>
-<td>EFFECTLIST</td>
-<td>A list of effects (shaders).</td>
-</tr>
-<tr>
-<td>NN</td>
-<td>a</td>
-<td><a href="nodenamelist/">NODENAMELIST</a></td>
-<td>A list of names for the nodes (bones) within an object (a model).</td>
-</tr>
-<tr>
-<td>OB</td>
-<td>o</td>
-<td>OBJECT</td>
-<td>A model.</td>
-</tr>
-<tr>
-<td>CA</td>
-<td>?</td>
-<td>CAMERA</td>
-<td>Camera parameters.</td>
-</tr>
-<tr>
-<td>MO</td>
-<td>m</td>
-<td>MOTION (node)</td>
-<td>A node (bone) animation.</td>
-</tr>
-<tr>
-<td>MC</td>
-<td>d</td>
-<td>MOTION (camera)</td>
-<td>A camera animation.</td>
-</tr>
-<tr>
-<td>ML</td>
-<td>?</td>
-<td>MOTION (light)</td>
-<td>A light animation.</td>
-</tr>
-<tr>
-<td>MM</td>
-<td>f</td>
-<td>MOTION (morph)</td>
-<td>A morph animation.</td>
-</tr>
-<tr>
-<td>MA</td>
-<td>v</td>
-<td>MOTION (material)</td>
-<td>A material animation.</td>
-</tr>
-<tr>
-<td>LI</td>
-<td>l</td>
-<td>LIGHT</td>
-<td>A light.</td>
-</tr>
-</tbody>
-</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_NODENAMELIST</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="cm">/* The sorting type */</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">NNE_NODENAME_SORTTYPE</span><span class="w"> </span><span class="n">SortType</span><span class="p">;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="cm">/* The size of [pNodeNameList] array */</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">nNode</span><span class="p">;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="cm">/* An array of NNS_NODENAME structs */</span><span class="w"> </span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="n">NNS_NODENAME</span><span class="o">*</span><span class="w"> </span><span class="n">pNodeNameList</span><span class="p">;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">};</span>
+</code></pre></div>
 <div class="admonition todo">
 <p class="admonition-title">Todo</p>
-<p>Add the rest of the data chunk types.</p>
+<p>Find the macros used in the text-form file format</p>
 </div>
-<p>For more specific information on the format of these data chunk
-types, please refer to the linked pages in the above chart.</p>
-<h2 id="file-types">File Types<a class="headerlink" href="#file-types" title="Permanent link">&para;</a></h2>
-<p>Just like with the older Ninja format, NN chunk files come in two forms:</p>
-<ul>
-<li><a href="#binary-form-file-format">Binary-Form</a></li>
-<li><a href="#text-form-file-format">Text-Form</a> (aka "Ascii-Form")</li>
-</ul>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p><strong>The vast majority of NN chunk files in released games are in binary-form.</strong></p>
-<p>To our knowledge, all released games using NN don't support
-loading text-form files, meaning that <strong>all NN text-form files
-found in the games are unused developer leftovers</strong>!</p>
-</div>
-<p>File extensions for NN chunk files typically consist of three characters:</p>
-<ol>
-<li>The "CC" (character-code) of the <a href="#platforms">platform</a>.</li>
-<li><code>n</code> for <a href="#binary-form-file-format">Binary-Form</a> files, or <code>t</code> for <a href="#text-form-file-format">Text-Form</a> files.</li>
-<li>The "CC" (character-code) of the last <a href="#data-chunks">data chunk</a> contained within the file.</li>
-</ol>
-<div class="admonition example">
-<p class="admonition-title">Examples</p>
-<table>
-<thead>
-<tr>
-<th>Extension</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.xno</td>
-<td>Xbox | Binary-Form | OBJECT</td>
-</tr>
-<tr>
-<td>.gno</td>
-<td>Gamecube | Binary-Form | OBJECT</td>
-</tr>
-<tr>
-<td>.xtv</td>
-<td>Xbox | Text-Form | MOTION (material)</td>
-</tr>
-<tr>
-<td>.snt</td>
-<td>Sony | Binary-Form | TEXLIST</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="binary-form-file-format">Binary-Form File Format<a class="headerlink" href="#binary-form-file-format" title="Permanent link">&para;</a></h2>
-<p>Binary-Form NN chunk files are just a series of consecutive
-"binary chunks", each of which begins with the following struct:</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>All instances of this struct (and ONLY this struct) are represented in
-<strong>little-endian</strong>, regardless of the endianness specified by the
-<a href="#platforms">platform</a>. <strong>Everything else</strong> in Binary-Form NN chunk files
-is represented in the endianness specified by the <a href="#platforms">platform</a>.</p>
-</div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cm">/*</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cm">    NOTE: A struct type with this name does not actually exist</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cm">    (to my knowledge) in real Sega NN implementations; instead,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="cm">    these fields are just embedded directly within every binary</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="cm">    chunk&#39;s header struct. This is just an easier way to think</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="cm">    about it for our purposes.</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="cm">*/</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_HEADER</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">{</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="cm">    The four-character identifier for this binary chunk;</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="cm">    specifies what type of binary chunk this is.</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="cm">  */</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Id</span><span class="p">;</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="cm">    The offset to the next four-character identifier in the</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="cm">    file, relative to the end of this struct (such that after</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="cm">    doing fread(&amp;OfsNextId, sizeof(OfsNextId), 1, file);</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="cm">    you can just do fseek(file, OfsNextId, SEEK_CUR)).</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="cm">  */</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">OfsNextId</span><span class="p">;</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="p">};</span>
-</code></pre></div>
-<p>Immediately following this struct comes all of the data (structs, strings, etc.)
-required to represent the binary chunk. The format of this data depends on
-the platform and type of binary chunk being represented. Check the Id field
-to determine this.</p>
-<p>After each binary chunk (including all of its data) has been written, the file
-is padded (with <code>0</code>s) to a position that is divisible by the "alignment"
-specified by the <a href="#platforms">platform</a> (usually it's 16, but notably, it's
-32 on Gamecube/Wii).</p>
-<p>What follows is documentation for all known binary chunk types, in the order
-they appear within binary-form NN chunk files.</p>
-<h3 id="info-chunk">Info Chunk<a class="headerlink" href="#info-chunk" title="Permanent link">&para;</a></h3>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>This chunk is required to be present at the beginning of all binary-form NN chunk files!</strong>
-The Sega NN games I checked actually rely on this behavior, so you can too.</p>
-</div>
-<p>This binary chunk serves as the header for a binary-form NN chunk file,
-and contains info needed to parse the file. It is represented as the
-following struct:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_FILEHEADER</span>
+<h2 id="nns_nodename">NNS_NODENAME<a class="headerlink" href="#nns_nodename" title="Permanent link">&para;</a></h2>
+<p>The actual node (bone) name</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_NODENAME</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="cm">    Binary chunk header; must be present at the beginning of all binary chunks.</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="cm">/* The node index */</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">iNode</span><span class="p">;</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="cm">    The chunk ID is set to &quot;**IF&quot;, where &quot;**&quot; is the &quot;ID&quot; of</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="cm">    the platform (e.g. &quot;NGIF&quot; for &quot;Ninja Gamecube InFo&quot;).</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="cm">  */</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="cm">/* The number of data chunks in the file. */</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">nChunk</span><span class="p">;</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="cm">/* Absolute offset to the first data chunk in the file. */</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">OfsData</span><span class="p">;</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">  </span><span class="cm">/* The combined size of all of the data chunks in the file, including padding. */</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">SizeData</span><span class="p">;</span>
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">  </span><span class="cm">/* Absolute offset to the (required) NOF0 binary chunk. */</span>
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">OfsNOF0</span><span class="p">;</span>
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="cm">    Size of the (required) NOF0 binary chunk, including its header.</span>
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="cm">    Depending on the variant of the format, this size either includes</span>
-<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="cm">    the padding that comes after the NOF0 binary chunk, or it doesn&#39;t.</span>
-<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>
-<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="cm">    (I haven&#39;t figured out exactly which versions include padding yet).</span>
-<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>
-<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="cm">    (It seems PSP files and .[x]ncp files don&#39;t count the padding,</span>
-<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="cm">    but everything else does?)</span>
-<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="cm">  */</span>
-<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">SizeNOF0</span><span class="p">;</span>
-<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>
-<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="cm">    1 in most files, 0 in some newer variants.</span>
-<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="cm">    (Maybe they just stopped using this value?)</span>
-<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="cm">  */</span>
-<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Version</span><span class="p">;</span>
-<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="p">};</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="cm">/* The node name */</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">Name</span><span class="p">;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">};</span>
 </code></pre></div>
-<div class="admonition todo">
-<p class="admonition-title">Todo</p>
-<p>Further research NIFL header chunks and add info on those.</p>
-</div>
-<h3 id="data-chunk-header">Data Chunk Header<a class="headerlink" href="#data-chunk-header" title="Permanent link">&para;</a></h3>
-<p>After the <a href="#info-chunk">Info Chunk</a>, comes a sequence of one or more <a href="#data-chunks">data chunks</a>.</p>
-<p>In binary-form NN chunk files, each data chunk begins with the following struct:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_DATAHEADER</span>
+<h2 id="nne_nodename_sorttype">NNE_NODENAME_SORTTYPE<a class="headerlink" href="#nne_nodename_sorttype" title="Permanent link">&para;</a></h2>
+<p>This enum indicates the sorting type used in the node name list.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">enum</span><span class="w"> </span><span class="n">NNE_NODENAME_SORTTYPE</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">{</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="cm">    Binary chunk header; must be present at the beginning of all binary chunks.</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="cm">/* Sorting by index */</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="n">NNE_NODENAME_SORTTYPE_INDEX</span><span class="p">,</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="cm">    The chunk ID is set to the &quot;ID&quot; of the platform, followed</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="cm">    by the &quot;ID&quot; of the data chunk type being written (e.g.</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="cm">    &quot;NXTL&quot; for &quot;Ninja Xbox Texture List&quot;).</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="cm">  */</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="cm">    Offset to the &quot;main&quot; (root) struct that makes up this chunk&#39;s data</span>
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="cm">    (e.g. offset to a NNS_NODENAMELIST if the chunk type indicates</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="cm">    that this is a NODENAMELIST data chunk), relative to the</span>
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="cm">    position specified by the [OfsData] field from the info chunk.</span>
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="cm">  */</span>
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">OfsMainData</span><span class="p">;</span>
-<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
-<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">  </span><span class="cm">/* Always 0 in every file I&#39;ve seen thus far. */</span>
-<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Version</span><span class="p">;</span>
-<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="p">};</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="cm">/* Sorting by name */</span><span class="w"> </span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="n">NNE_NODENAME_SORTTYPE_NAME</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">};</span>
 </code></pre></div>
-<p>Immediately following this struct comes all of the data (structs, strings, etc.)
-required to represent the data chunk. The format of this data depends on
-the platform and type of data chunk being represented. Check the chunk ID from
-the ChunkHeader field in the above struct to determine this.</p>
-<p>See the linked pages in the <a href="#data-chunks">data chunks chart</a>.</p>
-<h3 id="offsets-list-chunk">Offsets List Chunk<a class="headerlink" href="#offsets-list-chunk" title="Permanent link">&para;</a></h3>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>This chunk is required to be present in all binary-form NN chunk files!</strong></p>
-</div>
-<p>After all of the data chunks, comes the offsets list chunk.</p>
-<p>This binary chunk represents a list of positions for all of the pointers
-("offsets") in all of the data chunks in the file, relative to the value
-of the <code>[OfsData]</code> field from the file's info chunk.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_NOF0HEADER</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">{</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="cm">    Binary chunk header; must be present at the beginning of all binary chunks.</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="cm">    The chunk ID is set to &quot;NOF0&quot;.</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="cm">  */</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="cm">/* The number of pointer positions listed within this chunk. */</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">nData</span><span class="p">;</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="cm">    Padding; always 0 in files.</span>
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="cm">    Some games use this value as a marker that states whether or not</span>
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="cm">    the offsets have been &quot;fixed&quot;. In those games, after they&#39;re done</span>
-<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="cm">    &quot;fixing&quot; all of the pointers listed within this chunk, they will set</span>
-<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="cm">    this value to 1 in memory.</span>
-<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="cm">  */</span>
-<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Pad</span><span class="p">;</span>
-<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="p">};</span>
-</code></pre></div>
-<p>Immediately following this struct comes an array of <code>uint32_t</code> values
-of size <code>[nData]</code>. These values represent the positions of every pointer
-in all of the data chunks in the file, relative to the <code>[OfsData]</code> field
-from the file's info chunk.</p>
-<p>Most Sega NN games use this chunk to quickly "fix" all of the pointers
-within the data chunks (that is, to convert all of the offsets into
-absolute memory addresses that can then just be used as normal pointers).</p>
-<p>Some games, however, (namely: Sonic 4 Episode I for Windows Phone) ignore the
-values in this chunk, and instead, just manually add <code>[OfsData]</code> to
-each offset to get an absolute file position whenever they need to jump there.</p>
-<p>Regardless of whether the data is used or not, it is still required to be present.</p>
 <div class="admonition todo">
 <p class="admonition-title">Todo</p>
-<p>Add pseudo-code for "fixing" the offsets listed in this chunk.</p>
-</div>
-<h3 id="file-name-chunk">File Name Chunk<a class="headerlink" href="#file-name-chunk" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p><strong>This chunk is completely optional</strong> and seems to only be used for
-debugging/internal-tooling purposes.</p>
-</div>
-<p>This chunk simply states the name and extension (without the path) of the file it's contained in.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_NFN0HEADER</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">{</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="cm">    Binary chunk header; must be present at the beginning of all binary chunks.</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="cm">    The chunk ID is set to &quot;NFN0&quot;.</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="cm">  */</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="cm">/* Padding; always 0 in files. */</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Pad</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">};</span>
-</code></pre></div>
-<p>Immediately following this header comes a null-terminated string
-which represents the file's name and extension (without its path).</p>
-<h3 id="end-chunk">End Chunk<a class="headerlink" href="#end-chunk" title="Permanent link">&para;</a></h3>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>This chunk is required to be present as the last chunk in all binary-form NN chunk files!</strong></p>
-</div>
-<p>This is the last chunk in all binary-form NN chunk files. It exists purely
-to indicate that there are no more chunks left in the file, so that you
-know when to stop reading if you're reading the file one chunk at a time.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_NENDHEADER</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">{</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="cm">    Binary chunk header; must be present at the beginning of all binary chunks.</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="cm">    The chunk ID is set to &quot;NEND&quot;.</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="cm">  */</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span><span class="cm">/* Padding; always 0 in files. */</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Pad</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="p">};</span>
-</code></pre></div>
-<h2 id="text-form-file-format">Text-Form File Format<a class="headerlink" href="#text-form-file-format" title="Permanent link">&para;</a></h2>
-<p>Just like text-form Ninja chunk model files, text-form NN chunk files are actually C
-header files designed to be directly <code>#include</code>-able from C or C++ code, allowing
-developers to literally embed NN data directly into the game's code itself!</p>
-<p>They also, however, are designed to serve as a human-readable variant of binary-form NN
-chunk files that can be more easily parsed and/or generated by the official Sega NN tooling.</p>
-<p>They accomplish all of this by using only a very strict subset of C in a precise
-layout, and by heavily utilizing preprocessor defines from other NN library header
-files that the developer is supposed to <code>#include</code> in their code before <code>#include</code>-ing
-the text-form NN chunk file.</p>
-<p>The general layout is as follows:</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Replace these special phrases in all of the following "<code>text snippets</code>" as follows:</p>
-<ul>
-<li>"<code>\t</code>": Replace with a tab character (<em>not</em> spaces).</li>
-<li>"<code>TYPE</code>": Replace with the name of the type currently being written.</li>
-<li>"<code>NAME</code>": Replace with the name of whatever you're currently writing.</li>
-</ul>
-</div>
-<ol>
-<li>A required (?) "header" comment that is comprised of the following, in order:<ol>
-<li>The name and version number of the tool used to create this file.</li>
-<li>"<code>Create\t:</code>" followed by the date this file was created in the "<code>ddd MMM dd HH:mm:ss yyyy</code>" .NET DateTime format.</li>
-<li>References to each of the "main" (root) structs that makes up the data of every data chunk used in the file, in this format: "<code>TYPE\t: NAME</code>", where <code>TYPE</code> refers to the type of the struct being referenced (e.g. NNS_TEXFILELIST). See the linked pages in the <a href="#data-chunks">data chunks chart</a>.</li>
-</ol>
-</li>
-<li>One or more data chunks, each of which is comprised of the following, in order:<ol>
-<li>A comment with the text: "<code>TYPE START</code>", where <code>TYPE</code> refers to the <a href="#data-chunks">data chunk's type</a> (e.g. TEXLIST).</li>
-<li>All of the data used by this data chunk, represented as C code comprised heavily of special NN preprocessor macros. See the linked pages in the <a href="#data-chunks">data chunks chart</a>.</li>
-<li>A comment with the text: "<code>TYPE END</code>", where <code>TYPE</code> refers to the <a href="#data-chunks">data chunk's type</a> (e.g. TEXLIST).</li>
-</ol>
-</li>
-<li>A required (?) comment with the text: "<code>End of File</code>".</li>
-</ol>
-<div class="admonition example">
-<p class="admonition-title">SampleFile.xtt</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cm">/*</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="cm">    Sample NN Exporter Version 1.00.00</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="cm">    Create  : Wed Feb 08 21:06:46 2023</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="cm">    NNS_TEXFILELIST : nntexfilelist_SampleFile</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="cm">*/</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="cm">/* TEXLIST START */</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">NNS_TEXFILE</span><span class="w"> </span><span class="n">nntexfile_SampleFile</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span>
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="p">{</span>
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="n">TEXFILE</span><span class="p">(</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">        </span><span class="n">TF_FILENAME</span><span class="p">(</span><span class="w"> </span><span class="s">&quot;SampleTex_dif.dds&quot;</span><span class="w"> </span><span class="p">),</span>
-<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">        </span><span class="n">TF_FILTER</span><span class="p">(</span><span class="w"> </span><span class="n">NND_MIN_LINEAR_MIPMAP_NEAREST</span><span class="p">,</span><span class="w"> </span><span class="n">NND_MAG_LINEAR</span><span class="w"> </span><span class="p">)</span>
-<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">    </span><span class="p">),</span>
-<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">    </span><span class="n">TEXFILE</span><span class="p">(</span>
-<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">        </span><span class="n">TF_FILENAME</span><span class="p">(</span><span class="w"> </span><span class="s">&quot;SampleTex_spec.dds&quot;</span><span class="w"> </span><span class="p">),</span>
-<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">        </span><span class="n">TF_FILTER</span><span class="p">(</span><span class="w"> </span><span class="n">NND_MIN_LINEAR_MIPMAP_NEAREST</span><span class="p">,</span><span class="w"> </span><span class="n">NND_MAG_LINEAR</span><span class="w"> </span><span class="p">)</span>
-<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">    </span><span class="p">),</span>
-<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">    </span><span class="n">TEXFILE</span><span class="p">(</span>
-<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">        </span><span class="n">TF_FILENAME</span><span class="p">(</span><span class="w"> </span><span class="s">&quot;SampleTex_norm.dds&quot;</span><span class="w"> </span><span class="p">),</span>
-<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">        </span><span class="n">TF_FILTER</span><span class="p">(</span><span class="w"> </span><span class="n">NND_MIN_LINEAR_MIPMAP_NEAREST</span><span class="p">,</span><span class="w"> </span><span class="n">NND_MAG_LINEAR</span><span class="w"> </span><span class="p">)</span>
-<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">    </span><span class="p">),</span>
-<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="p">};</span>
-<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>
-<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="n">NNS_TEXFILELIST</span><span class="w"> </span><span class="n">nntexfilelist_SampleFile</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span>
-<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="p">{</span>
-<a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="w">    </span><span class="n">TEXFILELIST</span><span class="p">(</span>
-<a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="w">        </span><span class="n">TFL_N_TEXFILE</span><span class="p">(</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="p">),</span>
-<a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="w">        </span><span class="n">TFL_TEXFILE</span><span class="p">(</span><span class="w"> </span><span class="n">nntexfile_SampleFile</span><span class="w"> </span><span class="p">)</span>
-<a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a><span class="w">    </span><span class="p">)</span>
-<a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a><span class="p">};</span>
-<a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a>
-<a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a><span class="cm">/* TEXLIST END */</span>
-<a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a>
-<a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a><span class="cm">/* End of File */</span>
-</code></pre></div>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>All of the following in the above example are struct/enum/preprocessor
-defines from the NN library:</p>
-<ul>
-<li><code>NNS_TEXFILE</code></li>
-<li><code>TEXFILE</code></li>
-<li><code>TF_FILENAME</code></li>
-<li><code>TF_FILTER</code></li>
-<li><code>NND_MIN_LINEAR_MIPMAP_NEAREST</code></li>
-<li><code>NND_MAG_LINEAR</code></li>
-<li><code>NNS_TEXFILELIST</code></li>
-<li><code>TEXFILELIST</code></li>
-<li><code>TFL_N_TEXFILE</code></li>
-<li><code>TFL_TEXFILE</code></li>
-</ul>
-<p>For a complete list of all of these defines, please refer to the individual pages
-linked in the <a href="#data-chunks">data chunks chart</a> (for this example,
-refer to the <a href="texlist/">TEXLIST documentation</a>).</p>
-</div>
-<p>The ordering of the data within each data chunk is generally in "reverse" order,
-such that any reference to a value will not be written until <em>after</em> the value
-it is referencing, as is required by C.</p>
-<p>In some cases, the "reverse" order is still not enough to satisfy this requirement,
-so the Sega NN exporters will write an extern declaration for the value being referenced.</p>
-<div class="admonition example">
-<p class="admonition-title">Example snippet from en_Kyozoress.xto in Sonic '06</p>
-<p>Here, the <code>nnvertex_plb_op_en_Kyozoress_head_l__2_w2_Eye</code> value is
-declared so that it can be referenced by the <code>VTX_LISTPTR</code> field in
-<code>nnvertexdesc_plb_op_en_Kyozoress_head_l__2_w2_Eye</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">extern</span><span class="w"> </span><span class="n">NNS_VTXTYPE_XB_PW4INCT</span><span class="w"> </span><span class="n">nnvertex_plb_op_en_Kyozoress_head_l__2_w2_Eye</span><span class="p">[];</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">NNS_VTXLIST_DX_DESC</span><span class="w"> </span><span class="n">nnvertexdesc_plb_op_en_Kyozoress_head_l__2_w2_Eye</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">{</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="n">VTXDESC</span><span class="p">(</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">        </span><span class="cm">/* ... */</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">        </span><span class="n">VTX_LISTPTR</span><span class="p">(</span><span class="w"> </span><span class="n">nnvertex_plb_op_en_Kyozoress_head_l__2_w2_Eye</span><span class="w"> </span><span class="p">),</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">        </span><span class="cm">/* ... */</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="p">),</span>
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="p">};</span>
-</code></pre></div>
-<p>Then, later on in the file, the referenced
-<code>nnvertex_plb_op_en_Kyozoress_head_l__2_w2_Eye</code>
-value is defined as usual (contents redacted due
-to extreme length):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">NNS_VTXTYPE_XB_PW4INCT</span><span class="w"> </span><span class="n">nnvertex_plb_op_en_Kyozoress_head_l__2_w2_Eye</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="p">{</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="cm">/* ... */</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="p">};</span>
-</code></pre></div>
+<p>Find the macros used in the text-form file format</p>
 </div>
 
 
@@ -6892,34 +6298,6 @@ to extreme length):</p>
     
     
     
-    
-      
-  <span class="md-source-file__fact">
-    
-      
-  <span class="md-icon" title="Contributors">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-  </span>
-  <span>GitHub</span>
-
-    
-    <nav>
-      
-        <a href="https://github.com/PTKay" class="md-author" title="@PTKay">
-          
-          <img src="https://avatars.githubusercontent.com/u/20132880?v=4&size=72" alt="PTKay">
-        </a>
-      
-        <a href="https://github.com/Radfordhound" class="md-author" title="@Radfordhound">
-          
-          <img src="https://avatars.githubusercontent.com/u/10536295?v=4&size=72" alt="Radfordhound">
-        </a>
-      
-      
-      
-    </nav>
-  </span>
-
     
   </aside>
 
@@ -6974,16 +6352,16 @@ to extreme length):</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
-        <script src="../../../../js/timeago.min.js"></script>
+        <script src="../../../../../js/timeago.min.js"></script>
       
-        <script src="../../../../js/timeago_mkdocs_material.js"></script>
+        <script src="../../../../../js/timeago_mkdocs_material.js"></script>
       
-        <script src="../../../../web/javascripts/custom.js"></script>
+        <script src="../../../../../web/javascripts/custom.js"></script>
       
     
   </body>
