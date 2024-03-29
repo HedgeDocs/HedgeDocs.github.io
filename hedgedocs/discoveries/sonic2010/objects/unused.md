@@ -13,3 +13,10 @@ Much like the metal variant of enmSpinner (Spinner), this variant of the Thunder
 <video autoplay loop muted defaultmuted playsinline>
   <source src="../assets/unused/enmMetalSpanner2.webm" type="video/webm">
 </video>
+
+## enmSparva (Thunder Larva)
+An unused, electric variant of the normal enmLarva (Larva) enemy.
+![Close-up of the unused Thunder Larva enemy.](./assets/unused/enmSparva.png)
+<video autoplay loop muted defaultmuted playsinline>
+  <source src="../assets/unused/enmSparva.webm" type="video/webm">
+</video>
