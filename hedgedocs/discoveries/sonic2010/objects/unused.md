@@ -4,7 +4,25 @@ description: Information on objects that went unused in Sonic Colors.
 ---
 # Unused Objects
 
-## enmMetalSpanner (Metal Thunder Spinner)
+## Objects
+
+### AppearThornBall
+
+### Shadow
+
+### SpinLaserStraightMove
+An unused, moving variant of the spinning laser object seen in various levels of Sweet Mountain and Asteroid Coaster.
+
+### SpinLaserPathMove
+An unused, variant of the spinning laser object seen in various levels of Sweet Mountain and Asteroid, which moves along a path.
+
+### SpiralDoor
+
+### RotationGlobe
+
+## Enemies
+
+### enmMetalSpanner (Metal Thunder Spinner)
 An unused, golden variant of the normal enmSpanner (Thunder Spinner) enemy.
 Much like the metal variant of enmSpinner (Spinner), this variant of the Thunder Spinner is also indestructable. 
 <video autoplay loop muted defaultmuted playsinline>
@@ -14,9 +32,32 @@ Much like the metal variant of enmSpinner (Spinner), this variant of the Thunder
   <source src="../assets/unused/enmMetalSpanner2.webm" type="video/webm">
 </video>
 
-## enmSparva (Thunder Larva)
+### enmSparva (Thunder Larva)
 An unused, electric variant of the normal enmLarva (Larva) enemy.
 ![Close-up of the unused Thunder Larva enemy.](./assets/unused/enmSparva.png)
 <video autoplay loop muted defaultmuted playsinline>
   <source src="../assets/unused/enmSparva.webm" type="video/webm">
 </video>
+
+### ChaserBomb
+* The object makes an appearance in one of the test levels leftover in Sonic Colo(u)rs: Ultimate. 
+
+## Cameras
+
+### ObjectLookCamera
+
+## Colliders
+
+### ChageMode_3DtoDash (Event Dimension Change 3D to Dash)
+
+### RollerCoasterCollision
+* The object makes an appearance in one of the test levels leftover in Sonic Colo(u)rs: Ultimate. 
+
+### MotoraEventCollision
+* The object makes an appearance in one of the test levels leftover in Sonic Colo(u)rs: Ultimate. 
+
+## Test Objects
+
+### TestObj
+
+### CCTTestObj
