@@ -7,14 +7,24 @@ description: Information on objects that went unused in Sonic Colors.
 ## Objects
 
 ### AppearThornBall
+!!! important
+    This section is missing some information. Help us fill it in!
 
 ### Shadow
+!!! important
+    This section is missing some information. Help us fill it in!
 
 ### SpinLaserStraightMove
 An unused, moving variant of the spinning laser object seen in various levels of Sweet Mountain and Asteroid Coaster.
 
+!!! important
+    This section is missing some information. Help us fill it in!
+
 ### SpinLaserPathMove
 An unused, variant of the spinning laser object seen in various levels of Sweet Mountain and Asteroid Coaster, which moves along a path.
+
+!!! important
+    This section is missing some information. Help us fill it in!
 
 ### RotationGlobe
 An unused object meant to be used by the spike wisp in gameplay.
@@ -47,21 +57,38 @@ An unused, electric variant of the normal enmLarva (Larva) enemy.
 ### ChaserBomb
 * The object makes an appearance in one of the test levels leftover in Sonic Colo(u)rs: Ultimate. 
 
+!!! important
+    This section is missing some information. Help us fill it in!
+
 ## Cameras
 
 ### ObjectLookCamera
 
+!!! important
+    This section is missing some information. Help us fill it in!
+
 ## Colliders
 
 ### ChageMode_3DtoDash (Event Dimension Change 3D to Dash)
+!!! important
+    This section is missing some information. Help us fill it in!
 
 ### RollerCoasterCollision
 * The object makes an appearance in one of the test levels leftover in Sonic Colo(u)rs: Ultimate. 
 
+!!! important
+    This section is missing some information. Help us fill it in!
+
 ### MotoraEventCollision
+!!! important
+    This section is missing some information. Help us fill it in!
 
 ## Test Objects
 
 ### TestObj
+!!! important
+    This section is missing some information. Help us fill it in!
 
 ### CCTTestObj
+!!! important
+    This section is missing some information. Help us fill it in!
