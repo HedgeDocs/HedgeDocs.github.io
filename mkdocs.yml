@@ -151,6 +151,9 @@ nav:
     - Sonic Unleashed:
       - PlayStation 3:
         - Leftover Install Assets: discoveries/swa/ps3/install.md
+    - Sonic Colors:
+      - Objects:
+        - Unused Objects: discoveries/sonic2010/objects/unused.md
     - Sonic Generations:
       - HUD:
         - Unused Time Eater Gauge: discoveries/blueblur/hud/blb_gauge.md
