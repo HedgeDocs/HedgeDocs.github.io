@@ -138,6 +138,8 @@ nav:
             - RFL Binary Template Map: docs/hedgehog-engine/rangers/files/rfl/mapping.md
         - Levels:
           - Level ID Map: docs/hedgehog-engine/rangers/levels/ids.md
+        - Objects:
+          - Gismos: docs/hedgehog-engine/rangers/obj/gismos.md
         - Scripts:
           - Functions: docs/hedgehog-engine/rangers/scripts/funcs.md
     - Sega NN:
