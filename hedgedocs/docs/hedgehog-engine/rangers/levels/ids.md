@@ -69,6 +69,20 @@ Stage Name | Level ID
 4-8        | w7d05
 4-9        | w9d07
 
+### Stages (DLC Cyber Space)
+
+Stage Name | Gedit ID  | Terrain ID
+---------- | --------- | ---------
+4-A        | w6d21     | w6d02
+4-B        | w6d22     | w6d04
+4-C        | w6d23     | w6d10
+4-D        | w7d21     | w7d01
+4-E        | w7d22     | w7d04
+4-F        | w7d23     | w7d06
+4-G        | w9d21     | w9d02
+4-H        | w9d22     | w9d03
+4-I        | w9d23     | w9d06
+
 ## Oddities
 Due to Ouranos and Rhea actually being part of Kronos, their map files are stored in w1:
 
