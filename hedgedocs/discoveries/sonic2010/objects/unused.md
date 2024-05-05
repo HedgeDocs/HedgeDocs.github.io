@@ -63,9 +63,11 @@ An unused, electric variant of the normal enmLarva (Larva) enemy.
 ## Cameras
 
 ### ObjectLookCamera
-
-!!! important
-    This section is missing some information. Help us fill it in!
+An unused camera variant leftover from Sonic Unleashed (HD).
+The camera locks onto a targetted object and orbits around it based on the player's position.
+<video autoplay loop muted defaultmuted playsinline>
+  <source src="../assets/unused/objectLookCamera.webm" type="video/webm">
+</video>
 
 ## Colliders
 
