@@ -19,7 +19,7 @@ The material might not have any textures assigned at all. You need to at least a
 
 ### Missing Transparency On Textures
 
-* You might need `@LYR(trans)` or `@LYR(punch)` tags on your material names. Read Hedgehog Converter tag cheat sheet included in the tool for more information.
+* You might need `@LYR(trans)` or `@LYR(punch)` tags on your material names. See [terrain importing guide](/guides/hedgehog-engine/blueblur/levels/importing-terrain) for more information.
 * Your texture might be compressed using `BC1`/`DXT1` format. This format does not support alpha channels. For transparent textures, use the `BC3`/`DXT5` compression format instead.
 
 ### Missing Terrain Models
