@@ -17,11 +17,18 @@ The game shows a rainbow flashing texture if the texture assigned to a material 
 
 The material might not have any textures assigned at all. You need to at least assign one diffuse texture, otherwise the game is going to use the texture of whatever was rendered last.
 
+### Missing Transparency On Textures
+
+* You might need `@LYR(trans)` or `@LYR(punch)` tags on your material names. Read Hedgehog Converter tag cheat sheet included in the tool for more information.
+* Your texture might be compressed using `BC1`/`DXT1` format. This format does not support alpha channels. For transparent textures, use the `BC3`/`DXT5` compression format instead.
+
 ### Missing Terrain Models
 
 * `Terrain.prm.xml` file might require higher memory sizes. Look for the `g_TerrainModelLimitSizeDefault` and `g_TerrainModelLimitSizeWin32` parameters, and increase them. If your stage requires more memory than what is defined in this file, some of your models might not render.
 * There is a limit of 8192 instances in the game. If you are trying to render more instances, the game is going to hit this limit and stop rendering.
 * Material files might be missing. There is a chance it might not crash and display nothing instead.
+* You might have a `visibility-tree.vt` file leftover from another level in your files. This file controls occlusion culling, and it needs to be created specifically for the level it's used in. Remove this file to solve potential pop-in problems.
+    * Similarly, if you are porting a level from Sonic Unleashed to Sonic Generations or vice versa, you might experience issues if your set object cameras don't exactly match with the original game. If they do, you can safely keep this file.
 
 ### Red Materials
 
