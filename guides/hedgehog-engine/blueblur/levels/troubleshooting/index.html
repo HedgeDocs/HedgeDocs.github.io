@@ -3064,6 +3064,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#missing-transparency-on-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Transparency On Textures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#missing-terrain-models" class="md-nav__link">
     <span class="md-ellipsis">
       Missing Terrain Models
@@ -6567,6 +6576,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#missing-transparency-on-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Transparency On Textures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#missing-terrain-models" class="md-nav__link">
     <span class="md-ellipsis">
       Missing Terrain Models
@@ -6746,11 +6764,20 @@
 <p>The game shows a rainbow flashing texture if the texture assigned to a material is missing. Ensure you included the texture in the AR and didn't make a typo in the material.</p>
 <h3 id="randomly-switching-textures">Randomly Switching Textures<a class="headerlink" href="#randomly-switching-textures" title="Permanent link">&para;</a></h3>
 <p>The material might not have any textures assigned at all. You need to at least assign one diffuse texture, otherwise the game is going to use the texture of whatever was rendered last.</p>
+<h3 id="missing-transparency-on-textures">Missing Transparency On Textures<a class="headerlink" href="#missing-transparency-on-textures" title="Permanent link">&para;</a></h3>
+<ul>
+<li>You might need <code>@LYR(trans)</code> or <code>@LYR(punch)</code> tags on your material names. See <a href="/guides/hedgehog-engine/blueblur/levels/importing-terrain">terrain importing guide</a> for more information.</li>
+<li>Your texture might be compressed using <code>BC1</code>/<code>DXT1</code> format. This format does not support alpha channels. For transparent textures, use the <code>BC3</code>/<code>DXT5</code> compression format instead.</li>
+</ul>
 <h3 id="missing-terrain-models">Missing Terrain Models<a class="headerlink" href="#missing-terrain-models" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>Terrain.prm.xml</code> file might require higher memory sizes. Look for the <code>g_TerrainModelLimitSizeDefault</code> and <code>g_TerrainModelLimitSizeWin32</code> parameters, and increase them. If your stage requires more memory than what is defined in this file, some of your models might not render.</li>
 <li>There is a limit of 8192 instances in the game. If you are trying to render more instances, the game is going to hit this limit and stop rendering.</li>
 <li>Material files might be missing. There is a chance it might not crash and display nothing instead.</li>
+<li>You might have a <code>visibility-tree.vt</code> file leftover from another level in your files. This file controls occlusion culling, and it needs to be created specifically for the level it's used in. Remove this file to solve potential pop-in problems.<ul>
+<li>Similarly, if you are porting a level from Sonic Unleashed to Sonic Generations or vice versa, you might experience issues if your set object cameras don't exactly match with the original game. If they do, you can safely keep this file.</li>
+</ul>
+</li>
 </ul>
 <h3 id="red-materials">Red Materials<a class="headerlink" href="#red-materials" title="Permanent link">&para;</a></h3>
 <p>The game fallbacks to displaying a red emissive material if the shader assigned to a material does not exist. If you want to see every available shader in the game, unpack <code>shader_r_add.ar.00</code> located inside <code>bb3.cpk</code>, and look for files with <code>.shader-list</code> extension.</p>
@@ -6850,7 +6877,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-02-28T23:10:05+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-02-28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-05-10T11:41:11+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-10</span>
   </span>
 
     
