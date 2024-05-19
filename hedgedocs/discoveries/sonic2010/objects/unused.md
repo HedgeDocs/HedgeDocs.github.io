@@ -82,8 +82,11 @@ The camera locks onto a targetted object and orbits around it based on the playe
     This section is missing some information. Help us fill it in!
 
 ### MotoraEventCollision
-!!! important
-    This section is missing some information. Help us fill it in!
+An unused collision object to re-spawn defeated Motobugs on demand.
+The behaviour is more or less the same as the automatic respawning of the enemy found in Starlight Carnival Act 4.
+<video autoplay loop muted defaultmuted playsinline>
+  <source src="../assets/unused/motoraEventCollision.webm" type="video/webm">
+</video>
 
 ## Test Objects
 
