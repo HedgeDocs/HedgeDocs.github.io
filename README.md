@@ -35,7 +35,7 @@ When adding new pages, please follow these guidelines (check pre-existing pages 
 - Make sure that each markdown file has a title at the start (specified with `#`). The first title in the markdown file is what's going to show up in the webpage's search results
 - Related to the previous rule, but there should only be one `#` title per page, and that is the page's title. All other titles should start at `##`
 - Guides should include an info box before the title, listing the tools that they're using. Each tool mentioned in that box should be a link to a HedgeDocs page, which contains a link to said tool
-    - If the tools aren't included in the tools page, add them. If that doesn't make sense, then add the links to said tools in the info box. These links should not be direct download links, but a link to the tool's page, is applicable.
+    - If the tools aren't included in the tools page, add them. If that doesn't make sense, then add the links to said tools in the info box. These links should not be direct download links, but a link to the tool's page, if it exists.
     - This rule helps avoiding fragmentation of tool versions. By making every tool link point to a HedgeDocs tool page, you can be sure that everyone will download the version that HedgeDocs has stored in the tools category, and update it if necessary in the future.
 - When adding images or other files to a page, place the files in a folder inside the `assets` folder. Name the folder with the same name of the document file. Example file tree:
 ```
