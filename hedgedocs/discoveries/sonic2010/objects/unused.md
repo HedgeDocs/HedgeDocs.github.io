@@ -15,13 +15,15 @@ description: Information on objects that went unused in Sonic Colors.
     This section is missing some information. Help us fill it in!
 
 ### SpinLaserStraightMove
-An unused, moving variant of the spinning laser object seen in various levels of Sweet Mountain and Asteroid Coaster.
+An unused variant of the spinning laser object seen in various levels of Sweet Mountain and Asteroid Coaster.
+It moves in a straight line depending on the distance and speed set from the object's parameters.
 <video autoplay loop muted defaultmuted playsinline>
   <source src="../assets/unused/spinLaserStraightMove.webm" type="video/webm">
 </video>
 
 ### SpinLaserPathMove
-An unused, variant of the spinning laser object seen in various levels of Sweet Mountain and Asteroid Coaster, which moves along a path.
+An unused variant of the spinning laser object seen in various levels of Sweet Mountain and Asteroid Coaster.
+It moves along a given path at the speed set from the object's parameters.
 <video autoplay loop muted defaultmuted playsinline>
   <source src="../assets/unused/spinLaserPathMove.webm" type="video/webm">
 </video>
