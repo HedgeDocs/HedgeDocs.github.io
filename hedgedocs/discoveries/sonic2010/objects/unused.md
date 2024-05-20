@@ -15,16 +15,18 @@ description: Information on objects that went unused in Sonic Colors.
     This section is missing some information. Help us fill it in!
 
 ### SpinLaserStraightMove
-An unused, moving variant of the spinning laser object seen in various levels of Sweet Mountain and Asteroid Coaster.
-
-!!! important
-    This section is missing some information. Help us fill it in!
+An unused variant of the spinning laser object seen in various levels of Sweet Mountain and Asteroid Coaster.
+It moves in a straight line depending on the distance and speed set from the object's parameters.
+<video autoplay loop muted defaultmuted playsinline>
+  <source src="../assets/unused/spinLaserStraightMove.webm" type="video/webm">
+</video>
 
 ### SpinLaserPathMove
-An unused, variant of the spinning laser object seen in various levels of Sweet Mountain and Asteroid Coaster, which moves along a path.
-
-!!! important
-    This section is missing some information. Help us fill it in!
+An unused variant of the spinning laser object seen in various levels of Sweet Mountain and Asteroid Coaster.
+It moves along a given path at the speed set from the object's parameters.
+<video autoplay loop muted defaultmuted playsinline>
+  <source src="../assets/unused/spinLaserPathMove.webm" type="video/webm">
+</video>
 
 ### RotationGlobe
 An unused object meant to be used by the spike wisp in gameplay.
@@ -63,9 +65,11 @@ An unused, electric variant of the normal enmLarva (Larva) enemy.
 ## Cameras
 
 ### ObjectLookCamera
-
-!!! important
-    This section is missing some information. Help us fill it in!
+An unused camera variant leftover from Sonic Unleashed (HD).
+The camera locks onto a targetted object and orbits around it based on the player's position.
+<video autoplay loop muted defaultmuted playsinline>
+  <source src="../assets/unused/objectLookCamera.webm" type="video/webm">
+</video>
 
 ## Colliders
 
@@ -80,8 +84,11 @@ An unused, electric variant of the normal enmLarva (Larva) enemy.
     This section is missing some information. Help us fill it in!
 
 ### MotoraEventCollision
-!!! important
-    This section is missing some information. Help us fill it in!
+An unused collision object to re-spawn defeated Motobugs on demand.
+The behaviour is more or less the same as the automatic respawning of the enemy found in Starlight Carnival Act 4.
+<video autoplay loop muted defaultmuted playsinline>
+  <source src="../assets/unused/motoraEventCollision.webm" type="video/webm">
+</video>
 
 ## Test Objects
 
