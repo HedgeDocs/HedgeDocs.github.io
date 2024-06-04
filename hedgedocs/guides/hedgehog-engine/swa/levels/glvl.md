@@ -5,7 +5,7 @@ description: Sonic GLvl setup tutorial for Sonic Unleashed
 # How to use Sonic GLvl with Sonic Unleashed
 
 !!! note
-    This guide covers how to setup Sonic Unleashed Xbox 360 levels in GLvl, but does not cover how to use this tool or how to set it up for PS3 levels. It's recommended that you also read the [Sonic Generations GLvl guide](/guides/hedgehog-engine/blueblur/levels/glvl.md).
+    This guide covers how to setup Sonic Unleashed Xbox 360 levels in GLvl, but does not cover how to use this tool or how to set it up for PS3 levels. It's recommended that you also read the [Sonic Generations GLvl guide](/guides/hedgehog-engine/blueblur/levels/glvl).
 
 !!! info
     This guide uses the following tools:
