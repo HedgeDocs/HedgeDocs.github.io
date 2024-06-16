@@ -80,7 +80,8 @@ nav:
         - Level Editing:
           - Sonic GLvl: guides/hedgehog-engine/blueblur/levels/glvl.md
           - Importing Terrain: guides/hedgehog-engine/blueblur/levels/importing-terrain.md
-          - Importing Collision: guides/hedgehog-engine/blueblur/levels/importing-collision.md        
+          - Importing Collision: guides/hedgehog-engine/blueblur/levels/importing-collision.md
+          - Custom Rank Times: guides/hedgehog-engine/blueblur/levels/custom-ranks.md     
           - Troubleshooting: guides/hedgehog-engine/blueblur/levels/troubleshooting.md         
         - File Locations: 
           - Sounds: guides/hedgehog-engine/blueblur/locations/sound.md
