@@ -6480,6 +6480,10 @@ to include complete symbols for everything (even enum values)! I can't understat
 how much this information has helped me!</p>
 </li>
 <li>
+<p><strong>Shadowth117</strong> for a ton of extremely useful information and help throughout,
+especially with regards to the PSO2 variants of the formats!</p>
+</li>
+<li>
 <p><strong>SEGA</strong>: For making these games, and for letting us freely mod them.
 Seriously, not many companies let us do this stuff openly, and I think it's awesome.
 (Also, for releasing that awful version of Sonic 4 Episode I on Windows Phone 7 which
@@ -6487,9 +6491,9 @@ had all the symbols in it. Thanks guys, you're the best!! &lt;3)</p>
 </li>
 </ul>
 </div>
-<p>The Sega NN Chunk Format is a generic "container" format developed by Sega
-somewhere around 2002-2004. It originally appeared in 2004's "Sega Superstars"
-(to our knowledge), and has been heavily utilized in many Sega games released since.</p>
+<p>The Sega NN Chunk Format is a generic "container" format developed by Sega's CS R&amp;D Department,
+dating back to 2002. It originally appeared in 2004's "Sega Superstars" (to our knowledge),
+and has been heavily utilized in many Sega games released since.</p>
 <p>The format is heavily based on the older "Sega Ninja Chunk Model" format, which was
 originally developed for the Sega Dreamcast and was utilized in many Dreamcast
 games (it was even included as part of the Dreamcast's "Katana" SDK).</p>
@@ -6503,109 +6507,106 @@ platform it is intended to be used on.</p>
 <p>Unlike the older Ninja format, however (which only supports one platform: the
 Sega Dreamcast), the NN Chunk Format is "multi-platform", and therefore comes
 in many different platform-specific variants.</p>
-<p>All known supported platforms are listed in the following chart:</p>
+<p>All known used platforms are listed in the following chart:</p>
 <table>
 <thead>
 <tr>
 <th>ID</th>
-<th>Meaning</th>
 <th>CC</th>
-<th>NN Library Version</th>
+<th>Used on</th>
 <th>Endianness</th>
 <th>Alignment</th>
-<th>Description</th>
+<th>NN Library Version</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>NX</td>
-<td>Ninja Xbox</td>
-<td>x</td>
-<td>DirectX G1.1</td>
-<td>Little</td>
-<td>16</td>
-<td>Xbox/Xbox 360</td>
-</tr>
-<tr>
 <td>NS</td>
-<td>Ninja Sony</td>
 <td>s</td>
 <td>PlayStation 2</td>
 <td>Little</td>
-<td>16 ?</td>
+<td>16</td>
 <td>PlayStation 2</td>
 </tr>
 <tr>
 <td>NG</td>
-<td>Ninja Gamecube</td>
 <td>g</td>
-<td>GAMECUBE</td>
+<td>Gamecube/Wii</td>
 <td>Big</td>
 <td>32</td>
-<td>Gamecube/Wii</td>
+<td>GAMECUBE</td>
 </tr>
 <tr>
-<td>NC</td>
-<td>Ninja Cell</td>
-<td>c ?</td>
-<td>PS3</td>
-<td>Little ?</td>
-<td>16 ?</td>
-<td>PlayStation 3</td>
+<td>NX</td>
+<td>x</td>
+<td>Xbox/Xbox 360/Windows</td>
+<td>Little</td>
+<td>16</td>
+<td>DirectX G1.1</td>
+</tr>
+<tr>
+<td>NL</td>
+<td>l</td>
+<td>Sega Lindberg</td>
+<td>Little</td>
+<td>16</td>
+<td>Lindberg</td>
 </tr>
 <tr>
 <td>NU</td>
-<td>Ninja Umd ?</td>
 <td>u/s</td>
-<td>PSP</td>
-<td>Little</td>
-<td>16 ?</td>
 <td>PlayStation Portable</td>
-</tr>
-<tr>
-<td>DS</td>
-<td>DS</td>
-<td>?</td>
-<td>?</td>
 <td>Little</td>
-<td>16 ?</td>
-<td>Nintendo DS/3DS</td>
+<td>16</td>
+<td>PSP</td>
 </tr>
 <tr>
-<td>NI</td>
-<td>Ninja Ios</td>
-<td>i ?</td>
-<td>OpenGL ES 1.1</td>
-<td>Little</td>
-<td>16 ?</td>
-<td>iOS/Android/Windows Phone</td>
-</tr>
-<tr>
-<td>NE</td>
-<td>?</td>
-<td>?</td>
-<td>DirectX G2.0 on XBOX360</td>
-<td>Little ?</td>
-<td>16 ?</td>
-<td>Xbox 360</td>
+<td>NC</td>
+<td>c</td>
+<td>PlayStation 3</td>
+<td>Big</td>
+<td>16</td>
+<td>PS3</td>
 </tr>
 <tr>
 <td>NY</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-<td>Big</td>
-<td>16 ?</td>
+<td>y ?</td>
 <td>Xbox 360/PlayStation 3</td>
+<td>?</td>
+<td>16 ?</td>
+<td>?</td>
+</tr>
+<tr>
+<td>NE</td>
+<td>e</td>
+<td>Xbox 360</td>
+<td>Little</td>
+<td>16</td>
+<td>DirectX G2.0 on XBOX360</td>
 </tr>
 <tr>
 <td>NZ</td>
-<td>Ninja [Other]</td>
 <td>z</td>
-<td>DirectX G2.0</td>
+<td>Windows</td>
 <td>Little</td>
 <td>16</td>
-<td>Other platforms, such as PC</td>
+<td>DirectX G2.0 on WINDOWS</td>
+</tr>
+<tr>
+<td>NI</td>
+<td>i ?</td>
+<td>iOS/Android/Windows Phone</td>
+<td>Little</td>
+<td>16</td>
+<td>OpenGL ES 1.1</td>
+</tr>
+<tr>
+<td>DS</td>
+<td>?</td>
+<td>Nintendo DS/3DS</td>
+<td>Little</td>
+<td>16</td>
+<td>?</td>
 </tr>
 </tbody>
 </table>
@@ -6633,7 +6634,7 @@ that represents a single resource of a specific type.</p>
 </tr>
 <tr>
 <td>EF</td>
-<td>?</td>
+<td>e</td>
 <td>EFFECTLIST</td>
 <td>A list of effects (shaders).</td>
 </tr>
@@ -6644,45 +6645,51 @@ that represents a single resource of a specific type.</p>
 <td>A list of names for the nodes (bones) within an object (a model).</td>
 </tr>
 <tr>
-<td>OB</td>
-<td>o</td>
-<td>OBJECT</td>
-<td>A model.</td>
+<td>MN</td>
+<td>u</td>
+<td>MATERIALNAMELIST</td>
+<td>A list of names for the materials within an object (a model).</td>
 </tr>
 <tr>
-<td>CA</td>
+<td>TN</td>
 <td>?</td>
-<td>CAMERA</td>
-<td>Camera parameters.</td>
+<td>MTNAMELIST</td>
+<td>A list of names for the morph targets within an object (a model).</td>
+</tr>
+<tr>
+<td>OB</td>
+<td>j/o</td>
+<td>OBJECT</td>
+<td>A model. Uses o as its CC if its TEXLIST is embedded, and j otherwise.</td>
 </tr>
 <tr>
 <td>MO</td>
 <td>m</td>
-<td>MOTION (node)</td>
+<td>MOTION</td>
 <td>A node (bone) animation.</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>f</td>
+<td>MOTION</td>
+<td>A morph animation.</td>
 </tr>
 <tr>
 <td>MC</td>
 <td>d</td>
-<td>MOTION (camera)</td>
+<td>MOTION</td>
 <td>A camera animation.</td>
 </tr>
 <tr>
 <td>ML</td>
 <td>?</td>
-<td>MOTION (light)</td>
+<td>MOTION</td>
 <td>A light animation.</td>
-</tr>
-<tr>
-<td>MM</td>
-<td>f</td>
-<td>MOTION (morph)</td>
-<td>A morph animation.</td>
 </tr>
 <tr>
 <td>MA</td>
 <td>v</td>
-<td>MOTION (material)</td>
+<td>MOTION</td>
 <td>A material animation.</td>
 </tr>
 <tr>
@@ -6691,14 +6698,49 @@ that represents a single resource of a specific type.</p>
 <td>LIGHT</td>
 <td>A light.</td>
 </tr>
+<tr>
+<td>CA</td>
+<td>c</td>
+<td>CAMERA</td>
+<td>A camera.</td>
+</tr>
+<tr>
+<td>MT</td>
+<td>g</td>
+<td>MORPH</td>
+<td>A morph target.</td>
+</tr>
+<tr>
+<td>NT</td>
+<td>?</td>
+<td>NODE_TREE_OBJECT ?</td>
+<td>?</td>
+</tr>
+<tr>
+<td>ME</td>
+<td>?</td>
+<td>MESH_OBJECT ?</td>
+<td>?</td>
+</tr>
+<tr>
+<td>SF</td>
+<td>?</td>
+<td>SHADERFILE</td>
+<td>?</td>
+</tr>
+<tr>
+<td>SI</td>
+<td>?</td>
+<td>SHADERIDX</td>
+<td>?</td>
+</tr>
 </tbody>
 </table>
-<div class="admonition todo">
-<p class="admonition-title">Todo</p>
-<p>Add the rest of the data chunk types.</p>
-</div>
-<p>For more specific information on the format of these data chunk
-types, please refer to the linked pages in the above chart.</p>
+<p>Each data chunk has a "root struct" associated with it, which is the starting
+point for the data in the chunk, and usually references other data
+(structs, arrays, strings, etc.).</p>
+<p>For information on the formats of the data contained within these
+data chunk types, please refer to the linked pages in the above chart.</p>
 <h2 id="file-types">File Types<a class="headerlink" href="#file-types" title="Permanent link">&para;</a></h2>
 <p>Just like with the older Ninja format, NN chunk files come in two forms:</p>
 <ul>
@@ -6708,10 +6750,12 @@ types, please refer to the linked pages in the above chart.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><strong>The vast majority of NN chunk files in released games are in binary-form.</strong></p>
-<p>To our knowledge, all released games using NN don't support
-loading text-form files, meaning that <strong>all NN text-form files
+<p>To our knowledge, all released games using NN don't support loading
+text-form files at runtime, meaning that <strong>all NN text-form files
 found in the games are unused developer leftovers</strong>!</p>
 </div>
+<p>Both of these forms represent the same thing: A series of one or more data chunks.
+However, they do so in different ways.</p>
 <p>File extensions for NN chunk files typically consist of three characters:</p>
 <ol>
 <li>The "CC" (character-code) of the <a href="#platforms">platform</a>.</li>
@@ -6748,8 +6792,8 @@ found in the games are unused developer leftovers</strong>!</p>
 </table>
 </div>
 <h2 id="binary-form-file-format">Binary-Form File Format<a class="headerlink" href="#binary-form-file-format" title="Permanent link">&para;</a></h2>
-<p>Binary-Form NN chunk files are just a series of consecutive
-"binary chunks", each of which begins with the following struct:</p>
+<p>Binary-Form NN chunk files are represented as a series of consecutive
+"binary chunks", each of which begins with the following data:</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>All instances of this struct (and ONLY this struct) are represented in
@@ -6757,124 +6801,111 @@ found in the games are unused developer leftovers</strong>!</p>
 <a href="#platforms">platform</a>. <strong>Everything else</strong> in Binary-Form NN chunk files
 is represented in the endianness specified by the <a href="#platforms">platform</a>.</p>
 </div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cm">/*</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cm">    NOTE: A struct type with this name does not actually exist</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cm">    (to my knowledge) in real Sega NN implementations; instead,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="cm">    these fields are just embedded directly within every binary</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="cm">    chunk&#39;s header struct. This is just an easier way to think</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="cm">    about it for our purposes.</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="cm">*/</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_HEADER</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">{</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="cm">    The four-character identifier for this binary chunk;</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="cm">    specifies what type of binary chunk this is.</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="cm">  */</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Id</span><span class="p">;</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="cm">    The offset to the next four-character identifier in the</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="cm">    file, relative to the end of this struct (such that after</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="cm">    doing fread(&amp;OfsNextId, sizeof(OfsNextId), 1, file);</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="cm">    you can just do fseek(file, OfsNextId, SEEK_CUR)).</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="cm">  */</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">OfsNextId</span><span class="p">;</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="p">};</span>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A struct type with this name does not actually exist (to my knowledge)
+in real Sega NN implementations; these fields are just embedded directly
+within every NNS_BINCNK_ struct. This is just an easier way to think
+about it for our purposes.</p>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_HEADER</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="c1">// The four-character identifier for this binary chunk;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="c1">// specifies what type of binary chunk this is.</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Id</span><span class="p">;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="c1">// The offset to the next four-character identifier in the</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="c1">// file, relative to the end of this struct (such that after</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="c1">// doing `fread(&amp;OfsNextId, sizeof(OfsNextId), 1, file)`</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="c1">// you can just do `fseek(file, OfsNextId, SEEK_CUR)`.</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">OfsNextId</span><span class="p">;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">};</span>
 </code></pre></div>
 <p>Immediately following this struct comes all of the data (structs, strings, etc.)
 required to represent the binary chunk. The format of this data depends on
-the platform and type of binary chunk being represented. Check the Id field
-to determine this.</p>
+the value of the Id field.</p>
 <p>After each binary chunk (including all of its data) has been written, the file
-is padded (with <code>0</code>s) to a position that is divisible by the "alignment"
+is padded (with null bytes) to a position that is divisible by the "alignment"
 specified by the <a href="#platforms">platform</a> (usually it's 16, but notably, it's
 32 on Gamecube/Wii).</p>
 <p>What follows is documentation for all known binary chunk types, in the order
-they appear within binary-form NN chunk files.</p>
+that they appear within binary-form NN chunk files.</p>
 <h3 id="info-chunk">Info Chunk<a class="headerlink" href="#info-chunk" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>This chunk is required to be present at the beginning of all binary-form NN chunk files!</strong>
-The Sega NN games I checked actually rely on this behavior, so you can too.</p>
+The Sega NN games I've checked actually rely on this behavior, so you can too.</p>
 </div>
 <p>This binary chunk serves as the header for a binary-form NN chunk file,
 and contains info needed to parse the file. It is represented as the
 following struct:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_FILEHEADER</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="cm">    Binary chunk header; must be present at the beginning of all binary chunks.</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="cm">    The chunk ID is set to &quot;**IF&quot;, where &quot;**&quot; is the &quot;ID&quot; of</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="cm">    the platform (e.g. &quot;NGIF&quot; for &quot;Ninja Gamecube InFo&quot;).</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="cm">  */</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="cm">/* The number of data chunks in the file. */</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">nChunk</span><span class="p">;</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="cm">/* Absolute offset to the first data chunk in the file. */</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">OfsData</span><span class="p">;</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">  </span><span class="cm">/* The combined size of all of the data chunks in the file, including padding. */</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">SizeData</span><span class="p">;</span>
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">  </span><span class="cm">/* Absolute offset to the (required) NOF0 binary chunk. */</span>
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">OfsNOF0</span><span class="p">;</span>
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="cm">    Size of the (required) NOF0 binary chunk, including its header.</span>
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="cm">    Depending on the variant of the format, this size either includes</span>
-<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="cm">    the padding that comes after the NOF0 binary chunk, or it doesn&#39;t.</span>
-<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>
-<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="cm">    (I haven&#39;t figured out exactly which versions include padding yet).</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="c1">// Binary chunk header; must be present at the beginning of all binary chunks.</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="c1">//</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="c1">// The chunk ID is set to &quot;**IF&quot;, where &quot;**&quot; is the &quot;ID&quot; of</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="c1">// the platform (e.g. &quot;NGIF&quot; for Gamecube binary chunk headers).</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="c1">// The number of data chunks in the file.</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">nChunk</span><span class="p">;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="c1">// The absolute offset to the first data chunk in the file.</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">OfsData</span><span class="p">;</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="c1">// The combined size of all of the data chunks in the file, in bytes, including any padding.</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">SizeData</span><span class="p">;</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">  </span><span class="c1">// The absolute offset to the (required) NOF0 binary chunk.</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">OfsNOF0</span><span class="p">;</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">  </span><span class="c1">// Size of the (required) NOF0 binary chunk, including its header.</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">  </span><span class="c1">// Depending on the variant of the format, this size either includes</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">  </span><span class="c1">// the padding that comes after the NOF0 binary chunk, or it doesn&#39;t.</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">  </span><span class="c1">// </span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">  </span><span class="c1">// TODO: Figure out exactly which versions include padding.</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">  </span><span class="c1">// It seems PSP files and .[x]ncp files don&#39;t count the padding,</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">  </span><span class="c1">// but everything else does??</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">SizeNOF0</span><span class="p">;</span>
 <a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>
-<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="cm">    (It seems PSP files and .[x]ncp files don&#39;t count the padding,</span>
-<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="cm">    but everything else does?)</span>
-<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="cm">  */</span>
-<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">SizeNOF0</span><span class="p">;</span>
-<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>
-<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="cm">    1 in most files, 0 in some newer variants.</span>
-<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="cm">    (Maybe they just stopped using this value?)</span>
-<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="cm">  */</span>
-<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Version</span><span class="p">;</span>
-<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="p">};</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">  </span><span class="c1">// 1 in most files, 0 in some newer variants.</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">  </span><span class="c1">// (Maybe they just stopped using this value?)</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">Version</span><span class="p">;</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="p">};</span>
 </code></pre></div>
 <div class="admonition todo">
 <p class="admonition-title">Todo</p>
 <p>Further research NIFL header chunks and add info on those.</p>
 </div>
 <h3 id="data-chunk-header">Data Chunk Header<a class="headerlink" href="#data-chunk-header" title="Permanent link">&para;</a></h3>
-<p>After the <a href="#info-chunk">Info Chunk</a>, comes a sequence of one or more <a href="#data-chunks">data chunks</a>.</p>
+<p>After the <a href="#info-chunk">Info Chunk</a>, comes the main contents of the file:
+A sequence of one or more <a href="#data-chunks">data chunks</a>.</p>
 <p>In binary-form NN chunk files, each data chunk begins with the following struct:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_DATAHEADER</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">{</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="cm">    Binary chunk header; must be present at the beginning of all binary chunks.</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="cm">    The chunk ID is set to the &quot;ID&quot; of the platform, followed</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="cm">    by the &quot;ID&quot; of the data chunk type being written (e.g.</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="cm">    &quot;NXTL&quot; for &quot;Ninja Xbox Texture List&quot;).</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="cm">  */</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="cm">    Offset to the &quot;main&quot; (root) struct that makes up this chunk&#39;s data</span>
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="cm">    (e.g. offset to a NNS_NODENAMELIST if the chunk type indicates</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="cm">    that this is a NODENAMELIST data chunk), relative to the</span>
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="cm">    position specified by the [OfsData] field from the info chunk.</span>
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="cm">  */</span>
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">OfsMainData</span><span class="p">;</span>
-<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
-<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">  </span><span class="cm">/* Always 0 in every file I&#39;ve seen thus far. */</span>
-<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Version</span><span class="p">;</span>
-<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="p">};</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="c1">// Binary chunk header; must be present at the beginning of all binary chunks.</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="c1">//</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="c1">// The chunk ID is set to the &quot;ID&quot; of the platform, followed</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="c1">// by the &quot;ID&quot; of the data chunk type being written (e.g.</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="c1">// &quot;NXOB&quot; for Xbox OBJECT data chunks).</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="c1">// The offset to the root struct that makes up this data chunk</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="c1">// (e.g. an offset to a NNS_NODENAMELIST if the chunk type indicates</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="c1">// that this is a NODE_NAME data chunk), relative to the</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">  </span><span class="c1">// position specified by the [OfsData] field from the info chunk.</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">  </span><span class="c1">//</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">  </span><span class="c1">// Please refer to the linked pages in the data chunks chart</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span><span class="c1">// to learn about their root structs.</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">OfsMainData</span><span class="p">;</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">  </span><span class="c1">// Always 0 in every file I&#39;ve seen thus far.</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">Version</span><span class="p">;</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="p">};</span>
 </code></pre></div>
 <p>Immediately following this struct comes all of the data (structs, strings, etc.)
 required to represent the data chunk. The format of this data depends on
-the platform and type of data chunk being represented. Check the chunk ID from
-the ChunkHeader field in the above struct to determine this.</p>
+the value of the Id field.</p>
 <p>See the linked pages in the <a href="#data-chunks">data chunks chart</a>.</p>
 <h3 id="offsets-list-chunk">Offsets List Chunk<a class="headerlink" href="#offsets-list-chunk" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
@@ -6884,41 +6915,39 @@ the ChunkHeader field in the above struct to determine this.</p>
 <p>After all of the data chunks, comes the offsets list chunk.</p>
 <p>This binary chunk represents a list of positions for all of the pointers
 ("offsets") in all of the data chunks in the file, relative to the value
-of the <code>[OfsData]</code> field from the file's info chunk.</p>
+of the <code>[OfsData]</code> field from the info chunk.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_NOF0HEADER</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">{</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="cm">    Binary chunk header; must be present at the beginning of all binary chunks.</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="cm">    The chunk ID is set to &quot;NOF0&quot;.</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="cm">  */</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="cm">/* The number of pointer positions listed within this chunk. */</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">nData</span><span class="p">;</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="cm">    Padding; always 0 in files.</span>
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="cm">    Some games use this value as a marker that states whether or not</span>
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="cm">    the offsets have been &quot;fixed&quot;. In those games, after they&#39;re done</span>
-<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="cm">    &quot;fixing&quot; all of the pointers listed within this chunk, they will set</span>
-<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="cm">    this value to 1 in memory.</span>
-<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="cm">  */</span>
-<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Pad</span><span class="p">;</span>
-<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="p">};</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="c1">// Binary chunk header; must be present at the beginning of all binary chunks.</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="c1">// </span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="c1">// The chunk ID is set to &quot;NOF0&quot;.</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="c1">// The number of pointer positions listed within this chunk.</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">nData</span><span class="p">;</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span><span class="c1">// Padding; must always be 0 in files.</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">  </span><span class="c1">//</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">  </span><span class="c1">// This is because some games use this value as a marker that states</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">  </span><span class="c1">// whether or not the pointers have been &quot;fixed&quot;.</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">  </span><span class="c1">//</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">  </span><span class="c1">// In those games, after they&#39;re done &quot;fixing&quot; all of the pointers</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">  </span><span class="c1">// listed within this chunk, they will set this value to 1 in memory.</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">Pad</span><span class="p">;</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="p">};</span>
 </code></pre></div>
 <p>Immediately following this struct comes an array of <code>uint32_t</code> values
 of size <code>[nData]</code>. These values represent the positions of every pointer
 in all of the data chunks in the file, relative to the <code>[OfsData]</code> field
-from the file's info chunk.</p>
+from the info chunk.</p>
 <p>Most Sega NN games use this chunk to quickly "fix" all of the pointers
 within the data chunks (that is, to convert all of the offsets into
 absolute memory addresses that can then just be used as normal pointers).</p>
 <p>Some games, however, (namely: Sonic 4 Episode I for Windows Phone) ignore the
 values in this chunk, and instead, just manually add <code>[OfsData]</code> to
 each offset to get an absolute file position whenever they need to jump there.</p>
-<p>Regardless of whether the data is used or not, it is still required to be present.</p>
+<p>Regardless of whether the data is actually used or not, it is always
+present in valid files.</p>
 <div class="admonition todo">
 <p class="admonition-title">Todo</p>
 <p>Add pseudo-code for "fixing" the offsets listed in this chunk.</p>
@@ -6932,16 +6961,14 @@ debugging/internal-tooling purposes.</p>
 <p>This chunk simply states the name and extension (without the path) of the file it's contained in.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_NFN0HEADER</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">{</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="cm">    Binary chunk header; must be present at the beginning of all binary chunks.</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="cm">    The chunk ID is set to &quot;NFN0&quot;.</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="cm">  */</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="cm">/* Padding; always 0 in files. */</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Pad</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">};</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="c1">// Binary chunk header; must be present at the beginning of all binary chunks.</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="c1">//</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="c1">// The chunk ID is set to &quot;NFN0&quot;.</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="c1">// Padding; always 0 in files.</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Pad</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">};</span>
 </code></pre></div>
 <p>Immediately following this header comes a null-terminated string
 which represents the file's name and extension (without its path).</p>
@@ -6952,55 +6979,54 @@ which represents the file's name and extension (without its path).</p>
 </div>
 <p>This is the last chunk in all binary-form NN chunk files. It exists purely
 to indicate that there are no more chunks left in the file, so that you
-know when to stop reading if you're reading the file one chunk at a time.</p>
+know when to stop reading if you're reading the file sequentially, one
+chunk at a time.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NNS_BINCNK_NENDHEADER</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">{</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="cm">/*</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="cm">    Binary chunk header; must be present at the beginning of all binary chunks.</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="cm">    The chunk ID is set to &quot;NEND&quot;.</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="cm">  */</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span><span class="cm">/* Padding; always 0 in files. */</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Pad</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="p">};</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="c1">// Binary chunk header; must be present at the beginning of all binary chunks.</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="c1">//</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="c1">// The chunk ID is set to &quot;NEND&quot;.</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="n">NNS_BINCNK_HEADER</span><span class="w"> </span><span class="n">ChunkHeader</span><span class="p">;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span><span class="c1">// Padding; always 0 in files.</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Pad</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="p">};</span>
 </code></pre></div>
 <h2 id="text-form-file-format">Text-Form File Format<a class="headerlink" href="#text-form-file-format" title="Permanent link">&para;</a></h2>
-<p>Just like text-form Ninja chunk model files, text-form NN chunk files are actually C
-header files designed to be directly <code>#include</code>-able from C or C++ code, allowing
-developers to literally embed NN data directly into the game's code itself!</p>
-<p>They also, however, are designed to serve as a human-readable variant of binary-form NN
-chunk files that can be more easily parsed and/or generated by the official Sega NN tooling.</p>
-<p>They accomplish all of this by using only a very strict subset of C in a precise
-layout, and by heavily utilizing preprocessor defines from other NN library header
-files that the developer is supposed to <code>#include</code> in their code before <code>#include</code>-ing
-the text-form NN chunk file.</p>
-<p>The general layout is as follows:</p>
+<p>Text-form NN chunk files, just like the text-form Ninja chunk model files that precede
+them, are text files comprised of code in what is actually a very limited subset of the
+C programming language, heavily utilizing special NN types/preprocessor defines, which are,
+presumably, defined within the official Sega NN SDK.</p>
+<p>This allows them to both be parsable by tooling (it is unclear if they actually do this),
+and to be directly <code>#include</code>d within the C or C++ files which make up their game's
+source code, embedding the data directly within the game's executable!</p>
+<p>Their general layout is as follows:</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Replace these special phrases in all of the following "<code>text snippets</code>" as follows:</p>
+<p>Replace these special phrases in all of the following <code>text snippets</code> as follows:</p>
 <ul>
-<li>"<code>\t</code>": Replace with a tab character (<em>not</em> spaces).</li>
-<li>"<code>TYPE</code>": Replace with the name of the type currently being written.</li>
-<li>"<code>NAME</code>": Replace with the name of whatever you're currently writing.</li>
+<li><code>\t</code>: Replace with one or more tab characters (<strong>NOT</strong> spaces), used to align the text.</li>
+<li><code>TYPE</code>: Replace with the name of the type currently being written.</li>
+<li><code>NAME</code>: Replace with the name of whatever you're currently writing.</li>
 </ul>
 </div>
 <ol>
-<li>A required (?) "header" comment that is comprised of the following, in order:<ol>
+<li>A (required?) "header" comment that is comprised of the following, in order:<ol>
 <li>The name and version number of the tool used to create this file.</li>
-<li>"<code>Create\t:</code>" followed by the date this file was created in the "<code>ddd MMM dd HH:mm:ss yyyy</code>" .NET DateTime format.</li>
-<li>References to each of the "main" (root) structs that makes up the data of every data chunk used in the file, in this format: "<code>TYPE\t: NAME</code>", where <code>TYPE</code> refers to the type of the struct being referenced (e.g. NNS_TEXFILELIST). See the linked pages in the <a href="#data-chunks">data chunks chart</a>.</li>
+<li><code>Create\t:</code> followed by the date this file was created in the <code>ddd MMM dd HH:mm:ss yyyy</code> .NET DateTime format.</li>
+<li>The names of each of the root structs for every data chunk in the file, in this format: <code>TYPE\t: NAME</code>, where <code>TYPE</code> refers to the root struct's type (e.g. <code>NNS_TEXFILELIST</code>). See the linked pages in the <a href="#data-chunks">data chunks chart</a>.</li>
 </ol>
 </li>
 <li>One or more data chunks, each of which is comprised of the following, in order:<ol>
-<li>A comment with the text: "<code>TYPE START</code>", where <code>TYPE</code> refers to the <a href="#data-chunks">data chunk's type</a> (e.g. TEXLIST).</li>
+<li>A comment with the text: <code>TYPE START</code>, where <code>TYPE</code> refers to the <a href="#data-chunks">data chunk's type</a> (e.g. <code>TEXLIST</code>).</li>
 <li>All of the data used by this data chunk, represented as C code comprised heavily of special NN preprocessor macros. See the linked pages in the <a href="#data-chunks">data chunks chart</a>.</li>
-<li>A comment with the text: "<code>TYPE END</code>", where <code>TYPE</code> refers to the <a href="#data-chunks">data chunk's type</a> (e.g. TEXLIST).</li>
+<li>A comment with the text: <code>TYPE END</code>, where <code>TYPE</code> refers to the <a href="#data-chunks">data chunk's type</a> (e.g. <code>TEXLIST</code>).</li>
 </ol>
 </li>
-<li>A required (?) comment with the text: "<code>End of File</code>".</li>
+<li>A (required?) comment with the text: <code>End of File</code>.</li>
 </ol>
+<p>The files also always use tab characters (<code>\t</code>) for indentation, rather than spaces.</p>
+<p>Here's a sample Text-form NN chunk file, to better understand the format:</p>
 <div class="admonition example">
 <p class="admonition-title">SampleFile.xtt</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cm">/*</span>
@@ -7042,7 +7068,7 @@ the text-form NN chunk file.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>All of the following in the above example are struct/enum/preprocessor
+<p>All of the following in the above example are type/preprocessor
 defines from the NN library:</p>
 <ul>
 <li><code>NNS_TEXFILE</code></li>
@@ -7057,14 +7083,17 @@ defines from the NN library:</p>
 <li><code>TFL_TEXFILE</code></li>
 </ul>
 <p>For a complete list of all of these defines, please refer to the individual pages
-linked in the <a href="#data-chunks">data chunks chart</a> (for this example,
+linked in the <a href="#data-chunks">data chunks chart</a> (for the ones used in this example,
 refer to the <a href="texlist/">TEXLIST documentation</a>).</p>
 </div>
-<p>The ordering of the data within each data chunk is generally in "reverse" order,
-such that any reference to a value will not be written until <em>after</em> the value
-it is referencing, as is required by C.</p>
-<p>In some cases, the "reverse" order is still not enough to satisfy this requirement,
-so the Sega NN exporters will write an extern declaration for the value being referenced.</p>
+<p>Note that in C, code is parsed sequentially: left-to-right, top-to-bottom.</p>
+<p>If a name is used in the file before it has been declared, that's an error.</p>
+<p>Thus, the ordering of the data within each data chunk is generally written to
+the file in "reverse" order, such that any reference to a value will not be
+written until <em>after</em> the value it is referencing has been written, avoiding
+this problem.</p>
+<p>In some cases, the Sega NN exporters will instead declare the value early,
+and define it later on in the file, using an extern declaration like so:</p>
 <div class="admonition example">
 <p class="admonition-title">Example snippet from en_Kyozoress.xto in Sonic '06</p>
 <p>Here, the <code>nnvertex_plb_op_en_Kyozoress_head_l__2_w2_Eye</code> value is
@@ -7111,7 +7140,7 @@ to extreme length):</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-03-16T06:10:34+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-03-16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-07-22T09:02:29+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-07-22</span>
   </span>
 
     
