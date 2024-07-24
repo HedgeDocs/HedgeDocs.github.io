@@ -21,10 +21,10 @@ struct NNS_NODENAMELIST
     /* An array of NNS_NODENAME structs */ 
     NNS_NODENAME* pNodeNameList;
 };
-```
 
-!!! todo
-    Find the macros used in the text-form file format
+/* Macros used by Text-Form files: */
+#define	NODENAMELIST( SortType, nNode, pNodeNameList ) { SortType, nNode, pNodeNameList }
+```
 
 ## NNS_NODENAME
 
@@ -39,6 +39,9 @@ struct NNS_NODENAME
     /* The node name */
     char* Name;
 };
+
+/* Macros used by Text-Form files: */
+#define	NODENAME( iNode, Name ) { iNode, Name }
 ```
 
 ## NNE_NODENAME_SORTTYPE
@@ -55,6 +58,3 @@ enum NNE_NODENAME_SORTTYPE
     NNE_NODENAME_SORTTYPE_NAME
 };
 ```
-
-!!! todo
-    Find the macros used in the text-form file format
