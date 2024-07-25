@@ -31,13 +31,13 @@ struct NNS_TEXFILELIST
     Is the following information on embedded texture data correct? This might only apply to NCP files, NOT to NN?
 
 Binary-form files can additionally contain embedded
-texture data via setting the [Filename] field
-within one or more NNS_TEXFILE structs to NULL.
+texture data via setting the `Filename` field
+within one or more [NNS_TEXFILE](#nns_texfile) structs to NULL.
 
 In binary-form files which utilize this feature,
 there is an extra field in NNS_TEXFILELIST after
-[pTexFileList], which is a pointer to an array of
-[nTex] NNS_TEXFILEDATA structs, which go like this:
+`pTexFileList`, which is a pointer to an array of
+`nTex` NNS_TEXFILEDATA structs, which go like this:
 
 ```c
 // NOTE: This name was guessed.
@@ -53,7 +53,7 @@ struct NNS_TEXFILEDATA
 
 ## NNF_TEXFILETYPE
 
-Types and flags for a [NNS_TEXFILE](#NNS_TEXFILE) struct.
+Types and flags for a [NNS_TEXFILE](#nns_texfile) struct.
 
 ```c
 enum NNF_TEXFILETYPE : uint32_t

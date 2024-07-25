@@ -11,7 +11,7 @@ description: Sega NN NODENAMELIST Data Chunk Format Specification
     may differ depending on the platform. In practice, it's always
     an `int32_t` in all known NN games.
 
-This enum indicates the way the [NNS_NODENAME](#NNS_NODENAME) structs are sorted in the `pNodeNameList` array used in the [NNS_NODENAMELIST](#NNS_NODENAMELIST).
+This enum indicates the way the [NNS_NODENAME](#nns_nodename) structs are sorted in the `pNodeNameList` array used in the [NNS_NODENAMELIST](#nns_nodenamelist).
 
 ```c
 enum NNE_NODENAME_SORTTYPE
