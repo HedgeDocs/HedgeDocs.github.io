@@ -47,6 +47,11 @@ While the exact meaning of the "NN" in "Sega NN" is still currently unknown, giv
 that it is so heavily based off of the older Ninja format, it's almost certainly
 an acronym for something like "New Ninja" or "Ninja Next".
 
+## Common Definitions
+
+Please see the [Common Definitions](common-definitions.md) page for a list of
+definitions (structs, enums, etc.) that are referenced throughout this specification.
+
 ## Platforms
 
 The NN Chunk Format, much like the older Ninja format it's based on, is

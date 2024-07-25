@@ -147,6 +147,7 @@ nav:
       - Common:
         - NN Chunk Format:
           - docs/nn/common/chunk-format/index.md
+          - Common Definitions: docs/nn/common/chunk-format/common-definitions.md
           - NODENAMELIST: docs/nn/common/chunk-format/nodenamelist.md
           - TEXLIST: docs/nn/common/chunk-format/texlist.md
   - Discoveries:
