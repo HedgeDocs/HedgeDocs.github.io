@@ -151,6 +151,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hedgedocs.com/docs/nn/common/chunk-format/common-definitions/</loc>
+         <lastmod>2024-07-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hedgedocs.com/docs/nn/common/chunk-format/motion/</loc>
+         <lastmod>2024-07-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hedgedocs.com/docs/nn/common/chunk-format/nodenamelist/</loc>
          <lastmod>2024-07-25</lastmod>
          <changefreq>daily</changefreq>
