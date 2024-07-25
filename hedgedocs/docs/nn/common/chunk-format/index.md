@@ -96,11 +96,11 @@ All known data chunk types are listed in the following chart:
 | MN | u    | MATERIALNAMELIST                    | A list of names for the materials within an object (a model).           |
 | TN | ?    | MTNAMELIST                          | A list of names for the morph targets within an object (a model).       |
 | OB | j/o  | OBJECT                              | A model. Uses o as its CC if its TEXLIST is embedded, and j otherwise.  |
-| MO | m    | MOTION                              | A node (bone) animation.                                                |
-| MM | f    | MOTION                              | A morph animation.                                                      |
-| MC | d    | MOTION                              | A camera animation.                                                     |
-| ML | ?    | MOTION                              | A light animation.                                                      |
-| MA | v    | MOTION                              | A material animation.                                                   |
+| MO | m    | [MOTION](motion.md)                 | A node (bone) animation.                                                |
+| MM | f    | [MOTION](motion.md)                 | A morph animation.                                                      |
+| MC | d    | [MOTION](motion.md)                 | A camera animation.                                                     |
+| ML | ?    | [MOTION](motion.md)                 | A light animation.                                                      |
+| MA | v    | [MOTION](motion.md)                 | A material animation.                                                   |
 | LI | l    | LIGHT                               | A light.                                                                |
 | CA | c    | CAMERA                              | A camera.                                                               |
 | MT | g    | MORPH                               | A morph target.                                                         |
