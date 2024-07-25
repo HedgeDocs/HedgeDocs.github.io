@@ -16,13 +16,13 @@ This enum indicates the way the [NNS_NODENAME](#nns_nodename) structs are sorted
 ```c
 enum NNE_NODENAME_SORTTYPE
 {
-    // The NNS_NODENAME structs are sorted by their
-    // [iNode] index field, from least to greatest.
-    NNE_NODENAME_SORTTYPE_INDEX,
+  // The NNS_NODENAME structs are sorted by their
+  // [iNode] index field, from least to greatest.
+  NNE_NODENAME_SORTTYPE_INDEX,
 
-    // The NNS_NODENAME structs are sorted by their
-    // [Name] field, ordered as if by C's strcmp.
-    NNE_NODENAME_SORTTYPE_NAME
+  // The NNS_NODENAME structs are sorted by their
+  // [Name] field, ordered as if by C's strcmp.
+  NNE_NODENAME_SORTTYPE_NAME
 };
 ```
 
@@ -36,15 +36,15 @@ A list of the names for the nodes (bones) that make up an object (model).
 ```c
 struct NNS_NODENAMELIST
 {
-    // The way the NNS_NODENAME structs in
-    // the [pNodeNameList] array are sorted.
-    NNE_NODENAME_SORTTYPE SortType;
+  // The way the NNS_NODENAME structs in
+  // the [pNodeNameList] array are sorted.
+  NNE_NODENAME_SORTTYPE SortType;
 
-    // The number of elements in the [pNodeNameList] array.
-    int32_t nNode;
+  // The number of elements in the [pNodeNameList] array.
+  int32_t nNode;
 
-    // An array of NNS_NODENAME structs.
-    NNS_NODENAME* pNodeNameList;
+  // An array of NNS_NODENAME structs.
+  NNS_NODENAME* pNodeNameList;
 };
 
 // Macros used by Text-Form files:
@@ -61,12 +61,12 @@ A name for a single node (bone).
 ```c
 struct NNS_NODENAME
 {
-    // The index of the node, in the [pNodeList]
-    // array in the corresponding NNS_OBJECT.
-    int32_t iNode;
+  // The index of the node, in the [pNodeList]
+  // array in the corresponding NNS_OBJECT.
+  int32_t iNode;
 
-    // The name of the node.
-    const char* Name;
+  // The name of the node.
+  const char* Name;
 };
 
 // Macros used by Text-Form files:
