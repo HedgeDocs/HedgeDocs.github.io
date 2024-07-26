@@ -88,26 +88,26 @@ that represents a single resource of a specific type.
 
 All known data chunk types are listed in the following chart:
 
-| ID | CC   | Type                                | Description                                                             |
-| -- | ---- | ----------------------------------- | ----------------------------------------------------------------------- |
-| TL | t    | [TEXLIST](texlist.md)               | A list of textures.                                                     |
-| EF | e    | EFFECTLIST                          | A list of effects (shaders).                                            |
-| NN | a    | [NODENAMELIST](nodenamelist.md)     | A list of names for the nodes (bones) within an object (a model).       |
-| MN | u    | MATERIALNAMELIST                    | A list of names for the materials within an object (a model).           |
-| TN | ?    | MTNAMELIST                          | A list of names for the morph targets within an object (a model).       |
-| OB | j/o  | OBJECT                              | A model. Uses o as its CC if its TEXLIST is embedded, and j otherwise.  |
-| MO | m    | [MOTION](motion.md)                 | A node (bone) animation.                                                |
-| MM | f    | [MOTION](motion.md)                 | A morph animation.                                                      |
-| MC | d    | [MOTION](motion.md)                 | A camera animation.                                                     |
-| ML | ?    | [MOTION](motion.md)                 | A light animation.                                                      |
-| MA | v    | [MOTION](motion.md)                 | A material animation.                                                   |
-| LI | l    | LIGHT                               | A light.                                                                |
-| CA | c    | CAMERA                              | A camera.                                                               |
-| MT | g    | MORPH                               | A morph target.                                                         |
-| NT | ?    | NODE_TREE_OBJECT ?                  | ?                                                                       |
-| ME | ?    | MESH_OBJECT ?                       | ?                                                                       |
-| SF | ?    | SHADERFILE                          | ?                                                                       |
-| SI | ?    | SHADERIDX                           | ?                                                                       |
+| ID | CC   | Type                                      | Description                                                               |
+| -- | ---- | ----------------------------------------- | ------------------------------------------------------------------------- |
+| TL | t    | [TEXLIST](texlist.md)                     | A list of textures.                                                       |
+| EF | e    | EFFECTLIST                                | A list of effects (shaders).                                              |
+| NN | a    | [NODENAMELIST](nodenamelist.md)           | A list of names for the nodes (bones) within an object (a model).         |
+| MN | u    | [MATERIALNAMELIST](materialnamelist.md)   | A list of names for the materials within an object (a model).             |
+| TN | ?    | MTNAMELIST                                | A list of names for the morph targets within an object (a model).         |
+| OB | j/o  | OBJECT                                    | A model. Uses o as its CC if its TEXLIST is embedded, and j otherwise.    |
+| MO | m    | [MOTION](motion.md)                       | A node (bone) animation.                                                  |
+| MM | f    | [MOTION](motion.md)                       | A morph animation.                                                        |
+| MC | d    | [MOTION](motion.md)                       | A camera animation.                                                       |
+| ML | ?    | [MOTION](motion.md)                       | A light animation.                                                        |
+| MA | v    | [MOTION](motion.md)                       | A material animation.                                                     |
+| LI | l    | LIGHT                                     | A light.                                                                  |
+| CA | c    | CAMERA                                    | A camera.                                                                 |
+| MT | g    | MORPH                                     | A morph target.                                                           |
+| NT | ?    | NODE_TREE_OBJECT ?                        | ?                                                                         |
+| ME | ?    | MESH_OBJECT ?                             | ?                                                                         |
+| SF | ?    | SHADERFILE                                | ?                                                                         |
+| SI | ?    | SHADERIDX                                 | ?                                                                         |
 
 Each data chunk has a "root struct" associated with it, which is the starting
 point for the data in the chunk, and usually references other data

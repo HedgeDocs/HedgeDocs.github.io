@@ -148,8 +148,10 @@ nav:
         - NN Chunk Format:
           - docs/nn/common/chunk-format/index.md
           - Common Definitions: docs/nn/common/chunk-format/common-definitions.md
-          - NODENAMELIST: docs/nn/common/chunk-format/nodenamelist.md
           - TEXLIST: docs/nn/common/chunk-format/texlist.md
+          - NODENAMELIST: docs/nn/common/chunk-format/nodenamelist.md
+          - MATERIALNAMELIST: docs/nn/common/chunk-format/materialnamelist.md
+          - MOTION: docs/nn/common/chunk-format/motion.md
   - Discoveries:
     - discoveries/index.md
     - Sonic Unleashed:
