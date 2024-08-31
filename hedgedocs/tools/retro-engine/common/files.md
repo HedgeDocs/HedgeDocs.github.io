@@ -3,7 +3,8 @@ description: File format tools for the Retro Engine
 ---
 # File Format Tools
 
-## RetroED
-A general purpose editor for all RSDK versions below RSDKv5.
+## RetroED v2
+A general purpose editor for all RSDK versions between v1 to v5.
 
-[Source Code :fontawesome-brands-github:](https://github.com/Rubberduckycooly/RetroED){ .md-button .md-button--primary target="_blank"}
+[Download :fontawesome-solid-download:](https://github.com/RSDKModding/RetroED/releases/latest){ .md-button .md-button--primary}
+[Source Code :fontawesome-brands-github:](https://github.com/RSDKModding/RetroED){ .md-button target="_blank"}
