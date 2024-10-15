@@ -78,9 +78,10 @@ Result:
 
 
 ## Testing
-You can test your changes locally before committing. To do so:
+You can test your changes locally before committing. 
+To do so, follow the steps described below*:
 
-- Install [Python](https://www.python.org/downloads/)
+- Download and install the latest version of [Python](https://www.python.org/downloads/)
 - Install Material For MkDocs: `pip install mkdocs-material --upgrade`
 - Install necessary MkDocs Plugins
     - git-revision-date-localized-plugin: `pip install mkdocs-git-revision-date-localized-plugin --upgrade`
@@ -88,4 +89,6 @@ You can test your changes locally before committing. To do so:
 - Serve webpage locally: `mkdocs serve`
     - You can also build a static site instead, using `mkdocs build`
  
-The served webpage will auto refresh whenever you make changes to the files.
+After executing the last command (the serve command), you'll see an address where you can visit the website. By visiting that address in your browser of choice, you'll be able to see the local version of the website, as in, the version of the website that's currently on your computer. This webpage will auto refresh whenever you make changes to the files, so you can edit the files and see your edits live!
+
+\* *Text inside a codeblock is meant to be written and executed in a terminal/command prompt inside this project's directory. To simplify, if you're using Windows, open the project's folder in Windows Explorer and type "cmd" in the address bar.*
