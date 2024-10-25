@@ -4,7 +4,7 @@ description: Guide for custom rank times for Sonic Generations
 # How To Specify Custom Ranks for Sonic Generations
 
 !!! info
-    This guide requires the usage of decompiled LUA files, which can be obtained in any console version of the game.
+    This guide requires the usage of decompiled LUA files, which can be obtained from the 2024 re-release of the game.
 
 Rank times for all stages are stored in `bb3/#Application.ar.00/ScoreTimeTable.lua`. Opening this file presents you with a list with the A and C rank times (in seconds). The S rank is just the A rank time with a perfect bonus, and the D rank is any time below the C rank time.
 
