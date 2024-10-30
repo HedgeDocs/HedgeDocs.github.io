@@ -82,7 +82,7 @@ You can test your changes locally before committing.
 To do so, follow the steps described below*:
 
 - Download and install the latest version of [Python](https://www.python.org/downloads/)
-- Install Material For MkDocs: `pip install mkdocs-material --upgrade`
+- Install Material For MkDocs: `pip install mkdocs-material==9.5.9 --upgrade`
 - Install necessary MkDocs Plugins
     - git-revision-date-localized-plugin: `pip install mkdocs-git-revision-date-localized-plugin --upgrade`
     - git-committers-plugin-2: `pip install mkdocs-git-committers-plugin-2 --upgrade`
