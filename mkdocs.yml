@@ -143,6 +143,9 @@ nav:
           - Gismos: docs/hedgehog-engine/rangers/obj/gismos.md
         - Scripts:
           - Functions: docs/hedgehog-engine/rangers/scripts/funcs.md
+      - Shadow Generations:
+        - Levels:
+          - Level ID Map: docs/hedgehog-engine/miller/levels/ids.md
     - Sega NN:
       - Common:
         - NN Chunk Format:
