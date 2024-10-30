@@ -209,7 +209,7 @@ markdown_extensions:
   - tables
 extra_css:
   - web/stylesheets/extra.css
-  - web/stylesheets/amoled.css
+  - web/stylesheets/ultradark.css
   - web/stylesheets/dark.css
   - web/stylesheets/rangers.css
 extra_javascript:
@@ -249,18 +249,18 @@ theme:
   icon:
     edit: material/file-edit-outline
   palette:
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to AMOLED mode
     - media: "(prefers-color-scheme: light)"
       scheme: rangers
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: amoled
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to ultra dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: ultradark
       toggle:
         icon: material/brightness-2
         name: Switch to light mode
