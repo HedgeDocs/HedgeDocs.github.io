@@ -30,6 +30,8 @@
     --rangers-background-color: #f0f3f5;
     --rangers-header-color: #3e7e9e;
     --rangers-background: radial-gradient(farthest-corner at 25vw 25vh, #ced4d5 10%, #879295 100%);
+    --rangers-alternate-fg-color: #f2f8f8;
+    --rangers-alternate-bg-color: #56bff0;
 }
 
 [data-md-color-scheme='rangers'] .contributor {
@@ -53,7 +55,7 @@
 
 [data-md-color-scheme='rangers'] th {
     background-color: var(--md-primary-fg-color);
-    color: #f2f8f8;
+    color: var(--rangers-alternate-fg-color);
 }
 
 [data-md-color-scheme='rangers'] tr {
@@ -65,27 +67,27 @@
 @media screen and (min-width: 76.25em) {
     [data-md-color-scheme='rangers'] .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
         background: var(--rangers-header-color);
-        color: #f2f8f8 !important;
+        color: var(--rangers-alternate-fg-color) !important;
         box-shadow: 0 0 0 0;
         border-left: 0px;
         transition: 125ms;
     }
     [data-md-color-scheme='rangers'] .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link:is(:focus,:hover) {
-        background: #56bff0;
+        background: var(--rangers-alternate-bg-color);
     }
     [data-md-color-scheme='rangers'] main>div>div.md-sidebar.md-sidebar--primary>div>div>nav>ul>li.md-nav__item.md-nav__item--active.md-nav__item--section.md-nav__item--nested>div>a {
-        color: #f2f8f8 !important;
+        color: var(--rangers-alternate-fg-color) !important;
         padding: 5px 5px 5px 10px;
     }
     [data-md-color-scheme='rangers'] main>div>div.md-sidebar.md-sidebar--primary>div>div>nav>ul>li.md-nav__item.md-nav__item--active.md-nav__item--section.md-nav__item--nested>div>a:is(:focus,:hover) {
-        color: #f2f8f8 !important;
+        color: var(--rangers-alternate-fg-color) !important;
     }
 }
 
 @media screen and (min-width: 60em) {
     [data-md-color-scheme='rangers'] .md-nav--secondary .md-nav__title {
         background: var(--rangers-header-color);
-        color: #f2f8f8;
+        color: var(--rangers-alternate-fg-color);
         padding-top: 5px;
         padding-bottom: 5px;
         box-shadow: 0 0 0 0;
@@ -127,7 +129,7 @@
 
 [data-md-color-scheme='rangers'] .md-tabs {
     background-color: var(--rangers-header-color);
-    color: #f2f8f8;
+    color: var(--rangers-alternate-fg-color);
     font-weight: bold;
 }
 
@@ -144,7 +146,7 @@
 }
 
 [data-md-color-scheme='rangers'] a.md-tabs__link.md-tabs__link--active {
-    color: #56bff0;
+    color: var(--rangers-alternate-bg-color);
 }
 
 [data-md-color-scheme='rangers'] a.md-nav__link.md-nav__link--passed.md-nav__link--active {
@@ -152,11 +154,11 @@
 }
 
 [data-md-color-scheme='rangers'] a.md-tabs__link.md-tabs__link--active:after {
-    color: #56bff0;
+    color: var(--rangers-alternate-bg-color);
 }
 
 [data-md-color-scheme='rangers'] .md-tabs__link:hover {
-    background-color: #56bff0;
+    background-color: var(--rangers-alternate-bg-color);
     color: #d8f6f6;
     text-align: center;
     padding-bottom: 0.7rem;
@@ -164,7 +166,7 @@
 }
 
 [data-md-color-scheme='rangers'] .md-tabs__link--active:hover {
-    background-color: #56bff0;
+    background-color: var(--rangers-alternate-bg-color);
     color: #d8f6f6;
     text-align: center;
     animation: none;
@@ -178,7 +180,7 @@
 
 [data-md-color-scheme='rangers'] .md-tabs__item--active .md-tabs__link--active:hover {
     color: inherit;
-    background-color: #4ea5cf;
+    background-color: var(--rangers-alternate-bg-color);
     padding-bottom: .7rem;
 }
 
@@ -194,7 +196,7 @@
 
 [data-md-color-scheme='rangers'] .md-tabs__link.md-tabs__link--active:hover {
     background-color: #00000000 !important;
-    color: #56bff0;
+    color: var(--rangers-alternate-bg-color);
 }
 
 [data-md-color-scheme='rangers'] .md-tabs__item.md-tabs__item--active:hover {
@@ -203,13 +205,13 @@
 }
 
 [data-md-color-scheme='rangers'] .md-tabs__link:after {
-    border-bottom: 0px #56bff0;
+    border-bottom: 0px var(--rangers-alternate-bg-color);
     transform: scaleX(1);
 }
 
 [data-md-color-scheme='rangers'] .md-header {
     background-color: var(--rangers-header-color);
-    color: #f2f8f8;
+    color: var(--rangers-alternate-fg-color);
     font-weight: bold;
 }
 
@@ -248,12 +250,12 @@ DISABLED FOR ALIGNMENT PURPOSES
 
 [data-md-color-scheme='rangers'] .md-typeset .md-button:is(:focus,:hover) {
     background-color: var(--md-primary-fg-color);
-    border-color: #56bff0;
+    border-color: var(--rangers-alternate-bg-color);
     color: var(--md-accent-bg-color);
 }
 [data-md-color-scheme='rangers'] .md-typeset .md-button:-webkit-any(:focus,:hover) {
     background-color: var(--md-primary-fg-color);
-    border-color: #56bff0;
+    border-color: var(--rangers-alternate-bg-color);
     color: var(--md-accent-bg-color);
 }
 */
