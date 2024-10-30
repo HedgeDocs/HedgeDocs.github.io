@@ -47,6 +47,10 @@
     color: var(--amoled-anchor-link-color);
 }
 
+[data-md-color-scheme='amoled'] .md-typeset .md-button--primary {
+    color: var(--md-primary-bg-color) !important;
+}
+
 [data-md-color-scheme='amoled'] a.contributor:hover {
     color: var(--md-default-fg-color--lighter);
 }
