@@ -144,6 +144,8 @@ nav:
         - Scripts:
           - Functions: docs/hedgehog-engine/rangers/scripts/funcs.md
       - Shadow Generations:
+        - Events:
+          - Event ID Map: docs/hedgehog-engine/miller/events/ids.md
         - Levels:
           - Level ID Map: docs/hedgehog-engine/miller/levels/ids.md
     - Sega NN:
