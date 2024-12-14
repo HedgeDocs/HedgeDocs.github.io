@@ -2,6 +2,9 @@
 description: Shadow Generations event ID map
 ---
 
+# Event ID Map
+
+### Base Game Event Mapping
 Event ID         | Event Description
 ---------------- | --------------------
 bo1010           | Biolizard Intro
@@ -77,7 +80,7 @@ res_b_010        | Result - B Rank
 res_c_010        | Result - C Rank
 res_d_010        | Result - D Rank
 res_key_010      | Result With Doom Sigil
-res_S_010        | Result - S Rank
+res_s_010        | Result - S Rank
 test_ev0000      | Test Cutscene of Shadow Standing in his Idle pose
 test_qte_sample  | Test QTE Cutscene
 wt0905           | First Set of Challenge Acts Appear
@@ -90,3 +93,19 @@ wt0925           | Last Set of Challenge Acts appear
 wt0930           | Black Moon Surge 2
 wt0931           | Sealing Device Containing Doom Wing is Activated
 zz_test_seamless | Test Cutscene of Shadow Walking with Stretched Eyes and Ears
+
+### Sonic 3 Movie Pack Mapping
+Event ID         | Event Description
+---------------- | --------------------
+ga201x           | TOKYO Intro Cutscene
+ga202x           | Shadow Pulls Gun Solder out of Helicopter
+ga203x           | Shadow Leaves TOKYO via Ring Portal
+ing_actmov_010   | TOKYO Helicopter Ending QTE
+mov_res_a_010    | Result - A Rank
+mov_res_b_010    | Result - B Rank
+mov_res_c_010    | Result - C Rank
+mov_res_d_010    | Result - D Rank
+mov_res_S_010    | Result - S Rank
+wt0950           | The Ring Gate Appears
+wt0960           | To the World of Movies
+wt0970           | Return from TOKYO
