@@ -27,6 +27,7 @@ w11       | Biolizard
 w12       | Metal Overlord
 w13       | Mephiles
 w14       | Devil Doom
+w20       | Tokyo
 
 ### Stage Type
 
@@ -59,6 +60,7 @@ Chaos Island: Act 1             | w05a10
 Chaos Island: Act 2             | w05a20
 Radical Highway: Act 1          | w06a10
 Radical Highway: Act 2          | w06a20
+Tokyo: Act 1                    | w20a10
 
 ### Boss Battles
 Boss Name               | Level ID
