@@ -36,7 +36,10 @@ body {
 }
 
 .md-banner {
-    background-color: #b71c1c;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #820000;
 }
 
 .md-copyright {

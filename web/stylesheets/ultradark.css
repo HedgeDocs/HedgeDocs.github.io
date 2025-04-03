@@ -32,6 +32,11 @@
     --ultradark-anchor-link-color: #0074ff;
 }
 
+[data-md-color-scheme='ultradark'] .md-banner {
+    background-color: #cbcbcb;
+    color: #000000;
+}
+
 [data-md-color-scheme='ultradark'] .contributor {
     color: var(--md-default-fg-color);
     word-break: break-word;
