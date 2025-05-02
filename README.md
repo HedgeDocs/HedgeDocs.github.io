@@ -1,3 +1,7 @@
+# Archived
+This version of HedgeDocs has been replaced with a MediaWiki based version. More information available in [this repository](https://github.com/hedge-dev/hedgedocs).
+
+-----------
 <h1>
     <a href="#hedgedocs">
         <img width="95" align="left" src="https://raw.githubusercontent.com/HedgeDocs/HedgeDocs.github.io/main/hedgedocs/web/images/favicon.png">
